@@ -1,3 +1,13 @@
+variable "funding_source_confirmed" {
+  type        = bool
+  nullable    = false
+  description = "Confirmar somente após verificar cobertura da conta acadêmica, sem desembolso pessoal. Não há autorização para cobrança ao aluno."
+  validation {
+    condition     = var.funding_source_confirmed
+    error_message = "Criação bloqueada: confirme a cobertura acadêmica sem desembolso pessoal antes de planejar a implantação."
+  }
+}
+
 variable "expected_account_id" {
   type        = string
   description = "Conta destinada ao laboratório novo. Nenhuma conta é assumida por padrão."

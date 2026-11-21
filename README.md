@@ -1,8 +1,10 @@
 # Avaliação final de Cibersegurança 2026.2
 
-Projeto novo e independente para a avaliação final. A proposta usa uma loja fictícia chamada **Aurora** como aplicação de demonstração, com catálogo sintético, banco privado, VPN, WAF e monitoramento. O nome e os detalhes do negócio são premissas de trabalho; as imagens do enunciado citam ABC Place na estrutura sugerida.
+Projeto novo para a avaliação final, na conta acadêmica já utilizada no curso. A conta e serviços de suporte podem ser aproveitados conforme a autorização do aluno, preservando o trabalho anterior. A proposta usa uma loja fictícia chamada **Aurora** como aplicação de demonstração, com catálogo sintético, banco privado, VPN, WAF e monitoramento. O nome e os detalhes do negócio são premissas de trabalho; as imagens do enunciado citam ABC Place na estrutura sugerida.
 
 **Situação:** aplicação e configuração de infraestrutura preparadas. O ambiente AWS ainda não foi criado. As capturas disponíveis mostram a aplicação local. Não há comprovação de VPN, WAF ou Wazuh funcionando na nuvem nesta etapa.
+
+**Restrição autorizada:** nenhum desembolso pessoal do aluno. A criação depende de conferir a cobertura da conta acadêmica. Não excluir, parar ou substituir os recursos do trabalho anterior. [Limites de uso da conta existente](docs/limites-da-conta-existente.md).
 
 ## Conteúdo
 
@@ -47,6 +49,6 @@ Os testes Terraform usam provedores simulados. Eles verificam propriedades da co
 | `evidencias/atuais` | Reservada às provas reais do novo ambiente AWS |
 | `entrega` | Reservada ao relatório, matriz e slides finais após validação prática |
 
-Chaves, senhas, perfis VPN, arquivos de estado e dados de trabalho privados são excluídos do Git. Nenhum recurso ou arquivo dos trabalhos anteriores integra esta avaliação.
+Chaves, senhas, perfis VPN, arquivos de estado e dados de trabalho privados são excluídos do Git. A entrega deve identificar o que foi criado nesta avaliação e produzir evidências atuais dos controles utilizados. Os recursos e arquivos dos trabalhos anteriores serão preservados.
 
 ![Captura real da aplicação local](evidencias/locais/aplicacao-local-desktop.png)

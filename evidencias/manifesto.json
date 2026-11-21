@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-21T16:52:54.172157+00:00",
+  "generated_utc": "2026-11-21T18:59:06.356833+00:00",
   "files": [
     {
       "path": "evidencias/locais/aplicacao-local-desktop.png",
@@ -18,8 +18,8 @@
     },
     {
       "path": "evidencias/locais/validacao-local.json",
-      "bytes": 2418,
-      "sha256": "db01f15ae3403dbd011ced0365071ea9349ce9c334f861e6a30c252f78a6fe93"
+      "bytes": 2893,
+      "sha256": "59c2777a60ea3889d4347c4e1f04c6beab9ea06c34153c41493fdea8babcf9f8"
     }
   ]
 }

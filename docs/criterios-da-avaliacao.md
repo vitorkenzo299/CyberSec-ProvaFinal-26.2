@@ -34,4 +34,4 @@ Fonte: sete imagens do enunciado fornecidas pelo aluno em 21 de novembro de 2026
 
 ## Regras de interpretação
 
-Um controle configurado não equivale a um teste bem-sucedido. Esta avaliação é independente dos projetos anteriores: não reutilizar servidores, domínios, matrizes, relatórios ou evidências daqueles trabalhos. A classificação residual depende de validação atual; ausência de achados em uma verificação limitada não comprova ausência de vulnerabilidades em todo o ambiente.
+Um controle configurado não equivale a um teste bem-sucedido. O aluno autorizou usar a conta acadêmica e aproveitar serviços do projeto anterior, preservando o que já está feito e criando um trabalho novo identificado separadamente. Evidências antigas não substituem os testes atuais. A classificação residual depende de validação atual; ausência de achados em uma verificação limitada não comprova ausência de vulnerabilidades em todo o ambiente.

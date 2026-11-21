@@ -45,10 +45,19 @@ mock_provider "time" {
 }
 
 variables {
-  expected_account_id    = "111122223333"
-  administrator_cidr     = "203.0.113.10/32"
-  ssh_public_key         = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAITestOnlyPublicKeyForOfflinePlan"
-  wazuh_installer_sha256 = "0000000000000000000000000000000000000000000000000000000000000000"
+  funding_source_confirmed = true # Fictício: todos os provedores externos são mocks.
+  expected_account_id      = "111122223333"
+  administrator_cidr       = "203.0.113.10/32"
+  ssh_public_key           = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAITestOnlyPublicKeyForOfflinePlan"
+  wazuh_installer_sha256   = "0000000000000000000000000000000000000000000000000000000000000000"
+}
+
+run "block_unconfirmed_funding" {
+  command = plan
+  variables {
+    funding_source_confirmed = false
+  }
+  expect_failures = [var.funding_source_confirmed]
 }
 
 run "secure_network_and_storage" {

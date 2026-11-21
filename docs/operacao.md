@@ -1,6 +1,6 @@
 # Procedimentos de implantação e validação
 
-Os comandos desta página são um roteiro para o ambiente novo. A implantação só deve começar depois de escolher conta e orçamento e revisar o plano real. Nesta etapa, os únicos testes executados são locais e simulados.
+Os comandos desta página são um roteiro para o ambiente novo na conta acadêmica existente. A implantação só deve começar depois de confirmar cobertura sem desembolso pessoal e revisar o plano real. Nesta etapa, os únicos testes executados são locais e simulados.
 
 ## Preparação
 
@@ -12,6 +12,7 @@ Os comandos desta página são um roteiro para o ambiente novo. A implantação 
 6. Copiar `infra/terraform.tfvars.example` para `infra/terraform.tfvars` e preencher os valores escolhidos. Este arquivo é ignorado pelo Git.
 7. Configurar armazenamento confidencial do estado Terraform. Preferir backend S3 próprio com criptografia, bloqueio de acesso público, versionamento, bloqueio de estado e permissões restritas. Nunca colocar o estado no Git.
 8. Conferir permissões e quotas da conta. As três EC2 propostas totalizam 8 vCPU da família Standard; contas novas ou Academy podem exigir ajuste de quota ou de arquitetura. Conferir também disponibilidade de RDS, WAF, CloudFront VPC Origin e criação de roles.
+9. Registrar um inventário privado dos recursos existentes. Confirmar o pagador e a cobertura acadêmica antes de definir `funding_source_confirmed = true`. O limite de desembolso pessoal é R$ 0.
 
 ## Validação sem nuvem
 
@@ -33,6 +34,14 @@ terraform -chdir=infra show ../.local/lab.tfplan
 ```
 
 Revisar a conta e cada criação, confirmar que não há recursos importados de outros projetos e confrontar a lista com o orçamento. Com o plano aprovado, aplicar exatamente o arquivo revisado:
+
+Antes da aplicação, salvar a saída de `terraform show -json` do plano em arquivo privado UTF-8 e passar pelo verificador:
+
+```powershell
+python scripts/review_plan.py --plan-json .local/plan.json --account CONTA_ACADEMICA_ESCOLHIDA
+```
+
+Atualizações, exclusões e substituições são recusadas no plano inicial, preservando o trabalho anterior. O verificador não comprova cobertura financeira; essa confirmação precisa existir antes.
 
 ```powershell
 terraform -chdir=infra apply ../.local/lab.tfplan

@@ -12,7 +12,8 @@
 ## Antes da entrega final
 
 - Confirmar o cenário específico da prova, quando existir material além das sete imagens.
-- Escolher conta, acesso e orçamento para criar o ambiente novo.
+- Renovar o acesso à conta acadêmica existente e confirmar cobertura sem desembolso pessoal.
+- Registrar um inventário de proteção do ambiente anterior antes de criar os novos recursos.
 - Revisar o plano real do Terraform, configurar proteção do estado e implantar.
 - Conferir instalação, comunicação e permissões efetivas, incluindo usuário nominal no Wazuh.
 - Resolver ou justificar as limitações descritas na arquitetura: TLS, componentes únicos e notificações.

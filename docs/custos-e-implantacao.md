@@ -1,6 +1,12 @@
 # Custos e decisões para implantação
 
-Nenhum recurso AWS foi criado nesta etapa. A proposta pode ser revisada no diretório `infra` antes de escolher conta, janela de uso e orçamento.
+Nenhum recurso AWS foi criado nesta etapa. A proposta pode ser revisada no diretório `infra` antes de confirmar acesso, cobertura e janela de uso da conta acadêmica escolhida.
+
+## Condição definida pelo aluno
+
+Usar a conta acadêmica já existente, sem desembolso pessoal. Não excluir ou interromper o que já está pronto. A conta reutilizada não torna recursos novos gratuitos: é necessário verificar cobertura institucional ou créditos elegíveis antes de criar serviços. O limite pessoal autorizado é R$ 0; a estimativa abaixo é custo bruto de uma alternativa de infraestrutura, não autorização para cobrança ao aluno.
+
+`funding_source_confirmed` é um valor obrigatório no Terraform. Se a cobertura não estiver confirmada, o plano é rejeitado. O exemplo mantém esse valor em `false`. Os testes usam cobertura fictícia apenas dentro de provedores simulados.
 
 ## Estimativa de planejamento
 
@@ -18,8 +24,8 @@ NAT Gateway, IPv4 público e WAF têm cobrança própria. Interromper apenas as 
 
 ## Informações necessárias para ativar
 
-- Conta escolhida para este projeto novo e uma identidade nominal com as permissões necessárias.
-- Limite de gasto autorizado e tempo em que o laboratório deve permanecer ativo.
+- Renovar o acesso à conta acadêmica existente com uma identidade nominal autorizada.
+- Confirmar responsável pela cobrança, cobertura aplicável e janela de uso, preservando o limite pessoal de R$ 0.
 - IPv4 público atual para restringir a entrada da VPN e chave SSH nova do operador.
 - Decisão sobre domínio novo com certificado ACM. O domínio padrão CloudFront permite demonstração inicial, mas sua política mínima TLSv1 deve aparecer como pendência.
 - Confirmação de que o cenário proposto pode ser usado, ou envio do relato específico desta avaliação, se houver.
@@ -30,4 +36,4 @@ As credenciais devem ser configuradas no computador ou pela sessão autorizada d
 
 Ao terminar as evidências, exportar a entrega e conferir o plano de remoção apenas dos recursos com o prefixo desta avaliação. O RDS tem proteção contra exclusão e exige alteração deliberada antes de remover. O snapshot final, os backups retidos, os segredos em recuperação e os objetos de auditoria podem permanecer e gerar pequenas cobranças. O bucket de auditoria não é esvaziado automaticamente.
 
-Um orçamento ou alarme de custo avisa sobre consumo; não constitui teto automático de cobrança.
+Um orçamento ou alarme de custo avisa sobre consumo; não constitui teto automático de cobrança. Não consultar a API paga do Cost Explorer durante a verificação inicial de cobertura; preferir o console gratuito e consultas de estado de conta que não tenham tarifa por requisição.

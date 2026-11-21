@@ -24,4 +24,4 @@ Cada evidência deve conter data, alvo, ação, resultado observado e risco rela
 - `entrega`: relatório, matriz e apresentação para entrega.
 - `.local`: dados de trabalho privados, ignorados pelo Git.
 
-Os nomes dos arquivos devem identificar data e controle. O manifesto deve registrar SHA-256 dos arquivos incluídos, permitindo verificar a integridade. Chaves SSH, credenciais AWS, cookies, perfis VPN e senhas ficam fora do repositório. Não utilizar evidências de outros projetos.
+Os nomes dos arquivos devem identificar data e controle. O manifesto deve registrar SHA-256 dos arquivos incluídos, permitindo verificar a integridade. Chaves SSH, credenciais AWS, cookies, perfis VPN e senhas ficam fora do repositório. Evidências de outros projetos não podem ser apresentadas como resultados atuais desta avaliação.

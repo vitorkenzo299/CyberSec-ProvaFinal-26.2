@@ -1,5 +1,6 @@
 # Copiar para terraform.tfvars somente depois de escolher conta e orçamento.
 # Os dados abaixo são exemplos e não apontam para um ambiente existente.
+funding_source_confirmed = false # Mantém a implantação bloqueada até conferir a cobertura acadêmica.
 expected_account_id     = "000000000000"
 operator_name           = "vitor"
 administrator_cidr      = "203.0.113.10/32"
