@@ -1,0 +1,27 @@
+#cloud-config
+ssh_pwauth: false
+disable_root: true
+users:
+  - name: ${operator}
+    groups: [sudo]
+    shell: /bin/bash
+    lock_passwd: true
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    ssh_authorized_keys:
+      - ${public_key}
+write_files:
+  - path: /etc/cyberfinal.json
+    permissions: '0600'
+    content: |
+      ${config_json}
+  - path: /opt/cyberfinal-common.sh
+    permissions: '0700'
+    encoding: b64
+    content: ${common_b64}
+  - path: /opt/cyberfinal-role.sh
+    permissions: '0700'
+    encoding: b64
+    content: ${role_b64}
+runcmd:
+  - [bash, /opt/cyberfinal-common.sh]
+  - [bash, /opt/cyberfinal-role.sh]

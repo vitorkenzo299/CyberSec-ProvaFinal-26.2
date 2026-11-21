@@ -1,0 +1,12 @@
+# Copiar para terraform.tfvars somente depois de escolher conta e orçamento.
+# Os dados abaixo são exemplos e não apontam para um ambiente existente.
+expected_account_id     = "000000000000"
+operator_name           = "vitor"
+administrator_cidr      = "203.0.113.10/32"
+ssh_public_key          = "ssh-ed25519 SUBSTITUA_PELA_CHAVE_PUBLICA_NOVA"
+wazuh_installer_sha256  = "db5f8d37703b3673ec0e6b30834499756cbd093d828fc24d7f5b276980ea1bf6"
+project_prefix         = "cyberfinal262"
+protect_database       = true
+# Para exigir TLS 1.2 na borda, configurar os dois valores juntos:
+# domain_name = "loja.dominio-novo.example"
+# acm_certificate_arn = "arn:aws:acm:us-east-1:000000000000:certificate/UUID"

@@ -1,0 +1,25 @@
+{
+  "generated_utc": "2026-11-21T16:52:54.172157+00:00",
+  "files": [
+    {
+      "path": "evidencias/locais/aplicacao-local-desktop.png",
+      "bytes": 81029,
+      "sha256": "d0937b2484d95ce750806c1c636d82343961c91a4fd777a299065a94a901ac7a"
+    },
+    {
+      "path": "evidencias/locais/aplicacao-local-mobile.png",
+      "bytes": 69176,
+      "sha256": "b70facd1ad406feb77bdc8dc815a65a2b19025e2b91f33e70c5cf6a46a9e45eb"
+    },
+    {
+      "path": "evidencias/locais/capturas-locais.json",
+      "bytes": 539,
+      "sha256": "e6019b0e27fd821024273a96ac7fcb5bbc61752799993aea8b13cd4675b4e0d8"
+    },
+    {
+      "path": "evidencias/locais/validacao-local.json",
+      "bytes": 2418,
+      "sha256": "db01f15ae3403dbd011ced0365071ea9349ce9c334f861e6a30c252f78a6fe93"
+    }
+  ]
+}

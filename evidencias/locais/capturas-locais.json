@@ -1,0 +1,18 @@
+{
+  "collected_utc": "2026-11-21T16:47:39.758017+00:00",
+  "scope": "aplicação local; sem AWS, VPN, WAF ou MySQL ativo",
+  "captures": [
+    {
+      "file": "evidencias/locais/aplicacao-local-desktop.png",
+      "viewport_requested": "1440,1100",
+      "source": "Microsoft Edge headless",
+      "application_mode": "local demo"
+    },
+    {
+      "file": "evidencias/locais/aplicacao-local-mobile.png",
+      "viewport_requested": "500,2100",
+      "source": "Microsoft Edge headless",
+      "application_mode": "local demo"
+    }
+  ]
+}

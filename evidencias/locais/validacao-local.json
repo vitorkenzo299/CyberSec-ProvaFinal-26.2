@@ -1,0 +1,70 @@
+{
+  "collected_utc": "2026-11-21T16:52:53.933313+00:00",
+  "scope": "testes locais e provedores simulados; nenhum recurso AWS criado",
+  "all_passed": true,
+  "results": [
+    {
+      "check": "application_tests",
+      "exit_code": 0,
+      "seconds": 0.766,
+      "stdout": "",
+      "stderr": "test_catalog_and_search (test_app.CatalogHttpTests.test_catalog_and_search) ... ok\ntest_failure_does_not_expose_internal_details (test_app.CatalogHttpTests.test_failure_does_not_expose_internal_details) ... ok\ntest_injection_payload_is_plain_search_input (test_app.CatalogHttpTests.test_injection_payload_is_plain_search_input) ... ok\ntest_mysql_path_keeps_sql_and_user_input_separate (test_app.CatalogHttpTests.test_mysql_path_keeps_sql_and_user_input_separate) ... ok\ntest_path_traversal_does_not_serve_files (test_app.CatalogHttpTests.test_path_traversal_does_not_serve_files) ... ok\ntest_response_security_headers (test_app.CatalogHttpTests.test_response_security_headers) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.547s\n\nOK\n"
+    },
+    {
+      "check": "terraform_format",
+      "exit_code": 0,
+      "seconds": 0.078,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "terraform_validate",
+      "exit_code": 0,
+      "seconds": 2.218,
+      "stdout": "Success! The configuration is valid.\n\n",
+      "stderr": ""
+    },
+    {
+      "check": "terraform_mock_test",
+      "exit_code": 0,
+      "seconds": 5.11,
+      "stdout": "tests\\security.tftest.hcl... in progress\n  run \"secure_network_and_storage\"... pass\ntests\\security.tftest.hcl... tearing down\ntests\\security.tftest.hcl... pass\n\nSuccess! 1 passed, 0 failed.\n",
+      "stderr": ""
+    },
+    {
+      "check": "javascript_syntax",
+      "exit_code": 0,
+      "seconds": 0.047,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "shell_syntax_common",
+      "exit_code": 0,
+      "seconds": 0.093,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "shell_syntax_vpn",
+      "exit_code": 0,
+      "seconds": 0.047,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "shell_syntax_wazuh",
+      "exit_code": 0,
+      "seconds": 0.047,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "shell_syntax_web",
+      "exit_code": 0,
+      "seconds": 0.031,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

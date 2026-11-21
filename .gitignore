@@ -1,0 +1,31 @@
+# Credenciais e material privado do laboratório
+.local/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.ovpn
+credentials
+*credentials*.json
+*secret*.json
+*token*.json
+terraform.tfstate*
+*.tfstate*
+*.tfplan
+*.plan
+*.tfvars
+!*.tfvars.example
+.terraform/
+
+# Arquivos temporários e dependências
+node_modules/
+__pycache__/
+*.pyc
+~$*
+tmp/
+build/
+.DS_Store
+Thumbs.db
