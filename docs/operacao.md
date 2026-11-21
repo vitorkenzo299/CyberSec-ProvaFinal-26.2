@@ -1,10 +1,10 @@
 # Procedimentos de implantação e validação
 
-Os comandos desta página são um roteiro para o ambiente novo na conta acadêmica existente. A implantação só deve começar depois de confirmar cobertura sem desembolso pessoal e revisar o plano real. Nesta etapa, os únicos testes executados são locais e simulados.
+Os comandos desta página são um roteiro para o ambiente novo na conta acadêmica existente. A implantação só deve começar depois de confirmar cobertura sem desembolso pessoal e revisar o plano real. A implantação e os testes reais foram executados em 21/11/2026. Este roteiro documenta a retomada e uma futura implantação isolada.
 
 ## Preparação
 
-1. Confirmar o cenário do trabalho e os integrantes. O nome Aurora é provisório.
+1. A apresentação é individual, por Vitor. Aurora é o catálogo sintético escolhido para a demonstração.
 2. Configurar uma identidade AWS nominal autorizada para a conta escolhida, sem publicar credenciais.
 3. Gerar uma chave SSH nova e manter a chave privada em `.local` ou em outro local protegido. Usar apenas a chave pública no Terraform.
 4. Conferir o IPv4 público atual do operador e usar `/32` na VPN.
@@ -101,3 +101,25 @@ Para cada captura, mostrar data, recurso, regra ou evento e contexto suficiente 
 ## Encerramento
 
 Exportar evidências e relatório antes de remover o laboratório. Revisar `terraform plan -destroy`, o snapshot final, os backups e a auditoria retidos. A proteção do RDS e os objetos do bucket exigem tratamento deliberado. Ao final, conferir a conta por tags para localizar cobranças remanescentes deste projeto.
+
+
+## Estado atual e retomada
+
+Projeto `cyberfinal262-5f48e9`, VPC `vpc-013c42b2a693efb40`. A aplicação está em https://d3hc8whbcpdvtd.cloudfront.net. Web: `10.62.10.10`; Wazuh: `https://10.62.10.20` pela VPN. O perfil privado se chama `cyberfinal-vitor.ovpn`. O Windows usa o OpenVPN GUI com o serviço interativo instalado. Ele evita a necessidade de executar manualmente o cliente com privilégios de rede.
+
+A chave privada, o perfil VPN, as credenciais de consulta e os outputs ficam em `.local/auth` ou `.local/deployment.json`, excluídos do Git. Não imprimir nem compartilhar esses arquivos. O parâmetro SSM do perfil é `/cyberfinal262-5f48e9/vpn/client`. A senha de vitor no Wazuh fica no arquivo privado `wazuh-viewer.json`. O acesso ao console AWS deve usar SSO e a função observer de consulta. Uma nova sessão pode ser necessária após expirar a autenticação.
+
+`deployment_suffix` é um identificador estável de seis caracteres hexadecimais que deve ser definido antes do primeiro plano. Para outro laboratório, gerar um sufixo novo e manter o valor até seu encerramento. Não alterar o sufixo de um ambiente existente. O nome da implantação atual não deve ser reutilizado para criar um segundo laboratório.
+
+O estado Terraform atual usa bucket S3 próprio privado com criptografia, versionamento e bloqueio por lockfile. A configuração confidencial do backend está em `.local/backend.hcl`. Não publicar o estado, o plano nem o arquivo de variáveis.
+
+Os dados cloud-init são de primeiro uso. `ignore_changes = [user_data_base64]` evita recriar instâncias por um ajuste de instalação. Uma mudança posterior exige atualização explícita e revisada nos hosts novos; apenas rodar apply não atualiza o software existente. A primeira instalação precisou de correções de rede, SSH, permissões de diretório, PKI e MSS, já incorporadas às fontes.
+
+A função observer foi criada no pós-provisionamento, fora do estado Terraform. Seu nome, política e teste IAM estão em EV02. O usuário Wazuh também é uma configuração de pós-instalação. Incluir ambos no inventário de encerramento; não assumir que terraform destroy remove todas as configurações adicionais.
+
+O snapshot de evidência é `cyberfinal262-5f48e9-evidence-20261121`. A instância temporária `cyberfinal262-5f48e9-restore-20261121` já foi removida. A instância principal e o snapshot foram preservados. R05 não deve ser encerrado com base somente no ZAP: conferir `triagem-kernel.json` e o inventário Wazuh.
+
+
+## Pós instalação reproduzível
+
+A função de consulta pode ser criada com `python scripts/configure_observer.py --outputs .local/deployment.json --account CONTA_ESCOLHIDA` usando a sessão nominal de implantação. O comando valida a conta e a tag de projeto e não exporta credenciais. O script `infra/scripts/create-wazuh-viewer.sh` configura o usuário de leitura somente em um host Wazuh deste projeto. Inicializar as visualizações uma vez com a conta de instalação e retornar ao usuário vitor. O script não imprime a senha e informa o arquivo privado no servidor.

@@ -7,6 +7,7 @@ umask 077
 apt-get -o DPkg::Lock::Timeout=300 install -y nginx
 id cyberapp >/dev/null 2>&1 || useradd --system --shell /usr/sbin/nologin --home-dir /opt/cyberfinal cyberapp
 mkdir -p /opt/cyberfinal
+chmod 755 /opt/cyberfinal
 python3 - <<'PY'
 import base64,json,pathlib
 c=json.load(open('/etc/cyberfinal.json'))
@@ -99,5 +100,10 @@ nginx -t
 systemctl daemon-reload
 systemctl enable --now cyberfinal
 systemctl restart nginx
-curl --fail --silent http://127.0.0.1:8080/healthz >/dev/null
+ready=false
+for attempt in $(seq 1 15); do
+  if curl --fail --silent http://127.0.0.1:8080/healthz >/dev/null; then ready=true; break; fi
+  sleep 1
+done
+if [ "$ready" != true ]; then echo 'Falha na verificacao de saude da aplicacao' >&2; exit 1; fi
 touch /var/lib/cyberfinal-role-ready

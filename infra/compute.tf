@@ -107,6 +107,11 @@ resource "aws_instance" "node" {
     delete_on_termination = true
   }
   credit_specification { cpu_credits = "standard" }
+  # cloud-init é um bootstrap de primeiro uso. Ajustes posteriores são aplicados
+  # explicitamente pelos procedimentos de operação, sem recriar hosts em atividade.
+  lifecycle {
+    ignore_changes = [user_data_base64]
+  }
   tags       = { Name = "${local.name}-${each.key}", Role = each.key }
-  depends_on = [terraform_data.identity_guard, aws_route_table_association.private, aws_route_table_association.public, aws_iam_role_policy.web_secret, aws_iam_role_policy.private_profile, aws_iam_role_policy.logs, aws_iam_role_policy.ssm, aws_secretsmanager_secret_version.app]
+  depends_on = [terraform_data.identity_guard, aws_route_table_association.private, aws_route_table_association.public, aws_iam_role_policy.web_secret, aws_iam_role_policy.private_profile, aws_iam_role_policy.logs, aws_iam_role_policy.ssm, aws_secretsmanager_secret_version.app, aws_vpc_security_group_egress_rule.https, aws_vpc_security_group_egress_rule.apt, aws_vpc_security_group_egress_rule.wazuh, aws_vpc_security_group_egress_rule.database, aws_vpc_security_group_ingress_rule.database, aws_vpc_security_group_ingress_rule.wazuh, aws_vpc_security_group_ingress_rule.ssh, aws_vpc_security_group_ingress_rule.vpn, aws_vpc_security_group_ingress_rule.web]
 }

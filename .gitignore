@@ -29,3 +29,5 @@ tmp/
 build/
 .DS_Store
 Thumbs.db
+*.inspect.ndjson
+.chart-data-*/

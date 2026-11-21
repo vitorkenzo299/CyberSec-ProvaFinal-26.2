@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-11-21T23:14:02.494967+00:00",
+  "role": "cyberfinal262-5f48e9-observer",
+  "simulation_results": [
+    {
+      "action": "ec2:DescribeInstances",
+      "decision": "allowed"
+    },
+    {
+      "action": "ec2:TerminateInstances",
+      "decision": "implicitDeny"
+    },
+    {
+      "action": "rds:DeleteDBInstance",
+      "decision": "implicitDeny"
+    },
+    {
+      "action": "ssm:SendCommand",
+      "decision": "implicitDeny"
+    },
+    {
+      "action": "secretsmanager:GetSecretValue",
+      "decision": "implicitDeny"
+    }
+  ],
+  "scope": "simulacao IAM, sem executar acoes de escrita"
+}

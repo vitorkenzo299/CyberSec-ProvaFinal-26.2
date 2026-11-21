@@ -5,7 +5,7 @@ import unittest
 from unittest.mock import MagicMock, patch
 from pathlib import Path
 from urllib.error import HTTPError
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 spec = importlib.util.spec_from_file_location("server", Path(__file__).parents[1] / "app/server.py")
 module = importlib.util.module_from_spec(spec)
@@ -73,6 +73,16 @@ class CatalogHttpTests(unittest.TestCase):
         with self.assertRaises(HTTPError) as ctx:
             urlopen(self.url + "/../server.py")
         self.assertEqual(ctx.exception.code, 404)
+
+    def test_write_methods_are_rejected_without_changing_catalog(self):
+        for method in ("POST", "PUT", "PATCH", "DELETE", "OPTIONS", "TRACE"):
+            with self.subTest(method=method), self.assertRaises(HTTPError) as ctx:
+                urlopen(Request(self.url + "/api/products", data=b"untrusted", method=method))
+            self.assertEqual(ctx.exception.code, 405)
+            self.assertEqual(ctx.exception.headers["Allow"], "GET, HEAD")
+            self.assertEqual(ctx.exception.headers["X-Content-Type-Options"], "nosniff")
+        with urlopen(self.url + "/api/products") as response:
+            self.assertEqual(len(json.load(response)["products"]), 3)
 
 
 if __name__ == "__main__":

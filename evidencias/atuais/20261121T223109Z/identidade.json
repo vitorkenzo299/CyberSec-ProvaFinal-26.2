@@ -1,0 +1,8 @@
+{
+  "collected_utc": "2026-11-21T22:31:09.658913+00:00",
+  "project": "cyberfinal262-5f48e9",
+  "data": {
+    "Account": "AWS_ACCOUNT",
+    "Arn": "arn:aws:sts::AWS_ACCOUNT:assumed-role/AWSReservedSSO_AdministratorAccess_b8b6e89b8003efee/vitorknf"
+  }
+}

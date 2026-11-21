@@ -5,15 +5,16 @@ source /etc/cyberfinal.env
 export AWS_DEFAULT_REGION=us-east-1
 umask 077
 apt-get -o DPkg::Lock::Timeout=300 install -y openvpn easy-rsa iptables-persistent
-make-cadir /etc/openvpn/easy-rsa
+[ -d /etc/openvpn/easy-rsa ] || make-cadir /etc/openvpn/easy-rsa
 cd /etc/openvpn/easy-rsa
-export EASYRSA_BATCH=1 EASYRSA_ALGO=ec EASYRSA_CURVE=prime256v1 EASYRSA_REQ_CN="$PROJECT-CA"
-./easyrsa init-pki
-./easyrsa build-ca nopass
-./easyrsa build-server-full server nopass
-./easyrsa build-client-full "$OPERATOR" nopass
+export EASYRSA_BATCH=1 EASYRSA_ALGO=ec EASYRSA_CURVE=prime256v1
+unset EASYRSA_REQ_CN || true
+[ -d pki ] || ./easyrsa init-pki
+[ -s pki/ca.crt ] || EASYRSA_REQ_CN="$PROJECT-CA" ./easyrsa build-ca nopass
+[ -s pki/issued/server.crt ] || ./easyrsa build-server-full server nopass
+[ -s "pki/issued/$OPERATOR.crt" ] || ./easyrsa build-client-full "$OPERATOR" nopass
 ./easyrsa gen-crl
-openvpn --genkey secret /etc/openvpn/server/tls-crypt.key
+[ -s /etc/openvpn/server/tls-crypt.key ] || openvpn --genkey secret /etc/openvpn/server/tls-crypt.key
 cp pki/ca.crt pki/issued/server.crt pki/private/server.key pki/crl.pem /etc/openvpn/server/
 chmod 644 /etc/openvpn/server/ca.crt /etc/openvpn/server/server.crt /etc/openvpn/server/crl.pem
 cat > /etc/openvpn/server/server.conf <<EOF
@@ -46,7 +47,7 @@ echo 'net.ipv4.ip_forward=1' > /etc/sysctl.d/90-cyberfinal-vpn.conf
 sysctl --system >/dev/null
 # A VPN oferece somente administração dos dois destinos definidos.
 IFACE=$(ip -o -4 route show default | awk '{print $5;exit}')
-ufw disable
+if command -v ufw >/dev/null 2>&1; then ufw disable; fi
 iptables -P INPUT DROP
 iptables -A INPUT -i lo -j ACCEPT
 iptables -A INPUT -p udp --sport 67 --dport 68 -j ACCEPT
@@ -54,6 +55,9 @@ iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 iptables -A INPUT -p udp --dport 1194 -j ACCEPT
 iptables -A INPUT -i tun0 -p tcp --dport 22 -j ACCEPT
 iptables -P FORWARD DROP
+# Evita fragmentacao do TCP encapsulado no acesso administrativo por UDP.
+iptables -t mangle -A FORWARD -i tun0 -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --set-mss 1200
+iptables -t mangle -A FORWARD -o tun0 -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --set-mss 1200
 iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 for target in "$WEB_IP" "$WAZUH_IP"; do
   iptables -A FORWARD -i tun0 -s "$VPN_CIDR" -d "$target" -p tcp --dport 22 -j ACCEPT

@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-11-21T23:42:47.317285+00:00",
+  "plan_log_modified_utc": "2026-11-21T23:37:19.292626+00:00",
+  "result": "No changes. Your infrastructure matches the configuration.",
+  "apply_performed": false,
+  "boundary": "Convergência dos recursos gerenciados no estado deste projeto. Não afirma que recursos manuais ou a conta inteira estejam nesse estado. O plano e o estado privados não são publicados."
+}

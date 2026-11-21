@@ -1,0 +1,177 @@
+{
+  "collected_utc": "2026-11-21T22:31:09.658913+00:00",
+  "project": "cyberfinal262-5f48e9",
+  "data": [
+    {
+      "AlarmName": "cyberfinal262-5f48e9-vpn-cpu",
+      "AlarmArn": "arn:aws:cloudwatch:us-east-1:AWS_ACCOUNT:alarm:cyberfinal262-5f48e9-vpn-cpu",
+      "AlarmDescription": "CPU acima de 80% por 10 minutos. Sem notificacao externa configurada.",
+      "AlarmConfigurationUpdatedTimestamp": "2026-11-21 21:58:53.855000+00:00",
+      "ActionsEnabled": true,
+      "OKActions": [],
+      "AlarmActions": [],
+      "InsufficientDataActions": [],
+      "StateValue": "OK",
+      "StateReason": "Threshold Crossed: 1 datapoint [0.0053825844340693 (21/11/26 21:54:00)] was not greater than the threshold (80.0).",
+      "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-11-21T21:59:56.122+0000\",\"startDate\":\"2026-11-21T21:54:00.000+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[0.0053825844340693],\"threshold\":80.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-21T21:54:00.000+0000\",\"sampleCount\":1.0,\"value\":0.0053825844340693}]}",
+      "StateUpdatedTimestamp": "2026-11-21 21:59:56.125000+00:00",
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Average",
+      "Dimensions": [
+        {
+          "Name": "InstanceId",
+          "Value": "i-02525d2134b6e5dba"
+        }
+      ],
+      "Period": 300,
+      "EvaluationPeriods": 2,
+      "Threshold": 80.0,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "missing",
+      "StateTransitionedTimestamp": "2026-11-21 21:59:56.125000+00:00"
+    },
+    {
+      "AlarmName": "cyberfinal262-5f48e9-vpn-status",
+      "AlarmArn": "arn:aws:cloudwatch:us-east-1:AWS_ACCOUNT:alarm:cyberfinal262-5f48e9-vpn-status",
+      "AlarmConfigurationUpdatedTimestamp": "2026-11-21 21:58:53.811000+00:00",
+      "ActionsEnabled": true,
+      "OKActions": [],
+      "AlarmActions": [],
+      "InsufficientDataActions": [],
+      "StateValue": "OK",
+      "StateReason": "Threshold Crossed: 1 datapoint [0.0 (21/11/26 22:04:00)] was not greater than the threshold (0.0).",
+      "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-11-21T22:05:16.003+0000\",\"startDate\":\"2026-11-21T22:04:00.000+0000\",\"statistic\":\"Maximum\",\"period\":60,\"recentDatapoints\":[0.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-21T22:04:00.000+0000\",\"sampleCount\":1.0,\"value\":0.0}]}",
+      "StateUpdatedTimestamp": "2026-11-21 22:05:16.004000+00:00",
+      "MetricName": "StatusCheckFailed",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Maximum",
+      "Dimensions": [
+        {
+          "Name": "InstanceId",
+          "Value": "i-02525d2134b6e5dba"
+        }
+      ],
+      "Period": 60,
+      "EvaluationPeriods": 2,
+      "Threshold": 0.0,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "missing",
+      "StateTransitionedTimestamp": "2026-11-21 22:05:16.004000+00:00"
+    },
+    {
+      "AlarmName": "cyberfinal262-5f48e9-wazuh-cpu",
+      "AlarmArn": "arn:aws:cloudwatch:us-east-1:AWS_ACCOUNT:alarm:cyberfinal262-5f48e9-wazuh-cpu",
+      "AlarmDescription": "CPU acima de 80% por 10 minutos. Sem notificacao externa configurada.",
+      "AlarmConfigurationUpdatedTimestamp": "2026-11-21 21:58:53.814000+00:00",
+      "ActionsEnabled": true,
+      "OKActions": [],
+      "AlarmActions": [],
+      "InsufficientDataActions": [],
+      "StateValue": "OK",
+      "StateReason": "Threshold Crossed: 1 datapoint [0.0050852332986364 (21/11/26 21:54:00)] was not greater than the threshold (80.0).",
+      "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-11-21T21:59:30.851+0000\",\"startDate\":\"2026-11-21T21:54:00.000+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[0.0050852332986364],\"threshold\":80.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-21T21:54:00.000+0000\",\"sampleCount\":1.0,\"value\":0.0050852332986364}]}",
+      "StateUpdatedTimestamp": "2026-11-21 21:59:30.852000+00:00",
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Average",
+      "Dimensions": [
+        {
+          "Name": "InstanceId",
+          "Value": "i-0db11855e5d491210"
+        }
+      ],
+      "Period": 300,
+      "EvaluationPeriods": 2,
+      "Threshold": 80.0,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "missing",
+      "StateTransitionedTimestamp": "2026-11-21 21:59:30.852000+00:00"
+    },
+    {
+      "AlarmName": "cyberfinal262-5f48e9-wazuh-status",
+      "AlarmArn": "arn:aws:cloudwatch:us-east-1:AWS_ACCOUNT:alarm:cyberfinal262-5f48e9-wazuh-status",
+      "AlarmConfigurationUpdatedTimestamp": "2026-11-21 21:58:53.899000+00:00",
+      "ActionsEnabled": true,
+      "OKActions": [],
+      "AlarmActions": [],
+      "InsufficientDataActions": [],
+      "StateValue": "OK",
+      "StateReason": "Threshold Crossed: 1 datapoint [0.0 (21/11/26 22:04:00)] was not greater than the threshold (0.0).",
+      "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-11-21T22:06:04.711+0000\",\"startDate\":\"2026-11-21T22:04:00.000+0000\",\"statistic\":\"Maximum\",\"period\":60,\"recentDatapoints\":[0.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-21T22:04:00.000+0000\",\"sampleCount\":1.0,\"value\":0.0}]}",
+      "StateUpdatedTimestamp": "2026-11-21 22:06:04.714000+00:00",
+      "MetricName": "StatusCheckFailed",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Maximum",
+      "Dimensions": [
+        {
+          "Name": "InstanceId",
+          "Value": "i-0db11855e5d491210"
+        }
+      ],
+      "Period": 60,
+      "EvaluationPeriods": 2,
+      "Threshold": 0.0,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "missing",
+      "StateTransitionedTimestamp": "2026-11-21 22:06:04.714000+00:00"
+    },
+    {
+      "AlarmName": "cyberfinal262-5f48e9-web-cpu",
+      "AlarmArn": "arn:aws:cloudwatch:us-east-1:AWS_ACCOUNT:alarm:cyberfinal262-5f48e9-web-cpu",
+      "AlarmDescription": "CPU acima de 80% por 10 minutos. Sem notificacao externa configurada.",
+      "AlarmConfigurationUpdatedTimestamp": "2026-11-21 21:58:53.828000+00:00",
+      "ActionsEnabled": true,
+      "OKActions": [],
+      "AlarmActions": [],
+      "InsufficientDataActions": [],
+      "StateValue": "OK",
+      "StateReason": "Threshold Crossed: 1 datapoint [0.0177117310827947 (21/11/26 21:55:00)] was not greater than the threshold (80.0).",
+      "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-11-21T22:00:02.870+0000\",\"startDate\":\"2026-11-21T21:55:00.000+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[0.0177117310827947],\"threshold\":80.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-21T21:55:00.000+0000\",\"sampleCount\":1.0,\"value\":0.0177117310827947}]}",
+      "StateUpdatedTimestamp": "2026-11-21 22:00:02.871000+00:00",
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Average",
+      "Dimensions": [
+        {
+          "Name": "InstanceId",
+          "Value": "i-0827f8e781876e807"
+        }
+      ],
+      "Period": 300,
+      "EvaluationPeriods": 2,
+      "Threshold": 80.0,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "missing",
+      "StateTransitionedTimestamp": "2026-11-21 22:00:02.871000+00:00"
+    },
+    {
+      "AlarmName": "cyberfinal262-5f48e9-web-status",
+      "AlarmArn": "arn:aws:cloudwatch:us-east-1:AWS_ACCOUNT:alarm:cyberfinal262-5f48e9-web-status",
+      "AlarmConfigurationUpdatedTimestamp": "2026-11-21 21:58:53.831000+00:00",
+      "ActionsEnabled": true,
+      "OKActions": [],
+      "AlarmActions": [],
+      "InsufficientDataActions": [],
+      "StateValue": "OK",
+      "StateReason": "Threshold Crossed: 1 datapoint [0.0 (21/11/26 22:04:00)] was not greater than the threshold (0.0).",
+      "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-11-21T22:05:57.447+0000\",\"startDate\":\"2026-11-21T22:04:00.000+0000\",\"statistic\":\"Maximum\",\"period\":60,\"recentDatapoints\":[0.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-21T22:04:00.000+0000\",\"sampleCount\":1.0,\"value\":0.0}]}",
+      "StateUpdatedTimestamp": "2026-11-21 22:05:57.448000+00:00",
+      "MetricName": "StatusCheckFailed",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Maximum",
+      "Dimensions": [
+        {
+          "Name": "InstanceId",
+          "Value": "i-0827f8e781876e807"
+        }
+      ],
+      "Period": 60,
+      "EvaluationPeriods": 2,
+      "Threshold": 0.0,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "TreatMissingData": "missing",
+      "StateTransitionedTimestamp": "2026-11-21 22:05:57.448000+00:00"
+    }
+  ]
+}

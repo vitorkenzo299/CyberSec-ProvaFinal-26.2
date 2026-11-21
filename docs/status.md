@@ -1,28 +1,26 @@
-# Situação da avaliação
+# Situação da entrega
 
-## Preparado neste repositório
+Atualização em 21 de novembro de 2026. Autor e apresentador: Vitor.
 
-- Aplicação acadêmica nova e catálogo fictício.
-- Infraestrutura declarada para uma VPC nova, VPN, Web privado, RDS, Wazuh, WAF, logs e auditoria.
-- Matriz de riscos inicial, critérios da prova e plano de evidências.
-- Testes locais e simulação dos controles de infraestrutura.
-- Capturas reais da demonstração local em computador e celular.
-- Roteiro de apresentação com 12 slides.
+O ambiente novo foi criado e testado. Os arquivos finais estão em `entrega`, e as provas práticas em `evidencias/atuais`. O relatório possui 14 páginas e a apresentação tem 12 slides, com notas para fala individual. Word, PowerPoint, Excel e as evidências são editáveis ou consultáveis fora da nuvem.
 
-## Antes da entrega final
+## Concluído
 
-- Confirmar o cenário específico da prova, quando existir material além das sete imagens.
-- Renovar o acesso à conta acadêmica existente e confirmar cobertura sem desembolso pessoal.
-- Registrar um inventário de proteção do ambiente anterior antes de criar os novos recursos.
-- Revisar o plano real do Terraform, configurar proteção do estado e implantar.
-- Conferir instalação, comunicação e permissões efetivas, incluindo usuário nominal no Wazuh.
-- Resolver ou justificar as limitações descritas na arquitetura: TLS, componentes únicos e notificações.
-- Conectar a VPN e produzir comparação de acesso antes, durante e depois do túnel.
-- Mostrar agentes ativos e provocar evento benigno com alerta correlacionado.
-- Testar WAF, registrar os bloqueios e preservar o acesso legítimo.
-- Executar scan recente, corrigir achados altos e fazer novo scan.
-- Restaurar backup para cópia separada e registrar a consistência dos dados.
-- Capturar os painéis, as regras e os resultados, com segredos fora das imagens.
-- Atualizar a matriz residual e montar relatório e slides finais com os resultados reais.
+- VPC nova com seis sub-redes, três EC2, RDS privado e CloudFront com VPC Origin e WAF.
+- VPN funcional, SSH nominal, root e senha desativados, firewalls e regras de rede restritas.
+- Função AWS observer e usuário Wazuh vitor somente de consulta, com negações verificadas.
+- Dois agentes Wazuh ativos, três eventos FIM e alerta 5712 de força bruta controlada.
+- WAF com bloqueios do probe, SQLi e taxa confirmados nos logs.
+- ZAP 2.17.0 concluído na origem privada sem alertas no escopo testado.
+- Snapshot RDS restaurado, dados comparados e cópia temporária removida.
+- Comparação de preservação das quatro instâncias e dos nove SG anteriores.
 
-Os arquivos de configuração e as simulações locais são preparação. As evidências práticas obrigatórias da AWS continuam pendentes.
+## Pendências de segurança registradas
+
+1. R05 continua alto: triar as correlações High e Critical de linux-aws. Apt não ofereceu atualizações e uma amostra já indica correspondência imprecisa do metapacote. Essa amostra não fecha todo o inventário.
+2. Domínio e ACM para exigir TLS 1.2 na borda e TLS no caminho até a origem.
+3. Confirmação de MFA do SSO e teste de destinatário externo para alertas.
+4. Redundância de Web e NAT, RDS Multi-AZ e metas de RPO/RTO antes de produção.
+5. Acompanhamento do consumo institucional e encerramento somente dos recursos novos ao fim do uso autorizado.
+
+Essas limitações estão na matriz, no relatório e nos slides. Nenhum resultado foi fabricado para indicar ausência de riscos.

@@ -1,6 +1,356 @@
 {
-  "generated_utc": "2026-11-21T18:59:06.356833+00:00",
+  "generated_utc": "2026-11-21T23:46:20.485377+00:00",
   "files": [
+    {
+      "path": "evidencias/atuais/20261121T223109Z/alarmes.json",
+      "bytes": 8794,
+      "sha256": "dd7695f268bc261ac040f1e4b1af11759f53cb37da03c03aeeab2fa26ca5e779"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/auditoria-status.json",
+      "bytes": 990,
+      "sha256": "64c088dad854b852ed02bfa2a88320b3964f512c85dca23571aa5875575b1cae"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/banco.json",
+      "bytes": 1410,
+      "sha256": "9972027f3e9da412aa1421aac578f3acf4429ddff8fdca913c41fc9c7041b01a"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/cloudfront.json",
+      "bytes": 2178,
+      "sha256": "5abd6984c2722698fe77bd3ee98f03b0d70b0a2cb7fa049bca33c4b526976b66"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/collection-status.json",
+      "bytes": 132,
+      "sha256": "ab01c5c03ae0d7cf44e0cff3d50f13c5db84658616fc6cdbc990e82f5a3e271b"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/identidade.json",
+      "bytes": 253,
+      "sha256": "19168a204bbc9801ac3ce91a71f2621ac06938b58826c20355664a0bda1f1a5b"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/instancias.json",
+      "bytes": 4431,
+      "sha256": "c5c6d9c54053d5359ec110213383719130f533f256c2a0ba0929d494fd8a8f2a"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/rotas.json",
+      "bytes": 5115,
+      "sha256": "937ba68e318f4507ee860df6ddef09cc37beba609dd20e81bfd3bc6ae90955aa"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/security-groups.json",
+      "bytes": 11050,
+      "sha256": "a0667b9b8fe2d670f38252707d402d01ce47eea42b9abfa588ced61c811c76d4"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/sub-redes.json",
+      "bytes": 8340,
+      "sha256": "344f4e37bc5517ff67d18a51f1338f315fb432acd642166522448971bd3a062b"
+    },
+    {
+      "path": "evidencias/atuais/20261121T223109Z/waf-configuracao.json",
+      "bytes": 3588,
+      "sha256": "2cc482c25ec980c7635f12362907dfdcfbe5787e75774d3d72f1046f83a8af4f"
+    },
+    {
+      "path": "evidencias/atuais/backup-lifecycle.json",
+      "bytes": 430,
+      "sha256": "7abdfff83fa855254946f5cac26157fa479d9f6d01885f05cf028a1f14a931e7"
+    },
+    {
+      "path": "evidencias/atuais/backup-restore.json",
+      "bytes": 845,
+      "sha256": "31752bdc26dcf3087ea0bda481275cef3e3e2bb7d956663da977f81cd9c01942"
+    },
+    {
+      "path": "evidencias/atuais/capturas.json",
+      "bytes": 5531,
+      "sha256": "2e6a571022abab0202e4b8e5ec60041b05ddc5cc6f1e86b7b838d55f70d7430c"
+    },
+    {
+      "path": "evidencias/atuais/cobertura-e-preservacao.json",
+      "bytes": 762,
+      "sha256": "e29c1f5bd9afbc81954559860826d431d12ca9991717359194bc1f9313f1c3f0"
+    },
+    {
+      "path": "evidencias/atuais/iam-observer.json",
+      "bytes": 1781,
+      "sha256": "7b915d5a010fa0edec1da4b4c9b607b2a64cffd5487bd051aaf17bc53c57740c"
+    },
+    {
+      "path": "evidencias/atuais/iam-simulacao.json",
+      "bytes": 619,
+      "sha256": "63ccf65c1b37b366305ddeaf1bf75bbee373f1cd7aa3f13bee7772d17f01deb4"
+    },
+    {
+      "path": "evidencias/atuais/network-negative.json",
+      "bytes": 859,
+      "sha256": "05a674f0dd64d2553ca08df2bd6342ff79e83437bf5573224d99bcca8ea69fea"
+    },
+    {
+      "path": "evidencias/atuais/pacotes-atualizacoes.json",
+      "bytes": 634,
+      "sha256": "1eb9130a1e761462852ac462230cd73db7abbdc49046119071bfd064e96f8e79"
+    },
+    {
+      "path": "evidencias/atuais/preservacao-anterior.json",
+      "bytes": 2479,
+      "sha256": "f3e6c2dd9d0a865e9550ac0393d67c48296a6877e8af80469df77c3f941c4222"
+    },
+    {
+      "path": "evidencias/atuais/qualidade-entrega.json",
+      "bytes": 2260,
+      "sha256": "f2e844fcc43411178c23509b1d3555b5066cb558da97a898d9b73db17002f9be"
+    },
+    {
+      "path": "evidencias/atuais/registros/backup-registro.html",
+      "bytes": 1408,
+      "sha256": "585af15cae6c9cf9d6c8b0a864a1d9311afa789f4232733db861165de9d2f065"
+    },
+    {
+      "path": "evidencias/atuais/registros/vpn-registro.html",
+      "bytes": 1987,
+      "sha256": "17ef2a426cddc36aab7fa648e9e703c1ca72e67e3aba5f8084f5d5a4913209fc"
+    },
+    {
+      "path": "evidencias/atuais/registros/waf-registro.html",
+      "bytes": 1502,
+      "sha256": "5cfb086b841cdce15f3417205a454f9ef7771b66eb031d28d19fc10834d27883"
+    },
+    {
+      "path": "evidencias/atuais/registros/zap-registro.html",
+      "bytes": 1650,
+      "sha256": "fef70e7fc20ed98f4edd96e89bad8b939f6a9359978126da4ca2bcbb15f402fb"
+    },
+    {
+      "path": "evidencias/atuais/servicos-finais.json",
+      "bytes": 1886,
+      "sha256": "54914bcb153e1d45b93312714f3443dc943a7d07ef229bd973392c93a0dad79f"
+    },
+    {
+      "path": "evidencias/atuais/ssh-negative-test.json",
+      "bytes": 1714,
+      "sha256": "5922e8698a39fb0c2f4cdbf49915972c3931adfb197e439b01d49639ffb12634"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-cloudwatch.png",
+      "bytes": 94132,
+      "sha256": "daff79fcb9e0888827401608ee320c1edc7bf0a6cba6f9f9eeee89a44ea9e047"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-ec2-anterior-baseline.png",
+      "bytes": 191595,
+      "sha256": "0ffc600d9b2b6273b826bc24aa26203fe25b88d8bbf1897cc46cb1f974ccc3ce"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-ec2-novas.png",
+      "bytes": 186308,
+      "sha256": "df37b30799d0bc93f0f6a258fcb90e2cd93f6630969ccaf5025019d7b00b6d98"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-rds.png",
+      "bytes": 220935,
+      "sha256": "1598407aefd870e32b0c758ba227a3757cc13601e416a73e5ec0e362d20d25c7"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-sg-banco.png",
+      "bytes": 157221,
+      "sha256": "975f796422038830d722a6a0cd58118f86189139073cbbb73dc1f6868bc19462"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-sg-vpn.png",
+      "bytes": 158467,
+      "sha256": "3338b7abcbb39b358e049eab4a8f7ca5fa71873070b2600f4e0aa7aa3c924a04"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-sg-web.png",
+      "bytes": 163103,
+      "sha256": "390880902e3762c62f496673cb09e4509a2a041836e02de54148f57cb4da8d46"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-trilha.png",
+      "bytes": 157432,
+      "sha256": "0d9d96dddd9e69228b73d5167429a7166fb13dcd465a269f82df7e86cfdae7b9"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-vpc.png",
+      "bytes": 254480,
+      "sha256": "66b4532a66ea668e93173c338f7aacb41dbee07ac963d03365ef098e9cda33f1"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-waf-overview.png",
+      "bytes": 229414,
+      "sha256": "32828ee60e6ec341ea01864a0315280bb89f956fbb445166a6e27932aec07e93"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-waf-regras.png",
+      "bytes": 212343,
+      "sha256": "b21b58c4d110a576aed2c19b060d943c040f681738e9fc29cf7b1a25d25e06ba"
+    },
+    {
+      "path": "evidencias/atuais/telas/aws-waf-trafego.png",
+      "bytes": 95307,
+      "sha256": "0da90681e10fee98f51e9487bbec3809ab3f09dbc8bdbbe1fda6c00472680ac7"
+    },
+    {
+      "path": "evidencias/atuais/telas/backup-registro.png",
+      "bytes": 64318,
+      "sha256": "de6b2d9099366a50788f18d0d65eb450c343e9cd23abd397187d421fac692744"
+    },
+    {
+      "path": "evidencias/atuais/telas/site-aws.png",
+      "bytes": 80902,
+      "sha256": "8ee50d59ba8aaa9bd99435a4bf4a80941669a0913e67e7930091aab64d72404b"
+    },
+    {
+      "path": "evidencias/atuais/telas/vpn-registro.png",
+      "bytes": 80823,
+      "sha256": "6ddc0a910929a2d235e1e72f56b2a483ba730ca4911798db422ce8fb5a13c02a"
+    },
+    {
+      "path": "evidencias/atuais/telas/waf-registro.png",
+      "bytes": 70917,
+      "sha256": "86f71e4045ea43051d595f894c86e442f679f827090f214d4f53e1575d228278"
+    },
+    {
+      "path": "evidencias/atuais/telas/wazuh-fim-eventos.png",
+      "bytes": 104041,
+      "sha256": "73e0905cc3da85cac955e64459c222b7cca155cebaa9e7ab9ae515fc2c41b678"
+    },
+    {
+      "path": "evidencias/atuais/telas/wazuh-fim.png",
+      "bytes": 105635,
+      "sha256": "a9cdb53c91559dbe5f2ae4466a576fe47d24ff05bc01064dcceab2d0c8af02d6"
+    },
+    {
+      "path": "evidencias/atuais/telas/wazuh-overview.png",
+      "bytes": 193913,
+      "sha256": "35c5f5255d9049409f2d44dce953223de7f27ccc62970dc5b3ed8659746412c3"
+    },
+    {
+      "path": "evidencias/atuais/telas/wazuh-ssh-5712.png",
+      "bytes": 75089,
+      "sha256": "4db8954fb08b88a8b760d9a10af636f447aec46abdf57e4e909016a9f54ac4b6"
+    },
+    {
+      "path": "evidencias/atuais/telas/wazuh-threat-hunting.png",
+      "bytes": 126763,
+      "sha256": "577512ed427031a4bdb525bab9eeff9a082e137d6497de4432ef2e26519a57f5"
+    },
+    {
+      "path": "evidencias/atuais/telas/wazuh-vulnerabilidades.png",
+      "bytes": 117176,
+      "sha256": "67b925356623e1975607d23c142bbe2c4e2cb9042d5b4056b6fdda192d311991"
+    },
+    {
+      "path": "evidencias/atuais/telas/zap-registro-inicial.png",
+      "bytes": 73725,
+      "sha256": "4045d50c7f19b77dba550962d0ec5666eead3f326289bdb92d978b7148afc09c"
+    },
+    {
+      "path": "evidencias/atuais/telas/zap-registro.png",
+      "bytes": 73985,
+      "sha256": "4b76c08d652fd29f7328ba9c07f70c5d2076375105e36a2ebe43142b7eda4ffe"
+    },
+    {
+      "path": "evidencias/atuais/telas/zap-relatorio-original-inicial.png",
+      "bytes": 71909,
+      "sha256": "d7707d2a17e4517d873e72965c24b30e2540803f948762da59445940ded5fbe9"
+    },
+    {
+      "path": "evidencias/atuais/telas/zap-relatorio-original.png",
+      "bytes": 70569,
+      "sha256": "fa610591b7dedef16b85c4221020b7413601d3d297ec7a7b011b9405740df07c"
+    },
+    {
+      "path": "evidencias/atuais/terraform-convergencia.json",
+      "bytes": 426,
+      "sha256": "c11c12620c1d0135ae4bb5cd27a2af5ca21808bde9c90ce06411ab661fcafb3b"
+    },
+    {
+      "path": "evidencias/atuais/triagem-kernel.json",
+      "bytes": 1063,
+      "sha256": "1e864d722ec6eaf469723a7f727f491253c7ecbb226f198c93ccb9e6d0d450bb"
+    },
+    {
+      "path": "evidencias/atuais/varredura/inicial/zap-coverage.json",
+      "bytes": 47814,
+      "sha256": "5af7007a5dd6c2f7588d8296f789d8f13149fca6e37448525907443ab96162e3"
+    },
+    {
+      "path": "evidencias/atuais/varredura/inicial/zap-report.html",
+      "bytes": 21759,
+      "sha256": "42d596f86bcebfcec04bc2a241038ebee07f25a6e2430eec8115a44d435866ce"
+    },
+    {
+      "path": "evidencias/atuais/varredura/inicial/zap-result.json",
+      "bytes": 672,
+      "sha256": "d0399a69d303354f01b0e774aabc5a802dcdbeeaba5df8a152e938bceab233f4"
+    },
+    {
+      "path": "evidencias/atuais/varredura/reteste-comparacao.json",
+      "bytes": 1463,
+      "sha256": "387a733bfc3e02e7f2bbae967c534895f6e3c2b8fd221d4960d4f55a7b73a58f"
+    },
+    {
+      "path": "evidencias/atuais/varredura/zap-coverage.json",
+      "bytes": 47580,
+      "sha256": "6060a54b0ec2b880d122e850f31d1b6c437402108b39a1a8f1c791d20d98ef61"
+    },
+    {
+      "path": "evidencias/atuais/varredura/zap-http-summary.json",
+      "bytes": 133315,
+      "sha256": "19a48e201c05da24b2bc0bdd6f3bca2083e4ecb6c1a380c4e812913ddd38f7fc"
+    },
+    {
+      "path": "evidencias/atuais/varredura/zap-report.html",
+      "bytes": 21401,
+      "sha256": "c7049a30ebee94f62e809f38692f1bbe764463be5451c174fbae2eb54b371972"
+    },
+    {
+      "path": "evidencias/atuais/varredura/zap-result.json",
+      "bytes": 672,
+      "sha256": "a9f9ee16a39b3614417a71b0c2f20d75325247076a69d635994982aadc66dbb1"
+    },
+    {
+      "path": "evidencias/atuais/vpn-after.json",
+      "bytes": 644,
+      "sha256": "25678cae1fbf7b7dd1854599bf769bf9d93fe43aa063da514cecebb8f9ed8bbd"
+    },
+    {
+      "path": "evidencias/atuais/vpn-before-during.json",
+      "bytes": 2098,
+      "sha256": "8740331b7386b70c550011c74d9b25b876aeb10e82a5c3fd4503903285e17319"
+    },
+    {
+      "path": "evidencias/atuais/waf-logs.json",
+      "bytes": 2961,
+      "sha256": "20d8c4b354d1aa4217cd3535c67cd08efc98e56d4597b07f939e12fc121bcdf5"
+    },
+    {
+      "path": "evidencias/atuais/waf-rate.json",
+      "bytes": 13427,
+      "sha256": "acd0427e5f0f80746d1f5b171881cc873688ec4c9d3abef9368ceca5dd517b2a"
+    },
+    {
+      "path": "evidencias/atuais/waf-test.json",
+      "bytes": 2634,
+      "sha256": "e4481b941f25b6d7a15b44a9ccba3e6155cce768841c9efc48c825b69cfa779a"
+    },
+    {
+      "path": "evidencias/atuais/wazuh-eventos.json",
+      "bytes": 67970,
+      "sha256": "46f2290848068475c1e87c0d689c9ff25ea618b379ee6aa225aa3e3ddba33fb0"
+    },
+    {
+      "path": "evidencias/INDICE.md",
+      "bytes": 4366,
+      "sha256": "9c070dba0ae0f240f789a0c906023cd05f9599f9b1151edc9abac6aa2f86c6cd"
+    },
     {
       "path": "evidencias/locais/aplicacao-local-desktop.png",
       "bytes": 81029,
@@ -18,8 +368,8 @@
     },
     {
       "path": "evidencias/locais/validacao-local.json",
-      "bytes": 2893,
-      "sha256": "59c2777a60ea3889d4347c4e1f04c6beab9ea06c34153c41493fdea8babcf9f8"
+      "bytes": 3193,
+      "sha256": "bb8c1e35300954de0f75cf099824c480a96ac923cb7cc72a43b6322b81f1e7e5"
     }
   ]
 }

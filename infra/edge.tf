@@ -1,3 +1,10 @@
+data "aws_cloudfront_cache_policy" "disabled" {
+  name = "Managed-CachingDisabled"
+}
+data "aws_cloudfront_origin_request_policy" "viewer" {
+  name = "Managed-AllViewerExceptHostHeader"
+}
+
 resource "aws_cloudwatch_log_group" "waf" {
   name              = "aws-waf-logs-${local.name}"
   retention_in_days = 7
@@ -145,8 +152,8 @@ resource "aws_cloudfront_distribution" "lab" {
     allowed_methods            = ["GET", "HEAD", "OPTIONS"]
     cached_methods             = ["GET", "HEAD"]
     viewer_protocol_policy     = "redirect-to-https"
-    cache_policy_id            = "413f1605-6a63-4b8c-a3a9-4df248ae26f5" # AWS Managed CachingDisabled
-    origin_request_policy_id   = "b689b0a8-53d0-40ab-baf2-68738e2966ac" # AWS Managed AllViewerExceptHostHeader
+    cache_policy_id            = data.aws_cloudfront_cache_policy.disabled.id
+    origin_request_policy_id   = data.aws_cloudfront_origin_request_policy.viewer.id
     response_headers_policy_id = aws_cloudfront_response_headers_policy.lab.id
     compress                   = true
   }

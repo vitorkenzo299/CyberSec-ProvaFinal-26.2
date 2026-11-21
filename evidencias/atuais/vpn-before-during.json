@@ -1,0 +1,30 @@
+{
+  "collected_utc": "2026-11-21T23:14:04.703185+00:00",
+  "before": {
+    "10.62.10.10": false,
+    "10.62.10.20": false
+  },
+  "method": "OpenVPN GUI com servico interativo do Windows; perfil exclusivo cyberfinal-vitor",
+  "during": {
+    "10.62.10.10": true,
+    "10.62.10.20": true
+  },
+  "vpn_public_ssh_22_open": false,
+  "client_log_selected": [
+    "2026-11-21 19:28:18 Route addition via service succeeded",
+    "2026-11-21 19:28:18 Route addition via service succeeded",
+    "2026-11-21 19:28:18 Initialization Sequence Completed",
+    "2026-11-21 19:28:18 MANAGEMENT: >STATE:1795300098,CONNECTED,SUCCESS,10.99.0.2,44.220.160.78,1194,,",
+    "2026-11-21 19:28:18 Data Channel: cipher 'AES-256-GCM', peer-id: 1"
+  ],
+  "ssh_web": {
+    "exit_code": 0,
+    "output": "uid=1000(vitor) gid=1000(vitor) groups=1000(vitor),27(sudo)\nmaxauthtries 3\npermitrootlogin no\npasswordauthentication no\nallowusers vitor\nStatus: active\n\nTo                         Action      From\n--                         ------      ----\n80/tcp                     ALLOW       Anywhere                  \n22/tcp                     ALLOW       10.62.0.10                \n80/tcp (v6)                ALLOW       Anywhere (v6)             \n\nactive\nactive\nactive\n",
+    "error": ""
+  },
+  "ssh_wazuh": {
+    "exit_code": 0,
+    "output": "uid=1000(vitor) gid=1000(vitor) groups=1000(vitor),27(sudo)\nmaxauthtries 3\npermitrootlogin no\npasswordauthentication no\nallowusers vitor\nStatus: active\n\nTo                         Action      From\n--                         ------      ----\n22/tcp                     ALLOW       10.62.0.10                \n1514/tcp                   ALLOW       10.62.10.10               \n1514/tcp                   ALLOW       10.62.0.10                \n1515/tcp                   ALLOW       10.62.10.10               \n1515/tcp                   ALLOW       10.62.0.10                \n443/tcp                    ALLOW       10.62.0.10                \n55000/tcp                  ALLOW       10.62.0.10                \n\nactive\nactive\nactive\n",
+    "error": ""
+  }
+}

@@ -33,11 +33,7 @@ mock_provider "aws" {
     defaults = { arn = "arn:aws:wafv2:us-east-1:111122223333:global/webacl/local-test/11111111-1111-1111-1111-111111111111" }
   }
 }
-mock_provider "random" {
-  mock_resource "random_id" {
-    defaults = { hex = "abc123" }
-  }
-}
+mock_provider "random" {}
 mock_provider "time" {
   mock_resource "time_static" {
     defaults = { rfc3339 = "2026-11-21T12:00:00Z" }
@@ -46,6 +42,7 @@ mock_provider "time" {
 
 variables {
   funding_source_confirmed = true # Fictício: todos os provedores externos são mocks.
+  deployment_suffix        = "abc123"
   expected_account_id      = "111122223333"
   administrator_cidr       = "203.0.113.10/32"
   ssh_public_key           = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAITestOnlyPublicKeyForOfflinePlan"

@@ -1,0 +1,22 @@
+{
+  "collected_utc": "2026-11-21T23:29:04.449854+00:00",
+  "profile_disconnected": "cyberfinal-vitor",
+  "after_private_ssh_open": {
+    "10.62.10.10": false,
+    "10.62.10.20": false
+  },
+  "application_after_disconnect": {
+    "status": 200,
+    "payload": {
+      "status": "ok",
+      "catalog": "available",
+      "mode": "mysql"
+    }
+  },
+  "log_selected": [
+    "2026-11-21 20:28:58 Route deletion via service succeeded",
+    "2026-11-21 20:28:58 Route deletion via service succeeded",
+    "2026-11-21 20:28:58 SIGTERM[hard,] received, process exiting",
+    "2026-11-21 20:28:58 MANAGEMENT: >STATE:1795303738,EXITING,SIGTERM,,,,,"
+  ]
+}

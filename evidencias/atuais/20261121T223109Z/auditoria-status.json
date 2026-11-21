@@ -1,0 +1,27 @@
+{
+  "collected_utc": "2026-11-21T22:31:09.658913+00:00",
+  "project": "cyberfinal262-5f48e9",
+  "data": {
+    "IsLogging": true,
+    "LatestDeliveryTime": "2026-11-21 19:30:14.312000-03:00",
+    "StartLoggingTime": "2026-11-21 18:48:34.438000-03:00",
+    "LatestDigestDeliveryTime": "2026-11-21 18:51:04.046000-03:00",
+    "LatestDeliveryAttemptTime": "2026-11-21T22:30:14Z",
+    "LatestNotificationAttemptTime": "",
+    "LatestNotificationAttemptSucceeded": "",
+    "LatestDeliveryAttemptSucceeded": "2026-11-21T22:30:14Z",
+    "TimeLoggingStarted": "2026-11-21T21:48:34Z",
+    "TimeLoggingStopped": "",
+    "ResponseMetadata": {
+      "RequestId": "e7213d97-84fa-4f6b-bb56-99dab76d2f51",
+      "HTTPStatusCode": 200,
+      "HTTPHeaders": {
+        "x-amzn-requestid": "e7213d97-84fa-4f6b-bb56-99dab76d2f51",
+        "content-type": "application/x-amz-json-1.1",
+        "content-length": "386",
+        "date": "Sat, 21 Nov 2026 22:31:14 GMT"
+      },
+      "RetryAttempts": 0
+    }
+  }
+}

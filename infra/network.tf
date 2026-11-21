@@ -4,7 +4,7 @@ data "aws_ec2_managed_prefix_list" "cloudfront" { name = "com.amazonaws.global.c
 
 resource "random_id" "suffix" { byte_length = 3 }
 locals {
-  name       = "${var.project_prefix}-${random_id.suffix.hex}"
+  name       = "${var.project_prefix}-${var.deployment_suffix}"
   vpc_cidr   = "10.62.0.0/16"
   vpn_cidr   = "10.99.0.0/24"
   vpn_ip     = "10.62.0.10"

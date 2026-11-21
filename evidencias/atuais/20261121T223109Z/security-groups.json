@@ -1,0 +1,434 @@
+{
+  "collected_utc": "2026-11-21T22:31:09.658913+00:00",
+  "project": "cyberfinal262-5f48e9",
+  "data": [
+    {
+      "GroupId": "sg-097e0647f554aeb9d",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 80,
+          "ToPort": 80,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Repositorios Ubuntu com pacotes assinados",
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1515,
+          "ToPort": 1515,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "CidrIp": "10.62.10.20/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1514,
+          "ToPort": 1514,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "CidrIp": "10.62.10.20/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 3306,
+          "ToPort": 3306,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-031164d4c6ca70774"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Repositorios, SSM e APIs AWS por TLS",
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "ManagedBy",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "AcademicFinal"
+        },
+        {
+          "Key": "Project",
+          "Value": "cyberfinal262-5f48e9"
+        },
+        {
+          "Key": "Environment",
+          "Value": "lab"
+        }
+      ],
+      "VpcId": "vpc-013c42b2a693efb40",
+      "SecurityGroupArn": "arn:aws:ec2:us-east-1:AWS_ACCOUNT:security-group/sg-097e0647f554aeb9d",
+      "OwnerId": "AWS_ACCOUNT",
+      "GroupName": "cyberfinal262-5f48e9-web-b0006268cc057838ecd4897492",
+      "Description": "Regras explicitas para web do laboratorio final",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 80,
+          "ToPort": 80,
+          "UserIdGroupPairs": [],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [
+            {
+              "PrefixListId": "pl-3b927c52"
+            }
+          ]
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 22,
+          "ToPort": 22,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-016f3db3313048c91"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-016f3db3313048c91",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 80,
+          "ToPort": 80,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Repositorios Ubuntu com pacotes assinados",
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1515,
+          "ToPort": 1515,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "CidrIp": "10.62.10.20/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 22,
+          "ToPort": 22,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "CidrIp": "10.62.0.0/16"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1514,
+          "ToPort": 1514,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "CidrIp": "10.62.10.20/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Repositorios, SSM e APIs AWS por TLS",
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 55000,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "CidrIp": "10.62.0.0/16"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Environment",
+          "Value": "lab"
+        },
+        {
+          "Key": "Project",
+          "Value": "cyberfinal262-5f48e9"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "AcademicFinal"
+        },
+        {
+          "Key": "ManagedBy",
+          "Value": "Terraform"
+        }
+      ],
+      "VpcId": "vpc-013c42b2a693efb40",
+      "SecurityGroupArn": "arn:aws:ec2:us-east-1:AWS_ACCOUNT:security-group/sg-016f3db3313048c91",
+      "OwnerId": "AWS_ACCOUNT",
+      "GroupName": "cyberfinal262-5f48e9-vpn-7f3b53f7487e5e5a0afee03798",
+      "Description": "Regras explicitas para vpn do laboratorio final",
+      "IpPermissions": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 1194,
+          "ToPort": 1194,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "CidrIp": "OPERATOR_IPV4/32",
+              "Description": "IPv4 pessoal removido da copia publica; prefixo /32 preservado"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-090540db21d7e5cb8",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 80,
+          "ToPort": 80,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Repositorios Ubuntu com pacotes assinados",
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Repositorios, SSM e APIs AWS por TLS",
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Purpose",
+          "Value": "AcademicFinal"
+        },
+        {
+          "Key": "Project",
+          "Value": "cyberfinal262-5f48e9"
+        },
+        {
+          "Key": "Environment",
+          "Value": "lab"
+        },
+        {
+          "Key": "ManagedBy",
+          "Value": "Terraform"
+        }
+      ],
+      "VpcId": "vpc-013c42b2a693efb40",
+      "SecurityGroupArn": "arn:aws:ec2:us-east-1:AWS_ACCOUNT:security-group/sg-090540db21d7e5cb8",
+      "OwnerId": "AWS_ACCOUNT",
+      "GroupName": "cyberfinal262-5f48e9-wazuh-4fcefe4869719793a1b25a7ef8",
+      "Description": "Regras explicitas para wazuh do laboratorio final",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1515,
+          "ToPort": 1515,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-097e0647f554aeb9d"
+            },
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-016f3db3313048c91"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 22,
+          "ToPort": 22,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-016f3db3313048c91"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1514,
+          "ToPort": 1514,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-016f3db3313048c91"
+            },
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-097e0647f554aeb9d"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-016f3db3313048c91"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 55000,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-016f3db3313048c91"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-031164d4c6ca70774",
+      "IpPermissionsEgress": [],
+      "Tags": [
+        {
+          "Key": "Environment",
+          "Value": "lab"
+        },
+        {
+          "Key": "ManagedBy",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Project",
+          "Value": "cyberfinal262-5f48e9"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "AcademicFinal"
+        }
+      ],
+      "VpcId": "vpc-013c42b2a693efb40",
+      "SecurityGroupArn": "arn:aws:ec2:us-east-1:AWS_ACCOUNT:security-group/sg-031164d4c6ca70774",
+      "OwnerId": "AWS_ACCOUNT",
+      "GroupName": "cyberfinal262-5f48e9-db-8e5da0e621f2c9ce39c4e2b734",
+      "Description": "MySQL somente a partir da aplicacao",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 3306,
+          "ToPort": 3306,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "AWS_ACCOUNT",
+              "GroupId": "sg-097e0647f554aeb9d"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    }
+  ]
+}

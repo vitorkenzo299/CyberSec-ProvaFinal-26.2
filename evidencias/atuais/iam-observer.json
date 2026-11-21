@@ -1,0 +1,56 @@
+{
+  "collected_utc": "2026-11-21T22:45:02.030123+00:00",
+  "role": "cyberfinal262-5f48e9-observer",
+  "session": "vitor-consulta-20261121",
+  "purpose": "consulta nominal sem acoes de alteracao; listagem de inventario da conta, leitura de logs restrita ao laboratorio",
+  "policy": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "InventoryReadOnly",
+        "Effect": "Allow",
+        "Action": [
+          "ec2:Describe*",
+          "rds:Describe*",
+          "cloudwatch:Describe*",
+          "cloudwatch:Get*",
+          "cloudwatch:List*",
+          "wafv2:Get*",
+          "wafv2:List*",
+          "cloudfront:Get*",
+          "cloudfront:List*",
+          "cloudtrail:GetTrailStatus",
+          "cloudtrail:DescribeTrails",
+          "cloudtrail:ListTrails",
+          "cloudtrail:LookupEvents",
+          "logs:Describe*"
+        ],
+        "Resource": "*"
+      },
+      {
+        "Sid": "LabLogsRead",
+        "Effect": "Allow",
+        "Action": [
+          "logs:GetLogEvents",
+          "logs:FilterLogEvents"
+        ],
+        "Resource": [
+          "arn:aws:logs:us-east-1:AWS_ACCOUNT:log-group:/cyberfinal262-5f48e9/*:*",
+          "arn:aws:logs:us-east-1:AWS_ACCOUNT:log-group:aws-waf-logs-cyberfinal262-5f48e9:*"
+        ]
+      },
+      {
+        "Sid": "TrailConfigurationRead",
+        "Effect": "Allow",
+        "Action": [
+          "cloudtrail:GetTrail",
+          "cloudtrail:GetEventSelectors",
+          "cloudtrail:GetInsightSelectors",
+          "cloudtrail:ListTags"
+        ],
+        "Resource": "arn:aws:cloudtrail:us-east-1:AWS_ACCOUNT:trail/cyberfinal262-5f48e9"
+      }
+    ]
+  },
+  "trust_principal": "arn:aws:iam::AWS_ACCOUNT:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_AdministratorAccess_b8b6e89b8003efee"
+}

@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "collected_utc": "2026-11-21T23:38:13.774477+00:00",
+      "source_role": "wazuh",
+      "destination": "RDS privado deste projeto",
+      "tcp_port": 3306,
+      "tcp_connected": false,
+      "expected_connected": false,
+      "passed": true,
+      "claim_boundary": "teste integrado do caminho; nao atribui sozinho o bloqueio a um unico SG"
+    },
+    {
+      "collected_utc": "2026-11-21T23:38:04.643299+00:00",
+      "source_role": "web",
+      "destination": "RDS privado deste projeto",
+      "tcp_port": 3306,
+      "tcp_connected": true,
+      "expected_connected": true,
+      "passed": true,
+      "claim_boundary": "teste integrado do caminho; nao atribui sozinho o bloqueio a um unico SG"
+    }
+  ],
+  "scope": "Somente Web, Wazuh e RDS novos deste projeto. Teste integrado; não isola uma única regra de firewall."
+}

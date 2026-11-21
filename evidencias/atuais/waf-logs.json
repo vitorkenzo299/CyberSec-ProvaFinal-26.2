@@ -1,0 +1,92 @@
+{
+  "collected_utc": "2026-11-21T22:42:20.394717+00:00",
+  "log_group": "aws-waf-logs-cyberfinal262-5f48e9",
+  "records": [
+    {
+      "timestamp": 1795300098300,
+      "action": "BLOCK",
+      "terminatingRuleId": "ControlledEvidenceProbe",
+      "ruleGroupList": [],
+      "rateBasedRuleList": [],
+      "uri": "/healthz",
+      "args": "REDACTED",
+      "httpMethod": "GET",
+      "requestId": "q3RbWPU4jNGyJFG_fnhWbCZ870OIRsG_MGf18sDbFpbl9l8uKaJ3qA==",
+      "clientIp": "OPERATOR_IP_REDACTED"
+    },
+    {
+      "timestamp": 1795300098709,
+      "action": "BLOCK",
+      "terminatingRuleId": "AWSManagedRulesSQLiRuleSet",
+      "ruleGroupList": [
+        {
+          "ruleGroupId": "AWS#AWSManagedRulesCommonRuleSet",
+          "terminatingRule": null,
+          "nonTerminatingMatchingRules": [],
+          "excludedRules": null,
+          "customerConfig": null
+        },
+        {
+          "ruleGroupId": "AWS#AWSManagedRulesSQLiRuleSet",
+          "terminatingRule": {
+            "ruleId": "SQLi_QUERYARGUMENTS",
+            "action": "BLOCK",
+            "ruleMatchDetails": null
+          },
+          "nonTerminatingMatchingRules": [],
+          "excludedRules": null,
+          "customerConfig": null
+        }
+      ],
+      "rateBasedRuleList": [],
+      "uri": "/api/products",
+      "args": "REDACTED",
+      "httpMethod": "GET",
+      "requestId": "fYZ_-QRNHFHjYCxHKdpnFBqbcAVtX3tMbCLzYTra0dqnLYY0Kn-UBw==",
+      "clientIp": "OPERATOR_IP_REDACTED"
+    },
+    {
+      "timestamp": 1795300578202,
+      "action": "BLOCK",
+      "terminatingRuleId": "RateLimit",
+      "ruleGroupList": [
+        {
+          "ruleGroupId": "AWS#AWSManagedRulesCommonRuleSet",
+          "terminatingRule": null,
+          "nonTerminatingMatchingRules": [],
+          "excludedRules": null,
+          "customerConfig": null
+        },
+        {
+          "ruleGroupId": "AWS#AWSManagedRulesSQLiRuleSet",
+          "terminatingRule": null,
+          "nonTerminatingMatchingRules": [],
+          "excludedRules": null,
+          "customerConfig": null
+        },
+        {
+          "ruleGroupId": "AWS#AWSManagedRulesKnownBadInputsRuleSet",
+          "terminatingRule": null,
+          "nonTerminatingMatchingRules": [],
+          "excludedRules": null,
+          "customerConfig": null
+        }
+      ],
+      "rateBasedRuleList": [
+        {
+          "rateBasedRuleId": "arn:aws:wafv2:us-east-1:626635403592_MANAGED:global/ipset/93d5d44e-812c-4ec3-9ae9-87adbc41b371_c50816e7-1a45-4b57-b468-36d59766d108_IPV4/c50816e7-1a45-4b57-b468-36d59766d108",
+          "rateBasedRuleName": "RateLimit",
+          "limitKey": "IP",
+          "maxRateAllowed": 100,
+          "evaluationWindowSec": 300,
+          "limitValue": "179.209.45.9"
+        }
+      ],
+      "uri": "/healthz",
+      "args": "REDACTED",
+      "httpMethod": "GET",
+      "requestId": "CQKf8LdvXa8Z2fcMd6klRIuyh-tcODD49hN7wIlhCldk2uNTzAV_9Q==",
+      "clientIp": "OPERATOR_IP_REDACTED"
+    }
+  ]
+}

@@ -50,6 +50,14 @@ variable "project_prefix" {
     error_message = "Use de 3 a 16 caracteres minúsculos, números ou hífen."
   }
 }
+variable "deployment_suffix" {
+  type        = string
+  description = "Identificador de seis dígitos hexadecimais gerado antes do plano, para que as tags do provedor sejam conhecidas desde o início."
+  validation {
+    condition     = can(regex("^[a-f0-9]{6}$", var.deployment_suffix))
+    error_message = "Use seis caracteres hexadecimais minúsculos."
+  }
+}
 variable "domain_name" {
   type        = string
   default     = null

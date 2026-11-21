@@ -1,0 +1,53 @@
+{
+  "scope": "oito tentativas com usuario ficticio no Web novo, via VPN; teste autorizado e sem descoberta de senhas",
+  "results": [
+    {
+      "attempt": 1,
+      "utc": "2026-11-21T22:34:56.654866+00:00",
+      "exit_code": 255,
+      "message": "cyberfinal_invalid_demo@10.62.10.10: Permission denied (publickey).\r\n"
+    },
+    {
+      "attempt": 2,
+      "utc": "2026-11-21T22:34:58.835520+00:00",
+      "exit_code": 255,
+      "message": "cyberfinal_invalid_demo@10.62.10.10: Permission denied (publickey).\r\n"
+    },
+    {
+      "attempt": 3,
+      "utc": "2026-11-21T22:35:01.198578+00:00",
+      "exit_code": 255,
+      "message": "cyberfinal_invalid_demo@10.62.10.10: Permission denied (publickey).\r\n"
+    },
+    {
+      "attempt": 4,
+      "utc": "2026-11-21T22:35:04.100475+00:00",
+      "exit_code": 255,
+      "message": "cyberfinal_invalid_demo@10.62.10.10: Permission denied (publickey).\r\n"
+    },
+    {
+      "attempt": 5,
+      "utc": "2026-11-21T22:35:07.328050+00:00",
+      "exit_code": 255,
+      "message": "cyberfinal_invalid_demo@10.62.10.10: Permission denied (publickey).\r\n"
+    },
+    {
+      "attempt": 6,
+      "utc": "2026-11-21T22:35:10.135680+00:00",
+      "exit_code": 255,
+      "message": "cyberfinal_invalid_demo@10.62.10.10: Permission denied (publickey).\r\n"
+    },
+    {
+      "attempt": 7,
+      "utc": "2026-11-21T22:35:12.308400+00:00",
+      "exit_code": 255,
+      "message": "cyberfinal_invalid_demo@10.62.10.10: Permission denied (publickey).\r\n"
+    },
+    {
+      "attempt": 8,
+      "utc": "2026-11-21T22:35:14.471507+00:00",
+      "exit_code": 255,
+      "message": "cyberfinal_invalid_demo@10.62.10.10: Permission denied (publickey).\r\n"
+    }
+  ]
+}

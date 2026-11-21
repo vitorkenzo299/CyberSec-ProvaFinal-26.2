@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-11-21T23:14:02.494967+00:00",
+  "primary_status": "available",
+  "snapshot_status": "available",
+  "snapshot": "cyberfinal262-5f48e9-evidence-20261121",
+  "snapshot_encrypted": true,
+  "temporary_restore": "cyberfinal262-5f48e9-restore-20261121",
+  "temporary_restore_status": "removed",
+  "verified_utc": "2026-11-21T22:39:25.648040+00:00",
+  "cleanup_requested_utc": "2026-11-21T22:40:52.425800+00:00"
+}

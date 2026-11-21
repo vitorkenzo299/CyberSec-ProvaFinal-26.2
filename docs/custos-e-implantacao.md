@@ -1,6 +1,6 @@
-# Custos e decisões para implantação
+# Consumo e encerramento
 
-Nenhum recurso AWS foi criado nesta etapa. A proposta pode ser revisada no diretório `infra` antes de confirmar acesso, cobertura e janela de uso da conta acadêmica escolhida.
+O ambiente foi criado na conta institucional existente em 21/11/2026. Organizations confirmou vínculo institucional e pagador de gerenciamento distinto. Os recursos anteriores foram preservados. A cobertura institucional não implica gratuidade nem limite rígido de gastos.
 
 ## Condição definida pelo aluno
 
@@ -22,13 +22,13 @@ O dimensionamento inclui três EC2, RDS, NAT Gateway, dois IPv4 públicos, armaz
 
 NAT Gateway, IPv4 público e WAF têm cobrança própria. Interromper apenas as EC2 mantém outros recursos cobrados. [Preços VPC](https://aws.amazon.com/vpc/pricing/), [preços WAF](https://aws.amazon.com/waf/pricing/), [preços EC2](https://aws.amazon.com/ec2/pricing/on-demand/), [preços RDS MySQL](https://aws.amazon.com/rds/mysql/pricing/).
 
-## Informações necessárias para ativar
+## Situação e acompanhamento
 
-- Renovar o acesso à conta acadêmica existente com uma identidade nominal autorizada.
-- Confirmar responsável pela cobrança, cobertura aplicável e janela de uso, preservando o limite pessoal de R$ 0.
-- IPv4 público atual para restringir a entrada da VPN e chave SSH nova do operador.
+- A sessão SSO nominal foi renovada e a implantação foi realizada. A função observer permite consulta posterior.
+- O pagador institucional foi verificado. A entrega não apurou fatura nem configurou um teto automático de consumo.
+- A entrada da VPN está restrita a /32 e usa uma chave SSH nova. Mudanças no IP do operador exigem revisão da regra.
 - Decisão sobre domínio novo com certificado ACM. O domínio padrão CloudFront permite demonstração inicial, mas sua política mínima TLSv1 deve aparecer como pendência.
-- Confirmação de que o cenário proposto pode ser usado, ou envio do relato específico desta avaliação, se houver.
+- A cópia temporária de restauração já foi removida. O banco principal, o snapshot e os demais recursos novos continuam identificados para a demonstração.
 
 As credenciais devem ser configuradas no computador ou pela sessão autorizada da AWS. Não devem entrar em arquivos versionados, imagens, mensagens ou slides.
 
@@ -37,3 +37,5 @@ As credenciais devem ser configuradas no computador ou pela sessão autorizada d
 Ao terminar as evidências, exportar a entrega e conferir o plano de remoção apenas dos recursos com o prefixo desta avaliação. O RDS tem proteção contra exclusão e exige alteração deliberada antes de remover. O snapshot final, os backups retidos, os segredos em recuperação e os objetos de auditoria podem permanecer e gerar pequenas cobranças. O bucket de auditoria não é esvaziado automaticamente.
 
 Um orçamento ou alarme de custo avisa sobre consumo; não constitui teto automático de cobrança. Não consultar a API paga do Cost Explorer durante a verificação inicial de cobertura; preferir o console gratuito e consultas de estado de conta que não tenham tarifa por requisição.
+
+A função IAM observer e o snapshot de evidência foram criados no pós-provisionamento. Incluir esses recursos na revisão de encerramento, pois não são removidos automaticamente pelo estado Terraform atual. Nunca usar um comando de remoção amplo na conta.

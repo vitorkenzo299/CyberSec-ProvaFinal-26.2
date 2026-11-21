@@ -1,0 +1,51 @@
+{
+  "records": [
+    {
+      "collected_utc": "2026-11-21T23:36:52.559658+00:00",
+      "project": "cyberfinal262-5f48e9",
+      "role": "vpn",
+      "services": {
+        "auditd": "active",
+        "amazon-cloudwatch-agent": "active",
+        "openvpn-server@server": "active",
+        "wazuh-agent": "active"
+      },
+      "bootstrap_common_ready": true,
+      "bootstrap_role_ready": true,
+      "initial_cloud_init_note": "primeira inicializacao teve falhas corrigidas por operacoes revisadas; nao se declara cloud-init historico limpo"
+    },
+    {
+      "collected_utc": "2026-11-21T23:36:55.659370+00:00",
+      "project": "cyberfinal262-5f48e9",
+      "role": "wazuh",
+      "services": {
+        "auditd": "active",
+        "amazon-cloudwatch-agent": "active",
+        "wazuh-manager": "active",
+        "wazuh-indexer": "active",
+        "wazuh-dashboard": "active"
+      },
+      "bootstrap_common_ready": true,
+      "bootstrap_role_ready": true,
+      "initial_cloud_init_note": "primeira inicializacao teve falhas corrigidas por operacoes revisadas; nao se declara cloud-init historico limpo"
+    },
+    {
+      "collected_utc": "2026-11-21T23:36:54.254934+00:00",
+      "project": "cyberfinal262-5f48e9",
+      "role": "web",
+      "services": {
+        "auditd": "active",
+        "amazon-cloudwatch-agent": "active",
+        "nginx": "active",
+        "cyberfinal": "active",
+        "wazuh-agent": "active"
+      },
+      "bootstrap_common_ready": true,
+      "bootstrap_role_ready": true,
+      "initial_cloud_init_note": "primeira inicializacao teve falhas corrigidas por operacoes revisadas; nao se declara cloud-init historico limpo",
+      "server_sha256": "83f7b7aa7ebd72286358d4929b9d6e2e18e70e0fc6edd0f30f3feb2bfdee36dd"
+    }
+  ],
+  "source_matches_deployed_web": true,
+  "server_sha256": "83f7b7aa7ebd72286358d4929b9d6e2e18e70e0fc6edd0f30f3feb2bfdee36dd"
+}

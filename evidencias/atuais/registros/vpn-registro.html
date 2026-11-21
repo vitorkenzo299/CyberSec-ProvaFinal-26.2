@@ -1,0 +1,21 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Acesso privado pela VPN</title><style>body{font:19px Arial;color:#172b3a;background:#fff;margin:48px;line-height:1.5}h1{font-size:32px;margin:8px 0 18px}h2{font-size:22px}small{color:#526779}table{border-collapse:collapse;width:100%;margin:24px 0}th,td{border:1px solid #d9d9d9;text-align:left;padding:13px}th{background:#173447;color:white}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:17px Consolas;background:#f2f5f7;padding:20px}footer{margin-top:35px;border-top:1px solid #ddd;padding-top:18px;font-size:16px}</style><small>REGISTRO TÉCNICO GERADO A PARTIR DOS RESULTADOS DO TESTE</small><h1>Acesso privado pela VPN</h1><p>Coleta UTC: 2026-11-21T23:14:04.703185+00:00</p><table><thead><tr><th>Destino</th><th>Antes</th><th>Durante</th></tr></thead><tbody><tr><td>10.62.10.10</td><td>False</td><td>True</td></tr><tr><td>10.62.10.20</td><td>False</td><td>True</td></tr></tbody></table><p>Porta pública SSH 22 aberta: False</p><pre>2026-11-21 19:28:18 Route addition via service succeeded
+2026-11-21 19:28:18 Route addition via service succeeded
+2026-11-21 19:28:18 Initialization Sequence Completed
+2026-11-21 19:28:18 MANAGEMENT: &gt;STATE:1795300098,CONNECTED,SUCCESS,10.99.0.2,44.220.160.78,1194,,
+2026-11-21 19:28:18 Data Channel: cipher &#x27;AES-256-GCM&#x27;, peer-id: 1</pre><h2>Identidade e restrições SSH</h2><pre>uid=1000(vitor) gid=1000(vitor) groups=1000(vitor),27(sudo)
+maxauthtries 3
+permitrootlogin no
+passwordauthentication no
+allowusers vitor
+Status: active
+
+To                         Action      From
+--                         ------      ----
+80/tcp                     ALLOW       Anywhere                  
+22/tcp                     ALLOW       10.62.0.10                
+80/tcp (v6)                ALLOW       Anywhere (v6)             
+
+active
+active
+active
+</pre><footer>Fonte: evidencias/atuais/vpn-before-during.json. Este registro não é uma tela do console AWS.</footer></html>

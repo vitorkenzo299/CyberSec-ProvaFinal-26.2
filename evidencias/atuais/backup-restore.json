@@ -1,0 +1,27 @@
+{
+  "verified_utc": "2026-11-21T22:39:25.648040+00:00",
+  "snapshot": "cyberfinal262-5f48e9-evidence-20261121",
+  "results": [
+    {
+      "database": "primary",
+      "row_count": 3,
+      "sha256": "bfc92801dfcd0827f8f31d96d915528b297bb643e9a03ccf70f32c03078daad4",
+      "tls_cipher": "TLS_AES_256_GCM_SHA384",
+      "grants": [
+        "GRANT USAGE ON *.* TO `catalog_reader`@`%`",
+        "GRANT SELECT ON `cyberfinal`.`products` TO `catalog_reader`@`%`"
+      ]
+    },
+    {
+      "database": "restored",
+      "row_count": 3,
+      "sha256": "bfc92801dfcd0827f8f31d96d915528b297bb643e9a03ccf70f32c03078daad4",
+      "tls_cipher": "TLS_AES_256_GCM_SHA384",
+      "grants": [
+        "GRANT USAGE ON *.* TO `catalog_reader`@`%`",
+        "GRANT SELECT ON `cyberfinal`.`products` TO `catalog_reader`@`%`"
+      ]
+    }
+  ],
+  "equal": true
+}

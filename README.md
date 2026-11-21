@@ -1,54 +1,55 @@
 # Avaliação final de Cibersegurança 2026.2
 
-Projeto novo para a avaliação final, na conta acadêmica já utilizada no curso. A conta e serviços de suporte podem ser aproveitados conforme a autorização do aluno, preservando o trabalho anterior. A proposta usa uma loja fictícia chamada **Aurora** como aplicação de demonstração, com catálogo sintético, banco privado, VPN, WAF e monitoramento. O nome e os detalhes do negócio são premissas de trabalho; as imagens do enunciado citam ABC Place na estrutura sugerida.
+Apresentação individual de **Vitor**. Ambiente novo implantado na conta institucional do curso, em VPC própria, preservando o trabalho anterior. A loja fictícia Aurora materializa o caso acadêmico ABC Place citado no enunciado e usa somente três produtos sintéticos, sem pagamentos ou dados pessoais.
 
-**Situação:** aplicação e configuração de infraestrutura preparadas. O ambiente AWS ainda não foi criado. As capturas disponíveis mostram a aplicação local. Não há comprovação de VPN, WAF ou Wazuh funcionando na nuvem nesta etapa.
+**Aplicação:** [abrir o catálogo na AWS](https://d3hc8whbcpdvtd.cloudfront.net).
 
-**Restrição autorizada:** nenhum desembolso pessoal do aluno. A criação depende de conferir a cobertura da conta acadêmica. Não excluir, parar ou substituir os recursos do trabalho anterior. [Limites de uso da conta existente](docs/limites-da-conta-existente.md).
+VPN, WAF, agentes Wazuh, permissões de consulta e restauração do banco foram testados. A avaliação Web com ZAP terminou sem alertas no escopo executado. **R05 continua alto:** o inventário de pacotes do kernel contém correlações High e Critical em triagem. Os resultados não representam aprovação para produção.
 
-## Conteúdo
+## Entrega
 
-- [Requisitos e pesos da avaliação](docs/criterios-da-avaliacao.md)
-- [Arquitetura proposta](docs/arquitetura.md)
-- [Matriz de riscos inicial](docs/matriz-de-riscos.md)
-- [Custos e decisões para implantação](docs/custos-e-implantacao.md)
-- [Plano de evidências e capturas](docs/plano-de-evidencias.md)
-- [Procedimentos de implantação e validação](docs/operacao.md)
-- [Roteiro da apresentação de 12 slides](docs/roteiro-apresentacao.md)
-- [Pendências da entrega](docs/status.md)
+- [Relatório em PDF](entrega/Relatorio_Final_Ciberseguranca.pdf) e [versão Word editável](entrega/Relatorio_Final_Ciberseguranca.docx)
+- [Apresentação editável de 12 slides](entrega/Apresentacao_Executiva.pptx) e [PDF dos slides](entrega/Apresentacao_Executiva.pdf)
+- [Matriz de riscos em Excel](entrega/Matriz_de_Riscos.xlsx)
+- [Todas as evidências e fotos](entrega/Evidencias_Completas.zip), [índice por controle](evidencias/INDICE.md) e [manifesto SHA-256](evidencias/manifesto.json)
+- [Roteiro individual de apresentação](docs/roteiro-apresentacao.md)
 
-## Executar a demonstração local
+## Resultados práticos
 
-Requer Python 3.10 ou superior, sem dependências externas no modo local.
+| Controle | Prova registrada |
+| --- | --- |
+| VPN | SSH privado inacessível sem o túnel e acessível durante; login nominal vitor e AES-256-GCM |
+| Privilégios | Wazuh negou administração de usuários com 403; simulação IAM permitiu leitura e negou ações de alteração |
+| WAF | Probe 403, assinatura SQLi 403 e bloqueio por taxa no pedido 128, ligados a regras distintas nos logs |
+| Wazuh | Dois agentes ativos, eventos FIM 554/550/553 e força bruta SSH 5712 |
+| ZAP 2.17.0 | 930 mensagens e 12 URLs na sessão pela origem privada; 100% concluído e fila passiva zerada |
+| Recuperação | Snapshot restaurado em cópia privada; três linhas com SHA-256 igual; cópia temporária removida |
+| Preservação | Quatro instâncias antigas com os mesmos campos comparados e regras dos nove SG anteriores iguais |
+
+As estimativas iniciais da matriz são hipóteses sem os controles. A classificação residual é julgamento qualitativo apoiado nos testes, sem cálculo estatístico de redução de risco.
+
+## Ambiente e operação
+
+Projeto `cyberfinal262-5f48e9`, VPC `10.62.0.0/16`, região `us-east-1`. Web e Wazuh não têm IP público. RDS MySQL privado aceita 3306 somente do Web. A VPN recebe UDP 1194 de um IPv4 /32 autorizado. CloudFront usa VPC Origin e WAF.
+
+- [Arquitetura e limites](docs/arquitetura.md)
+- [Matriz completa e justificativas](docs/matriz-de-riscos.md)
+- [Procedimentos e retomada](docs/operacao.md)
+- [Consumo e encerramento](docs/custos-e-implantacao.md)
+- [Status e limitações](docs/status.md)
+- [Versões e fontes oficiais](docs/versoes-e-fontes.md)
+
+Um único Web, NAT e RDS Single-AZ limitam disponibilidade. O certificado padrão CloudFront mantém política mínima TLSv1 e a origem privada usa HTTP. MFA e notificação externa não foram comprovados. A cobertura institucional foi verificada, mas isso não torna os serviços gratuitos ou limita automaticamente o consumo. Os recursos novos permanecem identificados para a demonstração; o encerramento deve preservar o projeto anterior.
+
+## Executar e verificar localmente
 
 ```powershell
 python app/server.py --demo
-```
-
-Abrir `http://127.0.0.1:8080`. O modo local usa um catálogo em memória; o caminho AWS utiliza MySQL com TLS e Secrets Manager. A aplicação não recebe pagamentos nem dados pessoais.
-
-```powershell
 python -m unittest discover -s tests -v
-terraform -chdir=infra init -backend=false
 terraform -chdir=infra validate
 terraform -chdir=infra test
 ```
 
-Os testes Terraform usam provedores simulados. Eles verificam propriedades da configuração, sem criar recursos ou comprovar o funcionamento de serviços AWS.
+O modo local usa catálogo em memória. Na AWS a aplicação lê MySQL com TLS e Secrets Manager, sem permissão de escrita. Os testes Terraform usam provedores simulados e não criam recursos.
 
-## Organização
-
-| Pasta | Conteúdo |
-| --- | --- |
-| `app` | Aplicação nova, com busca parametrizada e cabeçalhos de segurança |
-| `infra` | Infraestrutura Terraform, instalação inicial e testes de configuração |
-| `scripts` | Capturas locais, teste controlado de WAF e manifesto de integridade |
-| `tests` | Testes da aplicação |
-| `docs` | Arquitetura, riscos, procedimentos e apresentação |
-| `evidencias/locais` | Capturas e resultados produzidos neste projeto no computador |
-| `evidencias/atuais` | Reservada às provas reais do novo ambiente AWS |
-| `entrega` | Reservada ao relatório, matriz e slides finais após validação prática |
-
-Chaves, senhas, perfis VPN, arquivos de estado e dados de trabalho privados são excluídos do Git. A entrega deve identificar o que foi criado nesta avaliação e produzir evidências atuais dos controles utilizados. Os recursos e arquivos dos trabalhos anteriores serão preservados.
-
-![Captura real da aplicação local](evidencias/locais/aplicacao-local-desktop.png)
+Chaves, senhas, perfis VPN, credenciais temporárias, planos e estado Terraform ficam excluídos do Git. O estado remoto tem bucket privado próprio. O código Terraform e os procedimentos de pós-instalação registram o ambiente desta avaliação.

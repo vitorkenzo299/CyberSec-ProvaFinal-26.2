@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-11-21T22:52:35.053879+00:00",
+  "status": "triagem parcial; inventario permanece aberto",
+  "raw_correlation_counts": {
+    "High": 1606,
+    "Critical": 202,
+    "agents": 2,
+    "package": "linux-aws",
+    "condition": "Package default status"
+  },
+  "counts_are": "correlacoes pacote-CVE por agente, nao CVEs unicas nem exploracoes confirmadas",
+  "installed_kernel": "7.0.0-1018-aws",
+  "installed_meta_version": "7.0.0-1018.19~24.04.1",
+  "apt_upgradable_count": 0,
+  "sample_review": {
+    "cve": "CVE-2026-98367",
+    "source": "https://ubuntu.com/security/CVE-2026-98367",
+    "matching_source_package": "linux-aws-7.0",
+    "ubuntu_release": "24.04 LTS noble",
+    "fixed_version": "7.0.0-1017.18~24.04.1",
+    "interpretation": "a versao instalada e posterior a correcao deste exemplo; indicio de correlacao imprecisa do metapacote. Nao extrapolado aos demais CVEs."
+  },
+  "decision": "Nao suprimir os achados nem declarar infraestrutura sem vulnerabilidades altas. Manter R05 alto ate triar todos os relevantes e revalidar."
+}

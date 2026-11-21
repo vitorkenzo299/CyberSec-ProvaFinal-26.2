@@ -20,8 +20,9 @@ X11Forwarding no
 MaxAuthTries 3
 AllowUsers $OPERATOR
 EOF
+install -d -m 0755 /run/sshd
 sshd -t
-systemctl reload ssh
+systemctl restart ssh
 systemctl enable --now auditd
 cat > /etc/audit/rules.d/cyberfinal.rules <<'EOF'
 -w /etc/ssh/ -p wa -k ssh_configuration
@@ -50,7 +51,9 @@ else
 import xml.etree.ElementTree as E
 p='/var/ossec/etc/ossec.conf'
 # O arquivo Wazuh pode conter múltiplos elementos ossec_config.
-text=open(p).read(); text=text.replace('</syscheck>', '<directories realtime="yes">/opt/cyberfinal</directories></syscheck>', 1)
+text=open(p).read()
+if '/opt/cyberfinal' not in text:
+    text=text.replace('</syscheck>', '<directories realtime="yes">/opt/cyberfinal</directories></syscheck>', 1)
 if '<localfile>' not in text or '/var/log/auth.log' not in text:
     text=text.replace('</ossec_config>', '<localfile><log_format>syslog</log_format><location>/var/log/auth.log</location></localfile></ossec_config>',1)
 open(p,'w').write(text)

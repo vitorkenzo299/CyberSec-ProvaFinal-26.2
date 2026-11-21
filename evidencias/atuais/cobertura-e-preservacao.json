@@ -1,0 +1,17 @@
+{
+  "verified_utc": "2026-11-21T21:45:09.162798+00:00",
+  "account": "AWS_ACCOUNT",
+  "account_label": "cybersec_bcc - grupo 09",
+  "organization_member": true,
+  "payer_is_another_account": true,
+  "payer_email_domain": "insper.edu.br",
+  "funding_basis": "Faturamento consolidado em conta pagadora da instituição; não foram informados ou alterados meios de pagamento pessoais.",
+  "free_tier_plan": "Não aplicável ou não disponível para esta conta; não foi afirmada gratuidade dos serviços.",
+  "protected_previous_ec2": [
+    "i-078159184460cea36",
+    "i-0d1f95c4e23c4fc77",
+    "i-09692206a93e8ce2d",
+    "i-01ae94efb2c0e0c8b"
+  ],
+  "source": "Consultas autenticadas STS, Organizations e EC2; inventário completo preservado em arquivo privado."
+}

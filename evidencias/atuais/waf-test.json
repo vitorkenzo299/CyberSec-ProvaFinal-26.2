@@ -1,0 +1,72 @@
+{
+  "collected_utc": "2026-11-21T22:28:19.901509+00:00",
+  "run_id": "f4ee87fb-bc87-48de-ad81-3ee61221ca5d",
+  "scope": "quatro requisições ao domínio informado; não substitui varredura de vulnerabilidades",
+  "certificate_validation": true,
+  "results": [
+    {
+      "name": "catalog_health",
+      "path": "/healthz",
+      "expected_status": 200,
+      "status": 200,
+      "final_url": "https://d3hc8whbcpdvtd.cloudfront.net/healthz",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Server": "nginx",
+        "Date": "Sat, 21 Nov 2026 22:28:17 GMT",
+        "X-Cache": "Miss from cloudfront",
+        "X-Amz-Cf-Id": "PODOpWUvfPRRRnD9KChZVjMVDxWbM-KCaRfpFHB78cFEKWZn5S98Nw==",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+      },
+      "passed": true
+    },
+    {
+      "name": "controlled_waf_probe",
+      "path": "/healthz",
+      "expected_status": 403,
+      "status": 403,
+      "final_url": "https://d3hc8whbcpdvtd.cloudfront.net/healthz",
+      "headers": {
+        "Server": "CloudFront",
+        "Date": "Sat, 21 Nov 2026 22:28:18 GMT",
+        "Content-Type": "text/html",
+        "X-Cache": "Error from cloudfront",
+        "X-Amz-Cf-Id": "q3RbWPU4jNGyJFG_fnhWbCZ870OIRsG_MGf18sDbFpbl9l8uKaJ3qA==",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+      },
+      "passed": true
+    },
+    {
+      "name": "sqli_signature_observation",
+      "path": "/api/products?search=%27%20OR%201%3D1--",
+      "expected_status": null,
+      "status": 403,
+      "final_url": "https://d3hc8whbcpdvtd.cloudfront.net/api/products?search=%27%20OR%201%3D1--",
+      "headers": {
+        "Server": "CloudFront",
+        "Date": "Sat, 21 Nov 2026 22:28:18 GMT",
+        "Content-Type": "text/html",
+        "X-Cache": "Error from cloudfront",
+        "X-Amz-Cf-Id": "fYZ_-QRNHFHjYCxHKdpnFBqbcAVtX3tMbCLzYTra0dqnLYY0Kn-UBw==",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+      },
+      "passed": true
+    },
+    {
+      "name": "legitimate_catalog_after",
+      "path": "/api/products",
+      "expected_status": 200,
+      "status": 200,
+      "final_url": "https://d3hc8whbcpdvtd.cloudfront.net/api/products",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Server": "nginx",
+        "Date": "Sat, 21 Nov 2026 22:28:19 GMT",
+        "X-Cache": "Miss from cloudfront",
+        "X-Amz-Cf-Id": "yiI9D8nlSqumSKxBT5rSHhbjldKuHIvh-Cqhc8pKBwMmKzYG9dApmg==",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+      },
+      "passed": true
+    }
+  ]
+}

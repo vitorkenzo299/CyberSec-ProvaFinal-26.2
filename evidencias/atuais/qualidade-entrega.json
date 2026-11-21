@@ -1,0 +1,62 @@
+{
+  "checked_utc": "2026-11-21T23:46:19.406127+00:00",
+  "author": "Vitor",
+  "report": {
+    "pages": 14,
+    "opened_with": "Microsoft Word",
+    "pdf_export": "native Office",
+    "visual_review": "14 páginas revistas; recorte final de CloudWatch corrigido, mantendo rótulos.",
+    "renderer": "PDFium após exportação nativa. LibreOffice não disponível; não foi declarado aprovado."
+  },
+  "presentation": {
+    "slides": 12,
+    "opened_with": "Microsoft PowerPoint",
+    "native_pngs_reviewed": 12,
+    "editable_tables": 4,
+    "editable_charts": 1,
+    "chart_embedded_workbook": true,
+    "font": "Arial",
+    "first_party_import_passed": true,
+    "structural_package_findings": 0,
+    "warning_review": "O estimador de altura de tabela sinalizou o slide 4. A renderização nativa confirmou as 12 linhas dentro da tabela e sem colisão com o rodapé. A heurística não foi apresentada como prova de ausência de problemas visuais."
+  },
+  "workbook": {
+    "checked_utc": "2026-11-21T23:44:18.6891739Z",
+    "application": "Microsoft Excel",
+    "read_only": true,
+    "sheets": 3,
+    "initial_high": 10.0,
+    "residual_high": 1.0,
+    "input_recalculation": "passed",
+    "missing_input": "passed",
+    "source_saved": false
+  },
+  "scope": "Validação de leitura, conteúdo e apresentação dos arquivos. Não substitui as limitações e pendências técnicas descritas no relatório.",
+  "artifacts": [
+    {
+      "file": "Apresentacao_Executiva.pdf",
+      "bytes": 333293,
+      "sha256": "9fa2c12a5f82f98491666db9b073b12a87801f479e416937de106df00ac241ba"
+    },
+    {
+      "file": "Apresentacao_Executiva.pptx",
+      "bytes": 327363,
+      "sha256": "8f50f03ca9348f6301c861f48cc610d8ccdee0741d9fa280f39783f39e7b01dd"
+    },
+    {
+      "file": "Matriz_de_Riscos.xlsx",
+      "bytes": 15191,
+      "sha256": "b499d76be4b5d544713963d5ef38dd22cf744612be1ce9fac8a0e36fff1e6fb7"
+    },
+    {
+      "file": "Relatorio_Final_Ciberseguranca.docx",
+      "bytes": 1062079,
+      "sha256": "ea6dbc392d7b2fb6eb3d2b4bad2b8aafc2cbb39a3caae9f7bf4d25276013fd97"
+    },
+    {
+      "file": "Relatorio_Final_Ciberseguranca.pdf",
+      "bytes": 953746,
+      "sha256": "67681dec8d70c979ecc09c3f46784bd6f8019bb1003ecfdd93b3ff827f34bb9e"
+    }
+  ]
+}

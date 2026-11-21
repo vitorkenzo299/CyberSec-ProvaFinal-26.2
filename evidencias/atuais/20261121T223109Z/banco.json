@@ -1,0 +1,51 @@
+{
+  "collected_utc": "2026-11-21T22:31:09.658913+00:00",
+  "project": "cyberfinal262-5f48e9",
+  "data": {
+    "DBInstanceIdentifier": "cyberfinal262-5f48e9",
+    "DBInstanceStatus": "backing-up",
+    "DBInstanceClass": "db.t4g.micro",
+    "Engine": "mysql",
+    "EngineVersion": "8.4.11",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 7,
+    "LatestRestorableTime": "2026-11-21 22:25:32+00:00",
+    "DeletionProtection": true,
+    "MultiAZ": false,
+    "VpcSecurityGroups": [
+      {
+        "VpcSecurityGroupId": "sg-031164d4c6ca70774",
+        "Status": "active"
+      }
+    ],
+    "DBSubnetGroup": {
+      "DBSubnetGroupName": "cyberfinal262-5f48e9",
+      "DBSubnetGroupDescription": "Managed by Terraform",
+      "VpcId": "vpc-013c42b2a693efb40",
+      "SubnetGroupStatus": "Complete",
+      "Subnets": [
+        {
+          "SubnetIdentifier": "subnet-0bb24219f33c41eaf",
+          "SubnetAvailabilityZone": {
+            "Name": "us-east-1a"
+          },
+          "SubnetOutpost": {},
+          "SubnetStatus": "Active"
+        },
+        {
+          "SubnetIdentifier": "subnet-0a4aad8bf30c8b75f",
+          "SubnetAvailabilityZone": {
+            "Name": "us-east-1b"
+          },
+          "SubnetOutpost": {},
+          "SubnetStatus": "Active"
+        }
+      ]
+    },
+    "EnabledCloudwatchLogsExports": [
+      "error",
+      "slowquery"
+    ]
+  }
+}

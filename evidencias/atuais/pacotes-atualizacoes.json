@@ -1,0 +1,29 @@
+[
+  {
+    "node": "vpn",
+    "result": {
+      "collected_utc": "2026-11-21T22:39:28.776352+00:00",
+      "kernel": "7.0.0-1018-aws",
+      "upgradable": "Listing...\n",
+      "reboot_required": false
+    }
+  },
+  {
+    "node": "wazuh",
+    "result": {
+      "collected_utc": "2026-11-21T22:39:31.768657+00:00",
+      "kernel": "7.0.0-1018-aws",
+      "upgradable": "Listing...\n",
+      "reboot_required": false
+    }
+  },
+  {
+    "node": "web",
+    "result": {
+      "collected_utc": "2026-11-21T22:39:30.244721+00:00",
+      "kernel": "7.0.0-1018-aws",
+      "upgradable": "Listing...\n",
+      "reboot_required": false
+    }
+  }
+]

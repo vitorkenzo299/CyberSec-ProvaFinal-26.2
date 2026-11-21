@@ -1,0 +1,2794 @@
+{
+  "collected_utc": "2026-11-21T22:40:10.321859+00:00",
+  "agents": {
+    "data": {
+      "affected_items": [
+        {
+          "lastKeepAlive": "9999-12-31T23:59:59+00:00",
+          "id": "000",
+          "name": "ip-10-62-10-20",
+          "version": "Wazuh v4.14.10",
+          "status": "active"
+        },
+        {
+          "lastKeepAlive": "2026-11-21T22:40:02+00:00",
+          "id": "001",
+          "name": "cyberfinal262-5f48e9-vpn",
+          "version": "Wazuh v4.14.10",
+          "status": "active"
+        },
+        {
+          "lastKeepAlive": "2026-11-21T22:40:04+00:00",
+          "id": "002",
+          "name": "cyberfinal262-5f48e9-web",
+          "version": "Wazuh v4.14.10",
+          "status": "active"
+        }
+      ],
+      "total_affected_items": 3,
+      "total_failed_items": 0,
+      "failed_items": []
+    },
+    "message": "All selected agents information was returned",
+    "error": 0
+  },
+  "indices": [
+    {
+      "index": "wazuh-states-inventory-networks-ip-10-62-10-20",
+      "docs.count": "4",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-packages-ip-10-62-10-20",
+      "docs.count": "1345",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-vulnerabilities-ip-10-62-10-20",
+      "docs.count": "5340",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-users-ip-10-62-10-20",
+      "docs.count": "75",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-hardware-ip-10-62-10-20",
+      "docs.count": "2",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-protocols-ip-10-62-10-20",
+      "docs.count": "4",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-alerts-4.x-2026.11.21",
+      "docs.count": "1075",
+      "health": "green"
+    },
+    {
+      "index": ".kibana_1",
+      "docs.count": "1",
+      "health": "green"
+    },
+    {
+      "index": ".opendistro_security",
+      "docs.count": "10",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-groups-ip-10-62-10-20",
+      "docs.count": "129",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-monitoring-2026.47w",
+      "docs.count": "6",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-browser-extensions-ip-10-62-10-20",
+      "docs.count": "0",
+      "health": "green"
+    },
+    {
+      "index": ".opensearch-observability",
+      "docs.count": "0",
+      "health": "green"
+    },
+    {
+      "index": ".plugins-ml-config",
+      "docs.count": "1",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-system-ip-10-62-10-20",
+      "docs.count": "2",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-hotfixes-ip-10-62-10-20",
+      "docs.count": "0",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-interfaces-ip-10-62-10-20",
+      "docs.count": "2",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-services-ip-10-62-10-20",
+      "docs.count": "317",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-ports-ip-10-62-10-20",
+      "docs.count": "25",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-statistics-2026.47w",
+      "docs.count": "8",
+      "health": "green"
+    },
+    {
+      "index": "wazuh-states-inventory-processes-ip-10-62-10-20",
+      "docs.count": "265",
+      "health": "green"
+    }
+  ],
+  "controlled_alerts_total": {
+    "value": 35,
+    "relation": "eq"
+  },
+  "controlled_alerts": [
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 4,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:13 ip-10-62-10-10 sshd[7979]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64705 [preauth]",
+      "timestamp": "2026-11-21T22:35:14.824+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 28,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:13 ip-10-62-10-10 sshd[7979]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64705",
+      "timestamp": "2026-11-21T22:35:14.822+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 26,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:13.632253+00:00 ip-10-62-10-10 sshd[7979]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64705",
+      "timestamp": "2026-11-21T22:35:14.812+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 27,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:13.921394+00:00 ip-10-62-10-10 sshd[7979]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64705 [preauth]",
+      "timestamp": "2026-11-21T22:35:14.812+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 25,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:11 ip-10-62-10-10 sshd[7975]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64697 [preauth]",
+      "timestamp": "2026-11-21T22:35:12.824+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 24,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:11 ip-10-62-10-10 sshd[7975]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64697",
+      "timestamp": "2026-11-21T22:35:12.822+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 23,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:11.758948+00:00 ip-10-62-10-10 sshd[7975]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64697 [preauth]",
+      "timestamp": "2026-11-21T22:35:12.811+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 22,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:11.471449+00:00 ip-10-62-10-10 sshd[7975]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64697",
+      "timestamp": "2026-11-21T22:35:12.811+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 3,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:09 ip-10-62-10-10 sshd[7970]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64691 [preauth]",
+      "timestamp": "2026-11-21T22:35:10.822+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 21,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:09 ip-10-62-10-10 sshd[7970]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64691",
+      "timestamp": "2026-11-21T22:35:10.820+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 19,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:09.242431+00:00 ip-10-62-10-10 sshd[7970]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64691",
+      "timestamp": "2026-11-21T22:35:10.811+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 20,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:09.585752+00:00 ip-10-62-10-10 sshd[7970]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64691 [preauth]",
+      "timestamp": "2026-11-21T22:35:10.811+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 18,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:06 ip-10-62-10-10 sshd[7963]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64687 [preauth]",
+      "timestamp": "2026-11-21T22:35:06.825+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 17,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:06 ip-10-62-10-10 sshd[7963]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64687",
+      "timestamp": "2026-11-21T22:35:06.821+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 16,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:06.779607+00:00 ip-10-62-10-10 sshd[7963]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64687 [preauth]",
+      "timestamp": "2026-11-21T22:35:06.811+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 15,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:06.373947+00:00 ip-10-62-10-10 sshd[7963]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64687",
+      "timestamp": "2026-11-21T22:35:06.811+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 14,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:03 ip-10-62-10-10 sshd[7959]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64684",
+      "timestamp": "2026-11-21T22:35:04.854+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 2,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:03 ip-10-62-10-10 sshd[7959]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64684 [preauth]",
+      "timestamp": "2026-11-21T22:35:04.854+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 13,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:03.550764+00:00 ip-10-62-10-10 sshd[7959]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 64684 [preauth]",
+      "timestamp": "2026-11-21T22:35:04.811+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 12,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:03.203938+00:00 ip-10-62-10-10 sshd[7959]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 64684",
+      "timestamp": "2026-11-21T22:35:04.810+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 11,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:00 ip-10-62-10-10 sshd[7952]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 55592 [preauth]",
+      "timestamp": "2026-11-21T22:35:00.825+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 10,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:35:00 ip-10-62-10-10 sshd[7952]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 55592",
+      "timestamp": "2026-11-21T22:35:00.821+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 8,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:00.238895+00:00 ip-10-62-10-10 sshd[7952]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 55592",
+      "timestamp": "2026-11-21T22:35:00.810+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 9,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:35:00.756252+00:00 ip-10-62-10-10 sshd[7952]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 55592 [preauth]",
+      "timestamp": "2026-11-21T22:35:00.810+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 10,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "11.4",
+          "10.2.4",
+          "10.2.5"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: brute force trying to get access to the system. Non existent user.",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failures"
+        ],
+        "nist_800_53": [
+          "SI.4",
+          "AU.14",
+          "AC.7"
+        ],
+        "frequency": 8,
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 1,
+        "mitre": {
+          "technique": [
+            "Brute Force"
+          ],
+          "id": [
+            "T1110"
+          ],
+          "tactic": [
+            "Credential Access"
+          ]
+        },
+        "id": "5712"
+      },
+      "full_log": "Nov 21 22:34:58 ip-10-62-10-10 sshd[7947]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 50834 [preauth]",
+      "timestamp": "2026-11-21T22:34:58.822+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 7,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:34:58 ip-10-62-10-10 sshd[7947]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 50834",
+      "timestamp": "2026-11-21T22:34:58.820+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 5,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:34:58.002202+00:00 ip-10-62-10-10 sshd[7947]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 50834",
+      "timestamp": "2026-11-21T22:34:58.810+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 6,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:34:58.286009+00:00 ip-10-62-10-10 sshd[7947]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 50834 [preauth]",
+      "timestamp": "2026-11-21T22:34:58.810+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 4,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:34:56 ip-10-62-10-10 sshd[7943]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 50830 [preauth]",
+      "timestamp": "2026-11-21T22:34:56.824+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 3,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "Nov 21 22:34:55 ip-10-62-10-10 sshd[7943]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 50830",
+      "timestamp": "2026-11-21T22:34:56.820+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 1,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:34:55.838408+00:00 ip-10-62-10-10 sshd[7943]: Invalid user cyberfinal_invalid_demo from 10.62.0.10 port 50830",
+      "timestamp": "2026-11-21T22:34:56.809+0000"
+    },
+    {
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "data": {
+        "srcip": "10.62.0.10"
+      },
+      "rule": {
+        "mail": false,
+        "level": 5,
+        "hipaa": [
+          "164.312.b"
+        ],
+        "pci_dss": [
+          "10.2.4",
+          "10.2.5",
+          "10.6.1"
+        ],
+        "tsc": [
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "sshd: Attempt to login using a non-existent user",
+        "groups": [
+          "syslog",
+          "sshd",
+          "authentication_failed",
+          "invalid_login"
+        ],
+        "nist_800_53": [
+          "AU.14",
+          "AC.7",
+          "AU.6"
+        ],
+        "gdpr": [
+          "IV_35.7.d",
+          "IV_32.2"
+        ],
+        "firedtimes": 2,
+        "mitre": {
+          "technique": [
+            "Password Guessing",
+            "SSH"
+          ],
+          "id": [
+            "T1110.001",
+            "T1021.004"
+          ],
+          "tactic": [
+            "Credential Access",
+            "Lateral Movement"
+          ]
+        },
+        "id": "5710",
+        "gpg13": [
+          "7.1"
+        ]
+      },
+      "full_log": "2026-11-21T22:34:56.105988+00:00 ip-10-62-10-10 sshd[7943]: Connection reset by invalid user cyberfinal_invalid_demo 10.62.0.10 port 50830 [preauth]",
+      "timestamp": "2026-11-21T22:34:56.809+0000"
+    },
+    {
+      "syscheck": {
+        "uname_after": "root",
+        "mtime_after": "2026-11-21T22:34:42",
+        "size_after": "92",
+        "gid_after": "0",
+        "mode": "realtime",
+        "path": "/opt/cyberfinal/evidence-probe.txt",
+        "sha1_after": "8e807cdb4bca241ad6e023d837450fbc5f503b03",
+        "gname_after": "root",
+        "uid_after": "0",
+        "perm_after": "rw-r--r--",
+        "event": "deleted",
+        "md5_after": "7192926134b6fe7f105ee1b96a12e2f6",
+        "sha256_after": "12470094dbd8f686557b640f841c8194e197892af9eeaa382a49ab2a07f23409",
+        "inode_after": 302941
+      },
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "rule": {
+        "mail": false,
+        "level": 7,
+        "pci_dss": [
+          "11.5"
+        ],
+        "hipaa": [
+          "164.312.c.1",
+          "164.312.c.2"
+        ],
+        "tsc": [
+          "PI1.4",
+          "PI1.5",
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "File deleted.",
+        "groups": [
+          "ossec",
+          "syscheck",
+          "syscheck_entry_deleted",
+          "syscheck_file"
+        ],
+        "nist_800_53": [
+          "SI.7"
+        ],
+        "gdpr": [
+          "II_5.1.f"
+        ],
+        "firedtimes": 1,
+        "mitre": {
+          "technique": [
+            "File Deletion",
+            "Data Destruction"
+          ],
+          "id": [
+            "T1070.004",
+            "T1485"
+          ],
+          "tactic": [
+            "Defense Evasion",
+            "Impact"
+          ]
+        },
+        "id": "553",
+        "gpg13": [
+          "4.11"
+        ]
+      },
+      "full_log": "File '/opt/cyberfinal/evidence-probe.txt' deleted\nMode: realtime\n",
+      "timestamp": "2026-11-21T22:34:54.567+0000"
+    },
+    {
+      "syscheck": {
+        "size_before": "48",
+        "uname_after": "root",
+        "mtime_after": "2026-11-21T22:34:42",
+        "size_after": "92",
+        "gid_after": "0",
+        "md5_before": "e0070138937a077dfe67cd7182e89127",
+        "sha256_before": "d1e4f7d2554b336c6e7fb1209c294ca088d5f7ee3cf81a75bc6ee28d8f20db4c",
+        "mtime_before": "2026-11-21T22:34:30",
+        "mode": "realtime",
+        "path": "/opt/cyberfinal/evidence-probe.txt",
+        "sha1_after": "8e807cdb4bca241ad6e023d837450fbc5f503b03",
+        "changed_attributes": [
+          "size",
+          "mtime",
+          "md5",
+          "sha1",
+          "sha256"
+        ],
+        "gname_after": "root",
+        "uid_after": "0",
+        "perm_after": "rw-r--r--",
+        "event": "modified",
+        "md5_after": "7192926134b6fe7f105ee1b96a12e2f6",
+        "sha1_before": "3d8606a900c0395f82592dbef34883bf867ea05a",
+        "sha256_after": "12470094dbd8f686557b640f841c8194e197892af9eeaa382a49ab2a07f23409",
+        "inode_after": 302941
+      },
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "rule": {
+        "mail": false,
+        "level": 7,
+        "pci_dss": [
+          "11.5"
+        ],
+        "hipaa": [
+          "164.312.c.1",
+          "164.312.c.2"
+        ],
+        "tsc": [
+          "PI1.4",
+          "PI1.5",
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "Integrity checksum changed.",
+        "groups": [
+          "ossec",
+          "syscheck",
+          "syscheck_entry_modified",
+          "syscheck_file"
+        ],
+        "nist_800_53": [
+          "SI.7"
+        ],
+        "gdpr": [
+          "II_5.1.f"
+        ],
+        "firedtimes": 1,
+        "mitre": {
+          "technique": [
+            "Stored Data Manipulation"
+          ],
+          "id": [
+            "T1565.001"
+          ],
+          "tactic": [
+            "Impact"
+          ]
+        },
+        "id": "550",
+        "gpg13": [
+          "4.11"
+        ]
+      },
+      "full_log": "File '/opt/cyberfinal/evidence-probe.txt' modified\nMode: realtime\nChanged attributes: size,mtime,md5,sha1,sha256\nSize changed from '48' to '92'\nOld modification time was: '1795300470', now it is '1795300482'\nOld md5sum was: 'e0070138937a077dfe67cd7182e89127'\nNew md5sum is : '7192926134b6fe7f105ee1b96a12e2f6'\nOld sha1sum was: '3d8606a900c0395f82592dbef34883bf867ea05a'\nNew sha1sum is : '8e807cdb4bca241ad6e023d837450fbc5f503b03'\nOld sha256sum was: 'd1e4f7d2554b336c6e7fb1209c294ca088d5f7ee3cf81a75bc6ee28d8f20db4c'\nNew sha256sum is : '12470094dbd8f686557b640f841c8194e197892af9eeaa382a49ab2a07f23409'\n",
+      "timestamp": "2026-11-21T22:34:42.567+0000"
+    },
+    {
+      "syscheck": {
+        "uname_after": "root",
+        "mtime_after": "2026-11-21T22:34:30",
+        "size_after": "48",
+        "gid_after": "0",
+        "mode": "realtime",
+        "path": "/opt/cyberfinal/evidence-probe.txt",
+        "sha1_after": "3d8606a900c0395f82592dbef34883bf867ea05a",
+        "gname_after": "root",
+        "uid_after": "0",
+        "perm_after": "rw-r--r--",
+        "event": "added",
+        "md5_after": "e0070138937a077dfe67cd7182e89127",
+        "sha256_after": "d1e4f7d2554b336c6e7fb1209c294ca088d5f7ee3cf81a75bc6ee28d8f20db4c",
+        "inode_after": 302941
+      },
+      "agent": {
+        "ip": "10.62.10.10",
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "rule": {
+        "firedtimes": 1,
+        "mail": false,
+        "level": 5,
+        "pci_dss": [
+          "11.5"
+        ],
+        "hipaa": [
+          "164.312.c.1",
+          "164.312.c.2"
+        ],
+        "tsc": [
+          "PI1.4",
+          "PI1.5",
+          "CC6.1",
+          "CC6.8",
+          "CC7.2",
+          "CC7.3"
+        ],
+        "description": "File added to the system.",
+        "groups": [
+          "ossec",
+          "syscheck",
+          "syscheck_entry_added",
+          "syscheck_file"
+        ],
+        "id": "554",
+        "nist_800_53": [
+          "SI.7"
+        ],
+        "gpg13": [
+          "4.11"
+        ],
+        "gdpr": [
+          "II_5.1.f"
+        ]
+      },
+      "full_log": "File '/opt/cyberfinal/evidence-probe.txt' added\nMode: realtime\n",
+      "timestamp": "2026-11-21T22:34:30.564+0000"
+    }
+  ],
+  "vulnerability_inventory": [
+    {
+      "index": {
+        "index": "wazuh-states-vulnerabilities-ip-10-62-10-20",
+        "docs.count": "5340",
+        "health": "green"
+      },
+      "total": {
+        "value": 1808,
+        "relation": "eq"
+      },
+      "severity": {
+        "severity": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "High",
+              "doc_count": 1606
+            },
+            {
+              "key": "Critical",
+              "doc_count": 202
+            }
+          ]
+        },
+        "packages": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "linux-aws",
+              "doc_count": 1808
+            }
+          ]
+        },
+        "agents": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "001",
+              "doc_count": 904
+            },
+            {
+              "key": "002",
+              "doc_count": 904
+            }
+          ]
+        }
+      },
+      "examples": [
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98367, https://www.cve.org/CVERecord?id=CVE-2026-98367",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.647Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98367",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98367"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98364, https://www.cve.org/CVERecord?id=CVE-2026-98364",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.651Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98364",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98364"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98357, https://www.cve.org/CVERecord?id=CVE-2026-98357",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.661Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98357",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98357"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98349, https://www.cve.org/CVERecord?id=CVE-2026-98349",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.675Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98349",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98349"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98339, https://www.cve.org/CVERecord?id=CVE-2026-98339",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.710Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98339",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98339"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98332, https://www.cve.org/CVERecord?id=CVE-2026-98332",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.722Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98332",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98332"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98323, https://www.cve.org/CVERecord?id=CVE-2026-98323",
+            "severity": "Critical",
+            "detected_at": "2026-11-21T22:18:02.737Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98323",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98323"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98290, https://www.cve.org/CVERecord?id=CVE-2026-98290",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.817Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98290",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98290"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98283, https://www.cve.org/CVERecord?id=CVE-2026-98283",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.829Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98283",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98283"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98276, https://www.cve.org/CVERecord?id=CVE-2026-98276",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.835Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98276",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98276"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98261, https://www.cve.org/CVERecord?id=CVE-2026-98261",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.868Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98261",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98261"
+          }
+        },
+        {
+          "agent": {
+            "name": "cyberfinal262-5f48e9-vpn",
+            "id": "001",
+            "type": "Wazuh",
+            "version": "v4.14.10"
+          },
+          "package": {
+            "name": "linux-aws",
+            "version": "7.0.0-1018.19~24.04.1"
+          },
+          "vulnerability": {
+            "reference": "https://ubuntu.com/security/CVE-2026-98252, https://www.cve.org/CVERecord?id=CVE-2026-98252",
+            "severity": "High",
+            "detected_at": "2026-11-21T22:18:02.880Z",
+            "scanner": {
+              "reference": "https://cti.wazuh.com/vulnerabilities/cves/CVE-2026-98252",
+              "condition": "Package default status",
+              "vendor": "Wazuh",
+              "source": "Canonical Security Tracker"
+            },
+            "id": "CVE-2026-98252"
+          }
+        }
+      ]
+    }
+  ],
+  "readonly_check": {
+    "user": "vitor",
+    "request": "GET indexer security/internalusers",
+    "http_status": 403,
+    "expected": 403
+  }
+}

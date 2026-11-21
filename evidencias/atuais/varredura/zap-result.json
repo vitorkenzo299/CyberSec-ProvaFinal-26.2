@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-11-21T23:20:49.808545+00:00",
+  "finished_utc": "2026-11-21T23:23:24.817478+00:00",
+  "tool": "OWASP ZAP",
+  "version": "2.17.0",
+  "target": "http://127.0.0.1:18080",
+  "origin_private": "10.62.10.10:80",
+  "scope": "catalogo academico e API GET; conexao VPN e tunel SSH, sem WAF intermediario; nao abrange SO, nuvem, disponibilidade ou revisao manual completa",
+  "active_scan_status": 100,
+  "passive_records_pending": 0,
+  "counts_by_alert_instance": {
+    "High": 0,
+    "Medium": 0,
+    "Low": 0,
+    "Informational": 0
+  },
+  "unique_rule_counts": {
+    "High": 0,
+    "Medium": 0,
+    "Low": 0,
+    "Informational": 0
+  },
+  "alerts": []
+}

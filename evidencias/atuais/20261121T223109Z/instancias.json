@@ -1,0 +1,174 @@
+{
+  "collected_utc": "2026-11-21T22:31:09.658913+00:00",
+  "project": "cyberfinal262-5f48e9",
+  "data": [
+    {
+      "InstanceId": "i-02525d2134b6e5dba",
+      "InstanceType": "t3.micro",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateIpAddress": "10.62.0.10",
+      "PublicIpAddress": "44.220.160.78",
+      "SubnetId": "subnet-01e3515b1a3571987",
+      "VpcId": "vpc-013c42b2a693efb40",
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-016f3db3313048c91",
+          "GroupName": "cyberfinal262-5f48e9-vpn-7f3b53f7487e5e5a0afee03798"
+        }
+      ],
+      "MetadataOptions": {
+        "State": "applied",
+        "HttpTokens": "required",
+        "HttpPutResponseHopLimit": 1,
+        "HttpEndpoint": "enabled",
+        "HttpProtocolIpv6": "disabled",
+        "InstanceMetadataTags": "disabled"
+      },
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::AWS_ACCOUNT:instance-profile/cyberfinal262-5f48e9-vpn",
+        "Id": "AIPAZDZTBOFEH4DF5NE2C"
+      },
+      "Tags": [
+        {
+          "Key": "Purpose",
+          "Value": "AcademicFinal"
+        },
+        {
+          "Key": "Role",
+          "Value": "vpn"
+        },
+        {
+          "Key": "Project",
+          "Value": "cyberfinal262-5f48e9"
+        },
+        {
+          "Key": "ManagedBy",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Environment",
+          "Value": "lab"
+        },
+        {
+          "Key": "Name",
+          "Value": "cyberfinal262-5f48e9-vpn"
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-0827f8e781876e807",
+      "InstanceType": "t3.micro",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateIpAddress": "10.62.10.10",
+      "PublicIpAddress": null,
+      "SubnetId": "subnet-01966b3b41280a3ed",
+      "VpcId": "vpc-013c42b2a693efb40",
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-097e0647f554aeb9d",
+          "GroupName": "cyberfinal262-5f48e9-web-b0006268cc057838ecd4897492"
+        }
+      ],
+      "MetadataOptions": {
+        "State": "applied",
+        "HttpTokens": "required",
+        "HttpPutResponseHopLimit": 1,
+        "HttpEndpoint": "enabled",
+        "HttpProtocolIpv6": "disabled",
+        "InstanceMetadataTags": "disabled"
+      },
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::AWS_ACCOUNT:instance-profile/cyberfinal262-5f48e9-web",
+        "Id": "AIPAZDZTBOFEMSGDW7BWF"
+      },
+      "Tags": [
+        {
+          "Key": "Environment",
+          "Value": "lab"
+        },
+        {
+          "Key": "Name",
+          "Value": "cyberfinal262-5f48e9-web"
+        },
+        {
+          "Key": "ManagedBy",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Project",
+          "Value": "cyberfinal262-5f48e9"
+        },
+        {
+          "Key": "Role",
+          "Value": "web"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "AcademicFinal"
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-0db11855e5d491210",
+      "InstanceType": "t3.xlarge",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateIpAddress": "10.62.10.20",
+      "PublicIpAddress": null,
+      "SubnetId": "subnet-01966b3b41280a3ed",
+      "VpcId": "vpc-013c42b2a693efb40",
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-090540db21d7e5cb8",
+          "GroupName": "cyberfinal262-5f48e9-wazuh-4fcefe4869719793a1b25a7ef8"
+        }
+      ],
+      "MetadataOptions": {
+        "State": "applied",
+        "HttpTokens": "required",
+        "HttpPutResponseHopLimit": 1,
+        "HttpEndpoint": "enabled",
+        "HttpProtocolIpv6": "disabled",
+        "InstanceMetadataTags": "disabled"
+      },
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::AWS_ACCOUNT:instance-profile/cyberfinal262-5f48e9-wazuh",
+        "Id": "AIPAZDZTBOFEJGJUUZXV3"
+      },
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "cyberfinal262-5f48e9-wazuh"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "AcademicFinal"
+        },
+        {
+          "Key": "Role",
+          "Value": "wazuh"
+        },
+        {
+          "Key": "Environment",
+          "Value": "lab"
+        },
+        {
+          "Key": "ManagedBy",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Project",
+          "Value": "cyberfinal262-5f48e9"
+        }
+      ]
+    }
+  ]
+}

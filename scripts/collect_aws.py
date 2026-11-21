@@ -61,7 +61,17 @@ if {tag["Key"]: tag["Value"] for tag in db_tags}.get("Project") != project:
 save("banco.json", {key: db.get(key) for key in ("DBInstanceIdentifier", "DBInstanceStatus", "DBInstanceClass", "Engine", "EngineVersion", "PubliclyAccessible", "StorageEncrypted", "BackupRetentionPeriod", "LatestRestorableTime", "DeletionProtection", "MultiAZ", "VpcSecurityGroups", "DBSubnetGroup", "EnabledCloudwatchLogsExports")})
 groups = {group["GroupId"] for item in instances for group in item["SecurityGroups"]}
 groups.update(group["VpcSecurityGroupId"] for group in db["VpcSecurityGroups"])
-save("security-groups.json", ec2.describe_security_groups(GroupIds=sorted(groups))["SecurityGroups"])
+security_groups = ec2.describe_security_groups(GroupIds=sorted(groups))["SecurityGroups"]
+vpn_groups = {g["GroupId"] for item in instances if {t["Key"]: t["Value"] for t in item.get("Tags", [])}.get("Role") == "vpn" for g in item["SecurityGroups"]}
+for group in security_groups:
+    if group["GroupId"] in vpn_groups:
+        for rule in group.get("IpPermissions", []):
+            if rule.get("IpProtocol") == "udp" and rule.get("FromPort") == 1194:
+                for ip_range in rule.get("IpRanges", []):
+                    if ip_range.get("CidrIp", "").endswith("/32"):
+                        ip_range["CidrIp"] = "OPERATOR_IPV4/32"
+                        ip_range["Description"] = "IPv4 pessoal removido da copia publica; prefixo /32 preservado"
+save("security-groups.json", security_groups)
 save("sub-redes.json", ec2.describe_subnets(Filters=[{"Name": "vpc-id", "Values": [values["vpc_id"]]}])["Subnets"])
 save("rotas.json", ec2.describe_route_tables(Filters=[{"Name": "vpc-id", "Values": [values["vpc_id"]]}])["RouteTables"])
 waf = session.client("wafv2").get_web_acl(Name=project, Scope="CLOUDFRONT", Id=values["web_acl_id"])["WebACL"]

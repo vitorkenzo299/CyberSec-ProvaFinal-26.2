@@ -1,0 +1,38 @@
+{
+  "collected_utc": "2026-11-21T23:27:06.520606+00:00",
+  "first_scan": {
+    "started_utc": "2026-11-21T22:36:54.289533+00:00",
+    "finished_utc": "2026-11-21T22:39:54.456271+00:00",
+    "alerts": {
+      "High": 0,
+      "Medium": 0,
+      "Low": 0,
+      "Informational": 0
+    },
+    "post_501_responses_observed_in_api_triage": 37,
+    "network_issue": "houve timeouts na preparacao da sessao antes do ajuste MSS; a primeira sessao foi preservada"
+  },
+  "change": "metodos de escrita passam de resposta padrao 501 para JSON 405, Allow GET, HEAD e cabecalhos de seguranca; atualizacao restrita ao Web novo",
+  "final_scan": {
+    "started_utc": "2026-11-21T23:20:49.808545+00:00",
+    "finished_utc": "2026-11-21T23:23:24.817478+00:00",
+    "alerts": {
+      "High": 0,
+      "Medium": 0,
+      "Low": 0,
+      "Informational": 0
+    },
+    "response_status_counts": {
+      "HTTP/1.1 200 OK": 722,
+      "HTTP/1.0 0": 2,
+      "HTTP/1.1 404 Not Found": 154,
+      "HTTP/1.1 405 Method Not Allowed": 37,
+      "HTTP/1.1 400 Bad Request": 13,
+      "HTTP/1.1 414 Request-URI Too Long": 2
+    },
+    "active_rules_enabled": 53,
+    "passive_rules_enabled": 61,
+    "five_xx_responses": 0
+  },
+  "rule_set_difference": "regra passiva 20020 Server Side Technology Version with Known Vulnerabilities presente somente na sessao inicial (62 passivas); rodada final com 61 passivas. Ambas com 53 regras ativas. Nao interpretar a diferenca como correcao de CVEs."
+}

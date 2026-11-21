@@ -1,6 +1,6 @@
-# Arquitetura proposta
+# Arquitetura implantada
 
-Esta é uma configuração nova, ainda não implantada. O cenário proposto é uma loja acadêmica de catálogo, sem pagamentos ou dados pessoais. A separação dos componentes permite demonstrar os controles exigidos no enunciado com ações de teste limitadas ao laboratório.
+Configuração nova implantada em 21/11/2026, identificada como cyberfinal262-5f48e9. O cenário é uma loja acadêmica de catálogo, sem pagamentos ou dados pessoais. A separação dos componentes permite demonstrar os controles exigidos no enunciado com ações de teste limitadas ao laboratório.
 
 ```mermaid
 flowchart TB
@@ -35,7 +35,7 @@ flowchart TB
 
 ## Componentes e decisões
 
-| Componente | Configuração proposta | Finalidade |
+| Componente | Configuração implantada | Finalidade |
 | --- | --- | --- |
 | VPC | Rede nova e seis sub-redes em duas zonas | Isolar o laboratório |
 | Aplicação | EC2 t3.micro privada, Nginx e serviço sem usuário root | Manter a origem fora da Internet |
@@ -46,7 +46,7 @@ flowchart TB
 | Saída | Um NAT Gateway | Atualizações e comunicação com APIs |
 | Auditoria | CloudTrail, Flow Logs e CloudWatch | Rastrear ações, conexões e serviços |
 
-O Wazuh recomenda 4 vCPU, 8 GiB de RAM e 50 GB para até 25 agentes; a instância proposta tem 4 vCPU e 16 GiB. [Requisitos oficiais](https://documentation.wazuh.com/current/quickstart.html).
+O Wazuh recomenda 4 vCPU, 8 GiB de RAM e 50 GB para até 25 agentes; a instância implantada tem 4 vCPU e 16 GiB. [Requisitos oficiais](https://documentation.wazuh.com/current/quickstart.html).
 
 O VPC Origin permite alcançar a EC2 privada pelo CloudFront, com um ponto de entrada público separado da aplicação. A rede ainda precisa de Internet Gateway conforme os pré-requisitos do serviço. [Documentação AWS](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-vpc-origins.html).
 
@@ -73,8 +73,8 @@ As instâncias utilizam roles, sem chaves AWS gravadas na aplicação. O segredo
 - Duas zonas não tornam a aplicação altamente disponível: há um servidor Web, um Wazuh e um NAT; o RDS está em Single-AZ para uso acadêmico.
 - CloudFront usa HTTPS público. O trecho privado VPC Origin–Nginx usa HTTP; não se deve afirmar criptografia TLS ponta a ponta.
 - O certificado padrão `cloudfront.net` mantém a política mínima TLSv1 no serviço. Para exigir TLS 1.2, configurar domínio e certificado ACM em us-east-1 e testar os protocolos. [Comportamento documentado pela AWS](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistValuesGeneral.html).
-- O painel Wazuh precisa de usuário nominal e perfil adequado antes da demonstração. A conta de bootstrap do instalador não deve ser usada para apresentar a operação cotidiana.
+- O painel Wazuh usa vitor em leitura. A conta de bootstrap foi utilizada apenas para inicializar as visualizações.
 - As regras de cadastro de agentes estão limitadas aos servidores previstos. Autenticação adicional de enrollment deve ser revisada antes da entrega.
-- Alarmes estão previstos no CloudWatch; envio de notificação externa ainda não está configurado.
+- Alarmes e painel estão configurados no CloudWatch; envio de notificação externa não foi configurado nem testado.
 - Logs de erros e consultas lentas do RDS não equivalem a auditoria completa de todas as consultas.
-- Backups configurados precisam de um teste real de restauração para comprovar recuperação.
+- O snapshot foi restaurado em cópia privada, com três registros e SHA-256 igual. A cópia temporária foi removida após o teste.

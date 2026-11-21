@@ -1,0 +1,136 @@
+{
+  "recorded_utc": "2026-11-21T23:42:47.317285+00:00",
+  "timestamp_semantics": "file_modified_utc é a data do arquivo preservado, não uma afirmação de horário exato de cada elemento visual. Telas e registros técnicos possuem identificação distinta no índice.",
+  "files": [
+    {
+      "file": "telas/aws-cloudwatch.png",
+      "file_modified_utc": "2026-11-21T22:52:46.332510+00:00",
+      "sha256": "daff79fcb9e0888827401608ee320c1edc7bf0a6cba6f9f9eeee89a44ea9e047"
+    },
+    {
+      "file": "telas/aws-ec2-anterior-baseline.png",
+      "file_modified_utc": "2026-11-21T22:52:35.055083+00:00",
+      "sha256": "0ffc600d9b2b6273b826bc24aa26203fe25b88d8bbf1897cc46cb1f974ccc3ce"
+    },
+    {
+      "file": "telas/aws-ec2-novas.png",
+      "file_modified_utc": "2026-11-21T22:51:55.550962+00:00",
+      "sha256": "df37b30799d0bc93f0f6a258fcb90e2cd93f6630969ccaf5025019d7b00b6d98"
+    },
+    {
+      "file": "telas/aws-rds.png",
+      "file_modified_utc": "2026-11-21T22:52:12.266501+00:00",
+      "sha256": "1598407aefd870e32b0c758ba227a3757cc13601e416a73e5ec0e362d20d25c7"
+    },
+    {
+      "file": "telas/aws-sg-banco.png",
+      "file_modified_utc": "2026-11-21T22:57:51.898888+00:00",
+      "sha256": "975f796422038830d722a6a0cd58118f86189139073cbbb73dc1f6868bc19462"
+    },
+    {
+      "file": "telas/aws-sg-vpn.png",
+      "file_modified_utc": "2026-11-21T22:58:02.102332+00:00",
+      "sha256": "3338b7abcbb39b358e049eab4a8f7ca5fa71873070b2600f4e0aa7aa3c924a04"
+    },
+    {
+      "file": "telas/aws-sg-web.png",
+      "file_modified_utc": "2026-11-21T22:58:12.238003+00:00",
+      "sha256": "390880902e3762c62f496673cb09e4509a2a041836e02de54148f57cb4da8d46"
+    },
+    {
+      "file": "telas/aws-trilha.png",
+      "file_modified_utc": "2026-11-21T23:14:27.221769+00:00",
+      "sha256": "0d9d96dddd9e69228b73d5167429a7166fb13dcd465a269f82df7e86cfdae7b9"
+    },
+    {
+      "file": "telas/aws-vpc.png",
+      "file_modified_utc": "2026-11-21T22:52:28.859617+00:00",
+      "sha256": "66b4532a66ea668e93173c338f7aacb41dbee07ac963d03365ef098e9cda33f1"
+    },
+    {
+      "file": "telas/aws-waf-overview.png",
+      "file_modified_utc": "2026-11-21T22:51:40.597107+00:00",
+      "sha256": "32828ee60e6ec341ea01864a0315280bb89f956fbb445166a6e27932aec07e93"
+    },
+    {
+      "file": "telas/aws-waf-regras.png",
+      "file_modified_utc": "2026-11-21T23:03:21.659407+00:00",
+      "sha256": "b21b58c4d110a576aed2c19b060d943c040f681738e9fc29cf7b1a25d25e06ba"
+    },
+    {
+      "file": "telas/aws-waf-trafego.png",
+      "file_modified_utc": "2026-11-21T23:07:53.283228+00:00",
+      "sha256": "0da90681e10fee98f51e9487bbec3809ab3f09dbc8bdbbe1fda6c00472680ac7"
+    },
+    {
+      "file": "telas/backup-registro.png",
+      "file_modified_utc": "2026-11-21T23:27:08.532230+00:00",
+      "sha256": "de6b2d9099366a50788f18d0d65eb450c343e9cd23abd397187d421fac692744"
+    },
+    {
+      "file": "telas/site-aws.png",
+      "file_modified_utc": "2026-11-21T22:32:08.584477+00:00",
+      "sha256": "8ee50d59ba8aaa9bd99435a4bf4a80941669a0913e67e7930091aab64d72404b"
+    },
+    {
+      "file": "telas/vpn-registro.png",
+      "file_modified_utc": "2026-11-21T23:27:08.101286+00:00",
+      "sha256": "6ddc0a910929a2d235e1e72f56b2a483ba730ca4911798db422ce8fb5a13c02a"
+    },
+    {
+      "file": "telas/waf-registro.png",
+      "file_modified_utc": "2026-11-21T23:27:09.401269+00:00",
+      "sha256": "86f71e4045ea43051d595f894c86e442f679f827090f214d4f53e1575d228278"
+    },
+    {
+      "file": "telas/wazuh-fim-eventos.png",
+      "file_modified_utc": "2026-11-21T22:56:39.952153+00:00",
+      "sha256": "73e0905cc3da85cac955e64459c222b7cca155cebaa9e7ab9ae515fc2c41b678"
+    },
+    {
+      "file": "telas/wazuh-fim.png",
+      "file_modified_utc": "2026-11-21T22:51:45.800797+00:00",
+      "sha256": "a9cdb53c91559dbe5f2ae4466a576fe47d24ff05bc01064dcceab2d0c8af02d6"
+    },
+    {
+      "file": "telas/wazuh-overview.png",
+      "file_modified_utc": "2026-11-21T22:49:47.885744+00:00",
+      "sha256": "35c5f5255d9049409f2d44dce953223de7f27ccc62970dc5b3ed8659746412c3"
+    },
+    {
+      "file": "telas/wazuh-ssh-5712.png",
+      "file_modified_utc": "2026-11-21T23:22:12.487504+00:00",
+      "sha256": "4db8954fb08b88a8b760d9a10af636f447aec46abdf57e4e909016a9f54ac4b6"
+    },
+    {
+      "file": "telas/wazuh-threat-hunting.png",
+      "file_modified_utc": "2026-11-21T22:52:06.422824+00:00",
+      "sha256": "577512ed427031a4bdb525bab9eeff9a082e137d6497de4432ef2e26519a57f5"
+    },
+    {
+      "file": "telas/wazuh-vulnerabilidades.png",
+      "file_modified_utc": "2026-11-21T22:57:02.327040+00:00",
+      "sha256": "67b925356623e1975607d23c142bbe2c4e2cb9042d5b4056b6fdda192d311991"
+    },
+    {
+      "file": "telas/zap-registro-inicial.png",
+      "file_modified_utc": "2026-11-21T23:27:06.526599+00:00",
+      "sha256": "4045d50c7f19b77dba550962d0ec5666eead3f326289bdb92d978b7148afc09c"
+    },
+    {
+      "file": "telas/zap-registro.png",
+      "file_modified_utc": "2026-11-21T23:27:09.002224+00:00",
+      "sha256": "4b76c08d652fd29f7328ba9c07f70c5d2076375105e36a2ebe43142b7eda4ffe"
+    },
+    {
+      "file": "telas/zap-relatorio-original-inicial.png",
+      "file_modified_utc": "2026-11-21T23:27:06.525598+00:00",
+      "sha256": "d7707d2a17e4517d873e72965c24b30e2540803f948762da59445940ded5fbe9"
+    },
+    {
+      "file": "telas/zap-relatorio-original.png",
+      "file_modified_utc": "2026-11-21T23:27:11.080235+00:00",
+      "sha256": "fa610591b7dedef16b85c4221020b7413601d3d297ec7a7b011b9405740df07c"
+    }
+  ]
+}

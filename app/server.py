@@ -53,7 +53,7 @@ class Handler(BaseHTTPRequestHandler):
     server_version = "CyberFinal"
     sys_version = ""
 
-    def respond(self, status: int, body: bytes, content_type: str):
+    def respond(self, status: int, body: bytes, content_type: str, extra_headers=None):
         self.send_response(status)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(body)))
@@ -63,12 +63,14 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Referrer-Policy", "no-referrer")
         self.send_header("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
         self.send_header("Content-Security-Policy", "default-src 'self'; script-src 'self'; style-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
+        for name, value in (extra_headers or {}).items():
+            self.send_header(name, value)
         self.end_headers()
         if self.command != "HEAD":
             self.wfile.write(body)
 
-    def json(self, status: int, data):
-        self.respond(status, json.dumps(data, ensure_ascii=False).encode(), "application/json; charset=utf-8")
+    def json(self, status: int, data, extra_headers=None):
+        self.respond(status, json.dumps(data, ensure_ascii=False).encode(), "application/json; charset=utf-8", extra_headers)
 
     def do_GET(self):
         parsed = urlsplit(self.path)
@@ -94,6 +96,16 @@ class Handler(BaseHTTPRequestHandler):
         return self.json(HTTPStatus.NOT_FOUND, {"error": "Recurso não encontrado"})
 
     do_HEAD = do_GET
+
+    def method_not_allowed(self):
+        self.json(HTTPStatus.METHOD_NOT_ALLOWED, {"error": "Método não permitido"}, {"Allow": "GET, HEAD"})
+
+    do_POST = method_not_allowed
+    do_PUT = method_not_allowed
+    do_PATCH = method_not_allowed
+    do_DELETE = method_not_allowed
+    do_OPTIONS = method_not_allowed
+    do_TRACE = method_not_allowed
 
     def log_message(self, format, *args):
         # Não registrar query strings, tokens, cookies ou cabeçalhos do cliente.

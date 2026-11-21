@@ -1,24 +1,37 @@
-# Roteiro da apresentação executiva
+# Roteiro individual de apresentação
 
-Estrutura de 12 slides para preencher com os resultados reais da avaliação. Este roteiro não é a apresentação final. O cenário e os integrantes devem ser confirmados; a loja Aurora é uma premissa nova para demonstrar os controles.
+Apresentador: **Vitor**. A apresentação tem 12 slides editáveis e notas de fala. Duração sugerida de 9 a 11 minutos, incluindo uma demonstração curta. Treinar a navegação antes da avaliação e usar as capturas preservadas se a sessão acadêmica estiver expirada.
 
-| Slide | Título | Mensagem e conteúdo | Visual ou prova |
-| --- | --- | --- | --- |
-| 1 | Segurança da loja de demonstração | Explicar o negócio fictício, o escopo e o objetivo da avaliação | Identificação do grupo e uma captura da aplicação |
-| 2 | Ameaças ao negócio | Apresentar roubo de credenciais, injeção, malware, interceptação, ameaça interna e indisponibilidade | Mapa de ameaças ligado a vendas, dados e operação |
-| 3 | Pontos críticos do cenário | Relacionar os sete pontos confirmados do caso às condições iniciais | Lista curta com origem e premissas identificadas |
-| 4 | Matriz de riscos | Mostrar método P × I, prioridades e quantidade de riscos por nível | Mapa de calor e tabela dos riscos altos |
-| 5 | Tratamento dos riscos altos | Relacionar cada prioridade a controle, teste e situação | Quadro antes e depois, com pendências explícitas |
-| 6 | Ambiente AWS | Explicar os fluxos público, administrativo, de dados e de monitoramento | Diagrama da arquitetura efetivamente implantada e EV01 |
-| 7 | Acesso e segmentação | Demonstrar VPN, identidade nominal e banco privado | EV02, EV03 e EV04 com legendas |
-| 8 | Detecção e auditoria | Mostrar agentes ativos e um evento benigno correlacionado | EV05, EV06 e EV09 |
-| 9 | Proteção Web e vulnerabilidades | Mostrar bloqueio WAF, funcionamento legítimo e scan recente | EV07, EV08 e EV10; incluir escopo e data |
-| 10 | Recuperação e práticas operacionais | Explicar backup, restauração, segredos, atualizações e revisão de acesso | EV12 e comparação da cópia restaurada |
-| 11 | Impactos e risco residual | Traduzir resultados em confiança, continuidade e proteção de dados | Comparação baseada em evidências; não apresentar projeção como resultado |
-| 12 | Conclusões e próximos passos | Expor o que foi comprovado, o que continua alto, responsáveis e próximos marcos | Plano curto, limitações e links para a entrega |
+| Slide | Mensagem e fala sugerida | Tempo |
+| --- | --- | --- |
+| 1 | “Criei um ambiente novo para demonstrar segurança de uma loja acadêmica, com dados fictícios e preservando o projeto anterior.” | 40 s |
+| 2 | Explicar as sete condições hipotéticas que organizaram o diagnóstico. Elas não são uma auditoria do ambiente antigo. | 45 s |
+| 3 | Relacionar credenciais, SQLi, malware, indisponibilidade e recuperação aos impactos no negócio. | 40 s |
+| 4 | Explicar P×I e a matriz de 12 riscos. Dez altos iniciais, um alto residual. R05 permanece aberto. | 60 s |
+| 5 | Mostrar o vínculo entre controle e teste: VPN, WAF, FIM e restauração. | 50 s |
+| 6 | Percorrer o diagrama pelo caminho do cliente e pelo caminho administrativo. Distinguir duas zonas de alta disponibilidade. | 60 s |
+| 7 | Mostrar que SSH só funcionou com a VPN, com login vitor e root e senha desativados. | 45 s |
+| 8 | Localizar os três eventos do arquivo benigno e citar a regra 5712 do teste SSH. | 50 s |
+| 9 | Mostrar os três bloqueios WAF e a correspondência dos logs. O limite por IP não é prova contra DDoS. | 50 s |
+| 10 | Explicar a origem privada do ZAP, sem WAF, e a cópia restaurada com três linhas e hash igual. | 55 s |
+| 11 | Explicar a comparação qualitativa, sem porcentagens inventadas. Destacar os limites. | 50 s |
+| 12 | Recomendar fechar a triagem do kernel, TLS, MFA, escalonamento e redundância antes de dados reais. | 40 s |
 
-## Organização da fala
+## Demonstração curta
 
-Distribuir contexto e riscos, implementação, evidências e conclusão entre os integrantes confirmados. Ensaiar as transições e reservar tempo para abrir as provas. Como referência de preparação, planejar 10 a 12 minutos se o professor não informar outra duração; esse tempo é uma sugestão, não um requisito do enunciado.
+1. Abrir o catálogo público e realizar uma busca legítima.
+2. Com a VPN conectada, abrir o Wazuh como vitor e mostrar os eventos já gerados. Não exibir senhas, chave, token ou perfil VPN.
+3. Mostrar o WAF em modo de consulta e os registros dos testes. Não repetir a sequência de taxa durante a fala, pois o bloqueio temporário poderia afetar a demonstração do próprio operador.
+4. Encerrar com a comparação do snapshot e a limitação de R05.
 
-Cada integrante deve conseguir explicar o risco, o controle e o resultado do seu trecho. A apresentação não deve declarar o ambiente livre de vulnerabilidades nem usar o número de bloqueios de uma simulação como medida de ataques reais evitados.
+## Perguntas esperadas
+
+**Todos os riscos altos foram eliminados?** Não. R05 continua alto e justificado com evidências. Os demais receberam controles e limitações documentadas.
+
+**ZAP sem alertas significa ambiente sem vulnerabilidades?** Não. O resultado é do catálogo e das regras executadas. O inventário do sistema operacional é outra análise e permanece em triagem.
+
+**Por que WAF e consulta parametrizada?** O WAF inspeciona a borda. A consulta parametrizada protege o acesso a dados mesmo quando a aplicação é alcançada pelo caminho interno autorizado.
+
+**O ambiente tem alta disponibilidade?** Não. As sub-redes estão em duas zonas, mas o Web, o NAT e o RDS usam componentes únicos.
+
+**O trabalho anterior foi alterado?** Os quatro servidores e as regras dos nove SG anteriores foram comparados com o inventário inicial e permaneceram iguais nos campos avaliados.
