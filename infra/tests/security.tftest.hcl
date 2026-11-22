@@ -11,6 +11,9 @@ mock_provider "aws" {
   mock_data "aws_ec2_managed_prefix_list" {
     defaults = { id = "pl-0123456789abcdef0" }
   }
+  mock_data "aws_sns_topic" {
+    defaults = { arn = "arn:aws:sns:us-east-1:111122223333:ABCPlace-R4-Alertas" }
+  }
   mock_resource "aws_db_instance" {
     defaults = {
       address            = "database.test.rds.amazonaws.com"
@@ -31,6 +34,9 @@ mock_provider "aws" {
   }
   mock_resource "aws_wafv2_web_acl" {
     defaults = { arn = "arn:aws:wafv2:us-east-1:111122223333:global/webacl/local-test/11111111-1111-1111-1111-111111111111" }
+  }
+  mock_resource "aws_wafv2_ip_set" {
+    defaults = { arn = "arn:aws:wafv2:us-east-1:111122223333:global/ipset/local-test/22222222-2222-2222-2222-222222222222" }
   }
 }
 mock_provider "random" {}
