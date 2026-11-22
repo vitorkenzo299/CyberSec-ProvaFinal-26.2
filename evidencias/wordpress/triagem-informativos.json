@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-11-22T00:47:12.513Z",
+  "informational_instances": 54,
+  "unique_informational_rules": 2,
+  "review": [
+    {
+      "rule": "10104",
+      "instances": 52,
+      "interpretation": "User Agent Fuzzer informa diferenças por agente. Não é apresentado como exploração confirmada."
+    },
+    {
+      "rule": "10031",
+      "instances": 2,
+      "interpretation": "A busca é refletida no atributo value. Fonte usa esc_attr; duas entradas dirigidas foram verificadas no navegador, sem criação de elemento ativo ou execução do marcador."
+    }
+  ],
+  "direct_browser_tests": [
+    {
+      "input": "\"><img src=x onerror=window.__abcProbe=1>",
+      "http": 200,
+      "probeExecuted": false,
+      "eventAttributes": 0,
+      "scriptTags": 0,
+      "reflectedInput": "<input id=\"search\" name=\"s\" maxlength=\"120\" value=\"&quot;&gt;&lt;img src=x onerror=window.__abcProbe=1&gt;\">"
+    },
+    {
+      "input": "\"><svg onload=window.__abcProbe=1>",
+      "http": 200,
+      "probeExecuted": false,
+      "eventAttributes": 0,
+      "scriptTags": 0,
+      "reflectedInput": "<input id=\"search\" name=\"s\" maxlength=\"120\" value=\"&quot;&gt;&lt;svg onload=window.__abcProbe=1&gt;\">"
+    }
+  ],
+  "public_search": {
+    "query": "Caderno",
+    "products": [
+      "Caderno Horizonte"
+    ],
+    "passed": true
+  },
+  "boundary": "Revisão dirigida de dois payloads no catálogo sem WAF; não é teste exaustivo de XSS, plugins autenticados ou checkout."
+}

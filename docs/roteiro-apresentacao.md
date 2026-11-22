@@ -1,37 +1,40 @@
-# Roteiro individual de apresentação
+# Roteiro de apresentação do Grupo 09
 
-Apresentador: **Vitor**. A apresentação tem 12 slides editáveis e notas de fala. Duração sugerida de 9 a 11 minutos, incluindo uma demonstração curta. Treinar a navegação antes da avaliação e usar as capturas preservadas se a sessão acadêmica estiver expirada.
+Integrantes: **Vitor, Artur Cruz e Daniel Juho**. Divisão proposta em três blocos de quatro slides, cerca de 10 minutos ao todo. Os blocos são uma proposta de fala, sem atribuir retrospectivamente quem executou cada configuração. Ensaiar as transições e usar as capturas se a sessão AWS estiver expirada.
 
-| Slide | Mensagem e fala sugerida | Tempo |
-| --- | --- | --- |
-| 1 | “Criei um ambiente novo para demonstrar segurança de uma loja acadêmica, com dados fictícios e preservando o projeto anterior.” | 40 s |
-| 2 | Explicar as sete condições hipotéticas que organizaram o diagnóstico. Elas não são uma auditoria do ambiente antigo. | 45 s |
-| 3 | Relacionar credenciais, SQLi, malware, indisponibilidade e recuperação aos impactos no negócio. | 40 s |
-| 4 | Explicar P×I e a matriz de 12 riscos. Dez altos iniciais, um alto residual. R05 permanece aberto. | 60 s |
-| 5 | Mostrar o vínculo entre controle e teste: VPN, WAF, FIM e restauração. | 50 s |
-| 6 | Percorrer o diagrama pelo caminho do cliente e pelo caminho administrativo. Distinguir duas zonas de alta disponibilidade. | 60 s |
-| 7 | Mostrar que SSH só funcionou com a VPN, com login vitor e root e senha desativados. | 45 s |
-| 8 | Localizar os três eventos do arquivo benigno e citar a regra 5712 do teste SSH. | 50 s |
-| 9 | Mostrar os três bloqueios WAF e a correspondência dos logs. O limite por IP não é prova contra DDoS. | 50 s |
-| 10 | Explicar a origem privada do ZAP, sem WAF, e a cópia restaurada com três linhas e hash igual. | 55 s |
-| 11 | Explicar a comparação qualitativa, sem porcentagens inventadas. Destacar os limites. | 50 s |
-| 12 | Recomendar fechar a triagem do kernel, TLS, MFA, escalonamento e redundância antes de dados reais. | 40 s |
+| Slide | Apresentador | Mensagem e fala sugerida | Tempo |
+| --- | --- | --- | --- |
+| 1 | Artur Cruz | “Avaliamos a evolução da segurança da ABC Place, o mesmo projeto WordPress/WooCommerce dos roteiros.” Identificar o trio. | 35 s |
+| 2 | Artur Cruz | Ligar IAM, análise de riscos, Wazuh e monitoramento/VPN às etapas anteriores. Explicar a nova VPC como ambiente de evolução separado. | 55 s |
+| 3 | Artur Cruz | Traduzir insider, malware, informação comprometida, interceptação, DoS e injeção em impactos em venda, operação e confiança. | 45 s |
+| 4 | Artur Cruz | Mostrar os 14 IDs e a escala original. Nove extremos e cinco altos no cenário inicial; seis altos e oito moderados na revisão. Não são probabilidades medidas. | 60 s |
+| 5 | Vitor | Mostrar os controles mínimos e por que seis riscos continuam altos. Não dizer que a matriz ficou totalmente mitigada. | 55 s |
+| 6 | Vitor | Percorrer WordPress, Web privado, RDS e borda. O banco atual é RDS; no roteiro anterior era EC2. Não afirmar que houve migração integral. | 60 s |
+| 7 | Vitor | Explicar os testes antes/durante/depois da VPN e o login nominal. Acesso dos três integrantes ainda precisa de concessão própria. | 45 s |
+| 8 | Vitor | Apontar os três eventos FIM na árvore WordPress e a regra SSH 5712 anterior. FIM detecta alteração; não comprova prevenção de ransomware. | 50 s |
+| 9 | Daniel Juho | Relacionar bloqueios e logs WAF. Distinguir o rate limit Cloudflare do roteiro 4 e o AWS WAF da evolução. | 50 s |
+| 10 | Daniel Juho | Mostrar scan WordPress separado do scan Python e os 54 informativos. A restauração testada é do catálogo técnico, não do WordPress completo. | 60 s |
+| 11 | Daniel Juho | Explicar a distribuição qualitativa e seus limites. Não calcular porcentagem de risco eliminado. | 45 s |
+| 12 | Daniel Juho | Concluir com próximos passos e responsáveis; manter uso acadêmico até fechar as pendências. | 40 s |
 
-## Demonstração curta
+**Transição Artur → Vitor:** “Partimos desses 14 cenários. O Vitor vai mostrar como os controles aparecem na arquitetura e nos testes.”
 
-1. Abrir o catálogo público e realizar uma busca legítima.
-2. Com a VPN conectada, abrir o Wazuh como vitor e mostrar os eventos já gerados. Não exibir senhas, chave, token ou perfil VPN.
-3. Mostrar o WAF em modo de consulta e os registros dos testes. Não repetir a sequência de taxa durante a fala, pois o bloqueio temporário poderia afetar a demonstração do próprio operador.
-4. Encerrar com a comparação do snapshot e a limitação de R05.
+**Transição Vitor → Daniel:** “Os controles de acesso e detecção estão demonstrados. O Daniel vai ligar a proteção Web, a varredura e os limites às decisões seguintes.”
 
-## Perguntas esperadas
+## Demonstração curta e perguntas
 
-**Todos os riscos altos foram eliminados?** Não. R05 continua alto e justificado com evidências. Os demais receberam controles e limitações documentadas.
+Abrir o catálogo WordPress e buscar Caderno. Mostrar o FIM já registrado no Wazuh pela VPN e os logs WAF em consulta. Evitar repetir a sequência de taxa durante a fala. Não mostrar senhas, perfil VPN, chaves ou tokens.
 
-**ZAP sem alertas significa ambiente sem vulnerabilidades?** Não. O resultado é do catálogo e das regras executadas. O inventário do sistema operacional é outra análise e permanece em triagem.
+**É continuação dos roteiros?** Sim, do caso ABC Place, da tecnologia WordPress/WooCommerce, dos requisitos e dos 14 riscos. A implementação final está numa VPC de evolução separada; o domínio e os recursos anteriores foram preservados.
 
-**Por que WAF e consulta parametrizada?** O WAF inspeciona a borda. A consulta parametrizada protege o acesso a dados mesmo quando a aplicação é alcançada pelo caminho interno autorizado.
+**Por que mudou Apache/MariaDB/Cloudflare?** O novo ambiente demonstra uma alternativa de evolução em AWS com Nginx/PHP-FPM, RDS MySQL e AWS WAF. Não se afirma que a infraestrutura antiga foi convertida ou conectada à nova.
 
-**O ambiente tem alta disponibilidade?** Não. As sub-redes estão em duas zonas, mas o Web, o NAT e o RDS usam componentes únicos.
+**Todos os riscos foram eliminados?** Não. Há seis altos com controles parciais e justificativa. O kernel é R03 nesta revisão, e não deve ser encerrado pelo resultado do ZAP.
 
-**O trabalho anterior foi alterado?** Os quatro servidores e as regras dos nove SG anteriores foram comparados com o inventário inicial e permaneceram iguais nos campos avaliados.
+**O SNS já foi testado?** O roteiro 4 registrou entrega de ALARM/OK no fluxo antigo. Isso não prova notificação externa configurada nos alarmes novos.
+
+**O scan ficou sem alertas?** WordPress não teve High/Medium/Low no escopo público executado, mas gerou 54 registros informativos. Não houve teste autenticado do painel ou de checkout.
+
+**O backup recupera toda a loja?** O teste realizado recuperou três linhas do catálogo técnico. Arquivos, uploads, plugins e dados de pedidos do WordPress exigem uma validação completa adicional.
+
+Se alterarem as pontuações da matriz, atualizem também a tabela do slide 4, o gráfico do slide 11 e os totais do relatório. Os arquivos editáveis não se atualizam entre si automaticamente.

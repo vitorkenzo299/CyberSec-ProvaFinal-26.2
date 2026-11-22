@@ -1,0 +1,43 @@
+{
+  "team": [
+    "Vitor",
+    "Artur Cruz",
+    "Daniel Juho"
+  ],
+  "stages": [
+    {
+      "stage": "Roteiro 1",
+      "source": "roteiro1-grupo",
+      "contribution": "IAM, EC2 e publicação Apache/HTTPS documentados; base de identidades e servidor Web.",
+      "evidence_kind": "relatório anterior, com grande parte das provas em imagens"
+    },
+    {
+      "stage": "Roteiro 2",
+      "source": "roteiro2-apresentacao e matriz-anterior",
+      "contribution": "ABC Place, WordPress/WooCommerce, seis ameaças, sete fragilidades e 14 riscos; nove extremos e cinco altos.",
+      "evidence_kind": "cenário e análise anterior; residual era meta projetada"
+    },
+    {
+      "stage": "Roteiro 3",
+      "date": "2026-10-15",
+      "source": "roteiro3-grupo",
+      "contribution": "Wazuh, agentes Web/Database, FIM, SSH, Apache e integração de logs; relatório diferencia configuração e provas disponíveis.",
+      "evidence_kind": "histórico documentado, não reteste atual"
+    },
+    {
+      "stage": "Roteiro 4",
+      "date": "2026-11-16",
+      "source": "roteiro4-grupo",
+      "contribution": "CloudWatch, SNS com ALARM/OK recebidos, rate limit Cloudflare e VPN com SSH privado para Web/Database.",
+      "evidence_kind": "testes datados do relatório e registros preservados"
+    },
+    {
+      "stage": "Avaliação final",
+      "date": "2026-11-21",
+      "source": "evidencias/atuais e evidencias/wordpress",
+      "contribution": "VPC de evolução separada, WordPress/WooCommerce, RDS privado, AWS WAF, identidades nominais, provas recentes e matriz atualizada.",
+      "evidence_kind": "provas novas; nenhuma migração integral ou troca de DNS alegada"
+    }
+  ],
+  "architecture_boundary": "A nova VPC não é conectada ao legado por peering. O domínio abcplace.blog.br, o WordPress antigo, a VPN e o Wazuh dos roteiros permanecem preservados. Evolução dos requisitos, tecnologia da loja e matriz; não substituição em produção."
+}

@@ -1,26 +1,17 @@
-# Situação da entrega
+# Status da avaliação final ABC Place
 
-Atualização em 21 de novembro de 2026. Autor e apresentador: Vitor.
+Grupo 09: Vitor, Artur Cruz e Daniel Juho. Revisão em 21/11/2026 no horário de Brasília; registros após 21h aparecem como 22/11 em UTC.
 
-O ambiente novo foi criado e testado. Os arquivos finais estão em `entrega`, e as provas práticas em `evidencias/atuais`. O relatório possui 14 páginas e a apresentação tem 12 slides, com notas para fala individual. Word, PowerPoint, Excel e as evidências são editáveis ou consultáveis fora da nuvem.
+| Item | Situação |
+| --- | --- |
+| Continuidade | Roteiros 1–4 localizados e mapeados; fontes e baseline preservadas |
+| Matriz | 14 IDs originais; escala 4×4 e correspondência em três níveis; seis altos residuais justificados |
+| Aplicação | WordPress/WooCommerce e três produtos sintéticos na infraestrutura nova |
+| Banco | Schema próprio, privilégios DML limitados e TLS com testes negativos aprovados |
+| VPN/WAF/Wazuh | Provas anteriores da final preservadas; novos testes HTTP e FIM WordPress adicionados |
+| Scan WordPress | ZAP 2.17.0, 100%, 1.228 mensagens/16 URLs, zero High/Medium/Low e 54 informativos |
+| Recuperação | Restauração do catálogo técnico comprovada; recuperação integral WordPress permanece pendente |
+| Legado | Sem migração, troca de DNS ou alteração dos recursos anteriores |
+| Apresentação | 12 slides com autoria do trio e quatro slides por integrante |
 
-## Concluído
-
-- VPC nova com seis sub-redes, três EC2, RDS privado e CloudFront com VPC Origin e WAF.
-- VPN funcional, SSH nominal, root e senha desativados, firewalls e regras de rede restritas.
-- Função AWS observer e usuário Wazuh vitor somente de consulta, com negações verificadas.
-- Dois agentes Wazuh ativos, três eventos FIM e alerta 5712 de força bruta controlada.
-- WAF com bloqueios do probe, SQLi e taxa confirmados nos logs.
-- ZAP 2.17.0 concluído na origem privada sem alertas no escopo testado.
-- Snapshot RDS restaurado, dados comparados e cópia temporária removida.
-- Comparação de preservação das quatro instâncias e dos nove SG anteriores.
-
-## Pendências de segurança registradas
-
-1. R05 continua alto: triar as correlações High e Critical de linux-aws. Apt não ofereceu atualizações e uma amostra já indica correspondência imprecisa do metapacote. Essa amostra não fecha todo o inventário.
-2. Domínio e ACM para exigir TLS 1.2 na borda e TLS no caminho até a origem.
-3. Confirmação de MFA do SSO e teste de destinatário externo para alertas.
-4. Redundância de Web e NAT, RDS Multi-AZ e metas de RPO/RTO antes de produção.
-5. Acompanhamento do consumo institucional e encerramento somente dos recursos novos ao fim do uso autorizado.
-
-Essas limitações estão na matriz, no relatório e nos slides. Nenhum resultado foi fabricado para indicar ausência de riscos.
+R01, R03, R06, R07, R10 e R14 permanecem altos. Há controles mínimos aplicados e justificativa para os limites. A triagem do kernel é R03 conforme a matriz do Roteiro 2. Produção exige concluir as pendências, testes autenticados, TLS de origem, MFA, notificação externa, recuperação completa e capacidade.

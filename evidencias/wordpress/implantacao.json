@@ -1,0 +1,25 @@
+{
+  "initial_install": {
+    "started_utc": "2026-11-22T00:03:41.891124+00:00",
+    "instance": "i-0827f8e781876e807",
+    "project": "cyberfinal262-5f48e9",
+    "temporary_policy_expires_utc": "2026-11-22T00:28:41.670490+00:00",
+    "new_compute_created": false,
+    "old_resources_modified": false,
+    "command_id": "e92f57af-058d-4cd0-86e2-782428b9ef0e",
+    "status": "Failed",
+    "response_code": 1,
+    "temporary_policy_removed": true,
+    "finished_utc": "2026-11-22T00:04:54.587905+00:00"
+  },
+  "final_configuration": {
+    "status": "Success",
+    "command_id": "82e7a1d1-1bd1-4ddd-a5fa-4a6bec724ef1",
+    "execution_end_utc": "2026-11-22T00:09:07.528Z"
+  },
+  "corrections": [
+    "PHP-FPM configurado em ondemand com até dois workers",
+    "Arquivos públicos com leitura 644; wp-config.php preservado em 640 root:www-data"
+  ],
+  "boundary": "Não houve novas instâncias EC2/RDS, alteração do domínio legado ou migração de clientes e pedidos. Permissão temporária de instalação removida; usuário SQL de setup excluído."
+}

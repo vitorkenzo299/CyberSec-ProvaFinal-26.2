@@ -1,0 +1,63 @@
+{
+  "collected_utc": "2026-11-22T00:15:56.384186+00:00",
+  "query_user": "vitor",
+  "target": "/var/www/abcplace/wp-content/uploads/evidence-probe.txt",
+  "total": {
+    "value": 3,
+    "relation": "eq"
+  },
+  "events": [
+    {
+      "syscheck": {
+        "path": "/var/www/abcplace/wp-content/uploads/evidence-probe.txt",
+        "event": "added",
+        "sha256_after": "86d8fec2276295bab895c4bbe9d40a368d1740614b05b88f008184953c7aa662"
+      },
+      "agent": {
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "rule": {
+        "level": 5,
+        "description": "File added to the system.",
+        "id": "554"
+      },
+      "timestamp": "2026-11-22T00:14:27.718+0000"
+    },
+    {
+      "syscheck": {
+        "path": "/var/www/abcplace/wp-content/uploads/evidence-probe.txt",
+        "sha256_before": "86d8fec2276295bab895c4bbe9d40a368d1740614b05b88f008184953c7aa662",
+        "event": "modified",
+        "sha256_after": "10b8ef481dc35037969cc135787e147f521e38a750cf68f3b4a58fe407dac872"
+      },
+      "agent": {
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "rule": {
+        "level": 7,
+        "description": "Integrity checksum changed.",
+        "id": "550"
+      },
+      "timestamp": "2026-11-22T00:14:39.724+0000"
+    },
+    {
+      "syscheck": {
+        "path": "/var/www/abcplace/wp-content/uploads/evidence-probe.txt",
+        "event": "deleted",
+        "sha256_after": "10b8ef481dc35037969cc135787e147f521e38a750cf68f3b4a58fe407dac872"
+      },
+      "agent": {
+        "name": "cyberfinal262-5f48e9-web",
+        "id": "002"
+      },
+      "rule": {
+        "level": 7,
+        "description": "File deleted.",
+        "id": "553"
+      },
+      "timestamp": "2026-11-22T00:14:51.724+0000"
+    }
+  ]
+}

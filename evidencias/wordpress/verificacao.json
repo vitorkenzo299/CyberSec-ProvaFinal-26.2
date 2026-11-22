@@ -1,0 +1,59 @@
+{
+  "database_and_versions": {
+    "collected_utc": "2026-11-22T00:41:52+00:00",
+    "wordpress": "7.1.5",
+    "woocommerce": "11.3.1",
+    "php": "8.3.6",
+    "products": 3,
+    "db_tls": {
+      "Variable_name": "Ssl_cipher",
+      "Value": "TLS_AES_256_GCM_SHA384"
+    },
+    "db_user": "abcplace_web@%",
+    "db_grants": [
+      [
+        "GRANT USAGE ON *.* TO `abcplace_web`@`%`"
+      ],
+      [
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `abcplace_wp`.* TO `abcplace_web`@`%`"
+      ]
+    ],
+    "wrong_ca_connected": false,
+    "wrong_hostname_connected": false,
+    "file_edits_disabled": true,
+    "file_mods_disabled": true,
+    "users_can_register": "0",
+    "mode": "catalogo academico sem clientes, pedidos ou pagamentos",
+    "site_url": "https://d3hc8whbcpdvtd.cloudfront.net/"
+  },
+  "http_services_and_sources": {
+    "collected_utc": "2026-11-22T00:42:03.672855+00:00",
+    "local_http": {
+      "/": 200,
+      "/?s=Caderno": 200,
+      "/wp-login.php": 403,
+      "/wp-admin/": 403,
+      "/xmlrpc.php": 403,
+      "/wp-config.php": 404,
+      "/wp-json/": 403
+    },
+    "services": {
+      "nginx": "active",
+      "php8.3-fpm": "active",
+      "cyberfinal": "active",
+      "wazuh-agent": "active"
+    },
+    "source_sha256": {
+      "wp-content/db.php": "f3334c3204364cd37440fa8106ab0a6b65c76d82ee12a051c2d77de24468dddb",
+      "wp-content/mu-plugins/academic-catalog.php": "dfe63f80a425aa6e4d82ccf8ca0d253092cc17dfea117f06c475a3d28001c6c9",
+      "wp-content/themes/abcplace/index.php": "73e07649d386076496c40937429a42b707324ab7528dfcbf0057bb35a510bbf6",
+      "wp-content/themes/abcplace/style.css": "2b070ed27f12be8cfcd1b8d37a382b39c3510561f89b4a55b8d32af03217f21e"
+    },
+    "claim_boundary": "Sem senha, hash de senha, cookie ou token. Consulta local; bloqueios públicos devem ser confirmados na borda."
+  },
+  "official_checksums": {
+    "core": true,
+    "woocommerce": true
+  },
+  "database_scope": "abcplace_web possui DML somente em abcplace_wp. catalog_reader continua SELECT somente em cyberfinal.products. Não se afirma SELECT-only para o WordPress."
+}

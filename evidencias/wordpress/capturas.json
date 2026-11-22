@@ -1,0 +1,30 @@
+{
+  "timestamp_semantics": "Data do arquivo preservado; não equivale ao horário de cada elemento visual. Capturas reais do navegador, sem montar telas ou alterar números.",
+  "files": [
+    {
+      "file": "telas/busca-wordpress.png",
+      "file_modified_utc": "2026-11-22T00:21:48.351855+00:00",
+      "sha256": "bf1eef1371251d0fa5647eda0a974055366edbc36586da458f2f0b0acf50de74"
+    },
+    {
+      "file": "telas/site-wordpress.png",
+      "file_modified_utc": "2026-11-22T00:21:45.714608+00:00",
+      "sha256": "54b1d001b1e07ce27295a58853fa11adba13be6c74c84fcab75763c085282207"
+    },
+    {
+      "file": "telas/wazuh-fim-wordpress.png",
+      "file_modified_utc": "2026-11-22T00:33:39.668977+00:00",
+      "sha256": "f2cdf0e670295fb7adbdd540f596245b2fc0900f27a3eaa6bdcd74c64a3758b6"
+    },
+    {
+      "file": "telas/zap-wordpress-inicial.png",
+      "file_modified_utc": "2026-11-22T00:22:38.195390+00:00",
+      "sha256": "2b45798bf77b4278b5477a6ae781738c86dda2db16f7e2988efff91f4f28dbcb"
+    },
+    {
+      "file": "telas/zap-wordpress.png",
+      "file_modified_utc": "2026-11-22T00:47:14.047507+00:00",
+      "sha256": "b006a971f3656cb31393f9342cb6d3ab07d1132d54b221018b7fa05da436adf9"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-22T00:37:57.507588+00:00",
+  "http": {
+    "/": 200,
+    "/?s=Caderno": 200,
+    "/wp-content/themes/abcplace/": 404,
+    "/wp-content/themes/abcplace/index.php": 404,
+    "/wp-content/db.php": 404,
+    "/wp-content/mu-plugins/academic-catalog.php": 404
+  },
+  "initial_zap_message": 842,
+  "initial_theme_directory_http": 500,
+  "fix": "Guard ABSPATH nos três arquivos PHP próprios; núcleo oficial não modificado."
+}

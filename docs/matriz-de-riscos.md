@@ -1,168 +1,220 @@
-# Matriz de riscos consolidada
+# Matriz de riscos da ABC Place
 
-Avaliação individual de Vitor em 21/11/2026. O cenário inicial é uma hipótese acadêmica sem controles, não uma constatação sobre a conta anterior. Residual é julgamento apoiado nos testes.
+Grupo 09: **Vitor, Artur Cruz e Daniel Juho**. Continuidade dos 14 IDs da matriz do Roteiro 2.
 
-P e I: 1 baixo, 2 médio, 3 alto. Pontuação=P×I. 1–2 baixo, 3–4 médio, 6–9 alto. A escala não produz 5, 7 ou 8.
+A escala original foi preservada: P e I de 1 a 4; 1–2 baixo, 3–6 moderado, 7–9 alto, >9 extremo. No formato de três níveis da avaliação final, moderado corresponde a médio, e alto/extremo correspondem a alto. Os valores são julgamentos ordinais, sem frequência estatística atribuída.
 
-| ID | Ameaça | P/I inicial | Nível | P/I residual | Nível residual |
-| --- | --- | --- | --- | --- | --- |
-| R01 | Roubo ou abuso de credenciais | 3×3=9 | Alto | 1×3=3 | Médio |
-| R02 | Força bruta e acesso remoto indevido | 3×3=9 | Alto | 1×3=3 | Médio |
-| R03 | SQL injection | 2×3=6 | Alto | 1×3=3 | Médio |
-| R04 | Exposição do banco | 2×3=6 | Alto | 1×3=3 | Médio |
-| R05 | Exploração de falha conhecida | 3×3=9 | Alto | 2×3=6 | Alto |
-| R06 | Ataque sem detecção | 3×3=9 | Alto | 1×3=3 | Médio |
-| R07 | Malware e alteração de arquivos | 2×3=6 | Alto | 1×3=3 | Médio |
-| R08 | Interceptação de comunicação | 2×3=6 | Alto | 1×3=3 | Médio |
-| R09 | Ação interna indevida | 1×3=3 | Médio | 1×3=3 | Médio |
-| R10 | Abuso de recursos e indisponibilidade | 2×3=6 | Alto | 1×3=3 | Médio |
-| R11 | Perda de dados e falha na recuperação | 2×3=6 | Alto | 1×2=2 | Baixo |
-| R12 | Consumo inesperado de nuvem | 2×2=4 | Médio | 2×2=4 | Médio |
+O original contém nove extremos e cinco altos. A estimativa residual desta implantação contém seis altos e oito moderados. São cenários da ABC Place, não uma medição de falhas reais no ambiente antigo. Os residuais originais eram metas; foram reavaliados conforme as provas e limitações atuais.
 
-Há dez riscos altos iniciais e um alto residual. Não apresentar a comparação como porcentagem estatística de redução.
+| ID | Cenário | Inicial | Residual | Situação |
+| --- | --- | --- | --- | --- |
+| R01 | Identidades privilegiadas | 4×4=16 Extremo | 2×4=8 Alto | Parcial; alto justificado |
+| R02 | Configuração insegura | 4×3=12 Extremo | 2×3=6 Moderado | Implementado com limites |
+| R03 | Vulnerabilidades conhecidas | 4×4=16 Extremo | 2×4=8 Alto | Alto pendente de triagem |
+| R04 | Acesso remoto indevido | 3×4=12 Extremo | 1×4=4 Moderado | Validado no ambiente novo |
+| R05 | Tráfego Web malicioso | 4×3=12 Extremo | 2×3=6 Moderado | Implementado e testado em escopo |
+| R06 | Injeção na aplicação | 3×4=12 Extremo | 2×4=8 Alto | Parcial; alto justificado |
+| R07 | Malware e ransomware | 3×4=12 Extremo | 2×4=8 Alto | Parcial; alto justificado |
+| R08 | Ataque sem detecção | 4×3=12 Extremo | 2×3=6 Moderado | Validado com integração externa pendente |
+| R09 | Negação de serviço | 3×3=9 Alto | 2×3=6 Moderado | Parcial |
+| R10 | Exposição de dados | 3×4=12 Extremo | 2×4=8 Alto | Parcial; alto justificado |
+| R11 | Falha de recuperação | 2×4=8 Alto | 1×4=4 Moderado | Teste parcial e limites explícitos |
+| R12 | Movimento lateral ao banco | 2×4=8 Alto | 1×4=4 Moderado | Validado no ambiente novo |
+| R13 | Ameaça interna | 3×3=9 Alto | 2×3=6 Moderado | Parcial |
+| R14 | Interceptação de tráfego | 2×4=8 Alto | 2×4=8 Alto | Parcial; alto justificado |
 
-## Tratamentos e rastreabilidade
+## R01 Identidades privilegiadas
 
-### R01 Roubo ou abuso de credenciais
+**Condição do caso:** Uso compartilhado de root/administrator, sem responsabilização individual e MFA comprovada
 
-**Condição inicial:** Conta genérica e segredos sem proteção. **Impacto:** Alteração de infraestrutura e perda de dados.
+**Impacto no negócio:** Tomada completa dos servidores, alteração da loja, exclusão de dados e ocultação de rastros
 
-**Controle:** Identidades nominais, observer AWS, viewer Wazuh, roles EC2 e Secrets Manager.
+**Controle atual:** SSO nominal, observer AWS, roles EC2, SSH vitor e viewer Wazuh. WordPress usa usuário nominal vitor para manutenção.
 
-**Resultado:** Consulta Wazuh permitida e administração de usuários negada com HTTP 403. Banco limitado a SELECT.
+**Resultado e limite:** Wazuh negou administração de usuários (403); IAM de consulta sem ações de alteração. MFA e concessões individuais para todos os integrantes ainda não comprovadas.
 
-**Evidências:** EV02, EV03, EV11. **Situação:** Implementado com limitações.
+**Evidências:** EV02, EV03, EV15. **Situação:** Parcial; alto justificado.
 
-**Próxima ação:** Confirmar MFA no SSO e remover acesso administrativo após a implantação. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de uso com dados reais.
+**Próxima ação:** Confirmar MFA e conceder acessos próprios a cada operador sem compartilhar a sessão de Vitor. **Responsável proposto:** Artur Cruz. **Prazo proposto:** Antes de operação contínua.
 
-### R02 Força bruta e acesso remoto indevido
+## R02 Configuração insegura
 
-**Condição inicial:** Administração exposta à Internet. **Impacto:** Comprometimento dos servidores.
+**Condição do caso:** Configurações padrão e ausência de baseline de hardening documentada
 
-**Controle:** VPN UDP 1194 limitada ao IP do operador, SSH privado por chave, root e senha desativados.
+**Impacto no negócio:** Execução não autorizada, escalada de privilégio, movimento lateral e indisponibilidade
 
-**Resultado:** SSH privado indisponível antes do túnel e disponível durante, login vitor; porta pública 22 fechada.
+**Controle atual:** SSH por chave sem root ou senha; UFW, auditd, PHP sem edição de arquivos e árvore WordPress protegida.
 
-**Evidências:** EV03, EV04. **Situação:** Validado.
+**Resultado e limite:** Serviços e parâmetros SSH verificados. WordPress usa PHP-FPM; Nginx nega configuração, XML-RPC e administração pela Internet. Não é certificação CIS completa.
 
-**Próxima ação:** Revisar IP autorizado e revogar o certificado ao encerrar. **Responsável proposto:** Vitor. **Prazo proposto:** Ao final do laboratório.
+**Evidências:** EV03, EV15. **Situação:** Implementado com limites.
 
-### R03 SQL injection
+**Próxima ação:** Revisar baseline de Ubuntu, Nginx, PHP e WordPress após atualizações. **Responsável proposto:** Daniel Juho. **Prazo proposto:** Revisão mensal.
 
-**Condição inicial:** Consultas concatenadas e ausência de inspeção. **Impacto:** Leitura ou alteração indevida de dados.
+## R03 Vulnerabilidades conhecidas
 
-**Controle:** Consultas parametrizadas, usuário MySQL SELECT e AWS Managed SQLi no WAF.
+**Condição do caso:** Não há inventário, rotina de correção, varredura ou SLA de vulnerabilidades
 
-**Resultado:** Entrada SQLi recebeu 403 e log AWSManagedRulesSQLiRuleSet; ZAP direto na origem sem alertas.
+**Impacto no negócio:** Comprometimento remoto da loja, instalação de malware e acesso aos dados de clientes
 
-**Evidências:** EV07, EV08, EV10, EV11. **Situação:** Validado no escopo.
+**Controle atual:** Inventário Wazuh, atualização pelo repositório oficial e versões WordPress/WooCommerce registradas.
 
-**Próxima ação:** Reavaliar após qualquer mudança em entrada, escrita ou autenticação. **Responsável proposto:** Vitor. **Prazo proposto:** A cada mudança da aplicação.
+**Resultado e limite:** As correlações High/Critical do kernel continuam em triagem. Um exemplo Canonical sugere correlação imprecisa, sem autorizar descartar os demais. Scan Web é avaliação separada.
 
-### R04 Exposição do banco
+**Evidências:** EV05, EV13, EV16. **Situação:** Alto pendente de triagem.
 
-**Condição inicial:** Banco público ou regra de rede ampla. **Impacto:** Exposição de dados e interrupção da loja.
+**Próxima ação:** Tratar CVEs relevantes contra a fonte correta e executar testes autenticados dos plugins antes de produção. **Responsável proposto:** Daniel Juho. **Prazo proposto:** Antes de dados reais.
 
-**Controle:** RDS privado, sub-redes sem rota Internet, SG 3306 somente Web, armazenamento criptografado.
+## R04 Acesso remoto indevido
 
-**Resultado:** Leitura TLS a partir do Web. Teste TCP 3306: Web conecta e Wazuh não conecta. Validação conjunta do caminho e das políticas; banco sem endpoint público.
+**Condição do caso:** Acesso administrativo sem VPN ou canal privado comprovado
 
-**Evidências:** EV01, EV03, EV11. **Situação:** Validado por configuração e caminhos positivo e negativo.
+**Impacto no negócio:** Acesso externo ao servidor, alteração de configurações e implantação de backdoor
 
-**Próxima ação:** Revisar regras e repetir os testes após mudanças de rede. **Responsável proposto:** Vitor. **Prazo proposto:** Revisão mensal.
+**Controle atual:** VPN UDP 1194 por origem /32, SSH privado por chave e usuário nominal.
 
-### R05 Exploração de falha conhecida
+**Resultado e limite:** Web e Wazuh inacessíveis antes e após o túnel, acessíveis durante; porta pública 22 fechada. Evidência nova não altera o SSH público preexistente nos servidores antigos.
 
-**Condição inicial:** Ausência de inventário, correção e verificação recente. **Impacto:** Execução de código e indisponibilidade.
+**Evidências:** EV03, EV04. **Situação:** Validado no ambiente novo.
 
-**Controle:** Ubuntu atualizado, inventário Wazuh, repositórios oficiais e scan Web recente.
+**Próxima ação:** Manter certificados individuais e planejar restrição do SSH legado em mudança própria. **Responsável proposto:** Vitor. **Prazo proposto:** Ao mudar operadores ou origem.
 
-**Resultado:** ZAP 2.17.0 concluiu sem alertas. Wazuh reteve 1808 correlações High/Critical em linux-aws nos dois agentes. Apt não ofereceu atualizações.
+## R05 Tráfego Web malicioso
 
-**Evidências:** EV05, EV10, EV13. **Situação:** Pendente de triagem do inventário.
+**Condição do caso:** Política de firewall, WAF e detecção de conexões maliciosas não comprovada
 
-**Próxima ação:** Conferir CVEs contra linux-aws-7.0 e Canonical. Não aceitar o ambiente para produção até fechar os achados. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de uso com dados reais.
+**Impacto no negócio:** Bots, exploração automatizada, injeção e abuso de recursos chegam diretamente à loja
 
-### R06 Ataque sem detecção
+**Controle atual:** AWS WAF com Common, SQLi, KnownBadInputs e taxa; CloudFront com origem privada.
 
-**Condição inicial:** Sem logs centralizados e sem alertas. **Impacto:** Contenção tardia e perda de evidências.
+**Resultado e limite:** Probe e SQLi bloqueados por regras confirmadas nos logs. WordPress foi publicado atrás da mesma distribuição. A Cloudflare do roteiro 4 continua no domínio legado.
 
-**Controle:** Dois agentes Wazuh ativos, CloudWatch, CloudTrail e Flow Logs.
+**Evidências:** EV07, EV08, EV15. **Situação:** Implementado e testado em escopo.
 
-**Resultado:** Eventos FIM 554, 550 e 553 e força bruta 5712 localizados no índice. Trilha e logs coletados.
+**Próxima ação:** Revisar falsos positivos e exceções; manter painel administrativo fora do acesso público. **Responsável proposto:** Vitor. **Prazo proposto:** A cada alteração.
 
-**Evidências:** EV05, EV06, EV09. **Situação:** Validado sem notificação externa.
+## R06 Injeção na aplicação
 
-**Próxima ação:** Definir destinatário e testar escalonamento com a equipe. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de operação contínua.
+**Condição do caso:** Validação de entradas, testes de segurança e práticas de desenvolvimento seguro não comprovados
 
-### R07 Malware e alteração de arquivos
+**Impacto no negócio:** Leitura, alteração ou exclusão de clientes, pedidos e configurações da aplicação
 
-**Condição inicial:** Privilégios excessivos e integridade não monitorada. **Impacto:** Conteúdo fraudulento e interrupção.
+**Controle atual:** WAF SQLi, WordPress/WooCommerce oficiais, validação de entrada e banco limitado ao schema próprio.
 
-**Controle:** Serviço cyberapp sem root, systemd restritivo, auditd e FIM em /opt/cyberfinal.
+**Resultado e limite:** O teste de assinatura confirma bloqueio na borda. O catálogo Python foi avaliado antes; a varredura WordPress tem resultado separado e não comprova checkout, plugins autenticados ou ausência de toda injeção.
 
-**Resultado:** Arquivo benigno criado, alterado e removido; três tipos de alerta confirmados no Wazuh.
+**Evidências:** EV08, EV10, EV16. **Situação:** Parcial; alto justificado.
 
-**Evidências:** EV03, EV06. **Situação:** Validado para detecção de alteração.
+**Próxima ação:** Executar revisão de plugins e testes autenticados antes de habilitar clientes, pedidos e checkout. **Responsável proposto:** Artur Cruz. **Prazo proposto:** Antes de operação comercial.
 
-**Próxima ação:** Manter resposta a incidente e acrescentar proteção antimalware conforme necessidade. **Responsável proposto:** Vitor. **Prazo proposto:** Revisão mensal.
+## R07 Malware e ransomware
 
-### R08 Interceptação de comunicação
+**Condição do caso:** Hardening, correções, segmentação de acesso e recuperação ainda insuficientes ou não comprovados
 
-**Condição inicial:** Canal administrativo aberto e política TLS fraca. **Impacto:** Roubo de sessão e credencial.
+**Impacto no negócio:** Criptografia de sistemas e dados, interrupção de vendas e possível extorsão por vazamento
 
-**Controle:** VPN AES-256-GCM, HTTPS público e MySQL TLS com validação de certificado.
+**Controle atual:** FIM, auditd, restrição de escrita no WordPress, privilégios limitados e snapshot criptografado.
 
-**Resultado:** Canal VPN e TLS_AES_256_GCM_SHA384 no banco comprovados. HTTPS público validado pelo cliente.
+**Resultado e limite:** FIM detectou criação, modificação e exclusão de arquivo benigno. Isso não demonstra prevenção de ransomware ou cobertura EDR. Restauração do catálogo técnico foi testada.
 
-**Evidências:** EV04, EV07, EV11. **Situação:** Parcial com compensação de rede.
+**Evidências:** EV06, EV11, EV15. **Situação:** Parcial; alto justificado.
 
-**Próxima ação:** Adotar domínio e ACM para TLS mínimo 1.2 e TLS entre CloudFront e origem. O certificado padrão mantém política TLSv1. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de produção.
+**Próxima ação:** Definir EDR e testar resposta e restauração completa de banco, arquivos e uploads. **Responsável proposto:** Daniel Juho. **Prazo proposto:** Antes de dados reais.
 
-### R09 Ação interna indevida
+## R08 Ataque sem detecção
 
-**Condição inicial:** Permissões excessivas e baixa rastreabilidade. **Impacto:** Alteração ou exclusão sem responsabilização.
+**Condição do caso:** Logs não centralizados e ausência de alertas e rotina de análise
 
-**Controle:** Usuários nominais, role observer, sudo auditado e CloudTrail.
+**Impacto no negócio:** Maior permanência do invasor, perda de evidências e contenção tardia
 
-**Resultado:** Role sem ações de escrita, SSH identificado e registro de auditoria habilitado.
+**Controle atual:** Wazuh com dois agentes, CloudWatch, CloudTrail e Flow Logs. FIM da árvore WordPress incluído.
 
-**Evidências:** EV02, EV03, EV09. **Situação:** Implementado.
+**Resultado e limite:** FIM e SSH 5712 confirmados nesta avaliação. Roteiro 4 registrou SNS recebido; não se presume que aquele tópico esteja ligado aos alarmes novos.
 
-**Próxima ação:** Separar responsabilidade de implantação e operação e revisar concessões. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de operação contínua.
+**Evidências:** EV05, EV06, EV09, EV14, EV15. **Situação:** Validado com integração externa pendente.
 
-### R10 Abuso de recursos e indisponibilidade
+**Próxima ação:** Integrar os alarmes novos ao fluxo de notificação autorizado e repetir entrega e escalonamento. **Responsável proposto:** Daniel Juho. **Prazo proposto:** Antes de operação contínua.
 
-**Condição inicial:** Sem limite de requisições e componentes únicos. **Impacto:** Loja e administração indisponíveis.
+## R09 Negação de serviço
 
-**Controle:** WAF rate limit 100/300 s, origem privada e alarmes de infraestrutura.
+**Condição do caso:** Capacidade, rate limiting, proteção DDoS e procedimento de resposta não comprovados
 
-**Resultado:** Teste limitado bloqueado no pedido 128, com regra RateLimit no log. Não houve teste de capacidade ou DoS.
+**Impacto no negócio:** Loja e checkout indisponíveis durante picos de ataque
 
-**Evidências:** EV08, EV09. **Situação:** Validado para abuso por IP.
+**Controle atual:** CloudFront e WAF rate limit 100 por 300 s; métricas e alarmes de infraestrutura.
 
-**Próxima ação:** Planejar múltiplas instâncias, NAT redundante e RDS Multi-AZ; limite por IP não resolve ataque distribuído. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de produção.
+**Resultado e limite:** Teste limitado bloqueado no pedido 128. Roteiro 4 usou Cloudflare no /wp-admin com parâmetros próprios. Não houve teste de capacidade nem prova contra DDoS distribuído.
 
-### R11 Perda de dados e falha na recuperação
+**Evidências:** EV08, EV09, EV14. **Situação:** Parcial.
 
-**Condição inicial:** Backup sem restauração comprovada. **Impacto:** Interrupção prolongada e retrabalho.
+**Próxima ação:** Planejar redundância Web/NAT/RDS e testar capacidade com limite e autorização próprios. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de produção.
 
-**Controle:** Backups RDS 7 dias, snapshot criptografado e proteção contra exclusão.
+## R10 Exposição de dados
 
-**Resultado:** Cópia restaurada em banco separado; três linhas e hash SHA-256 iguais. Cópia temporária removida após o teste.
+**Condição do caso:** Menor privilégio, criptografia, trilhas de acesso e monitoramento do banco não comprovados
 
-**Evidências:** EV11. **Situação:** Validado para catálogo de teste.
+**Impacto no negócio:** Fraude, exposição de dados pessoais, comunicação à ANPD e titulares, sanções e dano reputacional
 
-**Próxima ação:** Estabelecer RPO/RTO e repetir com volume representativo. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de produção e trimestralmente.
+**Controle atual:** RDS privado e criptografado, TLS, schema WordPress separado e usuário de execução sem DDL.
 
-### R12 Consumo inesperado de nuvem
+**Resultado e limite:** Catálogo técnico usa SELECT; WordPress precisa de SELECT/INSERT/UPDATE/DELETE somente em abcplace_wp. Não há clientes nem dados pessoais nesta implantação.
 
-**Condição inicial:** Recursos esquecidos e consumo sem acompanhamento. **Impacto:** Uso acima do orçamento institucional.
+**Evidências:** EV03, EV11, EV15. **Situação:** Parcial; alto justificado.
 
-**Controle:** Conta institucional com pagador distinto, tags exclusivas, estimativa e inventário.
+**Próxima ação:** Validar trilhas, retenção, tratamento de dados e plano de incidente antes de importar clientes ou pedidos. **Responsável proposto:** Artur Cruz. **Prazo proposto:** Antes de dados pessoais.
 
-**Resultado:** Cobertura institucional verificada. Nenhum recurso anterior foi removido ou substituído. Não há limite rígido de gastos configurado.
+## R11 Falha de recuperação
 
-**Evidências:** EV01, EV12. **Situação:** Parcial.
+**Condição do caso:** Backups isolados, testes de restauração, RTO e RPO não comprovados
 
-**Próxima ação:** Acompanhar consumo institucional e encerrar somente recursos deste laboratório ao término autorizado. **Responsável proposto:** Vitor. **Prazo proposto:** Durante o laboratório e após a apresentação.
+**Impacto no negócio:** Perda permanente de dados ou interrupção prolongada da operação
+
+**Controle atual:** RDS com sete dias de backup, snapshot criptografado e teste de cópia separada.
+
+**Resultado e limite:** Três linhas do catálogo técnico foram restauradas com hash igual. O teste antecede o WordPress e não prova recuperação de uploads, plugins ou pedidos.
+
+**Evidências:** EV11, EV15. **Situação:** Teste parcial e limites explícitos.
+
+**Próxima ação:** Testar restauração completa WordPress e definir RPO/RTO representativos antes de produção. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de produção.
+
+## R12 Movimento lateral ao banco
+
+**Condição do caso:** O caso previa co-localização; o projeto separou as instâncias, mas as regras de rede e hardening precisam de validação contínua
+
+**Impacto no negócio:** Comprometimento da aplicação alcança diretamente dados críticos
+
+**Controle atual:** Web e RDS em sub-redes separadas; 3306 apenas do SG Web e sem endpoint público.
+
+**Resultado e limite:** Teste positivo Web→RDS e negativo Wazuh→RDS. Valida o caminho e as políticas em conjunto. Banco RDS gerenciado substitui EC2/MariaDB nesta evolução.
+
+**Evidências:** EV01, EV03, EV11. **Situação:** Validado no ambiente novo.
+
+**Próxima ação:** Revisar regras e repetir os testes após mudança de rede. **Responsável proposto:** Vitor. **Prazo proposto:** Revisão mensal.
+
+## R13 Ameaça interna
+
+**Condição do caso:** Contas compartilhadas, excesso de privilégio e baixa rastreabilidade
+
+**Impacto no negócio:** Exclusão de dados, fraude, alteração de pedidos ou cópia de informações sensíveis
+
+**Controle atual:** Acesso nominal, role de leitura, sudo auditado, trilhas e funções de serviço separadas.
+
+**Resultado e limite:** A execução técnica registrada usa Vitor; a divisão de fala é do trio. Nomes na capa não comprovam segregação de funções ou criação de acessos para os colegas.
+
+**Evidências:** EV02, EV03, EV09. **Situação:** Parcial.
+
+**Próxima ação:** Formalizar permissões e revisão de acessos para cada pessoa e responsabilidades de resposta. **Responsável proposto:** Artur Cruz. **Prazo proposto:** Antes de operação contínua.
+
+## R14 Interceptação de tráfego
+
+**Condição do caso:** HTTPS está em uso, mas VPN administrativa, política TLS e gestão de certificados não foram validadas
+
+**Impacto no negócio:** Roubo de sessão, credenciais ou dados trafegados
+
+**Controle atual:** VPN AES-256-GCM, HTTPS na borda e TLS no banco com CA e verificação do servidor.
+
+**Resultado e limite:** Persistem a política TLSv1 do domínio CloudFront padrão e HTTP privado entre CloudFront e Nginx. Não se declara TLS ponta a ponta.
+
+**Evidências:** EV04, EV07, EV11, EV15. **Situação:** Parcial; alto justificado.
+
+**Próxima ação:** Usar domínio e ACM para política mínima TLS 1.2 e habilitar TLS na origem privada. **Responsável proposto:** Vitor. **Prazo proposto:** Antes de produção.

@@ -1,0 +1,46 @@
+{
+  "collected_utc": "2026-11-22T00:45:47.801710+00:00",
+  "requests": [
+    {
+      "name": "homepage",
+      "started_utc": "2026-11-22T00:45:45.449873+00:00",
+      "path": "/",
+      "http": 200,
+      "cloudfront_request_id": "2pOya_oepCHv7nA2dMpuvKQ3ht38420towsqcIq6W2HQ7fZICU180A==",
+      "wordpress_page": true
+    },
+    {
+      "name": "legitimate_search",
+      "started_utc": "2026-11-22T00:45:46.133619+00:00",
+      "path": "/?s=Caderno",
+      "http": 200,
+      "cloudfront_request_id": "0lJiFvaTbkMZN8umAT4FnTbbjWiR0mYzNjTCqmNsjR0ieOsvXAVDdA==",
+      "wordpress_page": true
+    },
+    {
+      "name": "waf_probe",
+      "started_utc": "2026-11-22T00:45:46.605623+00:00",
+      "path": "/",
+      "http": 403,
+      "cloudfront_request_id": "7g7d8NiKEBZwnLu5lT_ZfDuzHoboHsSaa_MzU2sv4yC_hpvv4L17eg==",
+      "wordpress_page": false
+    },
+    {
+      "name": "sqli",
+      "started_utc": "2026-11-22T00:45:47.014635+00:00",
+      "path": "/?s=%27%20OR%201%3D1--",
+      "http": 403,
+      "cloudfront_request_id": "dHJ4llvhIRCbp4Rt6SAnWhQ_OyvjU3h3L6MhhwLjQjHqLs8xNIe48w==",
+      "wordpress_page": false
+    },
+    {
+      "name": "admin_path",
+      "started_utc": "2026-11-22T00:45:47.422620+00:00",
+      "path": "/wp-admin/",
+      "http": 403,
+      "cloudfront_request_id": "B0ymC1w707abTiyTdxbdNo4IlNWgAx2ABvyzEymZnqdCQXTiSA8DBA==",
+      "wordpress_page": false
+    }
+  ],
+  "attribution_boundary": "Probe e SQLi devem ser correlacionados aos logs WAF. /wp-admin também é bloqueado pelo Nginx, comprovado no teste direto da origem; 403 sozinho não identifica a camada."
+}

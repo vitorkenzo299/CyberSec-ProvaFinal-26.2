@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-11-22T00:48:52.857720+00:00",
+  "profile": "cyberfinal-vitor",
+  "after_disconnect_ssh": {
+    "10.62.10.10": false,
+    "10.62.10.20": false
+  },
+  "public_wordpress_http": 200,
+  "public_wordpress_identity_confirmed": true,
+  "boundary": "Somente o perfil e o encaminhamento locais desta avaliação foram encerrados. Infraestrutura AWS e recursos anteriores continuam preservados."
+}

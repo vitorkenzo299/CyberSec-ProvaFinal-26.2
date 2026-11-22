@@ -1,0 +1,44 @@
+{
+  "collected_utc": "2026-11-22T00:48:46.611917+00:00",
+  "records": [
+    {
+      "timestamp": 1795308346134,
+      "action": "BLOCK",
+      "terminatingRuleId": "ControlledEvidenceProbe",
+      "uri": "/",
+      "httpMethod": "GET",
+      "requestId": "7g7d8NiKEBZwnLu5lT_ZfDuzHoboHsSaa_MzU2sv4yC_hpvv4L17eg==",
+      "clientIp": "OPERATOR_IP_REDACTED"
+    },
+    {
+      "timestamp": 1795308346558,
+      "action": "BLOCK",
+      "terminatingRuleId": "AWSManagedRulesSQLiRuleSet",
+      "uri": "/",
+      "httpMethod": "GET",
+      "requestId": "dHJ4llvhIRCbp4Rt6SAnWhQ_OyvjU3h3L6MhhwLjQjHqLs8xNIe48w==",
+      "clientIp": "OPERATOR_IP_REDACTED"
+    }
+  ],
+  "correlations": [
+    {
+      "test": "waf_probe",
+      "response_http": 403,
+      "cloudfront_request_id": "7g7d8NiKEBZwnLu5lT_ZfDuzHoboHsSaa_MzU2sv4yC_hpvv4L17eg==",
+      "matched_waf_request_id": "7g7d8NiKEBZwnLu5lT_ZfDuzHoboHsSaa_MzU2sv4yC_hpvv4L17eg==",
+      "expected_rule": "ControlledEvidenceProbe",
+      "actual_rule": "ControlledEvidenceProbe",
+      "passed": true
+    },
+    {
+      "test": "sqli",
+      "response_http": 403,
+      "cloudfront_request_id": "dHJ4llvhIRCbp4Rt6SAnWhQ_OyvjU3h3L6MhhwLjQjHqLs8xNIe48w==",
+      "matched_waf_request_id": "dHJ4llvhIRCbp4Rt6SAnWhQ_OyvjU3h3L6MhhwLjQjHqLs8xNIe48w==",
+      "expected_rule": "AWSManagedRulesSQLiRuleSet",
+      "actual_rule": "AWSManagedRulesSQLiRuleSet",
+      "passed": true
+    }
+  ],
+  "boundary": "Correlação por identificador de requisição. Somente campos necessários; IP pessoal, cabeçalhos privados e query strings não são publicados."
+}

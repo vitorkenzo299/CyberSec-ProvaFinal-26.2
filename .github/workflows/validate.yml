@@ -18,6 +18,10 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Sintaxe dos instaladores
         run: for file in infra/scripts/*.sh; do bash -n "$file"; done
+      - name: Sintaxe das fontes WordPress
+        run: |
+          if ! command -v php >/dev/null; then sudo apt-get update && sudo apt-get install -y php-cli; fi
+          find wordpress -name '*.php' -print0 | xargs -0 -n 1 php -l
       - name: Preparar provedores sem backend
         run: terraform -chdir=infra init -backend=false -input=false
       - name: Formato e configuracao

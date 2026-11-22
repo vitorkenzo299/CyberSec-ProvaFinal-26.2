@@ -27,6 +27,19 @@ A detecção de vulnerabilidades Wazuh depende do inventário dos agentes e da c
 
 OWASP ZAP 2.17.0, pacote oficial com SHA-256 `94c8f767b1c2e94f0db66b3ae56514d5e3f5a728ee1b6c798e0c8fe2d61fbff0`. A sessão registrou 930 mensagens e 12 URLs, com scan ativo concluído e fila passiva vazia. [Versão oficial](https://github.com/zaproxy/zaproxy/releases/tag/v2.17.0).
 
-A amostra do inventário CVE-2026-98367 foi comparada à [fonte Canonical](https://ubuntu.com/security/CVE-2026-98367). A versão instalada é posterior à correção indicada para linux-aws-7.0, mas os demais achados não foram automaticamente considerados falsos positivos. R05 permanece alto.
+A amostra do inventário CVE-2026-98367 foi comparada à [fonte Canonical](https://ubuntu.com/security/CVE-2026-98367). A versão instalada é posterior à correção indicada para linux-aws-7.0, mas os demais achados não foram automaticamente considerados falsos positivos. R03 permanece alto.
 
 O relatório foi aberto e exportado pelo Word instalado. Os slides foram abertos no PowerPoint, além das verificações de estrutura, fontes, tabelas e dados do gráfico. A matriz foi calculada e verificada com alteração de entrada e teste de entrada ausente. Os arquivos finais não dependem de uma sessão AWS ativa para leitura.
+
+
+## Plataforma ABC Place na evolução final
+
+WordPress 7.1.5, WooCommerce 11.3.1, PHP 8.3.6 e WP-CLI 2.12.0 foram observados em 22/11 UTC (21/11 em Brasília). O PHAR do WP-CLI foi fixado por SHA-256 `ce34ddd838f7351d6759068d09793f26755463b4a4610a5a5c0a97b68220d85c`. Núcleo WordPress e plugin WooCommerce passaram no verificador oficial de checksums. Integridade de pacote não prova ausência de vulnerabilidades.
+
+- [Instalação WordPress com WP-CLI](https://developer.wordpress.org/cli/commands/core/install/)
+- [Verificação de downloads WP-CLI](https://make.wordpress.org/cli/handbook/guides/verifying-downloads/)
+- [Verificador de checksums](https://developer.wordpress.org/cli/commands/core/verify-checksums/)
+- [Interface wpdb para conexão e drop-in](https://developer.wordpress.org/reference/classes/wpdb/)
+- [Requisitos WooCommerce](https://woocommerce.com/document/update-php-wordpress/)
+
+O novo scan WordPress tem 1.228 mensagens, 16 URLs, 54 informativos e nenhum High/Medium/Low. Ele não substitui o scan anterior do catálogo Python nem o inventário do SO. Nomes, versões e hashes dos roteiros 1–4 estão em `evidencias/continuidade/fontes.json`. O original foi apenas lido; sua escala de quatro níveis foi preservada na matriz.

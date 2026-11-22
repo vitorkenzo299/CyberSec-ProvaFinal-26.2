@@ -1,0 +1,81 @@
+{
+  "checked_utc": "2026-11-22T00:06:29.646733+00:00",
+  "files": [
+    {
+      "key": "roteiro1-enunciado",
+      "name": "Roteiro 1 - IAM e acesso a nuvem - BCC.pdf",
+      "sha256": "dde1275399cce8d30b5eb030334fccdac88f0e92aebf94e98c159ab73a42110d",
+      "pages": 9,
+      "characters": 8736
+    },
+    {
+      "key": "roteiro1-grupo",
+      "name": "Roteiro1Cybersec.pdf",
+      "sha256": "d6d35155b90e35303d85deda7d0324c3f5ddab6300e2cac519c68eeba116b249",
+      "pages": 10,
+      "characters": 3198
+    },
+    {
+      "key": "roteiro2-apresentacao",
+      "name": "Apresentacao-Cybersec-Roteiro2.pdf",
+      "sha256": "fcb4bb8dadb86a5e7f49a780e40d1a73452540dfe62427f9c55ef7ea9d306e8e",
+      "pages": 9,
+      "characters": 6331
+    },
+    {
+      "key": "intermediaria",
+      "name": "Avaliacao_Intermediaria_Ciberseguranca.pdf",
+      "sha256": "5b0341bbbc8e1baf34026cd36cc3192eefc4d503bd95cfba94782934c7b84c61",
+      "pages": 4,
+      "characters": 8251
+    },
+    {
+      "key": "roteiro3-enunciado",
+      "name": "Roteiro 3 - plataforma Segurança-1.pdf",
+      "sha256": "cb22ba38255ae4506d53e09a6fa09c022f6c9f7e0216fb757b1960fda95faf80",
+      "pages": 2,
+      "characters": 1870
+    },
+    {
+      "key": "roteiro3-grupo",
+      "name": "Roteiro_3_Cyber_Artur_Daniel_Vitor.pdf",
+      "sha256": "09267c89723a60d80b7d319fa125bd033f45267e505087aec2615d13428fffe5",
+      "pages": 14,
+      "characters": 21455
+    },
+    {
+      "key": "roteiro3-revisado",
+      "name": "Roteiro_3_Plataforma_de_Seguranca_Wazuh_final.docx",
+      "sha256": "3edc745a4fde7ef07a3d0e6bba6a39d14ea0b2b1e5c6ea1b801b3299def3b822",
+      "pages": null,
+      "characters": 17503
+    },
+    {
+      "key": "roteiro4-enunciado",
+      "name": "Roteiro 4.pdf",
+      "sha256": "ba8a0a5f92ce6e51799280e748c23b419255edd794a7a1d6792f0e7a5c08a046",
+      "pages": 8,
+      "characters": 6510
+    },
+    {
+      "key": "roteiro4-grupo",
+      "name": "Relatorio_Roteiro_4_ABC_Place.pdf",
+      "sha256": "6d9089c638f80216f59bbf5e45fa48bf4eeffd1f937d88e2156572d1740d8592",
+      "pages": 16,
+      "characters": 24039
+    },
+    {
+      "key": "final-enunciado",
+      "name": "Avaliacao final.pdf",
+      "sha256": "b44a7aab00f1f9fd7a7255bc5205ff08d258d8a83f39648ba3c73cbca48ca4f6",
+      "pages": 7,
+      "characters": 9199
+    },
+    {
+      "key": "matriz-anterior",
+      "name": "Matriz-de-Ameacas-Riscos-ABC-Place.xlsx",
+      "sha256": "a2c6cbe257182793e0087830a45a61a52dcaa6e95ca300f14f18e66c843fb689"
+    }
+  ],
+  "boundary": "Arquivos originais lidos sem alteração. Hash identifica a cópia consultada; não se publicam anexos que possam conter detalhes de acesso."
+}

@@ -1,12 +1,17 @@
 {
-  "checked_utc": "2026-11-21T23:46:19.406127+00:00",
-  "author": "Vitor",
+  "checked_utc": "2026-11-22T00:54:21.861336+00:00",
+  "team": [
+    "Vitor",
+    "Artur Cruz",
+    "Daniel Juho"
+  ],
+  "case": "ABC Place — continuidade dos roteiros 1–4",
   "report": {
-    "pages": 14,
+    "pages": 17,
     "opened_with": "Microsoft Word",
     "pdf_export": "native Office",
-    "visual_review": "14 páginas revistas; recorte final de CloudWatch corrigido, mantendo rótulos.",
-    "renderer": "PDFium após exportação nativa. LibreOffice não disponível; não foi declarado aprovado."
+    "renderer": "PDFium",
+    "visual_review": "17 páginas revistas; recortes reais e tabelas conferidos. A renderização nativa foi usada porque LibreOffice não está instalado."
   },
   "presentation": {
     "slides": 12,
@@ -18,45 +23,68 @@
     "font": "Arial",
     "first_party_import_passed": true,
     "structural_package_findings": 0,
-    "warning_review": "O estimador de altura de tabela sinalizou o slide 4. A renderização nativa confirmou as 12 linhas dentro da tabela e sem colisão com o rodapé. A heurística não foi apresentada como prova de ausência de problemas visuais."
+    "visual_correction": "O título do nó CloudFront foi encurtado após a inspeção nativa para evitar quebra sobre o texto inferior. Estimativas automáticas de geometria não substituíram a revisão visual.",
+    "speakers": {
+      "Artur Cruz": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "Vitor": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "Daniel Juho": [
+        9,
+        10,
+        11,
+        12
+      ]
+    }
   },
   "workbook": {
-    "checked_utc": "2026-11-21T23:44:18.6891739Z",
+    "checked_utc": "2026-11-22T00:34:23.1260636Z",
     "application": "Microsoft Excel",
     "read_only": true,
-    "sheets": 3,
-    "initial_high": 10.0,
-    "residual_high": 1.0,
+    "sheets": 5,
+    "original_extreme": 9,
+    "original_high": 5,
+    "residual_high": 6,
+    "residual_moderate": 8,
     "input_recalculation": "passed",
     "missing_input": "passed",
+    "original_values_preserved": "passed",
     "source_saved": false
   },
-  "scope": "Validação de leitura, conteúdo e apresentação dos arquivos. Não substitui as limitações e pendências técnicas descritas no relatório.",
+  "boundary": "Validação dos arquivos e de sua leitura. Não substitui as pendências técnicas e o limite de implantação paralela descritos no relatório.",
   "artifacts": [
     {
       "file": "Apresentacao_Executiva.pdf",
-      "bytes": 333293,
-      "sha256": "9fa2c12a5f82f98491666db9b073b12a87801f479e416937de106df00ac241ba"
+      "bytes": 348181,
+      "sha256": "803ccb7608bcfaeca4c0c29dac897ca81569d2fe07b80bcb0fd2adacfe436b1d"
     },
     {
       "file": "Apresentacao_Executiva.pptx",
-      "bytes": 327363,
-      "sha256": "8f50f03ca9348f6301c861f48cc610d8ccdee0741d9fa280f39783f39e7b01dd"
+      "bytes": 395026,
+      "sha256": "1ec55fa0000895a771a179fb2a443edc7752d31576b89fa794aa8931d1310dea"
     },
     {
       "file": "Matriz_de_Riscos.xlsx",
-      "bytes": 15191,
-      "sha256": "b499d76be4b5d544713963d5ef38dd22cf744612be1ce9fac8a0e36fff1e6fb7"
+      "bytes": 23574,
+      "sha256": "ecae3523bd5b058197f78e5af1f9c2c38768e546dfd669a991ca55995251126a"
     },
     {
       "file": "Relatorio_Final_Ciberseguranca.docx",
-      "bytes": 1062079,
-      "sha256": "ea6dbc392d7b2fb6eb3d2b4bad2b8aafc2cbb39a3caae9f7bf4d25276013fd97"
+      "bytes": 889622,
+      "sha256": "8bd06af1f796925ed9ff93e3ce1dd868d35a3d96dd1845992a458df4a5387686"
     },
     {
       "file": "Relatorio_Final_Ciberseguranca.pdf",
-      "bytes": 953746,
-      "sha256": "67681dec8d70c979ecc09c3f46784bd6f8019bb1003ecfdd93b3ff827f34bb9e"
+      "bytes": 826165,
+      "sha256": "c490e34497e5a0edf4ba4c66b20eaf28cdb58f3a7df01820d50cc3f539428729"
     }
   ]
 }

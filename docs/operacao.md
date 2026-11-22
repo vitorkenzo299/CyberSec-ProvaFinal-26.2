@@ -4,7 +4,7 @@ Os comandos desta página são um roteiro para o ambiente novo na conta acadêmi
 
 ## Preparação
 
-1. A apresentação é individual, por Vitor. Aurora é o catálogo sintético escolhido para a demonstração.
+1. A apresentação é do Grupo 09: Vitor, Artur Cruz e Daniel Juho. A aplicação principal é a ABC Place em WordPress/WooCommerce, na continuidade dos roteiros 1 a 4.
 2. Configurar uma identidade AWS nominal autorizada para a conta escolhida, sem publicar credenciais.
 3. Gerar uma chave SSH nova e manter a chave privada em `.local` ou em outro local protegido. Usar apenas a chave pública no Terraform.
 4. Conferir o IPv4 público atual do operador e usar `/32` na VPN.
@@ -117,9 +117,20 @@ Os dados cloud-init são de primeiro uso. `ignore_changes = [user_data_base64]` 
 
 A função observer foi criada no pós-provisionamento, fora do estado Terraform. Seu nome, política e teste IAM estão em EV02. O usuário Wazuh também é uma configuração de pós-instalação. Incluir ambos no inventário de encerramento; não assumir que terraform destroy remove todas as configurações adicionais.
 
-O snapshot de evidência é `cyberfinal262-5f48e9-evidence-20261121`. A instância temporária `cyberfinal262-5f48e9-restore-20261121` já foi removida. A instância principal e o snapshot foram preservados. R05 não deve ser encerrado com base somente no ZAP: conferir `triagem-kernel.json` e o inventário Wazuh.
+O snapshot de evidência é `cyberfinal262-5f48e9-evidence-20261121`. A instância temporária `cyberfinal262-5f48e9-restore-20261121` já foi removida. A instância principal e o snapshot foram preservados. R03 não deve ser encerrado com base somente no ZAP: conferir `triagem-kernel.json` e o inventário Wazuh.
 
 
 ## Pós instalação reproduzível
 
 A função de consulta pode ser criada com `python scripts/configure_observer.py --outputs .local/deployment.json --account CONTA_ESCOLHIDA` usando a sessão nominal de implantação. O comando valida a conta e a tag de projeto e não exporta credenciais. O script `infra/scripts/create-wazuh-viewer.sh` configura o usuário de leitura somente em um host Wazuh deste projeto. Inicializar as visualizações uma vez com a conta de instalação e retornar ao usuário vitor. O script não imprime a senha e informa o arquivo privado no servidor.
+
+
+## Continuidade WordPress da ABC Place
+
+A aplicação principal agora é WordPress/WooCommerce no mesmo Web privado e no mesmo RDS existente, com schema `abcplace_wp`. A instalação pós-provisionamento não é feita automaticamente por `terraform apply`: suas fontes estão em `wordpress/` e `infra/scripts/install-wordpress.sh`. O script recusa sobrescrever a guarda privada de uma instalação já iniciada. Para atualizar uma instalação existente, revisar mudanças e executar uma manutenção explícita, preservando banco, fontes e backups.
+
+Para preparar somente as fontes públicas: `python scripts/pack_wordpress.py --output .local/install-wordpress-packed.sh`. A execução exige host Web validado e uma permissão de manutenção de curta duração, restrita ao segredo mestre desse RDS. A permissão não deve ser renovada para o uso diário. Na execução desta avaliação, ela foi removida após o setup e a conta SQL temporária foi excluída. O WordPress diário usa `abcplace_web`, sem DDL, apenas no schema próprio. Atualizações que exigem migração de tabelas precisam de manutenção controlada.
+
+Manutenção nominal: conectar a VPN, usar SSH como vitor e elevar explicitamente para WP-CLI. A interface pública `/wp-admin` e `/wp-login.php` foi bloqueada; não compartilhar a sessão nominal de Vitor com os colegas. Conceder acesso próprio aos integrantes quando necessário. A senha privada da conta WordPress nominal e o segredo do banco estão apenas no servidor, fora do Git. A configuração PHP fica em 640 root:www-data; arquivos públicos ficam em 644 e diretórios em 755, com escrita de uploads limitada.
+
+`scripts/verify_wordpress.sh` verifica versões, checksums oficiais, grants, TLS (incluindo CA e hostname incorretos) e respostas HTTP sem imprimir segredos. O tema serve catálogo acadêmico sem checkout, cadastro de clientes ou pagamentos. Atualizações automáticas e edição pela interface foram desabilitadas; manter rotina de atualização revisada. Restauração integral de WordPress e dados reais não foi demonstrada.

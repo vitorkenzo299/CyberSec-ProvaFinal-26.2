@@ -1,75 +1,82 @@
 {
-  "collected_utc": "2026-11-21T23:37:06.918625+00:00",
+  "collected_utc": "2026-11-22T00:34:28.548674+00:00",
   "scope": "testes locais e provedores simulados; nenhum recurso AWS criado",
   "all_passed": true,
   "results": [
     {
       "check": "application_tests",
       "exit_code": 0,
-      "seconds": 0.969,
+      "seconds": 0.75,
       "stdout": "",
-      "stderr": "test_catalog_and_search (test_app.CatalogHttpTests.test_catalog_and_search) ... ok\ntest_failure_does_not_expose_internal_details (test_app.CatalogHttpTests.test_failure_does_not_expose_internal_details) ... ok\ntest_injection_payload_is_plain_search_input (test_app.CatalogHttpTests.test_injection_payload_is_plain_search_input) ... ok\ntest_mysql_path_keeps_sql_and_user_input_separate (test_app.CatalogHttpTests.test_mysql_path_keeps_sql_and_user_input_separate) ... ok\ntest_path_traversal_does_not_serve_files (test_app.CatalogHttpTests.test_path_traversal_does_not_serve_files) ... ok\ntest_response_security_headers (test_app.CatalogHttpTests.test_response_security_headers) ... ok\ntest_write_methods_are_rejected_without_changing_catalog (test_app.CatalogHttpTests.test_write_methods_are_rejected_without_changing_catalog) ... ok\ntest_accepts_new_resources_in_the_verified_account (test_plan_review.PlanReviewTests.test_accepts_new_resources_in_the_verified_account) ... ok\ntest_rejects_modification_deletion_and_replacement (test_plan_review.PlanReviewTests.test_rejects_modification_deletion_and_replacement) ... ok\ntest_rejects_unknown_funding_or_another_account (test_plan_review.PlanReviewTests.test_rejects_unknown_funding_or_another_account) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.578s\n\nOK\n"
+      "stderr": "test_catalog_and_search (test_app.CatalogHttpTests.test_catalog_and_search) ... ok\ntest_failure_does_not_expose_internal_details (test_app.CatalogHttpTests.test_failure_does_not_expose_internal_details) ... ok\ntest_injection_payload_is_plain_search_input (test_app.CatalogHttpTests.test_injection_payload_is_plain_search_input) ... ok\ntest_mysql_path_keeps_sql_and_user_input_separate (test_app.CatalogHttpTests.test_mysql_path_keeps_sql_and_user_input_separate) ... ok\ntest_path_traversal_does_not_serve_files (test_app.CatalogHttpTests.test_path_traversal_does_not_serve_files) ... ok\ntest_response_security_headers (test_app.CatalogHttpTests.test_response_security_headers) ... ok\ntest_write_methods_are_rejected_without_changing_catalog (test_app.CatalogHttpTests.test_write_methods_are_rejected_without_changing_catalog) ... ok\ntest_accepts_new_resources_in_the_verified_account (test_plan_review.PlanReviewTests.test_accepts_new_resources_in_the_verified_account) ... ok\ntest_rejects_modification_deletion_and_replacement (test_plan_review.PlanReviewTests.test_rejects_modification_deletion_and_replacement) ... ok\ntest_rejects_unknown_funding_or_another_account (test_plan_review.PlanReviewTests.test_rejects_unknown_funding_or_another_account) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.546s\n\nOK\n"
     },
     {
       "check": "terraform_format",
       "exit_code": 0,
-      "seconds": 0.093,
+      "seconds": 0.407,
       "stdout": "",
       "stderr": ""
     },
     {
       "check": "terraform_validate",
       "exit_code": 0,
-      "seconds": 3.407,
+      "seconds": 3.39,
       "stdout": "Success! The configuration is valid.\n\n",
       "stderr": ""
     },
     {
       "check": "terraform_mock_test",
       "exit_code": 0,
-      "seconds": 9.984,
+      "seconds": 6.875,
       "stdout": "tests\\security.tftest.hcl... in progress\n  run \"block_unconfirmed_funding\"... pass\n  run \"secure_network_and_storage\"... pass\ntests\\security.tftest.hcl... tearing down\ntests\\security.tftest.hcl... pass\n\nSuccess! 2 passed, 0 failed.\n",
       "stderr": ""
     },
     {
       "check": "javascript_syntax",
       "exit_code": 0,
-      "seconds": 0.063,
+      "seconds": 0.078,
       "stdout": "",
       "stderr": ""
     },
     {
       "check": "shell_syntax_common",
       "exit_code": 0,
-      "seconds": 0.062,
+      "seconds": 0.079,
       "stdout": "",
       "stderr": ""
     },
     {
       "check": "shell_syntax_create-wazuh-viewer",
       "exit_code": 0,
-      "seconds": 0.063,
+      "seconds": 0.046,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "shell_syntax_install-wordpress",
+      "exit_code": 0,
+      "seconds": 0.172,
       "stdout": "",
       "stderr": ""
     },
     {
       "check": "shell_syntax_vpn",
       "exit_code": 0,
-      "seconds": 0.046,
+      "seconds": 0.063,
       "stdout": "",
       "stderr": ""
     },
     {
       "check": "shell_syntax_wazuh",
       "exit_code": 0,
-      "seconds": 0.063,
+      "seconds": 0.062,
       "stdout": "",
       "stderr": ""
     },
     {
       "check": "shell_syntax_web",
       "exit_code": 0,
-      "seconds": 0.047,
+      "seconds": 0.063,
       "stdout": "",
       "stderr": ""
     }

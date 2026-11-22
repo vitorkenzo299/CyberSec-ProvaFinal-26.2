@@ -39,3 +39,6 @@ Ao terminar as evidências, exportar a entrega e conferir o plano de remoção a
 Um orçamento ou alarme de custo avisa sobre consumo; não constitui teto automático de cobrança. Não consultar a API paga do Cost Explorer durante a verificação inicial de cobertura; preferir o console gratuito e consultas de estado de conta que não tenham tarifa por requisição.
 
 A função IAM observer e o snapshot de evidência foram criados no pós-provisionamento. Incluir esses recursos na revisão de encerramento, pois não são removidos automaticamente pelo estado Terraform atual. Nunca usar um comando de remoção amplo na conta.
+
+
+WordPress/WooCommerce foi adicionado ao Web e ao RDS já existentes da avaliação final, sem criar novas instâncias. O consumo dos recursos ativos continua variável. A evolução não modificou o domínio nem os recursos dos roteiros anteriores.

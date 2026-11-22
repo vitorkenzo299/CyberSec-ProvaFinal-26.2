@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-21T23:46:20.485377+00:00",
+  "generated_utc": "2026-11-22T00:54:21.967323+00:00",
   "files": [
     {
       "path": "evidencias/atuais/20261121T223109Z/alarmes.json",
@@ -99,12 +99,12 @@
     {
       "path": "evidencias/atuais/preservacao-anterior.json",
       "bytes": 2479,
-      "sha256": "f3e6c2dd9d0a865e9550ac0393d67c48296a6877e8af80469df77c3f941c4222"
+      "sha256": "3239aebb505137ada922b97eae0939acd14bdd64cc489a7ec2bb6ecf94339fe6"
     },
     {
       "path": "evidencias/atuais/qualidade-entrega.json",
-      "bytes": 2260,
-      "sha256": "f2e844fcc43411178c23509b1d3555b5066cb558da97a898d9b73db17002f9be"
+      "bytes": 2635,
+      "sha256": "17cc9f5503b1fe67c31912a4535c2b10e0fd5948498e5497081659feea1bf18c"
     },
     {
       "path": "evidencias/atuais/registros/backup-registro.html",
@@ -347,9 +347,34 @@
       "sha256": "46f2290848068475c1e87c0d689c9ff25ea618b379ee6aa225aa3e3ddba33fb0"
     },
     {
+      "path": "evidencias/continuidade/correspondencia-ids.json",
+      "bytes": 701,
+      "sha256": "139d44d41b7e37e17f7157385ce8ea35511d8bb964903310a16566657d4fc1dc"
+    },
+    {
+      "path": "evidencias/continuidade/fontes.json",
+      "bytes": 2666,
+      "sha256": "c4943c85d66121959a0cd57d69a3fb048cd742576868008fe55cd44cea795e52"
+    },
+    {
+      "path": "evidencias/continuidade/linha-do-tempo.json",
+      "bytes": 1970,
+      "sha256": "72c51002867c33e45d680ba3b044ef982e2ee7af8ef6713724345ce8a4766057"
+    },
+    {
+      "path": "evidencias/continuidade/matriz-original.json",
+      "bytes": 16473,
+      "sha256": "508a424a758f01f2f8b3e9f786c63080e8fab81d63bae4a2a752c4dfc3270885"
+    },
+    {
+      "path": "evidencias/continuidade/qualidade-versao-anterior.json",
+      "bytes": 2260,
+      "sha256": "f2e844fcc43411178c23509b1d3555b5066cb558da97a898d9b73db17002f9be"
+    },
+    {
       "path": "evidencias/INDICE.md",
-      "bytes": 4366,
-      "sha256": "9c070dba0ae0f240f789a0c906023cd05f9599f9b1151edc9abac6aa2f86c6cd"
+      "bytes": 7285,
+      "sha256": "4c360964526c68b270b4718026e9b08a0c53ac4f9ddf85258f58a86531227995"
     },
     {
       "path": "evidencias/locais/aplicacao-local-desktop.png",
@@ -368,8 +393,123 @@
     },
     {
       "path": "evidencias/locais/validacao-local.json",
-      "bytes": 3193,
-      "sha256": "bb8c1e35300954de0f75cf099824c480a96ac923cb7cc72a43b6322b81f1e7e5"
+      "bytes": 3338,
+      "sha256": "2050cc78a51fd291e6d5cf1243dc8b54caeaed5b09399978e4a1f8a9295af96a"
+    },
+    {
+      "path": "evidencias/wordpress/capturas.json",
+      "bytes": 1210,
+      "sha256": "a6e3c2afd9cd36a2078f2c56a78070a20ab2b44239c6870e13c621f570b6756f"
+    },
+    {
+      "path": "evidencias/wordpress/fim-eventos.json",
+      "bytes": 1787,
+      "sha256": "5ef7e564b0bcf1184bf1b1714ea26a74596ac89e3b1989755e45e36dffc2a94d"
+    },
+    {
+      "path": "evidencias/wordpress/http-publico.json",
+      "bytes": 1599,
+      "sha256": "d541de1bf37129ea186c5d5455191fd024a55e5b0d0f8ec39d80b08b7e0182d6"
+    },
+    {
+      "path": "evidencias/wordpress/implantacao.json",
+      "bytes": 1050,
+      "sha256": "62b6e3aa2de26c11d2a2d3db21f3019b8c24db71cc91898daef3630b4a06f80a"
+    },
+    {
+      "path": "evidencias/wordpress/permissao-temporaria.json",
+      "bytes": 325,
+      "sha256": "16d40f207ebd57c9260afdb9c5df380758b38867428d73a5c93798cd0e665cc8"
+    },
+    {
+      "path": "evidencias/wordpress/reteste-hardening.json",
+      "bytes": 450,
+      "sha256": "fa46940b9fcdd35dee64b950418ebe3e8aa0a5b27945dc1ffcf3a46349050a1e"
+    },
+    {
+      "path": "evidencias/wordpress/telas/busca-wordpress.png",
+      "bytes": 71443,
+      "sha256": "bf1eef1371251d0fa5647eda0a974055366edbc36586da458f2f0b0acf50de74"
+    },
+    {
+      "path": "evidencias/wordpress/telas/site-wordpress.png",
+      "bytes": 80246,
+      "sha256": "54b1d001b1e07ce27295a58853fa11adba13be6c74c84fcab75763c085282207"
+    },
+    {
+      "path": "evidencias/wordpress/telas/wazuh-fim-wordpress.png",
+      "bytes": 90496,
+      "sha256": "f2cdf0e670295fb7adbdd540f596245b2fc0900f27a3eaa6bdcd74c64a3758b6"
+    },
+    {
+      "path": "evidencias/wordpress/telas/zap-wordpress-inicial.png",
+      "bytes": 76873,
+      "sha256": "2b45798bf77b4278b5477a6ae781738c86dda2db16f7e2988efff91f4f28dbcb"
+    },
+    {
+      "path": "evidencias/wordpress/telas/zap-wordpress.png",
+      "bytes": 76956,
+      "sha256": "b006a971f3656cb31393f9342cb6d3ab07d1132d54b221018b7fa05da436adf9"
+    },
+    {
+      "path": "evidencias/wordpress/triagem-informativos.json",
+      "bytes": 1490,
+      "sha256": "f848eac299b0252ae743641a9b9a7b0b6c6663077600f72657d98dc7d531175f"
+    },
+    {
+      "path": "evidencias/wordpress/varredura/inicial/zap-coverage.json",
+      "bytes": 47791,
+      "sha256": "be82924d65f666ac578b1ebc701894b7d09e85defa3265cdd6220c9b1ecad628"
+    },
+    {
+      "path": "evidencias/wordpress/varredura/inicial/zap-http-summary.json",
+      "bytes": 160230,
+      "sha256": "e92cf58169d11afcb336089a6b2b491f763efe8bc250fbdd1414af840301328c"
+    },
+    {
+      "path": "evidencias/wordpress/varredura/inicial/zap-report.html",
+      "bytes": 29106,
+      "sha256": "1cf44b3a57c8113dd424036153256b5fa61451679768f38fc0d6495a1d250b87"
+    },
+    {
+      "path": "evidencias/wordpress/varredura/inicial/zap-result.json",
+      "bytes": 64920,
+      "sha256": "b188a00fe8230425bf6171aed9b75c0e251bf6ee524738d7d46da361e39bb0a3"
+    },
+    {
+      "path": "evidencias/wordpress/varredura/zap-coverage.json",
+      "bytes": 47791,
+      "sha256": "100e505fba4a73cfeeb2aa9573fb3ba677d3a4e03ef0f453c220a171f6a56a31"
+    },
+    {
+      "path": "evidencias/wordpress/varredura/zap-http-summary.json",
+      "bytes": 159942,
+      "sha256": "7bec8092e66822fd3a0ef45659805276b1aff6b8f7ab8ed95036597d2638c677"
+    },
+    {
+      "path": "evidencias/wordpress/varredura/zap-report.html",
+      "bytes": 29107,
+      "sha256": "a8490ecaaa506a9da6c7d0bd7a5fce39fc745f492007f3f41b6985688fd3ea24"
+    },
+    {
+      "path": "evidencias/wordpress/varredura/zap-result.json",
+      "bytes": 64920,
+      "sha256": "90d7ea2028a9a94d266082990dd51a51c1fd2e625c4aa87635a21d021d8f5804"
+    },
+    {
+      "path": "evidencias/wordpress/verificacao.json",
+      "bytes": 2100,
+      "sha256": "47f6fbd09199020529251b35aa656dee15c608c528c0430699d2a1fbb44c44ef"
+    },
+    {
+      "path": "evidencias/wordpress/vpn-apos-revisao.json",
+      "bytes": 411,
+      "sha256": "529ad0bd53851d10da7f7d5de65ffee0e08a8df149bf75803422548d5d70d29c"
+    },
+    {
+      "path": "evidencias/wordpress/waf-logs.json",
+      "bytes": 1591,
+      "sha256": "b0e94b39a009fd7ee059e7819a86c797f1fa7ff0140b4e606b515aba155c6f04"
     }
   ]
 }
