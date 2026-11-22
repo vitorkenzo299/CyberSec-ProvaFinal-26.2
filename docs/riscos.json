@@ -1,11 +1,11 @@
 {
-  "as_of": "21 de novembro de 2026",
+  "as_of": "22 de novembro de 2026",
   "team": [
     "Vitor",
     "Artur Cruz",
     "Daniel Juho"
   ],
-  "case": "ABC Place — continuidade dos roteiros 1 a 4",
+  "case": "ABC Place — integração dos roteiros 1 a 4",
   "method": "Escala original P×I de 1 a 4. 1–2 baixo, 3–6 moderado, 7–9 alto, acima de 9 extremo. Para os três níveis da avaliação final: moderado=médio; alto e extremo=alto. P/I 1=baixo, 2=médio, 3 e 4=alto, preservando o valor ordinal original. Não são probabilidades medidas.",
   "risks": [
     {
@@ -35,18 +35,18 @@
       "original_threat": "Uso indevido de conta privilegiada",
       "pr": 2,
       "ir": 4,
-      "control": "SSO nominal, observer AWS, roles EC2, SSH vitor e viewer Wazuh. WordPress usa usuário nominal vitor para manutenção.",
-      "test": "Wazuh negou administração de usuários (403); IAM de consulta sem ações de alteração. MFA e concessões individuais para todos os integrantes ainda não comprovadas.",
-      "evidence": "EV02, EV03, EV15",
+      "control": "Sessão nominal do AWS IAM Identity Center; dispositivo MFA de Vitor cadastrado; segundo fator Cloudflare por e-mail; SSH nominal e acesso do Wazuh por visualizador.",
+      "test": "O dispositivo MFA de Vitor foi observado no portal institucional. A sessão usada para alterações AWS era AWSReservedSSO_AdministratorAccess; existe função de observação separada, mas menor privilégio não foi comprovado para as mudanças. Não audita MFA de root, política global do Insper ou identidades dos demais.",
+      "evidence": "EV02, EV19, EV23",
       "status": "Parcial; alto justificado",
-      "action": "Confirmar MFA e conceder acessos próprios a cada operador sem compartilhar a sessão de Vitor.",
+      "action": "Adotar função temporária de implantação com permissões mínimas revisadas; confirmar a política MFA da organização e acessos próprios dos demais integrantes.",
       "owner": "Artur Cruz",
       "deadline": "Antes de operação contínua",
       "residual_score": 8,
       "residual_level": "Alto",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Alto",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 2,
@@ -86,7 +86,7 @@
       "residual_level": "Moderado",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Médio",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 3,
@@ -115,18 +115,18 @@
       "original_threat": "Exploração de vulnerabilidade conhecida",
       "pr": 2,
       "ir": 4,
-      "control": "Inventário Wazuh, atualização pelo repositório oficial e versões WordPress/WooCommerce registradas.",
-      "test": "As correlações High/Critical do kernel continuam em triagem. Um exemplo Canonical sugere correlação imprecisa, sem autorizar descartar os demais. Scan Web é avaliação separada.",
-      "evidence": "EV05, EV13, EV16",
-      "status": "Alto pendente de triagem",
-      "action": "Tratar CVEs relevantes contra a fonte correta e executar testes autenticados dos plugins antes de produção.",
+      "control": "Atualizações oficiais em dia no canal instalado; Wazuh e OpenSCAP com OVAL Canonical; carga automática de 23 módulos sem uso bloqueada e io_uring desativada.",
+      "test": "Os 1.019 CVEs distintos do snapshot Wazuh foram avaliados nos três hosts: 802 definições falsas e 217 verdadeiras, incluindo 37 High e 1 Critical por host na classificação Canonical. Não houve erro/unknown. As medidas compensatórias não são patches e o risco continua alto.",
+      "evidence": "EV05, EV13, EV21",
+      "status": "Tratamento parcial; alto justificado",
+      "action": "Acompanhar correções do fornecedor para o kernel instalado, aplicar atualizações revisadas e repetir o inventário e a avaliação. Manter R03 alto até concluir a remediação dos casos aplicáveis.",
       "owner": "Daniel Juho",
       "deadline": "Antes de dados reais",
       "residual_score": 8,
       "residual_level": "Alto",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Alto",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 4,
@@ -166,7 +166,7 @@
       "residual_level": "Moderado",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Médio",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 5,
@@ -195,18 +195,18 @@
       "original_threat": "Tráfego malicioso alcança a aplicação",
       "pr": 2,
       "ir": 3,
-      "control": "AWS WAF com Common, SQLi, KnownBadInputs e taxa; CloudFront com origem privada.",
-      "test": "Probe e SQLi bloqueados por regras confirmadas nos logs. WordPress foi publicado atrás da mesma distribuição. A Cloudflare do roteiro 4 continua no domínio legado.",
-      "evidence": "EV07, EV08, EV15",
-      "status": "Implementado e testado em escopo",
-      "action": "Revisar falsos positivos e exceções; manter painel administrativo fora do acesso público.",
+      "control": "Cloudflare e AWS WAF no mesmo caminho da loja final; cinco regras AWS, listas oficiais de origem, assinaturas SQLi e taxa por CF-Connecting-IP.",
+      "test": "Catálogo/busca 200, probe e SQLi 403 correlacionados aos logs. Acesso direto ao CloudFront com IP forjado foi negado. Cloudflare limitou /wp-admin com 429 e recuperou para o 403 administrativo esperado.",
+      "evidence": "EV07, EV08, EV17",
+      "status": "Implementado e retestado",
+      "action": "Revisar listas oficiais Cloudflare e falsos positivos após mudanças; manter administração pública bloqueada.",
       "owner": "Vitor",
       "deadline": "A cada alteração",
       "residual_score": 6,
       "residual_level": "Moderado",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Médio",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 6,
@@ -246,7 +246,7 @@
       "residual_level": "Alto",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Alto",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 7,
@@ -275,18 +275,18 @@
       "original_threat": "Ransomware e código malicioso",
       "pr": 2,
       "ir": 4,
-      "control": "FIM, auditd, restrição de escrita no WordPress, privilégios limitados e snapshot criptografado.",
-      "test": "FIM detectou criação, modificação e exclusão de arquivo benigno. Isso não demonstra prevenção de ransomware ou cobertura EDR. Restauração do catálogo técnico foi testada.",
-      "evidence": "EV06, EV11, EV15",
+      "control": "FIM, auditd, escrita restrita no WordPress, privilégios limitados, backups RDS e cópia WordPress AES-256-GCM em S3 privado/versionado.",
+      "test": "Restauração isolada conferiu 52 tabelas, 8.808 arquivos e catálogo/busca 200. A origem permaneceu íntegra e adulteração do arquivo criptografado foi rejeitada. Isso não comprova prevenção de ransomware ou uma cópia imutável independente.",
+      "evidence": "EV06, EV15, EV20",
       "status": "Parcial; alto justificado",
-      "action": "Definir EDR e testar resposta e restauração completa de banco, arquivos e uploads.",
+      "action": "Definir prevenção/resposta a ransomware e retenção independente. Repetir backup sob demanda antes da apresentação; operação comercial exige política contínua aprovada.",
       "owner": "Daniel Juho",
       "deadline": "Antes de dados reais",
       "residual_score": 8,
       "residual_level": "Alto",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Alto",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 8,
@@ -315,18 +315,18 @@
       "original_threat": "Ataque permanece sem detecção",
       "pr": 2,
       "ir": 3,
-      "control": "Wazuh com dois agentes, CloudWatch, CloudTrail e Flow Logs. FIM da árvore WordPress incluído.",
-      "test": "FIM e SSH 5712 confirmados nesta avaliação. Roteiro 4 registrou SNS recebido; não se presume que aquele tópico esteja ligado aos alarmes novos.",
-      "evidence": "EV05, EV06, EV09, EV14, EV15",
-      "status": "Validado com integração externa pendente",
-      "action": "Integrar os alarmes novos ao fluxo de notificação autorizado e repetir entrega e escalonamento.",
+      "control": "Wazuh com agentes Web/VPN; CloudWatch, CloudTrail e Flow Logs; oito alarmes ligados ao SNS confirmado do Roteiro 4.",
+      "test": "Download real acionou rede e recuperação, com duas publicações bem-sucedidas e recebimento ALARM/OK confirmado pelo usuário. O teste WAF gerou outro ciclo registrado; todos os oito alarmes voltaram a OK e permanecem habilitados.",
+      "evidence": "EV05, EV09, EV18",
+      "status": "Implementado e retestado",
+      "action": "Revisar destinatários e resposta operacional; avaliar escalonamento e exercícios de incidente antes de produção.",
       "owner": "Daniel Juho",
       "deadline": "Antes de operação contínua",
       "residual_score": 6,
       "residual_level": "Moderado",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Médio",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 9,
@@ -355,9 +355,9 @@
       "original_threat": "Negação de serviço distribuída",
       "pr": 2,
       "ir": 3,
-      "control": "CloudFront e WAF rate limit 100 por 300 s; métricas e alarmes de infraestrutura.",
-      "test": "Teste limitado bloqueado no pedido 128. Roteiro 4 usou Cloudflare no /wp-admin com parâmetros próprios. Não houve teste de capacidade nem prova contra DDoS distribuído.",
-      "evidence": "EV08, EV09, EV14",
+      "control": "Cloudflare 5 requisições/10 s em /wp-admin; AWS WAF 100/300 s por visitante, origem privada e oito alarmes de infraestrutura.",
+      "test": "Limitação Cloudflare e AWS WAF retestadas. A regra AWS usa IP encaminhado apenas de redes Cloudflare confiáveis. Testes limitados não medem capacidade ou resistência a DDoS distribuído.",
+      "evidence": "EV08, EV17, EV18",
       "status": "Parcial",
       "action": "Planejar redundância Web/NAT/RDS e testar capacidade com limite e autorização próprios.",
       "owner": "Vitor",
@@ -366,7 +366,7 @@
       "residual_level": "Moderado",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Médio",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 10,
@@ -406,7 +406,7 @@
       "residual_level": "Alto",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Alto",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 11,
@@ -435,18 +435,18 @@
       "original_threat": "Falha de restauração após incidente",
       "pr": 1,
       "ir": 4,
-      "control": "RDS com sete dias de backup, snapshot criptografado e teste de cópia separada.",
-      "test": "Três linhas do catálogo técnico foram restauradas com hash igual. O teste antecede o WordPress e não prova recuperação de uploads, plugins ou pedidos.",
-      "evidence": "EV11, EV15",
-      "status": "Teste parcial e limites explícitos",
-      "action": "Testar restauração completa WordPress e definir RPO/RTO representativos antes de produção.",
+      "control": "RDS privado/criptografado com sete dias de backup; WordPress completo criptografado e versionado no bucket privado já existente.",
+      "test": "Após configurar o domínio final, 52 tabelas e 8.808 arquivos coincidiram na cópia isolada. Catálogo e busca funcionaram; schema, usuário e listener temporários foram removidos. Tempo observado de 52,4 s não é um SLA de recuperação de desastre.",
+      "evidence": "EV11, EV20",
+      "status": "Recuperação acadêmica comprovada",
+      "action": "Manter cópia sob demanda e chave de recuperação separada. Produção requer RPO/RTO aprovados, recorrência e testes de desastre completos.",
       "owner": "Vitor",
       "deadline": "Antes de produção",
       "residual_score": 4,
       "residual_level": "Moderado",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Médio",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 12,
@@ -486,7 +486,7 @@
       "residual_level": "Moderado",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Médio",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 13,
@@ -526,7 +526,7 @@
       "residual_level": "Moderado",
       "delivery_initial_level": "Alto",
       "delivery_residual_level": "Médio",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     },
     {
       "id_original": 14,
@@ -553,20 +553,20 @@
       "source": "WordPress HTTPS/Hardening; NIST CSF 2.0",
       "id": "R14",
       "original_threat": "Eavesdropping e ataque man-in-the-middle",
-      "pr": 2,
+      "pr": 1,
       "ir": 4,
-      "control": "VPN AES-256-GCM, HTTPS na borda e TLS no banco com CA e verificação do servidor.",
-      "test": "Persistem a política TLSv1 do domínio CloudFront padrão e HTTP privado entre CloudFront e Nginx. Não se declara TLS ponta a ponta.",
-      "evidence": "EV04, EV07, EV11, EV15",
-      "status": "Parcial; alto justificado",
-      "action": "Usar domínio e ACM para política mínima TLS 1.2 e habilitar TLS na origem privada.",
+      "control": "Cloudflare TLS mínimo 1.2; Full strict para final.abcplace.blog.br; CloudFront TLSv1.2_2021; origem privada HTTPS verificada; TLS no banco e VPN.",
+      "test": "TLS 1.0/1.1 recusados e 1.2/1.3 aceitos na borda. Origem usa certificado público Let’s Encrypt e renovação automática testada em dry-run, sem trocar o certificado de produção. O painel Wazuh continua com PKI privada da instalação dentro da VPN.",
+      "evidence": "EV04, EV11, EV17",
+      "status": "Implementado e retestado",
+      "action": "Monitorar validade e renovação dos certificados; distribuir a CA privada Wazuh por canal confiável aos operadores, mantendo validação da identidade do servidor.",
       "owner": "Vitor",
       "deadline": "Antes de produção",
-      "residual_score": 8,
-      "residual_level": "Alto",
+      "residual_score": 4,
+      "residual_level": "Moderado",
       "delivery_initial_level": "Alto",
-      "delivery_residual_level": "Alto",
-      "assessment_boundary": "Residual estimado para a implantação acadêmica nova. Não certifica redução do risco no domínio legado nem aprova produção."
+      "delivery_residual_level": "Médio",
+      "assessment_boundary": "Estimativa para o ambiente acadêmico integrado da final. Não certifica o legado nem aprova operação comercial."
     }
   ]
 }

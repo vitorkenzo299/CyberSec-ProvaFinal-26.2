@@ -1,0 +1,1132 @@
+{
+  "started_utc": "2026-11-22T03:59:04.741577+00:00",
+  "requests": [
+    {
+      "number": 1,
+      "utc": "2026-11-22T03:59:05.669082+00:00",
+      "http": 200,
+      "cloudfront_request_id": "udeVKgc4QRh5gOE5ZA6bkP62HXoLfjQbkd8ixzK9cFDkUy1oJ4hO4A==",
+      "cloudflare_ray": "a5e504f0afa161e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 2,
+      "utc": "2026-11-22T03:59:06.171415+00:00",
+      "http": 200,
+      "cloudfront_request_id": "d3QmqECyAC-f5yUaucAqBlzcOiCBUsJqW09CYMMedsgTkdf2ioDQTQ==",
+      "cloudflare_ray": "a5e504f7793361e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 3,
+      "utc": "2026-11-22T03:59:06.740464+00:00",
+      "http": 200,
+      "cloudfront_request_id": "fKiKpncahQZrAe9P6_XKQTu-f5Mh0jon4Px2JToN7vWxXulgpWxGwA==",
+      "cloudflare_ray": "a5e504faad7e61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 4,
+      "utc": "2026-11-22T03:59:07.235634+00:00",
+      "http": 200,
+      "cloudfront_request_id": "2i5JSohlrXNZCDK5d7pyg8-C7YatH6Fh7BXQ4FnAwsEF-QCf0bFlhQ==",
+      "cloudflare_ray": "a5e504fe2a3461e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 5,
+      "utc": "2026-11-22T03:59:07.767718+00:00",
+      "http": 200,
+      "cloudfront_request_id": "RcpihpHaiWHAH_RnM64UcUA8QCQzatmEkzvc12QIXRmor-VGOdXWHQ==",
+      "cloudflare_ray": "a5e505014e8a61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 6,
+      "utc": "2026-11-22T03:59:08.245203+00:00",
+      "http": 200,
+      "cloudfront_request_id": "8_iGziD76F4yHpETfMV2IjmmKXqnNEK4KGlVf2NNGrVByBWBjjZTXQ==",
+      "cloudflare_ray": "a5e505049b4261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 7,
+      "utc": "2026-11-22T03:59:08.770104+00:00",
+      "http": 200,
+      "cloudfront_request_id": "N13-tkPXKhfKZwW-Fb3YbhYqQ8WjmXkI4muaqgWK4TF1fuj-bhBvGA==",
+      "cloudflare_ray": "a5e505079fb561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 8,
+      "utc": "2026-11-22T03:59:09.258597+00:00",
+      "http": 200,
+      "cloudfront_request_id": "DIl6PQaWQLtohn8lAo4qDehtVyqOC_aw4UihjIQuTIoVBjWZW_MrEQ==",
+      "cloudflare_ray": "a5e5050adc7561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 9,
+      "utc": "2026-11-22T03:59:09.772751+00:00",
+      "http": 200,
+      "cloudfront_request_id": "fmnry85O4WcgH3QCk4M1PceyHuVSADqO5-KtPytkzNWZqHZFgY6NUw==",
+      "cloudflare_ray": "a5e5050de8e161e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 10,
+      "utc": "2026-11-22T03:59:10.308424+00:00",
+      "http": 200,
+      "cloudfront_request_id": "qPiutNdSI8vf_uu5y7hgBwg9ui6gOdip-eiP7Eqvco0g-5MyVUQU_g==",
+      "cloudflare_ray": "a5e505112cdb61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 11,
+      "utc": "2026-11-22T03:59:10.778920+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Ssrrmp85_NtS9Yg_ouNvQpdzW1wwY5ioJbNP-kvftsQilHenvSzZHA==",
+      "cloudflare_ray": "a5e50514793261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 12,
+      "utc": "2026-11-22T03:59:11.324010+00:00",
+      "http": 200,
+      "cloudfront_request_id": "4QGxPdxG7ncnag8MuygcQmCWTwhRxgcd6kqQAeqWzbanlD9EnocSYg==",
+      "cloudflare_ray": "a5e505176d8961e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 13,
+      "utc": "2026-11-22T03:59:11.804410+00:00",
+      "http": 200,
+      "cloudfront_request_id": "uS-osahw-N3fw98Yfb3l6oAwiHKJN6HrABl5yHdydyWjrHqyN5wc7g==",
+      "cloudflare_ray": "a5e5051ada2561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 14,
+      "utc": "2026-11-22T03:59:12.272758+00:00",
+      "http": 200,
+      "cloudfront_request_id": "bO3_3QTxvTsAhGWsg7wvQxz5f-LyAPglD_IpDX865dTYnN8q2TkP5g==",
+      "cloudflare_ray": "a5e5051dde8b61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 15,
+      "utc": "2026-11-22T03:59:12.747840+00:00",
+      "http": 200,
+      "cloudfront_request_id": "sEvIlG-IdNxIEwbOZ2hVLzUXHl9qWGgVxcgmsCUmXOa_PMc75LlECg==",
+      "cloudflare_ray": "a5e50520cad561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 16,
+      "utc": "2026-11-22T03:59:13.269154+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Ma1mZdKzMLB_nsZokNhD7X6bAzbvpHi6HwOXdnRs5FmheRYM9hkf7Q==",
+      "cloudflare_ray": "a5e50523bf2861e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 17,
+      "utc": "2026-11-22T03:59:13.735752+00:00",
+      "http": 200,
+      "cloudfront_request_id": "W1_WeQZoJgt70frd4vw77JDlhkhsZD5J8V-klIfv93q4NCS62csDaQ==",
+      "cloudflare_ray": "a5e50526fb4661e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 18,
+      "utc": "2026-11-22T03:59:14.271346+00:00",
+      "http": 200,
+      "cloudfront_request_id": "ibw7IR04jYLQAeMZhcPUe5X9NqlG3qugaDNGLRNGTAWq42YPbdFJoA==",
+      "cloudflare_ray": "a5e50529ef9c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 19,
+      "utc": "2026-11-22T03:59:14.751428+00:00",
+      "http": 200,
+      "cloudfront_request_id": "HluqOrS-f3LX-4lq1dZxjERXzfOcqKrjyQhKPKyXLtNR99v5bkKY3w==",
+      "cloudflare_ray": "a5e5052d3cc861e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 20,
+      "utc": "2026-11-22T03:59:15.280335+00:00",
+      "http": 200,
+      "cloudfront_request_id": "h5oGJI9rXBYzVAinJagUm9KCxEUtng55PD6EG5-Ol77JGheF-Yo2xg==",
+      "cloudflare_ray": "a5e5053038ee61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 21,
+      "utc": "2026-11-22T03:59:15.799837+00:00",
+      "http": 200,
+      "cloudfront_request_id": "ZzRDg7hnyGhPfmHqRZJvgX6U5Hahw_u1VGbKSk3XWvDM1DPbstJGng==",
+      "cloudflare_ray": "a5e505338d0d61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 22,
+      "utc": "2026-11-22T03:59:16.271400+00:00",
+      "http": 200,
+      "cloudfront_request_id": "o-SpOTu0MnqRY_kENaZWeL0grg7yPS8TguEGO2VPydikDsi5BQL3PQ==",
+      "cloudflare_ray": "a5e50536c97861e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 23,
+      "utc": "2026-11-22T03:59:16.749972+00:00",
+      "http": 200,
+      "cloudfront_request_id": "et8J7mfI7K8hFwtfL9UU8UjycvlnGtAjoBiCjByhuLz_6GE6_e65Lw==",
+      "cloudflare_ray": "a5e50539bd1761e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 24,
+      "utc": "2026-11-22T03:59:17.284904+00:00",
+      "http": 200,
+      "cloudfront_request_id": "5T_yFh8G9ceRg5xtRhyWx2WeokkOvZuwW5Z65oUdVN2lqXJ_X6GP-g==",
+      "cloudflare_ray": "a5e5053cb8e261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 25,
+      "utc": "2026-11-22T03:59:17.766381+00:00",
+      "http": 200,
+      "cloudfront_request_id": "G9EEwxyK61yA2V1Hei16fDza5TnDbV2GQVtjjCLBC9rvZ0pK9CPB1A==",
+      "cloudflare_ray": "a5e505401cdc61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 26,
+      "utc": "2026-11-22T03:59:18.235925+00:00",
+      "http": 200,
+      "cloudfront_request_id": "h_UMP2ICnprdRV01xdleTVrc9rkl-WOcFUq2CuEUD_rk3bpI-0AP5A==",
+      "cloudflare_ray": "a5e5054318e261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 27,
+      "utc": "2026-11-22T03:59:18.824777+00:00",
+      "http": 200,
+      "cloudfront_request_id": "ehKvlFwDUfuRmQasdbNPKPhZmpoCn1ymO9P9y-AcHJu4cdLNSMDDkw==",
+      "cloudflare_ray": "a5e505460d0261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 28,
+      "utc": "2026-11-22T03:59:19.295873+00:00",
+      "http": 200,
+      "cloudfront_request_id": "48qXPIuPNr44as3VY-bKSq7lDr7OKzn5wf-W0V0vNB4LyprCB9Bbeg==",
+      "cloudflare_ray": "a5e50549b9eb61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 29,
+      "utc": "2026-11-22T03:59:19.765948+00:00",
+      "http": 200,
+      "cloudfront_request_id": "uwnlyO5uDjI-aGO0UWjyhYHbxh52EgKjF9pb0aBeq0ndhcipbcqQAw==",
+      "cloudflare_ray": "a5e5054cadcb61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 30,
+      "utc": "2026-11-22T03:59:20.238722+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Ruznc1QvN42Z-8yRlWYwm8YYJYS0wpS92VHx2WEm8iwF0Keqr-THcA==",
+      "cloudflare_ray": "a5e5054f99de61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 31,
+      "utc": "2026-11-22T03:59:20.717095+00:00",
+      "http": 200,
+      "cloudfront_request_id": "WcD02g1MM1wi3PObNLmJSZCeEUHTWs7La3GRuw-FF46xxKCj4Uh9kg==",
+      "cloudflare_ray": "a5e505528dd261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 32,
+      "utc": "2026-11-22T03:59:21.251136+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Eb7EeOBr387ybCvkr6zgGGhkTDjmos3dWCb-SyyP00RYVIvNW5lmhQ==",
+      "cloudflare_ray": "a5e505558b5461e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 33,
+      "utc": "2026-11-22T03:59:21.732551+00:00",
+      "http": 200,
+      "cloudfront_request_id": "gVNHeN2jxzbdHcLZXPBWaS8xbjC6nekv0jAostYYAMOCWvVPrSIFkQ==",
+      "cloudflare_ray": "a5e50558d88661e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 34,
+      "utc": "2026-11-22T03:59:22.258173+00:00",
+      "http": 200,
+      "cloudfront_request_id": "2vi8RUh0X6sS63Y9mqOdnPndWrWH5WbqWQuJWamZDpM6HcTxJwq4Cg==",
+      "cloudflare_ray": "a5e5055becca61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 35,
+      "utc": "2026-11-22T03:59:22.726494+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Wzocrz-Ncp40RJ0zLaneb-zxcqaSYSVtuYWuof7Fo4-3u5M1UKF5Bg==",
+      "cloudflare_ray": "a5e5055f298961e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 36,
+      "utc": "2026-11-22T03:59:23.312122+00:00",
+      "http": 200,
+      "cloudfront_request_id": "xKrIAQuwW4WKmOjjnMY7LMiP5WxrmaVFasiAkdW6o4o-LCIRE27GXg==",
+      "cloudflare_ray": "a5e505621d3b61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 37,
+      "utc": "2026-11-22T03:59:23.782585+00:00",
+      "http": 200,
+      "cloudfront_request_id": "zhTwFZiL-g7xwtFgyb1IU5aIg_S0cDX9rzBO4WYbwetLDsN8j5DP2g==",
+      "cloudflare_ray": "a5e50565c9e261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 38,
+      "utc": "2026-11-22T03:59:24.253029+00:00",
+      "http": 200,
+      "cloudfront_request_id": "5kIhdNztGoixymV9UcDQ__C986S5ZjQxgWwnlka39hNm0MfJJE4Gtw==",
+      "cloudflare_ray": "a5e50568bdb061e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 39,
+      "utc": "2026-11-22T03:59:24.721944+00:00",
+      "http": 200,
+      "cloudfront_request_id": "JBP6m1AC6pqrr1yrf0-etfYJLSqxp7X8Pkg9dw0iKFM99PD4PY4AUw==",
+      "cloudflare_ray": "a5e5056bab1261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 40,
+      "utc": "2026-11-22T03:59:25.202098+00:00",
+      "http": 200,
+      "cloudfront_request_id": "WKi-zHrq_rywHJPFClIy8tyAn9rMglhC9UctwaX_w7ExLDyF7h3MGA==",
+      "cloudflare_ray": "a5e5056e9e9d61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 41,
+      "utc": "2026-11-22T03:59:25.730405+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Rk1JC0bU77iHBfEeosBUeVPEhmJ8S0uI5s1FoGO0PY52_J5YPk1bvg==",
+      "cloudflare_ray": "a5e505719a7561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 42,
+      "utc": "2026-11-22T03:59:26.218846+00:00",
+      "http": 200,
+      "cloudfront_request_id": "saT_6E1n1q0GGQMz-AxJIVi9nt4B8OH3QqWeGSvJVDOK7COdlRsueA==",
+      "cloudflare_ray": "a5e50574ee6261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 43,
+      "utc": "2026-11-22T03:59:26.864369+00:00",
+      "http": 200,
+      "cloudfront_request_id": "X093t1y7Tuql5iR61zF02NFA1M1fSYAC0ci-2aaXIckSvmW9Z-FIaw==",
+      "cloudflare_ray": "a5e50577ea9561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 44,
+      "utc": "2026-11-22T03:59:27.343020+00:00",
+      "http": 200,
+      "cloudfront_request_id": "PL-s1Fw_RPD6VoXut-Kl-MW2gIxYbRcqBn7LyQ1WDqFRT9rSOHNEeA==",
+      "cloudflare_ray": "a5e5057bf88a61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 45,
+      "utc": "2026-11-22T03:59:27.808449+00:00",
+      "http": 200,
+      "cloudfront_request_id": "X4vMHzSNiVdXDNFDf15qjB1yV1uV6t31DjrpyaeeHdna7Gd4CT_CYw==",
+      "cloudflare_ray": "a5e5057efc8a61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 46,
+      "utc": "2026-11-22T03:59:28.295878+00:00",
+      "http": 200,
+      "cloudfront_request_id": "GbZ2JqBpHTaK_46l5Msfo2fChKodXPX-mOgxYxcmjjNrdWRNuYmNJQ==",
+      "cloudflare_ray": "a5e50581d86661e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 47,
+      "utc": "2026-11-22T03:59:28.765012+00:00",
+      "http": 200,
+      "cloudfront_request_id": "G5vph_CWi9HGIdPCumha4p0ntgW6Y6Cu5Qf7w7xVBSyvKsSaCpMhag==",
+      "cloudflare_ray": "a5e50584ec0e61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 48,
+      "utc": "2026-11-22T03:59:29.247321+00:00",
+      "http": 200,
+      "cloudfront_request_id": "D9kyQb2VXWXodeMNF94-JTCgiNruA7caD7MFaXVSSB-AZTmhzUmxug==",
+      "cloudflare_ray": "a5e50587dfda61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 49,
+      "utc": "2026-11-22T03:59:29.719136+00:00",
+      "http": 200,
+      "cloudfront_request_id": "4RPw-pqb25UsFKqf5l-9r6QFJb4BEcyEzfv9IftOc_RDK5_M5R9s7w==",
+      "cloudflare_ray": "a5e5058adb8c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 50,
+      "utc": "2026-11-22T03:59:30.196557+00:00",
+      "http": 200,
+      "cloudfront_request_id": "ONILh-c6W37ghks7jVteCATGPAbdQB68AXHUjEITj337__hcTqdlGA==",
+      "cloudflare_ray": "a5e5058dcf7561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 51,
+      "utc": "2026-11-22T03:59:30.713411+00:00",
+      "http": 200,
+      "cloudfront_request_id": "9rvoh5f5D-UNAVMWCNUcdpUGXA22zodx0YTdRA9VVpXGhkffX4HWEg==",
+      "cloudflare_ray": "a5e50590cbec61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 52,
+      "utc": "2026-11-22T03:59:31.259854+00:00",
+      "http": 200,
+      "cloudfront_request_id": "BX9eB3wyLxQ3EGxU3y5rDcjGxuns47t9a5HM7ckNVk0TkGAoSMcW7w==",
+      "cloudflare_ray": "a5e50594089361e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 53,
+      "utc": "2026-11-22T03:59:31.731493+00:00",
+      "http": 200,
+      "cloudfront_request_id": "gssj2jiLhGnJ7MiYXQsPee1sZoIcbP6s_7YIyaegTBWEdalFk9V4_A==",
+      "cloudflare_ray": "a5e505976dcc61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 54,
+      "utc": "2026-11-22T03:59:32.281337+00:00",
+      "http": 200,
+      "cloudfront_request_id": "NsHjB0bPxa--1oKz5JXXRmnXI8GSazAV8jyhcfjuMLO4j8jjBqcJlQ==",
+      "cloudflare_ray": "a5e5059a5ae661e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 55,
+      "utc": "2026-11-22T03:59:32.828616+00:00",
+      "http": 200,
+      "cloudfront_request_id": "fuP9RiNhJDX3HHORGNg68-_PMthqt9qFIqxdxUmLPupGoXBmF6sj5Q==",
+      "cloudflare_ray": "a5e5059ddffc61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 56,
+      "utc": "2026-11-22T03:59:33.326005+00:00",
+      "http": 200,
+      "cloudfront_request_id": "5xgb8sf4jJKDUH9hhugzbnkYC28tUTuppKCJKUXQrLf0tMVGVubh0w==",
+      "cloudflare_ray": "a5e505a13d1161e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 57,
+      "utc": "2026-11-22T03:59:33.795856+00:00",
+      "http": 200,
+      "cloudfront_request_id": "SabhLZTpx5JB5myHzurX73bGmxn_aYWcCASHSp5qpXrp1xfKGq1f9A==",
+      "cloudflare_ray": "a5e505a45a1061e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 58,
+      "utc": "2026-11-22T03:59:34.270817+00:00",
+      "http": 200,
+      "cloudfront_request_id": "p_GuhIiNd3AmH73zqXag-ImHQSDVyMIGtNB74JnM1Ejk2qLgPrzErQ==",
+      "cloudflare_ray": "a5e505a74e9461e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 59,
+      "utc": "2026-11-22T03:59:34.789409+00:00",
+      "http": 200,
+      "cloudfront_request_id": "iuCvangDppgmO4pw3Jxz_l2fRfgUH6uLZrMc408S9DBYkJXcun-__w==",
+      "cloudflare_ray": "a5e505aa3a4961e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 60,
+      "utc": "2026-11-22T03:59:35.323131+00:00",
+      "http": 200,
+      "cloudfront_request_id": "3dzeAOHKkZLIlZTUaVtvf1wT5-3C9S5oIAKB5iyqCyckGykCADd-Xw==",
+      "cloudflare_ray": "a5e505ad7e7461e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 61,
+      "utc": "2026-11-22T03:59:35.797181+00:00",
+      "http": 200,
+      "cloudfront_request_id": "eKl19nuNeOfj5Fmw3yESI9UXkAvxS4tFJGPnAuB9QhtRJtA9IV40Dw==",
+      "cloudflare_ray": "a5e505b0dae761e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 62,
+      "utc": "2026-11-22T03:59:36.274490+00:00",
+      "http": 200,
+      "cloudfront_request_id": "vTUdpsBYEjjmKCYLYEbany8v2mGpPKnsIL1y7Gyl_0jIERC_qv9XiQ==",
+      "cloudflare_ray": "a5e505b3cf3661e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 63,
+      "utc": "2026-11-22T03:59:36.743805+00:00",
+      "http": 200,
+      "cloudfront_request_id": "b_RzDrl7LfjSLfdUUufWoBTY4J5PQrLjDR69LxVgV4e8Z0T512PSUQ==",
+      "cloudflare_ray": "a5e505b6cad861e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 64,
+      "utc": "2026-11-22T03:59:37.224549+00:00",
+      "http": 200,
+      "cloudfront_request_id": "vmA9AemuJty8c2RX2Yo9_ymlfvDgRDPDd6JgmRgpmq0lyYq_utT25A==",
+      "cloudflare_ray": "a5e505b9beb561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 65,
+      "utc": "2026-11-22T03:59:37.701442+00:00",
+      "http": 200,
+      "cloudfront_request_id": "xvt2x_-X8OavIMPdKTgyjv-sNpgUhEkzHFYpMrGqFCUV6aW5UMhXBQ==",
+      "cloudflare_ray": "a5e505bcbba561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 66,
+      "utc": "2026-11-22T03:59:38.187940+00:00",
+      "http": 200,
+      "cloudfront_request_id": "KmgNMDYBmP5KzMTVBJRKllxs6KKvNqE_XIl8cVe-nGrbgXBj692FVA==",
+      "cloudflare_ray": "a5e505bfa81f61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 67,
+      "utc": "2026-11-22T03:59:38.671206+00:00",
+      "http": 200,
+      "cloudfront_request_id": "2svOsZj1-Kq_0US38BtKg6QXrSIhY2Fr1S0WmaPebiiWsmTJlp9UAg==",
+      "cloudflare_ray": "a5e505c2bc9d61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 68,
+      "utc": "2026-11-22T03:59:39.197698+00:00",
+      "http": 200,
+      "cloudfront_request_id": "T9pAsXr4YLBk9i5XVF3TPYAUN_uY9GkEZ464tcObhmYdVdLr3MgL6w==",
+      "cloudflare_ray": "a5e505c5b8be61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 69,
+      "utc": "2026-11-22T03:59:39.686434+00:00",
+      "http": 200,
+      "cloudfront_request_id": "E0xEOzddBfmaAmjYtZphm9SlR4ksoQ9hwwzCrJGo-jSbHmdB88j3dQ==",
+      "cloudflare_ray": "a5e505c90cf461e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 70,
+      "utc": "2026-11-22T03:59:40.163093+00:00",
+      "http": 200,
+      "cloudfront_request_id": "2GhH3cLFmbdSuoOGuSuwiv5mDLjP8RStSSDXY2U90VE7nc9Smo2pkg==",
+      "cloudflare_ray": "a5e505cc18fb61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 71,
+      "utc": "2026-11-22T03:59:40.698926+00:00",
+      "http": 200,
+      "cloudfront_request_id": "yH95uLsias7cIzXxK1s9qIxRox2VLhCMkTDh8kliEwx_XT1EvG5V7A==",
+      "cloudflare_ray": "a5e505cf7d1d61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 72,
+      "utc": "2026-11-22T03:59:41.224592+00:00",
+      "http": 200,
+      "cloudfront_request_id": "JqoCsilXyXXzanpm7DOmAaDGlbMSLp6e_7V2C-ULgHfGZM7xQx8tig==",
+      "cloudflare_ray": "a5e505d2692b61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 73,
+      "utc": "2026-11-22T03:59:41.767701+00:00",
+      "http": 200,
+      "cloudfront_request_id": "nCWUFA8OcRTE_tqsu77GOmefIUPRxgQzTISyIqm14AtvM82D7NSImw==",
+      "cloudflare_ray": "a5e505d5edff61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 74,
+      "utc": "2026-11-22T03:59:42.254254+00:00",
+      "http": 200,
+      "cloudfront_request_id": "9d_sYH7_LcihKl5NjIF6oPtagSOzho8EpXMoxCdx_uPRZsTCgdfR4g==",
+      "cloudflare_ray": "a5e505d93aa361e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 75,
+      "utc": "2026-11-22T03:59:42.782420+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Omkii66cqgjkejWnUl34a5IH3VrIP2S_htqACBMJMMYKR7GEdoOZRw==",
+      "cloudflare_ray": "a5e505dc2e8a61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 76,
+      "utc": "2026-11-22T03:59:43.367146+00:00",
+      "http": 200,
+      "cloudfront_request_id": "GP55bjD0ti8CuN23WRxfNheH2PaP1sKDQFM8wFGVFprpVzAJ9BtcxQ==",
+      "cloudflare_ray": "a5e505df9b0c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 77,
+      "utc": "2026-11-22T03:59:43.884027+00:00",
+      "http": 200,
+      "cloudfront_request_id": "JuZI3PxkHQw7Ds0cJrJYONVvaRHdd7rsKKSQpXW9nnWmkYxgNWRfUA==",
+      "cloudflare_ray": "a5e505e31f1861e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 78,
+      "utc": "2026-11-22T03:59:44.360296+00:00",
+      "http": 200,
+      "cloudfront_request_id": "slwirBTyg_yK5toreBlfjM1xI86-6XgOJ2q1CuvXTBdeGmrffqELdw==",
+      "cloudflare_ray": "a5e505e65b3361e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 79,
+      "utc": "2026-11-22T03:59:44.832714+00:00",
+      "http": 200,
+      "cloudfront_request_id": "JxeA9teV0r5Tim4hc3qWLEBNhgU_HOv__4RJPF2AFx3_SWufyfWgqg==",
+      "cloudflare_ray": "a5e505e94f1661e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 80,
+      "utc": "2026-11-22T03:59:45.305990+00:00",
+      "http": 200,
+      "cloudfront_request_id": "pTekHzq6Mtw8lUNtwwSb-znPRCKhhuCKrwkwC-HcVoKnB8imb72pFw==",
+      "cloudflare_ray": "a5e505ec4b6261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 81,
+      "utc": "2026-11-22T03:59:45.775949+00:00",
+      "http": 200,
+      "cloudfront_request_id": "tezQqiTPwzbEUaRc9Nc6ZnhdLFC2igr_i1JgMxmmqGHpvOBR_3xQ-Q==",
+      "cloudflare_ray": "a5e505ef3f4161e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 82,
+      "utc": "2026-11-22T03:59:46.325873+00:00",
+      "http": 200,
+      "cloudfront_request_id": "emco6UOTpS-uysQrH7PIx1zOee42DtInpCwQLO-R5QRQ-fcC_9yJaw==",
+      "cloudflare_ray": "a5e505f22b7561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 83,
+      "utc": "2026-11-22T03:59:46.795406+00:00",
+      "http": 200,
+      "cloudfront_request_id": "3rYBHoKpLszDA06tYyKcTPm3AFyLl2o_QJL9WhLNfuWFkE9qHTfktA==",
+      "cloudflare_ray": "a5e505f5980e61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 84,
+      "utc": "2026-11-22T03:59:47.282037+00:00",
+      "http": 200,
+      "cloudfront_request_id": "XrrqC65julhB3TUDXdRvjjPhNj6FzMvTuJMxqytbIY8VSu-pP7eDUA==",
+      "cloudflare_ray": "a5e505f88c6e61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 85,
+      "utc": "2026-11-22T03:59:47.752392+00:00",
+      "http": 200,
+      "cloudfront_request_id": "KI6XmXiU3mMkuVMKNh_23z_zrOFKdjbLUvHxwzlRFtSnkOrm3xuQ2A==",
+      "cloudflare_ray": "a5e505fb88de61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 86,
+      "utc": "2026-11-22T03:59:48.277707+00:00",
+      "http": 200,
+      "cloudfront_request_id": "cTQqRP9vB4JWH-1L_d6aJMs_W8794-_UvbUBaOisZwfl6vaMXVeW3Q==",
+      "cloudflare_ray": "a5e505fe8d2c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 87,
+      "utc": "2026-11-22T03:59:48.807755+00:00",
+      "http": 200,
+      "cloudfront_request_id": "piYNSiK8-ikVZbYSju6RnZCrKwd3D00wkmic_HMVkotzU6_aUKzbaw==",
+      "cloudflare_ray": "a5e50601ca0161e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 88,
+      "utc": "2026-11-22T03:59:49.281468+00:00",
+      "http": 200,
+      "cloudfront_request_id": "oxhV_uW1OwShCscqkJJNy8u5r4Wcg3UOFmcj1JvknxQsGOeILlIisA==",
+      "cloudflare_ray": "a5e506051ef261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 89,
+      "utc": "2026-11-22T03:59:49.813820+00:00",
+      "http": 200,
+      "cloudfront_request_id": "lsYSc-kImuf9TiMWY8N3q5ofKeSeIW7d_TXs6L3ZIxwfe2VKDvQcyA==",
+      "cloudflare_ray": "a5e506080b9a61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 90,
+      "utc": "2026-11-22T03:59:50.293455+00:00",
+      "http": 200,
+      "cloudfront_request_id": "ksZAukKGZ6aEtWWfGLzsXQYLbp19hZYCwBSUIBUmZQi3_TMPkhC3eQ==",
+      "cloudflare_ray": "a5e5060b68c561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 91,
+      "utc": "2026-11-22T03:59:50.811660+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Br_DAOag79CnjF2zqv65WLiYsWb2wB5nu3P6F_VNRw7C_b_xVzKHgA==",
+      "cloudflare_ray": "a5e5060e6d0c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 92,
+      "utc": "2026-11-22T03:59:51.290480+00:00",
+      "http": 200,
+      "cloudfront_request_id": "B4HamrSfHFNUDgiD_USZd40HT0WN0LL_BJJtvGq5eVD9oPSuPJ-1LQ==",
+      "cloudflare_ray": "a5e50611997e61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 93,
+      "utc": "2026-11-22T03:59:51.766497+00:00",
+      "http": 200,
+      "cloudfront_request_id": "6wkq26d6mmVdT6OyfdJax3kOC3V36OCLGBG9a2WhQbXPc7b850Trww==",
+      "cloudflare_ray": "a5e506149d3f61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 94,
+      "utc": "2026-11-22T03:59:52.236927+00:00",
+      "http": 200,
+      "cloudfront_request_id": "ytyJRMDAkJHu48dZ32UJp1dTq_hh2I6T6ZM_dV0s7dIm8t5NJ7HNFw==",
+      "cloudflare_ray": "a5e50617991d61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 95,
+      "utc": "2026-11-22T03:59:52.705214+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Ja7GZNVF5LIXAJP7X35NyedWhcTKi_UwTkIrdmyYwpckJlW3tqaiiA==",
+      "cloudflare_ray": "a5e5061a8d1f61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 96,
+      "utc": "2026-11-22T03:59:53.226508+00:00",
+      "http": 200,
+      "cloudfront_request_id": "gksNdONeSHQW7BfWsufnyu1ghe0HP0FVN4Wt1ymgzPKh327Q0q4_dA==",
+      "cloudflare_ray": "a5e5061d78a661e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 97,
+      "utc": "2026-11-22T03:59:53.740774+00:00",
+      "http": 200,
+      "cloudfront_request_id": "WSoI9sf62ICOjPdNKg4NhbZqjsggvgayo6-b9WOloH-mvoIJkOE8TA==",
+      "cloudflare_ray": "a5e50620bd1f61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 98,
+      "utc": "2026-11-22T03:59:54.217779+00:00",
+      "http": 200,
+      "cloudfront_request_id": "nL0S0sYsHmvH6Wj3lTElCuXRz0yqvdrWQc3Mu8TjKqSANVA-EAigNg==",
+      "cloudflare_ray": "a5e50623ea1e61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 99,
+      "utc": "2026-11-22T03:59:54.747941+00:00",
+      "http": 200,
+      "cloudfront_request_id": "hEt0IYLNonnl-xwUqvMrNQsUrDhrBFk3RioL2Gjnzr2u6WSck9BCXQ==",
+      "cloudflare_ray": "a5e50626ee4561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 100,
+      "utc": "2026-11-22T03:59:55.216854+00:00",
+      "http": 200,
+      "cloudfront_request_id": "9geyTeLPdRgQyNsLWhp_Mg0iMHlTHsdg4TfIrBJsTFzU1AVnaYQdvg==",
+      "cloudflare_ray": "a5e5062a3ac161e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 101,
+      "utc": "2026-11-22T03:59:55.685774+00:00",
+      "http": 200,
+      "cloudfront_request_id": "6xosvgnQF9fwYNuzeWaCexnwh_3xrXBqZo57E5ApW1wyHMHUhkpmCA==",
+      "cloudflare_ray": "a5e5062d2f2c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 102,
+      "utc": "2026-11-22T03:59:56.160359+00:00",
+      "http": 200,
+      "cloudfront_request_id": "VGLVN1D1ZRiOG07cCn1elUWJwg-Iw4MZjiKFN3qeaOiWFS6d69XOGQ==",
+      "cloudflare_ray": "a5e506301b6561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 103,
+      "utc": "2026-11-22T03:59:56.687613+00:00",
+      "http": 200,
+      "cloudfront_request_id": "QH2vlXhgZdBrKi_xF2bqDJnDVcNsLx_QQwpEgZYxRyMlCcU191Zcng==",
+      "cloudflare_ray": "a5e506330f6961e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 104,
+      "utc": "2026-11-22T03:59:57.211140+00:00",
+      "http": 200,
+      "cloudfront_request_id": "4cr1tAtf7WJ8-5_6s1ljOn2r7zTgOffK-eb12zKFufpuWKsvV0SiTg==",
+      "cloudflare_ray": "a5e506365bc661e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 105,
+      "utc": "2026-11-22T03:59:57.684729+00:00",
+      "http": 200,
+      "cloudfront_request_id": "xRe6MyVZFKS1YSUUr7HAzjjs6dS7tIWMEs241RuCkAARLtfetL4ltA==",
+      "cloudflare_ray": "a5e50639983461e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 106,
+      "utc": "2026-11-22T03:59:58.207174+00:00",
+      "http": 200,
+      "cloudfront_request_id": "kby-xNQNGcUSaRWyUiGtP20AJ1vs5uxYjKVD3qYzSXCzd0uJ8OpbxQ==",
+      "cloudflare_ray": "a5e5063c9cdf61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 107,
+      "utc": "2026-11-22T03:59:58.676037+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Q6FX5WGuSrMJApkkEodmUz5cjoXXFwW3XxnMmwi1_Ppm0oxHe1tdfg==",
+      "cloudflare_ray": "a5e5063fd93961e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 108,
+      "utc": "2026-11-22T03:59:59.155319+00:00",
+      "http": 200,
+      "cloudfront_request_id": "xHRNtVs0xDojpSX12L8__pA3xeSEZO3Xlgz2jlBTLDCqo4G8ldZ4oA==",
+      "cloudflare_ray": "a5e50642cd5461e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 109,
+      "utc": "2026-11-22T03:59:59.783074+00:00",
+      "http": 200,
+      "cloudfront_request_id": "jxT9abBO3oTmnAsDrTyNsLDbCltwAg-N6o1f8ij0sSxykB4ygUddPQ==",
+      "cloudflare_ray": "a5e50645c98c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 110,
+      "utc": "2026-11-22T04:00:00.250624+00:00",
+      "http": 200,
+      "cloudfront_request_id": "LiOHU44Oj-72-MM3CRL3KD919C8myv71XVROt8O5va6VzkHUPAm1hg==",
+      "cloudflare_ray": "a5e50649bef361e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 111,
+      "utc": "2026-11-22T04:00:00.778741+00:00",
+      "http": 200,
+      "cloudfront_request_id": "H72cYFsrduFCCSJvq-t7Qzfu-cFVJWfL6RrIh7k0WnQqZx_gtRgl_g==",
+      "cloudflare_ray": "a5e5064c9aa361e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 112,
+      "utc": "2026-11-22T04:00:05.269031+00:00",
+      "http": 200,
+      "cloudfront_request_id": "XgYcLA4u2ksZHx-p9QxqxUMEYoK7wfqNpEoVApiph9LZxgN4ybCNJg==",
+      "cloudflare_ray": "a5e5064fef8561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 113,
+      "utc": "2026-11-22T04:00:05.757472+00:00",
+      "http": 200,
+      "cloudfront_request_id": "5ZBJ8EvrscsthFJAJI7TlaP0hdz-p3O-p89Ndt-fOqbdU2iwupPe2Q==",
+      "cloudflare_ray": "a5e5066bfbc861e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 114,
+      "utc": "2026-11-22T04:00:06.281504+00:00",
+      "http": 200,
+      "cloudfront_request_id": "SRfsG8SA0Y-0UPwykLt3S-z99Vok9ghy6i6qnr9swTpP7GwIxOkGpg==",
+      "cloudflare_ray": "a5e5066f087e61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 115,
+      "utc": "2026-11-22T04:00:06.756345+00:00",
+      "http": 200,
+      "cloudfront_request_id": "IADI4n5K7QirCqdmvNOxU8001LSWo39bYaIoGplDjFsaYIr6ns3oQA==",
+      "cloudflare_ray": "a5e506724deb61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 116,
+      "utc": "2026-11-22T04:00:07.329946+00:00",
+      "http": 200,
+      "cloudfront_request_id": "Uzl3qNwDBCT2Khf3hg-pqFm_O4mAyHaFS0ECdSBUqwhFKIMlPnvUtg==",
+      "cloudflare_ray": "a5e506754a4061e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 117,
+      "utc": "2026-11-22T04:00:07.846614+00:00",
+      "http": 200,
+      "cloudfront_request_id": "7GdhUv0lDp1TVGDGtfCbRjViF1vALCdy3pS3JeGXFuK6T3JvyNhftQ==",
+      "cloudflare_ray": "a5e50678df5e61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 118,
+      "utc": "2026-11-22T04:00:08.421880+00:00",
+      "http": 200,
+      "cloudfront_request_id": "eKVaAizcDgZEdtS092lgjLJszenTrVTT4d5s-S4wd8Q2P3CD8QPkVA==",
+      "cloudflare_ray": "a5e5067c1c3361e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 119,
+      "utc": "2026-11-22T04:00:08.900976+00:00",
+      "http": 200,
+      "cloudfront_request_id": "msH5wVUk6enzvuyRO6Nuyu-VmZCunm1TkfA0yI_O5wagk-eWYCGSJg==",
+      "cloudflare_ray": "a5e5067fa97861e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 120,
+      "utc": "2026-11-22T04:00:09.388365+00:00",
+      "http": 200,
+      "cloudfront_request_id": "0k3XnBh0PieMFx5HD9L1JZKflcnqdIzd-UNft97P50lUm1X3N-BmHA==",
+      "cloudflare_ray": "a5e50682ae1a61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 121,
+      "utc": "2026-11-22T04:00:09.922087+00:00",
+      "http": 200,
+      "cloudfront_request_id": "MwssQBx5CFZwD-IfmvAsn0sgbZ7Goyr3Q5dNZWGu1IIse4tzzKdKOw==",
+      "cloudflare_ray": "a5e50685ba7561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 122,
+      "utc": "2026-11-22T04:00:10.397193+00:00",
+      "http": 200,
+      "cloudfront_request_id": "evOfJFxqTwtCGsJbcrBoPZPjTvS2Vg-J5QkKXMscVaRcJl4ImSmskQ==",
+      "cloudflare_ray": "a5e506890ff261e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 123,
+      "utc": "2026-11-22T04:00:10.913030+00:00",
+      "http": 200,
+      "cloudfront_request_id": "mqyM17nk6kg-wB0TvSdjhsAkCisRS9ZfcntxosexRLj9oJs5JsQP0g==",
+      "cloudflare_ray": "a5e5068c0c1c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 124,
+      "utc": "2026-11-22T04:00:11.444413+00:00",
+      "http": 200,
+      "cloudfront_request_id": "BxvV_OQFAi7epQHiq7WwBPUGoD4MigBVt8c3j_khzhqBtWF5kV-8cQ==",
+      "cloudflare_ray": "a5e5068f488c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 125,
+      "utc": "2026-11-22T04:00:11.970324+00:00",
+      "http": 200,
+      "cloudfront_request_id": "c99AazqbIJEyBBTGosvlegxgodwT4fxlcT8ctHb2ANAeXYjvkwsFnQ==",
+      "cloudflare_ray": "a5e506929d8861e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 126,
+      "utc": "2026-11-22T04:00:12.446262+00:00",
+      "http": 200,
+      "cloudfront_request_id": "9kjgRkJ8tjROXDu2ArAN4ctYHygubaB9Ll0_QZ0l6KhvhU7BQZqDzQ==",
+      "cloudflare_ray": "a5e50695da2e61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 127,
+      "utc": "2026-11-22T04:00:12.917620+00:00",
+      "http": 200,
+      "cloudfront_request_id": "8lFQarfg-xIA9wDhOa3HBmV9Kp0Yhdi00ZDkb6G045EZamuNDH1BNQ==",
+      "cloudflare_ray": "a5e50698de0f61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 128,
+      "utc": "2026-11-22T04:00:13.386765+00:00",
+      "http": 200,
+      "cloudfront_request_id": "7C8Y-EbW1cI3icmqaR-5gvzVdwIFQC1xzlqgZtR-kkYBtdcmMbxBgA==",
+      "cloudflare_ray": "a5e5069bca8361e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 129,
+      "utc": "2026-11-22T04:00:13.864435+00:00",
+      "http": 200,
+      "cloudfront_request_id": "W00OgCFVJv_fRIDsDWfz8kluGJF0zs8YBTLNm14xZoXIZmUQYftCQw==",
+      "cloudflare_ray": "a5e5069ebf0d61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 130,
+      "utc": "2026-11-22T04:00:14.390805+00:00",
+      "http": 200,
+      "cloudfront_request_id": "jVTGYuNLw9hCt0ypZX6gvQUTHHsO4BydCIJ_sspla8tZGbpFEyHI_w==",
+      "cloudflare_ray": "a5e506a1bbdf61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 131,
+      "utc": "2026-11-22T04:00:14.857409+00:00",
+      "http": 200,
+      "cloudfront_request_id": "qEcwtfEIqJgIcKm7Azmr4fYpjUtx7JO8ETf8qfT0V1SwJsQGpkYYyA==",
+      "cloudflare_ray": "a5e506a4f8cc61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 132,
+      "utc": "2026-11-22T04:00:15.333661+00:00",
+      "http": 200,
+      "cloudfront_request_id": "NmLXFJLnZCqGc5dry-pzT9-27wypMRTkVhtlqLKGQpvfaedq_zkEUQ==",
+      "cloudflare_ray": "a5e506a7ed4d61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 133,
+      "utc": "2026-11-22T04:00:15.808325+00:00",
+      "http": 200,
+      "cloudfront_request_id": "eLQM1tKvoKSLLEx0URe-A1Yn8FzLn_KnkI-ewPUDmghK7Wo6izj1uQ==",
+      "cloudflare_ray": "a5e506aae98c61e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 134,
+      "utc": "2026-11-22T04:00:16.288145+00:00",
+      "http": 200,
+      "cloudfront_request_id": "yi6_S2YbE7EtSiBZ5l1HKGItD8O8JVmHE_SbuU9VQmK5JDXHQZwYpA==",
+      "cloudflare_ray": "a5e506adde2861e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 135,
+      "utc": "2026-11-22T04:00:16.766097+00:00",
+      "http": 200,
+      "cloudfront_request_id": "kKWyeIJIfu2n-6SUqxuAmCwkWxr-VWP03X17cLBxUeFWbeW1mOwLLg==",
+      "cloudflare_ray": "a5e506b0daa761e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 136,
+      "utc": "2026-11-22T04:00:17.255730+00:00",
+      "http": 200,
+      "cloudfront_request_id": "P5PoOhv9RpdHl2T76_Ilhv0T5iIqylUBBX2eR7TSgIdmkW0WiVph5w==",
+      "cloudflare_ray": "a5e506b3df2561e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 137,
+      "utc": "2026-11-22T04:00:17.780250+00:00",
+      "http": 200,
+      "cloudfront_request_id": "PCoFlVspdJmWGonihBp-3q3DeUrb4TUEW6xXFg8vjABfo_dx4Nnk9Q==",
+      "cloudflare_ray": "a5e506b6eb5461e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 138,
+      "utc": "2026-11-22T04:00:18.319988+00:00",
+      "http": 200,
+      "cloudfront_request_id": "KvHUy5nHXqvr-RVy2RAv8X1rppvIXGISmmLTZVbmDERHzXfaKU_rig==",
+      "cloudflare_ray": "a5e506ba2fc461e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 139,
+      "utc": "2026-11-22T04:00:18.796591+00:00",
+      "http": 200,
+      "cloudfront_request_id": "ejvsiHVKVjXURtAT_mfXwugZGaxbAmF2H0MBftykoIAp8Mtq1FhJpA==",
+      "cloudflare_ray": "a5e506bd8c5361e0-GRU",
+      "cf_mitigated": null
+    },
+    {
+      "number": 140,
+      "utc": "2026-11-22T04:00:19.164102+00:00",
+      "http": 403,
+      "cloudfront_request_id": "C6dpFouMt7X1cxbDU90euu6-EqRXGGxLem_LynRD3bysKpGnQK63DA==",
+      "cloudflare_ray": "a5e506c0889a61e0-GRU",
+      "cf_mitigated": null
+    }
+  ],
+  "method": "HEAD",
+  "limit": "100 por 300 segundos por CF-Connecting-IP, somente atrás de Cloudflare",
+  "boundary": "No máximo 160 pedidos sem corpo, uma conexão, pausas de 250 ms; parou no primeiro código diferente de 200. Não é teste de capacidade. A camada deve ser confirmada pelos logs.",
+  "recovery": {
+    "utc": "2026-11-22T04:04:59.460120+00:00",
+    "http": 200
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-11-22",
+  "terraform": {
+    "result": "No changes. Your infrastructure matches the configuration.",
+    "resource_actions": "0 create, 0 update, 0 delete",
+    "plan_review": "No applyable changes; no apply performed",
+    "scope": "Read-only convergence check of the final Terraform configuration."
+  },
+  "aws_session": {
+    "permission_set": "AWSReservedSSO_AdministratorAccess",
+    "observer_role_available": true,
+    "root_used": false,
+    "limit": "The changes used AdministratorAccess. This does not establish least privilege. The roles and MFA status of other team members, root, and the organization-wide policy were not audited."
+  },
+  "preservation": {
+    "previous_servers": "4 compared; evaluated fields unchanged",
+    "previous_security_groups": "9 compared; rules unchanged",
+    "legacy_dns": "apex, www, and monitoring unchanged",
+    "new_final_subdomain": "Added only for the assessment"
+  },
+  "cost_boundary": {
+    "personal_payment_method_changed": false,
+    "new_ec2_or_rds_created": false,
+    "cloudflare_plan": "Free",
+    "institutional_usage": "Active resources, S3 versions, CloudWatch metrics, and logs may still incur institutional charges; billing and a hard spending cap were not checked."
+  }
+}

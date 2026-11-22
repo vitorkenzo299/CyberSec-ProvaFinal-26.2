@@ -1,34 +1,32 @@
 # Status da avaliação final ABC Place
 
-Grupo 09: Vitor, Artur Cruz e Daniel Juho. Revisão em 21/11/2026 no horário de Brasília; registros após 21h aparecem como 22/11 em UTC.
+**Grupo 09:** Vitor, Artur Cruz e Daniel Juho. Revisão de 22/11/2026. Os horários de execução estão preservados em UTC nos JSONs; capturas de tela podem mostrar Brasília (UTC−03:00).
 
-| Item | Situação |
+| Item | Resultado atual |
 | --- | --- |
-| Continuidade | Roteiros 1–4 localizados e mapeados; fontes e baseline preservadas |
-| Matriz | 14 IDs originais; escala 4×4 e correspondência em três níveis; seis altos residuais justificados |
-| Aplicação | WordPress/WooCommerce e três produtos sintéticos na infraestrutura nova |
-| Banco | Schema próprio, privilégios DML limitados e TLS com testes negativos aprovados |
-| VPN/WAF/Wazuh | Provas anteriores da final preservadas; novos testes HTTP e FIM WordPress adicionados |
-| Scan WordPress | ZAP 2.17.0, 100%, 1.228 mensagens/16 URLs, zero High/Medium/Low e 54 informativos |
-| Recuperação | Restauração do catálogo técnico comprovada; recuperação integral WordPress permanece pendente |
-| Legado | Sem migração, troca de DNS ou alteração dos recursos anteriores |
-| Apresentação | 12 slides com autoria do trio e quatro slides por integrante |
+| Continuidade | Roteiros 1–4 mapeados; caso ABC Place e 14 IDs do Roteiro 2 preservados |
+| Loja | WordPress/WooCommerce no catálogo acadêmico, três produtos sintéticos, em `https://final.abcplace.blog.br` |
+| Borda | Cloudflare → CloudFront/AWS WAF → origem privada HTTPS; TLS 1.2; SQLi, bypass e limites retestados |
+| VPN | Acesso administrativo privado, SSH nominal; acesso antes/durante/depois da VPN conferido |
+| Wazuh | Dois agentes ativos (Web e VPN), logs centralizados e FIM da árvore WordPress com eventos comprovados |
+| Alertas | Oito alarmes integrados ao SNS existente; ciclo de rede ALARM/OK confirmado pelo usuário; todos retornaram a OK |
+| Recuperação | Restauração integral WordPress: 52 tabelas, 8.808 arquivos, hashes conferidos, catálogo e busca HTTP 200 |
+| Varredura | ZAP WordPress 2.17.0: 100%, 1.232 registros HTTP e 16 formas de URL (12 endpoints no sumário HTML), 0 High/Medium/Low e 54 informativos; painel/checkout fora do escopo |
+| Infraestrutura anterior | Quatro servidores, nove Security Groups e registros legados avaliados sem mudança nos campos comparados |
+| Plano Terraform | Plano final sem mudanças e sem ações destrutivas; nenhum apply necessário |
+| Custo | Conta institucional e Cloudflare Free; sem meio de pagamento pessoal alterado e sem novo EC2/RDS. Métricas, logs e cópias versionadas ainda podem gerar cobrança institucional |
 
-R01, R03, R06, R07, R10 e R14 permanecem altos. Há controles mínimos aplicados e justificativa para os limites. A triagem do kernel é R03 conforme a matriz do Roteiro 2. Produção exige concluir as pendências, testes autenticados, TLS de origem, MFA, notificação externa, recuperação completa e capacidade.
+A matriz mantém a escala e os 14 IDs originais. **Cinco riscos continuam altos:** R01, R03, R06, R07 e R10. R01 permanece alto porque as alterações AWS usaram `AWSReservedSSO_AdministratorAccess`; o menor privilégio de implantação não foi comprovado. R03 mantém achados de kernel sem patch demonstrado. Os outros riscos altos têm lacunas em testes autenticados, ransomware/cópia independente e proteção de dados/resposta a vazamento.
 
+## Limites de uso
 
-## Conferência operacional adicional
+O ambiente comprova controles para uma demonstração acadêmica; não é certificado para operação comercial. A loja não contém clientes, pedidos ou pagamentos reais. Plugins e painel autenticados, resposta a ransomware, RPO/RTO, capacidade e redundância comercial permanecem fora do teste. Root, MFA dos demais integrantes e política global institucional não foram auditados. O Wazuh usa PKI privada dentro da VPN.
 
-Em 21/11/2026, entre 22h21 e 22h25 (Brasília), foram repetidas as consultas de saúde. Os registros estão em `evidencias/revisao-final/`.
+Os serviços permanecem ativos na conta institucional. A revisão não consultou a fatura e não configurou teto automático. A conta institucional não significa custo zero. Não foram excluídos recursos nem alterado o domínio legado.
 
-| Verificação | Resultado atual |
-| --- | --- |
-| Cloudflare no domínio legado | abcplace.blog.br HTTP 200; rate limit bloqueou a sétima requisição com 429 e voltou a 302 após a espera |
-| WordPress novo | HTTP 200, três produtos; busca Caderno retorna um produto |
-| AWS | Três EC2 com verificações OK; RDS disponível, privado e criptografado; CloudFront Deployed e WAF associado |
-| Wazuh | Serviços ativos, dois agentes externos ativos, três eventos FIM acessíveis como vitor; administração de usuários negada com 403 |
-| VPN | SSH privado indisponível antes, disponível durante e indisponível depois; painel privado HTTP 200 durante a conexão |
-| Logs | Eventos recentes de sistema, Flow Logs e WAF; CloudTrail gravando |
-| Arquivos | Os cinco arquivos Office/PDF conferem com os hashes da revisão visual registrada |
+## Próximas ações
 
-O ambiente está operacional nos testes acima, com pendências. Cloudflare protege o domínio legado; o novo ambiente usa CloudFront/AWS WAF. Os alarmes novos estão sem ação externa, enquanto o tópico SNS antigo tem assinatura confirmada. Permanecem os seis riscos residuais altos e as limitações já justificadas no relatório. Não se declara integração total, migração concluída ou prontidão de produção.
+1. Substituir `AdministratorAccess` por uma função de implantação com permissões mínimas revisadas antes de novos provisionamentos.
+2. Acompanhar correção do kernel e repetir inventário/OVAL após atualização aplicável.
+3. Planejar testes autenticados, prevenção e resposta a ransomware, dados pessoais e recuperação com RPO/RTO aprovados antes de qualquer uso comercial.
+4. Acompanhar consumo institucional e decidir o encerramento apenas dos recursos da final com autorização própria; preservar o legado e as evidências.

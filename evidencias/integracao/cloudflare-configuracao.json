@@ -1,0 +1,137 @@
+{
+  "checked_utc": "2026-11-22T03:47:47.015435+00:00",
+  "zone": "abcplace.blog.br",
+  "plan": "Free Website",
+  "final_record": {
+    "id": "98cd864edbd61cf14314fe33a50983b3",
+    "name": "final.abcplace.blog.br",
+    "type": "CNAME",
+    "content": "d3hc8whbcpdvtd.cloudfront.net",
+    "proxiable": true,
+    "proxied": true,
+    "ttl": 1,
+    "settings": {
+      "flatten_cname": false
+    },
+    "meta": {},
+    "comment": "ABC Place final assessment; separate from preserved original store",
+    "tags": [],
+    "created_on": "2026-11-22T03:08:28.41487Z",
+    "modified_on": "2026-11-22T03:08:28.41487Z",
+    "comment_modified_on": "2026-11-22T03:08:28.41487Z"
+  },
+  "minimum_tls": "1.2",
+  "final_strict_rule": {
+    "description": "Strict certificate verification for final only",
+    "id": "125f8679421e4f95a50f0e3bb9a9753b",
+    "kind": "zone",
+    "last_updated": "2026-11-22T03:08:26.617064Z",
+    "name": "ABC Place final TLS",
+    "phase": "http_config_settings",
+    "rules": [
+      {
+        "action": "set_config",
+        "action_parameters": {
+          "ssl": "strict"
+        },
+        "description": "ABC Place final Full strict",
+        "enabled": true,
+        "expression": "http.host eq \"final.abcplace.blog.br\"",
+        "id": "19b4dfe23ba64e67ac7d7328998181eb",
+        "last_updated": "2026-11-22T03:08:26.617064Z",
+        "ref": "19b4dfe23ba64e67ac7d7328998181eb",
+        "version": "1"
+      }
+    ],
+    "version": "1"
+  },
+  "rate_limit": {
+    "description": "",
+    "id": "05db80ecfea74c17870947d42117943d",
+    "kind": "zone",
+    "last_updated": "2026-09-01T12:27:03.399333Z",
+    "name": "default",
+    "phase": "http_ratelimit",
+    "rules": [
+      {
+        "action": "block",
+        "description": "Limit Rate",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/wp-admin\")",
+        "id": "6e35efd1a72a448eb5d773eca4435890",
+        "last_updated": "2026-09-01T12:27:03.399333Z",
+        "ratelimit": {
+          "characteristics": [
+            "ip.src",
+            "cf.colo.id"
+          ],
+          "mitigation_timeout": 10,
+          "period": 10,
+          "requests_per_period": 5
+        },
+        "ref": "6e35efd1a72a448eb5d773eca4435890",
+        "version": "1"
+      }
+    ],
+    "source": "rate_limit",
+    "version": "1"
+  },
+  "acme_geo_exception": {
+    "action": "block",
+    "description": "IP's do Brasil",
+    "enabled": true,
+    "expression": "(ip.src.country ne \"BR\") and not (http.host eq \"final.abcplace.blog.br\" and starts_with(http.request.uri.path, \"/.well-known/acme-challenge/\"))",
+    "id": "58c9324db601484a810d61f531c41ed2",
+    "last_updated": "2026-11-22T03:08:27.577766Z",
+    "ref": "58c9324db601484a810d61f531c41ed2",
+    "version": "2"
+  },
+  "legacy_a_records": [
+    {
+      "id": "1e763d6397d28c75d9a083c4d5288da2",
+      "name": "abcplace.blog.br",
+      "type": "A",
+      "content": "3.81.172.132",
+      "proxiable": true,
+      "proxied": true,
+      "ttl": 1,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-01T11:58:00.296809Z",
+      "modified_on": "2026-09-03T11:30:43.253035Z"
+    },
+    {
+      "id": "0dca65d6d22c2b04d516a64e72e76cc5",
+      "name": "monitoramento.abcplace.blog.br",
+      "type": "A",
+      "content": "35.169.104.127",
+      "proxiable": true,
+      "proxied": false,
+      "ttl": 1,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-10-15T21:55:39.133842Z",
+      "modified_on": "2026-10-15T21:55:39.133842Z"
+    },
+    {
+      "id": "782c937d2bf680d3356bf0990bc8212e",
+      "name": "www.abcplace.blog.br",
+      "type": "A",
+      "content": "3.81.172.132",
+      "proxiable": true,
+      "proxied": true,
+      "ttl": 1,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-01T12:11:02.035767Z",
+      "modified_on": "2026-09-03T11:30:49.633332Z"
+    }
+  ],
+  "scope": "Apex, www e monitoramento preservam os mesmos registros A. TLS mínimo global 1.2 autorizado pelo usuário. Exceção de geolocalização somente no caminho ACME da nova loja. Nenhum plano pago ou token permanente criado."
+}

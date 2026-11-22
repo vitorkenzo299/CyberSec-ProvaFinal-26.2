@@ -1,0 +1,171 @@
+{
+  "checked_utc": "2026-11-22T03:49:47.135061+00:00",
+  "tests": {
+    "homepage": {
+      "checked_utc": "2026-11-22T03:49:26.486348+00:00",
+      "url": "https://final.abcplace.blog.br/",
+      "http": 200,
+      "server": "cloudflare",
+      "cloudflare_ray": "a5e4f6ccbfc01a90-GRU",
+      "cloudfront_request_id": "0fZHhXacT2VgxTmjRsXUOtNddPJb47Qt8gBE-l8bpRiHmuxOUOnA2w==",
+      "has_three_products": true,
+      "sha256_body": "1db986779108eb75aefa627b2c78d23c35d298e62e65c42fd440c29db6294bce"
+    },
+    "search": {
+      "checked_utc": "2026-11-22T03:49:27.147624+00:00",
+      "url": "https://final.abcplace.blog.br/?s=Caderno",
+      "http": 200,
+      "server": "cloudflare",
+      "cloudflare_ray": "a5e4f6d26d80acbf-GRU",
+      "cloudfront_request_id": "pBNbqh2OF10xHblKTu_DTryOEEL8KUfPDmUl98RfBljFpgoVzjRGeg==",
+      "has_three_products": false,
+      "sha256_body": "9da6061ed09e92c32fcf11482334d10927b092601fee311b6930549b4ff86704"
+    },
+    "controlled_probe": {
+      "checked_utc": "2026-11-22T03:49:27.929407+00:00",
+      "url": "https://final.abcplace.blog.br/",
+      "http": 403,
+      "server": "cloudflare",
+      "cloudflare_ray": "a5e4f6d6883fe7d5-GRU",
+      "cloudfront_request_id": "N0ok9s_Y69NY5mXRK2XznG837eCVa8CNuwD0in2vnwFCTS6G3ovrtA==",
+      "has_three_products": false,
+      "sha256_body": "f1084ccaf1c28cb3960fabe14eeab8c0cfa48f0d64342c5b13154d4300433f85"
+    },
+    "sqli": {
+      "checked_utc": "2026-11-22T03:49:28.560550+00:00",
+      "url": "https://final.abcplace.blog.br/?s=%27%20OR%201%3D1--",
+      "http": 403,
+      "server": "cloudflare",
+      "cloudflare_ray": "a5e4f6db5994f194-GRU",
+      "cloudfront_request_id": "H-87RujjRadBJuFS-K04q61-L4W6zwVXumt6QSslxErM2M18JwdadQ==",
+      "has_three_products": false,
+      "sha256_body": "43ee931b13f3f8a0a6d98b301319e93113d04fb896a8166aef8f13eab9b5d0a5"
+    },
+    "direct_bypass_with_forged_ip": {
+      "http": 403,
+      "cloudfront_request_id": "8kpgmQw2IKnNd3lThBGgGli4Fsqhw0AHq2bfLDP_-IWCTkQg_-8kLg==",
+      "tls_hostname_verified": true,
+      "expected_block": 403
+    },
+    "previous_cloudfront_url": {
+      "http": 301,
+      "location": "https://final.abcplace.blog.br/?s=Caderno"
+    }
+  },
+  "tls_cloudflare": {
+    "TLSv1": {
+      "accepted": false,
+      "error": "TLSV1_ALERT_PROTOCOL_VERSION"
+    },
+    "TLSv1_1": {
+      "accepted": false,
+      "error": "TLSV1_ALERT_PROTOCOL_VERSION"
+    },
+    "TLSv1_2": {
+      "accepted": true,
+      "negotiated": "TLSv1.2",
+      "cipher": "ECDHE-ECDSA-CHACHA20-POLY1305"
+    },
+    "TLSv1_3": {
+      "accepted": true,
+      "negotiated": "TLSv1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384"
+    }
+  },
+  "cloudflare_rate": {
+    "requests": [
+      {
+        "checked_utc": "2026-11-22T03:49:30.606453+00:00",
+        "url": "https://final.abcplace.blog.br/wp-admin/",
+        "http": 403,
+        "server": "cloudflare",
+        "cloudflare_ray": "a5e4f6e73bb1066a-GRU",
+        "cloudfront_request_id": "SGFqOG7CmKVHcSsMl6M9qiafF4I3oJbfMKDthEHRSihUzjeEzFG-iQ==",
+        "has_three_products": false,
+        "sha256_body": "230d35304be3328d15e019e93d600c94812779eb8bfea955f9e506dea84b9a70"
+      },
+      {
+        "checked_utc": "2026-11-22T03:49:31.106643+00:00",
+        "url": "https://final.abcplace.blog.br/wp-admin/",
+        "http": 403,
+        "server": "cloudflare",
+        "cloudflare_ray": "a5e4f6ee0f75b3ec-GRU",
+        "cloudfront_request_id": "OFtPWVePlKhC0GuAh0Q4lAVUumeuPI73vTvceJmj4B7RSl0dXl-RQA==",
+        "has_three_products": false,
+        "sha256_body": "230d35304be3328d15e019e93d600c94812779eb8bfea955f9e506dea84b9a70"
+      },
+      {
+        "checked_utc": "2026-11-22T03:49:32.064748+00:00",
+        "url": "https://final.abcplace.blog.br/wp-admin/",
+        "http": 403,
+        "server": "cloudflare",
+        "cloudflare_ray": "a5e4f6f12fe7565d-GRU",
+        "cloudfront_request_id": "C9wwbZyEusXDpbPbBYgF7eCADm7VWdMfYI5MQVjR5RVCbFmjambHwg==",
+        "has_three_products": false,
+        "sha256_body": "230d35304be3328d15e019e93d600c94812779eb8bfea955f9e506dea84b9a70"
+      },
+      {
+        "checked_utc": "2026-11-22T03:49:32.572450+00:00",
+        "url": "https://final.abcplace.blog.br/wp-admin/",
+        "http": 403,
+        "server": "cloudflare",
+        "cloudflare_ray": "a5e4f6f6f91c0124-GRU",
+        "cloudfront_request_id": "x6ZCf6SYQTGX0Yx5AcQNZ_AwKPbZeQsx0xd1IOIgbNzHjeWGy4ay-A==",
+        "has_three_products": false,
+        "sha256_body": "230d35304be3328d15e019e93d600c94812779eb8bfea955f9e506dea84b9a70"
+      },
+      {
+        "checked_utc": "2026-11-22T03:49:33.066808+00:00",
+        "url": "https://final.abcplace.blog.br/wp-admin/",
+        "http": 403,
+        "server": "cloudflare",
+        "cloudflare_ray": "a5e4f6fa2cf8f194-GRU",
+        "cloudfront_request_id": "-L_rYfoWrpP14sjvUAG2vKOrakaVW2UKjV_275p3L8Qd7VxyLz9aaQ==",
+        "has_three_products": false,
+        "sha256_body": "230d35304be3328d15e019e93d600c94812779eb8bfea955f9e506dea84b9a70"
+      },
+      {
+        "checked_utc": "2026-11-22T03:49:34.172419+00:00",
+        "url": "https://final.abcplace.blog.br/wp-admin/",
+        "http": 403,
+        "server": "cloudflare",
+        "cloudflare_ray": "a5e4f6fd4bdac65f-GRU",
+        "cloudfront_request_id": "KKurTvY5XOnU559pdxqklteL7YgtolNeX1BLl3H5NvIBSpe32tz7Jw==",
+        "has_three_products": false,
+        "sha256_body": "230d35304be3328d15e019e93d600c94812779eb8bfea955f9e506dea84b9a70"
+      },
+      {
+        "checked_utc": "2026-11-22T03:49:34.514994+00:00",
+        "url": "https://final.abcplace.blog.br/wp-admin/",
+        "http": 429,
+        "server": "cloudflare",
+        "cloudflare_ray": "a5e4f7042b187e1d-GRU",
+        "cloudfront_request_id": null,
+        "has_three_products": false,
+        "sha256_body": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602"
+      }
+    ],
+    "recovery": {
+      "checked_utc": "2026-11-22T03:49:47.135061+00:00",
+      "url": "https://final.abcplace.blog.br/wp-admin/",
+      "http": 403,
+      "server": "cloudflare",
+      "cloudflare_ray": "a5e4f74fbf19628c-GRU",
+      "cloudfront_request_id": "uxR9resxvdq4j5wHsG0fsFX9yoiELAHN7_zL9HOaKOTNDec0z8DVpQ==",
+      "has_three_products": false,
+      "sha256_body": "230d35304be3328d15e019e93d600c94812779eb8bfea955f9e506dea84b9a70"
+    },
+    "interpretation": "403 inicial vem da administração bloqueada na origem; 429 com CF-Ray comprova limitação Cloudflare; após 12 s volta ao 403 esperado."
+  },
+  "legacy_home": {
+    "checked_utc": "2026-11-22T03:49:48.088748+00:00",
+    "url": "https://abcplace.blog.br/",
+    "http": 200,
+    "server": "cloudflare",
+    "cloudflare_ray": "a5e4f7536a2ed8cb-GRU",
+    "cloudfront_request_id": null,
+    "has_three_products": false,
+    "sha256_body": "8fed2b8e687010be00b22864d82a67adc1734933786ca127b595f11a9bbe7b3e"
+  },
+  "scope": "Somente a loja do grupo; GETs limitados e marcador benigno. Correlacionar SQLi/probe/acesso direto aos logs WAF por request ID. Não é teste de capacidade."
+}

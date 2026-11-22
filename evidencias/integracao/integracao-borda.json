@@ -1,0 +1,85 @@
+{
+  "checked_utc": "2026-11-22T03:55:20.203025+00:00",
+  "waf_correlations": [
+    {
+      "test": "controlled_probe",
+      "timestamp": 1795319366747,
+      "action": "BLOCK",
+      "rule": "TrustedCloudflareIngress",
+      "request_id": "N0ok9s_Y69NY5mXRK2XznG837eCVa8CNuwD0in2vnwFCTS6G3ovrtA==",
+      "uri": "/",
+      "source_is_cloudflare": true,
+      "expected_rule": "TrustedCloudflareIngress",
+      "passed": true
+    },
+    {
+      "test": "sqli",
+      "timestamp": 1795319367468,
+      "action": "BLOCK",
+      "rule": "AWSManagedRulesSQLiRuleSet",
+      "request_id": "H-87RujjRadBJuFS-K04q61-L4W6zwVXumt6QSslxErM2M18JwdadQ==",
+      "uri": "/",
+      "source_is_cloudflare": true,
+      "expected_rule": "AWSManagedRulesSQLiRuleSet",
+      "passed": true
+    },
+    {
+      "test": "direct_bypass_with_forged_ip",
+      "timestamp": 1795319368015,
+      "action": "BLOCK",
+      "rule": "TrustedCloudflareIngress",
+      "request_id": "8kpgmQw2IKnNd3lThBGgGli4Fsqhw0AHq2bfLDP_-IWCTkQg_-8kLg==",
+      "uri": "/",
+      "source_is_cloudflare": false,
+      "expected_rule": "TrustedCloudflareIngress",
+      "passed": true
+    }
+  ],
+  "cloudfront": {
+    "state": "Deployed",
+    "aliases": {
+      "Quantity": 1,
+      "Items": [
+        "final.abcplace.blog.br"
+      ]
+    },
+    "minimum_tls": "TLSv1.2_2021",
+    "sni_only": true,
+    "active_vpc_origin_id": "vo_3I44gQ9LNKuCeY0O1tdczQ",
+    "active_vpc_origin": {
+      "Name": "cyberfinal262-5f48e9-tls",
+      "Arn": "arn:aws:ec2:us-east-1:626635403592:instance/i-0827f8e781876e807",
+      "HTTPPort": 80,
+      "HTTPSPort": 443,
+      "OriginProtocolPolicy": "https-only",
+      "OriginSslProtocols": {
+        "Quantity": 1,
+        "Items": [
+          "TLSv1.2"
+        ]
+      }
+    },
+    "origin_state": "Deployed",
+    "host_forwarding_policy_id": "216adef6-5c7f-47e4-b989-5492eafa07d3"
+  },
+  "waf": {
+    "rule_count": 5,
+    "rules": [
+      "TrustedCloudflareIngress",
+      "AWSManagedRulesCommonRuleSet",
+      "AWSManagedRulesSQLiRuleSet",
+      "AWSManagedRulesKnownBadInputsRuleSet",
+      "RateLimit"
+    ],
+    "rate_limit": {
+      "Limit": 100,
+      "EvaluationWindowSec": 300,
+      "AggregateKeyType": "FORWARDED_IP",
+      "ForwardedIPConfig": {
+        "HeaderName": "CF-Connecting-IP",
+        "FallbackBehavior": "MATCH"
+      }
+    }
+  },
+  "notes": "IP pessoal e cabeçalhos privados omitidos. O cabeçalho CF-Connecting-IP só é confiável depois da restrição às redes oficiais Cloudflare no domínio final."
+}

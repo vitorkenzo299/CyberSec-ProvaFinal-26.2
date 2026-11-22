@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-22T01:28:17.764808+00:00",
+  "generated_utc": "2026-11-22T05:26:11Z",
   "files": [
     {
       "path": "evidencias/atuais/20261121T223109Z/alarmes.json",
@@ -103,8 +103,8 @@
     },
     {
       "path": "evidencias/atuais/qualidade-entrega.json",
-      "bytes": 2635,
-      "sha256": "17cc9f5503b1fe67c31912a4535c2b10e0fd5948498e5497081659feea1bf18c"
+      "bytes": 2787,
+      "sha256": "cd260d0d617b87c39c9fae393693d984a8dcc4667679b6d52a231e0a3aad3999"
     },
     {
       "path": "evidencias/atuais/registros/backup-registro.html",
@@ -373,8 +373,208 @@
     },
     {
       "path": "evidencias/INDICE.md",
-      "bytes": 7760,
-      "sha256": "e16820756a70afbfcb3a0d1eb01e2a19002096ccb5fba82229ecfc3963d34725"
+      "bytes": 11083,
+      "sha256": "c9216309c885b604ca519a7e2d52ee87ee88dd896f545bb585442e68f67ecdc4"
+    },
+    {
+      "path": "evidencias/integracao/aws-rate.json",
+      "bytes": 39005,
+      "sha256": "cfd81cf828ea5d2c532ea26cc8290a8313dda1190ffe1592e0dae104dd7260ed"
+    },
+    {
+      "path": "evidencias/integracao/borda-testes.json",
+      "bytes": 7191,
+      "sha256": "afc24b7bf85d4a247673a08c3ce35ba0ba490b67c3b12b5ed111c5367640be20"
+    },
+    {
+      "path": "evidencias/integracao/cloudflare-configuracao.json",
+      "bytes": 4376,
+      "sha256": "50ca390cd8763d664fca51151d3bcd5ba7663f985859f984168b2a581f160cb4"
+    },
+    {
+      "path": "evidencias/integracao/hardening-kernel.json",
+      "bytes": 25504,
+      "sha256": "9eb5874ad872b2015d0b7bbb8e1557ad1d2e75ef0da1f245b6855e257776aa99"
+    },
+    {
+      "path": "evidencias/integracao/integracao-borda.json",
+      "bytes": 2604,
+      "sha256": "c3ee00cf0aaf4fb55f4106ea6e508dfe95cb88b7ec508b8f4b1a8e53a39371dc"
+    },
+    {
+      "path": "evidencias/integracao/kernel-triagem.json",
+      "bytes": 174802,
+      "sha256": "b931a25d1e8bc7e290e29823704a003e3354843299204cdaaa279f3e7132749a"
+    },
+    {
+      "path": "evidencias/integracao/manutencao-recuperacao.json",
+      "bytes": 467,
+      "sha256": "3d0da0322174b93eb802739b28da42b3d9c1827e7a947437159ba1002978efa5"
+    },
+    {
+      "path": "evidencias/integracao/mfa.json",
+      "bytes": 849,
+      "sha256": "4cf88a6f8438cc2aae3f2c5e92b7c3fa9cf06347da9cf5be3240b7d17c069f7e"
+    },
+    {
+      "path": "evidencias/integracao/notificacoes.json",
+      "bytes": 15993,
+      "sha256": "146487b717c2edc5f143852bb5bc240abb2b387adb62959b34a1952feeac97d2"
+    },
+    {
+      "path": "evidencias/integracao/preservacao.json",
+      "bytes": 2479,
+      "sha256": "5eddebfe2cc0bed9a245c86512e7b38f699648172c3d9b9a91dff8f6263913dd"
+    },
+    {
+      "path": "evidencias/integracao/recuperacao-wordpress-inicial.json",
+      "bytes": 17988,
+      "sha256": "33cc1aebe6613c80266f58d2a0ca644fe6df7f11b9221c22841dd5e4a8cd924c"
+    },
+    {
+      "path": "evidencias/integracao/recuperacao-wordpress.json",
+      "bytes": 17987,
+      "sha256": "3f1a17d970905496e9e4b0f6b827d73773193f96dabf824ec0fc1851e5b93753"
+    },
+    {
+      "path": "evidencias/integracao/registros/recuperacao-wordpress.html",
+      "bytes": 2246,
+      "sha256": "c5e3a150364c9668b7a7f4570a65e222fa410e8ef64a143e928a61844a43b1ea"
+    },
+    {
+      "path": "evidencias/integracao/registros/sessao-aws.html",
+      "bytes": 1913,
+      "sha256": "8ab1c27c4c20b231a08dea26e11201f79fa71564d647ae29ed3e0095b6bbfebe"
+    },
+    {
+      "path": "evidencias/integracao/registros/terraform-convergencia.html",
+      "bytes": 1702,
+      "sha256": "d67e9ea8adffc1915be1c314c59701be009613e0f812d7ead81aa6f13c9beafd"
+    },
+    {
+      "path": "evidencias/integracao/registros/triagem-kernel.html",
+      "bytes": 2176,
+      "sha256": "86fa1adfd0197be059b31612635a761648acb96446a738aaac12b146c4762fa8"
+    },
+    {
+      "path": "evidencias/integracao/telas/arquitetura.png",
+      "bytes": 139521,
+      "sha256": "2d1220715f61afead1428b8e98ce4d4e701dc6f03dd8e6f0b89348f42842ae70"
+    },
+    {
+      "path": "evidencias/integracao/telas/aws-alarmes-atuais.png",
+      "bytes": 195723,
+      "sha256": "54d41d93a9d350fb0e10c28a6b77809c249e5b2593c6522d06715a8244b78f15"
+    },
+    {
+      "path": "evidencias/integracao/telas/aws-cloudfront-origem.png",
+      "bytes": 182657,
+      "sha256": "c89133aeaf3c4f6b22d3183ce1842371c7aeec76a7ca231c5daa97e35ca9725a"
+    },
+    {
+      "path": "evidencias/integracao/telas/aws-cloudwatch-integrado.png",
+      "bytes": 147745,
+      "sha256": "69099464f737990cbde742eac7eb04e5993c04456fe5f14e5b1671ac18cfec13"
+    },
+    {
+      "path": "evidencias/integracao/telas/aws-ec2-atuais.png",
+      "bytes": 185493,
+      "sha256": "5e10b7076dae3aa907c891d0d88154a8e0adc15bf0cbaac17ae67ab6f96c7466"
+    },
+    {
+      "path": "evidencias/integracao/telas/aws-mfa-operador.png",
+      "bytes": 38818,
+      "sha256": "b6f7402177281344a20e2e4259ae2537063ddf6ce9421cb29b688b265c243d02"
+    },
+    {
+      "path": "evidencias/integracao/telas/aws-sessao-registro-recorte.png",
+      "bytes": 75357,
+      "sha256": "5ae0784afc6c6f4d82f92c3ba9e08b3ed38d12641225311de1e152eacc907037"
+    },
+    {
+      "path": "evidencias/integracao/telas/aws-sessao-registro.png",
+      "bytes": 82171,
+      "sha256": "dc8ff118315adf59ce2769e14f4f42169f072b64298882381be8c48bf64c428d"
+    },
+    {
+      "path": "evidencias/integracao/telas/aws-waf-action-totals-recorte.png",
+      "bytes": 33082,
+      "sha256": "fc35b6bd0f0bcd4a09a1a519c77f6c577daea9732e10249fab41982eb1f3c8b5"
+    },
+    {
+      "path": "evidencias/integracao/telas/aws-waf-integrado.png",
+      "bytes": 229901,
+      "sha256": "56693c289265f50dab2719b7202998a8091614e1935173c89cb4f4453b4863c9"
+    },
+    {
+      "path": "evidencias/integracao/telas/backup-registro.png",
+      "bytes": 125820,
+      "sha256": "7df2d0ebfd8317789cd84bdd7d038afdf5d6d4753d9705b4c07bbbc7e2688bb5"
+    },
+    {
+      "path": "evidencias/integracao/telas/cloudflare-dns.png",
+      "bytes": 150971,
+      "sha256": "84785418e07f706026e0eb9d245fbfeedae6a44985b92e48ba9d1288f4dde544"
+    },
+    {
+      "path": "evidencias/integracao/telas/cloudflare-mfa.png",
+      "bytes": 106386,
+      "sha256": "b2637ccc1979def1c95e2f7191386e2b7acbcf94768680d60e711acdb144cd8a"
+    },
+    {
+      "path": "evidencias/integracao/telas/kernel-registro.png",
+      "bytes": 111387,
+      "sha256": "73c16e66dd9e4dedb4d34395a7bd5c2f4545487fd263ebe9238e52a49c8092fd"
+    },
+    {
+      "path": "evidencias/integracao/telas/site-final.png",
+      "bytes": 117823,
+      "sha256": "4626c9854671453a55cb671e6ba57d9143cb1520db78afb03daac4d6d0a767f8"
+    },
+    {
+      "path": "evidencias/integracao/telas/terraform-convergencia.png",
+      "bytes": 67249,
+      "sha256": "dcb08db6466d864b844450755db8b8a2b188dfda72e6e2226d99ad34a5430c59"
+    },
+    {
+      "path": "evidencias/integracao/telas/wazuh-fim-atual.png",
+      "bytes": 90496,
+      "sha256": "f2cdf0e670295fb7adbdd540f596245b2fc0900f27a3eaa6bdcd74c64a3758b6"
+    },
+    {
+      "path": "evidencias/integracao/telas/zap-final.png",
+      "bytes": 229807,
+      "sha256": "49b21e20a8286cccfb5fd48980a81752f763ddd05cc9d656fc63900699c7b6d5"
+    },
+    {
+      "path": "evidencias/integracao/telas/zap-resumo-recorte.png",
+      "bytes": 47744,
+      "sha256": "d141da88d9ce7b400758b3f178bfdef3ee2082007b6ec43df9a8be7009df41e8"
+    },
+    {
+      "path": "evidencias/integracao/terraform-convergencia.json",
+      "bytes": 1291,
+      "sha256": "bdd5b2ed146dd3202c7eb6b67b6a082f1f95f51a729198dc4243ef3621fdf3c6"
+    },
+    {
+      "path": "evidencias/integracao/varredura/zap-coverage.json",
+      "bytes": 47790,
+      "sha256": "ca930adc2432823e62122bb1f3e98b75d950d073b7031ab67d53039de8294605"
+    },
+    {
+      "path": "evidencias/integracao/varredura/zap-http-summary.json",
+      "bytes": 160433,
+      "sha256": "3a4f65434edad9f41934589bb55124d5b1eaf2bdfb6992c877600b29197a2714"
+    },
+    {
+      "path": "evidencias/integracao/varredura/zap-report.html",
+      "bytes": 29106,
+      "sha256": "66f02d2756a07bab1ce82ae1114220cb82aef835293402cac04924e263ee1796"
+    },
+    {
+      "path": "evidencias/integracao/varredura/zap-result.json",
+      "bytes": 64920,
+      "sha256": "45c825824775f8cd61e902a90b53ed4866815d886cf014f5231c019919d99880"
     },
     {
       "path": "evidencias/locais/aplicacao-local-desktop.png",

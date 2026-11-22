@@ -1,0 +1,488 @@
+{
+  "checked_utc": "2026-11-22T03:47:46.873664+00:00",
+  "nodes": [
+    {
+      "checked_utc": "2026-11-22T03:44:13.283699+00:00",
+      "role": "web",
+      "kernel": "7.0.0-1018-aws",
+      "sysctl_saved_baseline": {
+        "kernel.io_uring_disabled": "0",
+        "kernel.kptr_restrict": "1"
+      },
+      "sysctl_after": {
+        "kernel.io_uring_disabled": "2",
+        "kernel.kptr_restrict": "2"
+      },
+      "modules": {
+        "xen_netback": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "sch_teql": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "cifs": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/fs/netfs/netfs.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/smb/common/cifs_md4.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/lib/crypto/libarc4.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/nls/nls_ucs2_utils.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "ksmbd": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/lib/crypto/libarc4.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/nls/nls_ucs2_utils.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/iw_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/rdma_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/smb/server/ksmbd.ko.zst",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "ntfs3": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "libertas": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "amdgpu": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/platform/wmi/wmi.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/acpi/video.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/i2c/algos/i2c-algo-bit.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/media/rc/rc-core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/media/cec/core/cec.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_suballoc_helper.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_exec.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/ttm/ttm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_buddy.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_panel_backlight_quirks.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/amd/amdxcp/amdxcp.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "binder_linux": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "algif_skcipher": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/crypto/af_alg.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "algif_aead": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/crypto/af_alg.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "sctp": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv4/udp_tunnel.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv6/ip6_udp_tunnel.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "rds": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "tipc": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv4/udp_tunnel.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv6/ip6_udp_tunnel.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "can": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "smc": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/dibs/dibs.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "siw": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_uverbs.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "rdma_ucm": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/iw_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/rdma_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_uverbs.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "libiscsi": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/scsi/scsi_transport_iscsi.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "iscsi_tcp": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/scsi/scsi_transport_iscsi.ko.zst \ninstall /bin/false \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/scsi/libiscsi_tcp.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "bluetooth": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "btusb": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "rfcomm": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "bnep": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        }
+      },
+      "services": {
+        "nginx": "active",
+        "php8.3-fpm": "active",
+        "cyberfinal": "active",
+        "wazuh-agent": "active",
+        "amazon-cloudwatch-agent": "active"
+      },
+      "boundary": "Carga automática bloqueada. Um administrador root ainda pode alterar a política ou carregar módulos explicitamente; softdeps podem sobrepor install em modprobe manual. Não apaga arquivos/alertas nem equivale a patches."
+    },
+    {
+      "checked_utc": "2026-11-22T03:44:11.772261+00:00",
+      "role": "vpn",
+      "kernel": "7.0.0-1018-aws",
+      "sysctl_saved_baseline": {
+        "kernel.io_uring_disabled": "0",
+        "kernel.kptr_restrict": "1"
+      },
+      "sysctl_after": {
+        "kernel.io_uring_disabled": "2",
+        "kernel.kptr_restrict": "2"
+      },
+      "modules": {
+        "xen_netback": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "sch_teql": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "cifs": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/fs/netfs/netfs.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/smb/common/cifs_md4.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/lib/crypto/libarc4.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/nls/nls_ucs2_utils.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "ksmbd": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/lib/crypto/libarc4.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/nls/nls_ucs2_utils.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/iw_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/rdma_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/smb/server/ksmbd.ko.zst",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "ntfs3": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "libertas": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "amdgpu": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/platform/wmi/wmi.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/acpi/video.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/i2c/algos/i2c-algo-bit.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/media/rc/rc-core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/media/cec/core/cec.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_suballoc_helper.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_exec.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/ttm/ttm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_buddy.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_panel_backlight_quirks.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/amd/amdxcp/amdxcp.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "binder_linux": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "algif_skcipher": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/crypto/af_alg.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "algif_aead": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/crypto/af_alg.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "sctp": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv4/udp_tunnel.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv6/ip6_udp_tunnel.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "rds": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "tipc": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv4/udp_tunnel.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv6/ip6_udp_tunnel.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "can": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "smc": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/dibs/dibs.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "siw": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_uverbs.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "rdma_ucm": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/iw_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/rdma_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_uverbs.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "libiscsi": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/scsi/scsi_transport_iscsi.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "iscsi_tcp": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/scsi/scsi_transport_iscsi.ko.zst \ninstall /bin/false \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/scsi/libiscsi_tcp.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "bluetooth": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "btusb": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "rfcomm": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "bnep": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        }
+      },
+      "services": {
+        "openvpn-server@server": "active",
+        "wazuh-agent": "active",
+        "amazon-cloudwatch-agent": "active"
+      },
+      "boundary": "Carga automática bloqueada. Um administrador root ainda pode alterar a política ou carregar módulos explicitamente; softdeps podem sobrepor install em modprobe manual. Não apaga arquivos/alertas nem equivale a patches."
+    },
+    {
+      "checked_utc": "2026-11-22T03:44:14.785332+00:00",
+      "role": "wazuh",
+      "kernel": "7.0.0-1018-aws",
+      "sysctl_saved_baseline": {
+        "kernel.io_uring_disabled": "0",
+        "kernel.kptr_restrict": "1"
+      },
+      "sysctl_after": {
+        "kernel.io_uring_disabled": "2",
+        "kernel.kptr_restrict": "2"
+      },
+      "modules": {
+        "xen_netback": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "sch_teql": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "cifs": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/fs/netfs/netfs.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/smb/common/cifs_md4.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/lib/crypto/libarc4.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/nls/nls_ucs2_utils.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "ksmbd": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/lib/crypto/libarc4.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/nls/nls_ucs2_utils.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/iw_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/rdma_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/fs/smb/server/ksmbd.ko.zst",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "ntfs3": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "libertas": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "amdgpu": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/platform/wmi/wmi.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/acpi/video.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/i2c/algos/i2c-algo-bit.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/media/rc/rc-core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/media/cec/core/cec.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/display/drm_display_helper.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_suballoc_helper.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_exec.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/ttm/ttm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_ttm_helper.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_buddy.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/scheduler/gpu-sched.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/drm_panel_backlight_quirks.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/gpu/drm/amd/amdxcp/amdxcp.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "binder_linux": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "algif_skcipher": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/crypto/af_alg.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "algif_aead": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/crypto/af_alg.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "sctp": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv4/udp_tunnel.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv6/ip6_udp_tunnel.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "rds": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "tipc": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv4/udp_tunnel.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/net/ipv6/ip6_udp_tunnel.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "can": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "smc": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/dibs/dibs.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "siw": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_uverbs.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "rdma_ucm": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_core.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/iw_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/rdma_cm.ko.zst \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/infiniband/core/ib_uverbs.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "libiscsi": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/scsi/scsi_transport_iscsi.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "iscsi_tcp": {
+          "loaded": false,
+          "manual_dry_run": "insmod /lib/modules/7.0.0-1018-aws/kernel/drivers/scsi/scsi_transport_iscsi.ko.zst \ninstall /bin/false \ninsmod /lib/modules/7.0.0-1018-aws/kernel/drivers/scsi/libiscsi_tcp.ko.zst \ninstall /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "bluetooth": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "btusb": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "rfcomm": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        },
+        "bnep": {
+          "loaded": false,
+          "manual_dry_run": "install /bin/false",
+          "autoload_dry_run": "",
+          "autoload_returncode": 0
+        }
+      },
+      "services": {
+        "wazuh-manager": "active",
+        "wazuh-indexer": "active",
+        "wazuh-dashboard": "active",
+        "amazon-cloudwatch-agent": "active"
+      },
+      "boundary": "Carga automática bloqueada. Um administrador root ainda pode alterar a política ou carregar módulos explicitamente; softdeps podem sobrepor install em modprobe manual. Não apaga arquivos/alertas nem equivale a patches."
+    }
+  ],
+  "no_module_files_removed": true,
+  "reboot_performed": false,
+  "scope": "Somente os três servidores da nova VPC. Baseline para reversão guardada em /root/abcplace-kernel-before.json."
+}

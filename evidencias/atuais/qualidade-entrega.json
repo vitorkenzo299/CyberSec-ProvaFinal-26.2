@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-11-22T00:54:21.861336+00:00",
+  "checked_utc": "2026-11-22T05:26:11Z",
   "team": [
     "Vitor",
     "Artur Cruz",
@@ -7,11 +7,11 @@
   ],
   "case": "ABC Place — continuidade dos roteiros 1–4",
   "report": {
-    "pages": 17,
+    "pages": 19,
     "opened_with": "Microsoft Word",
     "pdf_export": "native Office",
-    "renderer": "PDFium",
-    "visual_review": "17 páginas revistas; recortes reais e tabelas conferidos. A renderização nativa foi usada porque LibreOffice não está instalado."
+    "renderer": "Poppler",
+    "visual_review": "PDF renderizado em 19 páginas; mosaico completo e páginas 8, 11 e 14 inspecionadas em tamanho maior."
   },
   "presentation": {
     "slides": 12,
@@ -23,7 +23,8 @@
     "font": "Arial",
     "first_party_import_passed": true,
     "structural_package_findings": 0,
-    "visual_correction": "O título do nó CloudFront foi encurtado após a inspeção nativa para evitar quebra sobre o texto inferior. Estimativas automáticas de geometria não substituíram a revisão visual.",
+    "automated_layout_warnings": 2,
+    "visual_review": "As 12 lâminas foram exportadas pelo PowerPoint e conferidas; slide 6 e tabelas dos slides 4 e 5 inspecionados em tamanho maior. Os dois alertas restantes são heurísticas de geometria e não aparecem como cortes na renderização nativa.",
     "speakers": {
       "Artur Cruz": [
         1,
@@ -46,45 +47,45 @@
     }
   },
   "workbook": {
-    "checked_utc": "2026-11-22T00:34:23.1260636Z",
+    "checked_utc": "2026-11-22T05:23:30.5521777Z",
     "application": "Microsoft Excel",
     "read_only": true,
     "sheets": 5,
     "original_extreme": 9,
     "original_high": 5,
-    "residual_high": 6,
-    "residual_moderate": 8,
+    "residual_high": 5,
+    "residual_moderate": 9,
     "input_recalculation": "passed",
     "missing_input": "passed",
     "original_values_preserved": "passed",
     "source_saved": false
   },
-  "boundary": "Validação dos arquivos e de sua leitura. Não substitui as pendências técnicas e o limite de implantação paralela descritos no relatório.",
+  "boundary": "Validação de estrutura, leitura e apresentação dos arquivos. Não substitui as pendências técnicas e os limites de implantação descritos no relatório.",
   "artifacts": [
     {
-      "file": "Apresentacao_Executiva.pdf",
-      "bytes": 348181,
-      "sha256": "803ccb7608bcfaeca4c0c29dac897ca81569d2fe07b80bcb0fd2adacfe436b1d"
-    },
-    {
-      "file": "Apresentacao_Executiva.pptx",
-      "bytes": 395026,
-      "sha256": "1ec55fa0000895a771a179fb2a443edc7752d31576b89fa794aa8931d1310dea"
-    },
-    {
-      "file": "Matriz_de_Riscos.xlsx",
-      "bytes": 23574,
-      "sha256": "ecae3523bd5b058197f78e5af1f9c2c38768e546dfd669a991ca55995251126a"
-    },
-    {
       "file": "Relatorio_Final_Ciberseguranca.docx",
-      "bytes": 889622,
-      "sha256": "8bd06af1f796925ed9ff93e3ce1dd868d35a3d96dd1845992a458df4a5387686"
+      "bytes": 1406246,
+      "sha256": "ca1d9f24666b0a1fbd941d84fd9dce67578c50d1dd608cb85ba6463da4524081"
     },
     {
       "file": "Relatorio_Final_Ciberseguranca.pdf",
-      "bytes": 826165,
-      "sha256": "c490e34497e5a0edf4ba4c66b20eaf28cdb58f3a7df01820d50cc3f539428729"
+      "bytes": 1135203,
+      "sha256": "c1d579433803f81d12475f2a3fe2b5d19dda4afa72ddb8e98e491d45be426514"
+    },
+    {
+      "file": "Apresentacao_Executiva.pptx",
+      "bytes": 564006,
+      "sha256": "98f5030e61b37e2b86b895f0e0c16363789848a4421b4fdf72cb6f8920364803"
+    },
+    {
+      "file": "Apresentacao_Executiva.pdf",
+      "bytes": 413017,
+      "sha256": "0b6ac51d1b74ed1b529e01c246cf1274f539604cdc087f3e44b2da25bc77876c"
+    },
+    {
+      "file": "Matriz_de_Riscos.xlsx",
+      "bytes": 24357,
+      "sha256": "ef8a17283721928e2997f05eef85fa6dc8d7f78d93b9768daff07a165b8c57b1"
     }
   ]
 }

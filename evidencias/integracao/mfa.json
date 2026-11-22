@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-11-22T03:24:46.986Z",
+  "aws": {
+    "identity": "Vitor",
+    "provider": "IAM Identity Center institucional",
+    "device_name": "vitorknf's MFA 1",
+    "type": "AplicaÃ§Ã£o autenticadora",
+    "registered_local": "20/08/2026 08:50:56 -03:00",
+    "existing_registration_verified": true,
+    "scope": "Confirma o dispositivo do operador atual; nÃ£o audita a polÃ­tica global do Insper, root ou os acessos dos demais integrantes."
+  },
+  "cloudflare": {
+    "two_factor_authentication_enabled": true,
+    "scope": "Perfil da conta do projeto; nenhum cÃ³digo ou chave de recuperaÃ§Ã£o capturado.",
+    "method": "Email Authentication (OTP), conforme tela; não é um aplicativo TOTP cadastrado na Cloudflare"
+  },
+  "screenshots": [
+    "aws-mfa-operador.png",
+    "cloudflare-mfa.png"
+  ]
+}

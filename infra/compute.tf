@@ -42,7 +42,8 @@ resource "aws_iam_role_policy" "logs" {
   role     = aws_iam_role.node[each.key].id
   policy = jsonencode({ Version = "2012-10-17", Statement = [
     { Effect = "Allow", Action = ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents", "logs:DescribeLogStreams"], Resource = [aws_cloudwatch_log_group.system.arn, "${aws_cloudwatch_log_group.system.arn}:*"] },
-    { Effect = "Allow", Action = ["logs:DescribeLogGroups"], Resource = "*" }
+    { Effect = "Allow", Action = ["logs:DescribeLogGroups"], Resource = "*" },
+    { Effect = "Allow", Action = ["cloudwatch:PutMetricData"], Resource = "*", Condition = { StringEquals = { "cloudwatch:namespace" = "CWAgent" } } }
   ] })
 }
 resource "aws_iam_role_policy" "web_secret" {
@@ -73,6 +74,7 @@ resource "aws_instance" "node" {
   subnet_id                   = each.value.public ? aws_subnet.public[0].id : aws_subnet.private[0].id
   private_ip                  = each.value.ip
   associate_public_ip_address = each.value.public
+  monitoring                  = each.key == "web"
   vpc_security_group_ids      = [aws_security_group.node[each.key].id]
   iam_instance_profile        = aws_iam_instance_profile.node[each.key].name
   source_dest_check           = each.key != "vpn"

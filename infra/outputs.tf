@@ -2,7 +2,7 @@ output "project_name" { value = local.name }
 locals {
   bootstrap_encoded_sizes = { for role, node in aws_instance.node : role => length(node.user_data_base64) }
 }
-output "application_url" { value = "https://${aws_cloudfront_distribution.lab.domain_name}" }
+output "application_url" { value = "https://${var.domain_name == null ? aws_cloudfront_distribution.lab.domain_name : var.domain_name}" }
 output "vpn_public_ip" { value = aws_instance.node["vpn"].public_ip }
 output "vpn_profile_parameter" {
   value       = "${local.secret_dir}/vpn/client"

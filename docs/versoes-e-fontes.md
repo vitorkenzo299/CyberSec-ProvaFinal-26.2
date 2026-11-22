@@ -42,4 +42,4 @@ WordPress 7.1.5, WooCommerce 11.3.1, PHP 8.3.6 e WP-CLI 2.12.0 foram observados 
 - [Interface wpdb para conexão e drop-in](https://developer.wordpress.org/reference/classes/wpdb/)
 - [Requisitos WooCommerce](https://woocommerce.com/document/update-php-wordpress/)
 
-O novo scan WordPress tem 1.228 mensagens, 16 URLs, 54 informativos e nenhum High/Medium/Low. Ele não substitui o scan anterior do catálogo Python nem o inventário do SO. Nomes, versões e hashes dos roteiros 1–4 estão em `evidencias/continuidade/fontes.json`. O original foi apenas lido; sua escala de quatro níveis foi preservada na matriz.
+O novo scan WordPress tem 1.232 registros HTTP e 16 formas de URL (12 endpoints no sumário HTML), 54 informativos e nenhum High/Medium/Low. Ele não substitui o scan anterior do catálogo Python nem o inventário do SO. Nomes, versões e hashes dos roteiros 1–4 estão em `evidencias/continuidade/fontes.json`. O original foi apenas lido; sua escala de quatro níveis foi preservada na matriz.

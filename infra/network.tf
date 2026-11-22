@@ -125,6 +125,25 @@ resource "aws_vpc_security_group_ingress_rule" "web" {
   from_port         = 80
   to_port           = 80
 }
+resource "aws_vpc_security_group_ingress_rule" "web_tls" {
+  security_group_id            = aws_security_group.node["web"].id
+  referenced_security_group_id = data.aws_security_group.cloudfront_service.id
+  ip_protocol                  = "tcp"
+  from_port                    = 443
+  to_port                      = 443
+  description                  = "HTTPS somente de ENIs CloudFront nesta VPC"
+}
+data "aws_security_group" "cloudfront_service" {
+  filter {
+    name   = "vpc-id"
+    values = [aws_vpc.lab.id]
+  }
+  filter {
+    name   = "group-name"
+    values = ["CloudFront-VPCOrigins-Service-SG"]
+  }
+  depends_on = [aws_cloudfront_vpc_origin.web]
+}
 resource "aws_vpc_security_group_ingress_rule" "database" {
   security_group_id            = aws_security_group.database.id
   referenced_security_group_id = aws_security_group.node["web"].id

@@ -1,0 +1,149 @@
+{
+  "started_utc": "2026-11-22T03:51:37.180229+00:00",
+  "alarm_name": "cyberfinal262-5f48e9-web-network",
+  "topic": "ABCPlace-R4-Alertas",
+  "authorized_test_emails": 2,
+  "baseline_all_alarms_ok": true,
+  "stimulus": "Um download de 3.000.000 bytes do endpoint público de teste de velocidade Cloudflare; nenhuma mudança de limite ou simulação de estado.",
+  "command_id": "13713a59-418e-4389-a880-2d9618f7fa71",
+  "download": {
+    "utc": "2026-11-22T03:51:37.321409+00:00",
+    "http": 200,
+    "download_bytes": 3000000
+  },
+  "finished_utc": "2026-11-22T03:54:06.343533+00:00",
+  "observed_alarm": true,
+  "final_state": "OK",
+  "history": [
+    {
+      "AlarmName": "cyberfinal262-5f48e9-web-network",
+      "AlarmType": "MetricAlarm",
+      "Timestamp": "2026-11-22 03:54:02.076000+00:00",
+      "HistoryItemType": "Action",
+      "HistorySummary": "Successfully executed action arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas",
+      "HistoryData": "{\"actionState\":\"Succeeded\",\"stateUpdateTimestamp\":1795319642041,\"notificationResource\":\"arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas\",\"publishedMessage\":\"{\\\"default\\\":\\\"{\\\\\\\"AlarmName\\\\\\\":\\\\\\\"cyberfinal262-5f48e9-web-network\\\\\\\",\\\\\\\"AlarmDescription\\\\\\\":\\\\\\\"R4: 1 MB decimal por minuto = NetworkIn + NetworkOut > 1000000 bytes em 60s.\\\\\\\",\\\\\\\"AWSAccountId\\\\\\\":\\\\\\\"626635403592\\\\\\\",\\\\\\\"AlarmConfigurationUpdatedTimestamp\\\\\\\":\\\\\\\"2026-11-22T03:51:16.708+0000\\\\\\\",\\\\\\\"NewStateValue\\\\\\\":\\\\\\\"OK\\\\\\\",\\\\\\\"NewStateReason\\\\\\\":\\\\\\\"Threshold Crossed: 1 datapoint [41339.0 (22/11/26 03:53:00)] was not greater than the threshold (1000000.0).\\\\\\\",\\\\\\\"StateChangeTime\\\\\\\":\\\\\\\"2026-11-22T03:54:02.041+0000\\\\\\\",\\\\\\\"Region\\\\\\\":\\\\\\\"US East (N. Virginia)\\\\\\\",\\\\\\\"AlarmArn\\\\\\\":\\\\\\\"arn:aws:cloudwatch:us-east-1:626635403592:alarm:cyberfinal262-5f48e9-web-network\\\\\\\",\\\\\\\"OldStateValue\\\\\\\":\\\\\\\"ALARM\\\\\\\",\\\\\\\"ActionExecutedAfterMuteWindow\\\\\\\":false,\\\\\\\"OKActions\\\\\\\":[\\\\\\\"arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas\\\\\\\"],\\\\\\\"AlarmActions\\\\\\\":[\\\\\\\"arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas\\\\\\\"],\\\\\\\"InsufficientDataActions\\\\\\\":[],\\\\\\\"Trigger\\\\\\\":{\\\\\\\"Period\\\\\\\":60,\\\\\\\"EvaluationPeriods\\\\\\\":1,\\\\\\\"ComparisonOperator\\\\\\\":\\\\\\\"GreaterThanThreshold\\\\\\\",\\\\\\\"Threshold\\\\\\\":1000000.0,\\\\\\\"TreatMissingData\\\\\\\":\\\\\\\"missing\\\\\\\",\\\\\\\"EvaluateLowSampleCountPercentile\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"Metrics\\\\\\\":[{\\\\\\\"Expression\\\\\\\":\\\\\\\"incoming+outgoing\\\\\\\",\\\\\\\"Id\\\\\\\":\\\\\\\"total\\\\\\\",\\\\\\\"Label\\\\\\\":\\\\\\\"Bytes por minuto\\\\\\\",\\\\\\\"ReturnData\\\\\\\":true},{\\\\\\\"Id\\\\\\\":\\\\\\\"outgoing\\\\\\\",\\\\\\\"MetricStat\\\\\\\":{\\\\\\\"Metric\\\\\\\":{\\\\\\\"Dimensions\\\\\\\":[{\\\\\\\"value\\\\\\\":\\\\\\\"i-0827f8e781876e807\\\\\\\",\\\\\\\"name\\\\\\\":\\\\\\\"InstanceId\\\\\\\"}],\\\\\\\"MetricName\\\\\\\":\\\\\\\"NetworkOut\\\\\\\",\\\\\\\"Namespace\\\\\\\":\\\\\\\"AWS/EC2\\\\\\\"},\\\\\\\"Period\\\\\\\":60,\\\\\\\"Stat\\\\\\\":\\\\\\\"Sum\\\\\\\"},\\\\\\\"ReturnData\\\\\\\":false},{\\\\\\\"Id\\\\\\\":\\\\\\\"incoming\\\\\\\",\\\\\\\"MetricStat\\\\\\\":{\\\\\\\"Metric\\\\\\\":{\\\\\\\"Dimensions\\\\\\\":[{\\\\\\\"value\\\\\\\":\\\\\\\"i-0827f8e781876e807\\\\\\\",\\\\\\\"name\\\\\\\":\\\\\\\"InstanceId\\\\\\\"}],\\\\\\\"MetricName\\\\\\\":\\\\\\\"NetworkIn\\\\\\\",\\\\\\\"Namespace\\\\\\\":\\\\\\\"AWS/EC2\\\\\\\"},\\\\\\\"Period\\\\\\\":60,\\\\\\\"Stat\\\\\\\":\\\\\\\"Sum\\\\\\\"},\\\\\\\"ReturnData\\\\\\\":false}]}}\\\",\\\"sms\\\":\\\"OK: \\\\\\\"cyberfinal262-5f48e9-web-network\\\\\\\" in US East (N. Virginia)\\\",\\\"email\\\":\\\"You are receiving this email because your Amazon CloudWatch Alarm \\\\\\\"cyberfinal262-5f48e9-web-network\\\\\\\" in the US East (N. Virginia) region has entered the OK state, because \\\\\\\"Threshold Crossed: 1 datapoint [41339.0 (22/11/26 03:53:00)] was not greater than the threshold (1000000.0).\\\\\\\" at \\\\\\\"Sunday 22 November, 2026 03:54:02 UTC\\\\\\\".\\\\n\\\\nView this alarm in the AWS Management Console:\\\\nhttps://us-east-1.console.aws.amazon.com/cloudwatch/deeplink.js?region=us-east-1#alarmsV2:alarm/cyberfinal262-5f48e9-web-network\\\\n\\\\nAlarm Details:\\\\n- Name:                       cyberfinal262-5f48e9-web-network\\\\n- Description:                R4: 1 MB decimal por minuto = NetworkIn + NetworkOut > 1000000 bytes em 60s.\\\\n- State Change:               ALARM -> OK\\\\n- Reason for State Change:    Threshold Crossed: 1 datapoint [41339.0 (22/11/26 03:53:00)] was not greater than the threshold (1000000.0).\\\\n- Timestamp:                  Sunday 22 November, 2026 03:54:02 UTC\\\\n- AWS Account:                626635403592\\\\n- Alarm Arn:                  arn:aws:cloudwatch:us-east-1:626635403592:alarm:cyberfinal262-5f48e9-web-network\\\\n\\\\nThreshold:\\\\n- The alarm is in the ALARM state when the metric is GreaterThanThreshold 1000000.0 for at least 1 of the last 1 period(s) of 60 seconds. \\\\n\\\\nMonitored Metrics:\\\\n- MetricExpression:           incoming+outgoing\\\\n- MetricLabel:                Bytes por minuto\\\\n\\\\nState Change Actions:\\\\n- OK: [arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas]\\\\n- ALARM: [arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas]\\\\n- INSUFFICIENT_DATA: \\\\n\\\"}\",\"error\":null,\"muteWindowEndTimestamp\":null}"
+    },
+    {
+      "AlarmName": "cyberfinal262-5f48e9-web-network",
+      "AlarmType": "MetricAlarm",
+      "Timestamp": "2026-11-22 03:54:02.041000+00:00",
+      "HistoryItemType": "StateUpdate",
+      "HistorySummary": "Alarm updated from ALARM to OK",
+      "HistoryData": "{\"version\":\"1.0\",\"oldState\":{\"stateValue\":\"ALARM\",\"stateReason\":\"Threshold Crossed: 1 datapoint [3203363.0 (22/11/26 03:52:00)] was greater than the threshold (1000000.0).\",\"stateReasonData\":{\"version\":\"1.0\",\"queryDate\":\"2026-11-22T03:53:02.036+0000\",\"startDate\":\"2026-11-22T03:52:00.000+0000\",\"period\":60,\"recentDatapoints\":[3203363.0],\"threshold\":1000000.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-22T03:52:00.000+0000\",\"value\":3203363.0}]}},\"newState\":{\"stateValue\":\"OK\",\"stateReason\":\"Threshold Crossed: 1 datapoint [41339.0 (22/11/26 03:53:00)] was not greater than the threshold (1000000.0).\",\"stateReasonData\":{\"version\":\"1.0\",\"queryDate\":\"2026-11-22T03:54:02.039+0000\",\"startDate\":\"2026-11-22T03:53:00.000+0000\",\"period\":60,\"recentDatapoints\":[41339.0],\"threshold\":1000000.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-22T03:53:00.000+0000\",\"value\":41339.0}]}}}"
+    },
+    {
+      "AlarmName": "cyberfinal262-5f48e9-web-network",
+      "AlarmType": "MetricAlarm",
+      "Timestamp": "2026-11-22 03:53:02.085000+00:00",
+      "HistoryItemType": "Action",
+      "HistorySummary": "Successfully executed action arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas",
+      "HistoryData": "{\"actionState\":\"Succeeded\",\"stateUpdateTimestamp\":1795319582038,\"notificationResource\":\"arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas\",\"publishedMessage\":\"{\\\"default\\\":\\\"{\\\\\\\"AlarmName\\\\\\\":\\\\\\\"cyberfinal262-5f48e9-web-network\\\\\\\",\\\\\\\"AlarmDescription\\\\\\\":\\\\\\\"R4: 1 MB decimal por minuto = NetworkIn + NetworkOut > 1000000 bytes em 60s.\\\\\\\",\\\\\\\"AWSAccountId\\\\\\\":\\\\\\\"626635403592\\\\\\\",\\\\\\\"AlarmConfigurationUpdatedTimestamp\\\\\\\":\\\\\\\"2026-11-22T03:51:16.708+0000\\\\\\\",\\\\\\\"NewStateValue\\\\\\\":\\\\\\\"ALARM\\\\\\\",\\\\\\\"NewStateReason\\\\\\\":\\\\\\\"Threshold Crossed: 1 datapoint [3203363.0 (22/11/26 03:52:00)] was greater than the threshold (1000000.0).\\\\\\\",\\\\\\\"StateChangeTime\\\\\\\":\\\\\\\"2026-11-22T03:53:02.038+0000\\\\\\\",\\\\\\\"Region\\\\\\\":\\\\\\\"US East (N. Virginia)\\\\\\\",\\\\\\\"AlarmArn\\\\\\\":\\\\\\\"arn:aws:cloudwatch:us-east-1:626635403592:alarm:cyberfinal262-5f48e9-web-network\\\\\\\",\\\\\\\"OldStateValue\\\\\\\":\\\\\\\"OK\\\\\\\",\\\\\\\"ActionExecutedAfterMuteWindow\\\\\\\":false,\\\\\\\"OKActions\\\\\\\":[\\\\\\\"arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas\\\\\\\"],\\\\\\\"AlarmActions\\\\\\\":[\\\\\\\"arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas\\\\\\\"],\\\\\\\"InsufficientDataActions\\\\\\\":[],\\\\\\\"Trigger\\\\\\\":{\\\\\\\"Period\\\\\\\":60,\\\\\\\"EvaluationPeriods\\\\\\\":1,\\\\\\\"ComparisonOperator\\\\\\\":\\\\\\\"GreaterThanThreshold\\\\\\\",\\\\\\\"Threshold\\\\\\\":1000000.0,\\\\\\\"TreatMissingData\\\\\\\":\\\\\\\"missing\\\\\\\",\\\\\\\"EvaluateLowSampleCountPercentile\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"Metrics\\\\\\\":[{\\\\\\\"Expression\\\\\\\":\\\\\\\"incoming+outgoing\\\\\\\",\\\\\\\"Id\\\\\\\":\\\\\\\"total\\\\\\\",\\\\\\\"Label\\\\\\\":\\\\\\\"Bytes por minuto\\\\\\\",\\\\\\\"ReturnData\\\\\\\":true},{\\\\\\\"Id\\\\\\\":\\\\\\\"outgoing\\\\\\\",\\\\\\\"MetricStat\\\\\\\":{\\\\\\\"Metric\\\\\\\":{\\\\\\\"Dimensions\\\\\\\":[{\\\\\\\"value\\\\\\\":\\\\\\\"i-0827f8e781876e807\\\\\\\",\\\\\\\"name\\\\\\\":\\\\\\\"InstanceId\\\\\\\"}],\\\\\\\"MetricName\\\\\\\":\\\\\\\"NetworkOut\\\\\\\",\\\\\\\"Namespace\\\\\\\":\\\\\\\"AWS/EC2\\\\\\\"},\\\\\\\"Period\\\\\\\":60,\\\\\\\"Stat\\\\\\\":\\\\\\\"Sum\\\\\\\"},\\\\\\\"ReturnData\\\\\\\":false},{\\\\\\\"Id\\\\\\\":\\\\\\\"incoming\\\\\\\",\\\\\\\"MetricStat\\\\\\\":{\\\\\\\"Metric\\\\\\\":{\\\\\\\"Dimensions\\\\\\\":[{\\\\\\\"value\\\\\\\":\\\\\\\"i-0827f8e781876e807\\\\\\\",\\\\\\\"name\\\\\\\":\\\\\\\"InstanceId\\\\\\\"}],\\\\\\\"MetricName\\\\\\\":\\\\\\\"NetworkIn\\\\\\\",\\\\\\\"Namespace\\\\\\\":\\\\\\\"AWS/EC2\\\\\\\"},\\\\\\\"Period\\\\\\\":60,\\\\\\\"Stat\\\\\\\":\\\\\\\"Sum\\\\\\\"},\\\\\\\"ReturnData\\\\\\\":false}]}}\\\",\\\"sms\\\":\\\"ALARM: \\\\\\\"cyberfinal262-5f48e9-web-network\\\\\\\" in US East (N. Virginia)\\\",\\\"email\\\":\\\"You are receiving this email because your Amazon CloudWatch Alarm \\\\\\\"cyberfinal262-5f48e9-web-network\\\\\\\" in the US East (N. Virginia) region has entered the ALARM state, because \\\\\\\"Threshold Crossed: 1 datapoint [3203363.0 (22/11/26 03:52:00)] was greater than the threshold (1000000.0).\\\\\\\" at \\\\\\\"Sunday 22 November, 2026 03:53:02 UTC\\\\\\\".\\\\n\\\\nView this alarm in the AWS Management Console:\\\\nhttps://us-east-1.console.aws.amazon.com/cloudwatch/deeplink.js?region=us-east-1#alarmsV2:alarm/cyberfinal262-5f48e9-web-network\\\\n\\\\nAlarm Details:\\\\n- Name:                       cyberfinal262-5f48e9-web-network\\\\n- Description:                R4: 1 MB decimal por minuto = NetworkIn + NetworkOut > 1000000 bytes em 60s.\\\\n- State Change:               OK -> ALARM\\\\n- Reason for State Change:    Threshold Crossed: 1 datapoint [3203363.0 (22/11/26 03:52:00)] was greater than the threshold (1000000.0).\\\\n- Timestamp:                  Sunday 22 November, 2026 03:53:02 UTC\\\\n- AWS Account:                626635403592\\\\n- Alarm Arn:                  arn:aws:cloudwatch:us-east-1:626635403592:alarm:cyberfinal262-5f48e9-web-network\\\\n\\\\nThreshold:\\\\n- The alarm is in the ALARM state when the metric is GreaterThanThreshold 1000000.0 for at least 1 of the last 1 period(s) of 60 seconds. \\\\n\\\\nMonitored Metrics:\\\\n- MetricExpression:           incoming+outgoing\\\\n- MetricLabel:                Bytes por minuto\\\\n\\\\nState Change Actions:\\\\n- OK: [arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas]\\\\n- ALARM: [arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas]\\\\n- INSUFFICIENT_DATA: \\\\n\\\"}\",\"error\":null,\"muteWindowEndTimestamp\":null}"
+    },
+    {
+      "AlarmName": "cyberfinal262-5f48e9-web-network",
+      "AlarmType": "MetricAlarm",
+      "Timestamp": "2026-11-22 03:53:02.038000+00:00",
+      "HistoryItemType": "StateUpdate",
+      "HistorySummary": "Alarm updated from OK to ALARM",
+      "HistoryData": "{\"version\":\"1.0\",\"oldState\":{\"stateValue\":\"OK\",\"stateReason\":\"Threshold Crossed: 1 datapoint [99164.0 (22/11/26 03:45:00)] was not greater than the threshold (1000000.0).\",\"stateReasonData\":{\"version\":\"1.0\",\"queryDate\":\"2026-11-22T03:46:52.773+0000\",\"startDate\":\"2026-11-22T03:45:00.000+0000\",\"period\":60,\"recentDatapoints\":[99164.0],\"threshold\":1000000.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-22T03:45:00.000+0000\",\"value\":99164.0}]}},\"newState\":{\"stateValue\":\"ALARM\",\"stateReason\":\"Threshold Crossed: 1 datapoint [3203363.0 (22/11/26 03:52:00)] was greater than the threshold (1000000.0).\",\"stateReasonData\":{\"version\":\"1.0\",\"queryDate\":\"2026-11-22T03:53:02.036+0000\",\"startDate\":\"2026-11-22T03:52:00.000+0000\",\"period\":60,\"recentDatapoints\":[3203363.0],\"threshold\":1000000.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-22T03:52:00.000+0000\",\"value\":3203363.0}]}}}"
+    }
+  ],
+  "successful_action_count": 2,
+  "all_alarms": [
+    {
+      "name": "cyberfinal262-5f48e9-vpn-cpu",
+      "state": "OK",
+      "actions_enabled": true,
+      "alarm_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ],
+      "ok_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ]
+    },
+    {
+      "name": "cyberfinal262-5f48e9-vpn-status",
+      "state": "OK",
+      "actions_enabled": true,
+      "alarm_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ],
+      "ok_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ]
+    },
+    {
+      "name": "cyberfinal262-5f48e9-wazuh-cpu",
+      "state": "OK",
+      "actions_enabled": true,
+      "alarm_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ],
+      "ok_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ]
+    },
+    {
+      "name": "cyberfinal262-5f48e9-wazuh-status",
+      "state": "OK",
+      "actions_enabled": true,
+      "alarm_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ],
+      "ok_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ]
+    },
+    {
+      "name": "cyberfinal262-5f48e9-web-cpu",
+      "state": "OK",
+      "actions_enabled": true,
+      "alarm_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ],
+      "ok_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ]
+    },
+    {
+      "name": "cyberfinal262-5f48e9-web-disk",
+      "state": "OK",
+      "actions_enabled": true,
+      "alarm_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ],
+      "ok_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ]
+    },
+    {
+      "name": "cyberfinal262-5f48e9-web-network",
+      "state": "OK",
+      "actions_enabled": true,
+      "alarm_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ],
+      "ok_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ]
+    },
+    {
+      "name": "cyberfinal262-5f48e9-web-status",
+      "state": "OK",
+      "actions_enabled": true,
+      "alarm_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ],
+      "ok_actions": [
+        "arn:aws:sns:us-east-1:626635403592:ABCPlace-R4-Alertas"
+      ]
+    }
+  ],
+  "mailbox_receipt": {
+    "source": "Confirmação explícita do usuário no chat",
+    "ALARM_received": true,
+    "OK_received": true,
+    "recorded_utc": "2026-11-22T04:04:36.724943+00:00",
+    "boundary": "Não foi realizada leitura automatizada da caixa nem captura de e-mail."
+  }
+}

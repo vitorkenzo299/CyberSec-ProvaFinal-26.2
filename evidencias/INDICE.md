@@ -45,7 +45,7 @@ O reteste ZAP está nos arquivos principais de `atuais/varredura`; a primeira ex
 `terraform-convergencia.json` registra o plano final sem mudanças. `servicos-finais.json` comprova os serviços ativos e o hash do aplicativo implantado. `capturas.json` lista as fotos preservadas. `qualidade-entrega.json` descreve a validação dos arquivos de entrega.
 
 
-## Continuidade ABC Place e revisão do grupo
+## Continuidade ABC Place e revisão do grupo (snapshot histórico anterior à integração final)
 
 O material atual consolida os roteiros 1–4, preservando os 14 IDs da matriz original. A autoria é de Vitor, Artur Cruz e Daniel Juho. A matriz original usa quatro níveis; a revisão fornece também a leitura de três níveis pedida na final. Os documentos de origem foram apenas lidos e identificados por hash, sem republicar anexos que possam conter detalhes de acesso.
 
@@ -53,7 +53,7 @@ As capturas em `atuais/telas` pertencem à primeira implantação da avaliação
 
 O HTML ZAP agrupa 54 instâncias informativas em duas regras. O JSON conserva as 52 de User Agent Fuzzer e as duas reflexões de atributo. A revisão dirigida de navegador não executou os marcadores de teste. O download auxiliar de driver do próprio ZAP também aparece nas estatísticas nativas; o contexto ativo foi limitado à origem local encaminhada.
 
-A prova de restauração EV11 antecede WordPress e valida somente o catálogo técnico. O fluxo SNS do Roteiro 4 é histórico e não comprova destinatários dos alarmes novos. A nova VPC não foi conectada ao legado e o domínio anterior não foi alterado. `wordpress/vpn-apos-revisao.json` comprova o encerramento dos clientes locais e o catálogo público ainda disponível.
+A prova de restauração EV11 antecede WordPress e valida somente o catálogo técnico. Na coleta histórica de 21/11, os alarmes novos e o subdomínio final ainda não estavam integrados. EV17–EV23 abaixo documentam as alterações posteriores de 22/11; o domínio legado e a infraestrutura anterior foram preservados. `wordpress/vpn-apos-revisao.json` comprova o encerramento dos clientes locais e o catálogo público ainda disponível.
 
 Os IDs gravados em registros históricos da primeira revisão são localizados por `continuidade/correspondencia-ids.json`; o antigo R05 do kernel corresponde ao R03 atual. `continuidade/qualidade-versao-anterior.json` pertence ao commit 476b779 e seus hashes se referem aos arquivos daquele commit, não aos entregáveis revisados. O recibo atual é `atuais/qualidade-entrega.json`.
 
@@ -61,3 +61,22 @@ Os IDs gravados em registros históricos da primeira revisão são localizados p
 ## Conferência operacional adicional
 
 `revisao-final/` contém nova consulta de saúde AWS, respostas públicas, teste limitado da Cloudflare com recuperação, conexão/desconexão VPN, serviços internos, recebimento de logs e conferência dos hashes dos arquivos revisados. A conferência de 21/11 às 22h21–22h25 (Brasília) confirma operação atual, mantendo explícitas as pendências em `resumo.json`. Ela não altera as datas ou o escopo dos testes anteriores.
+
+
+## Integração final verificada — 22/11/2026
+
+As linhas e capturas antigas foram mantidas como histórico. As evidências abaixo descrevem o estado integrado mais recente e prevalecem sobre observações anteriores que indicavam pendências de Cloudflare, SNS, TLS ou restauração.
+
+| Código | Resultado atual | Evidência e capturas |
+| --- | --- | --- |
+| EV17 | Cloudflare → CloudFront/AWS WAF → origem HTTPS; DNS legado preservado | `integracao/borda-testes.json`, `integracao/cloudflare-configuracao.json`, `integracao/preservacao.json`; `integracao/telas/cloudflare-dns.png`, `aws-waf-integrado.png`, `aws-cloudfront-origem.png` |
+| EV18 | Oito alarmes ligados ao SNS existente; ciclo ALARM/OK de rede confirmado pelo usuário; estado final OK | `integracao/notificacoes.json`; captura atual `integracao/telas/aws-cloudwatch-integrado.png` |
+| EV19 | MFA de Vitor observado no IAM Identity Center; Cloudflare por e-mail | `integracao/mfa.json`; `integracao/telas/aws-mfa-operador.png`, `cloudflare-mfa.png` |
+| EV20 | Restauração WordPress: 52 tabelas, 8.808 arquivos, hashes e loja/busca 200 | `integracao/recuperacao-wordpress.json`; registro técnico `integracao/telas/backup-registro.png` |
+| EV21 | Triagem do kernel em três hosts; hardening compensatório, sem patch provado; R03 continua alto | `integracao/kernel-triagem.json`, `hardening-kernel.json`; registro `integracao/telas/kernel-registro.png` |
+| EV22 | ZAP WordPress concluído; 0 High/Medium/Low, 54 informativos; painel e checkout fora do escopo | `integracao/varredura/`; `integracao/telas/zap-final.png` |
+| EV23 | Plano Terraform sem mudanças; sessão de alteração usou AdministratorAccess; quatro servidores e nove SGs avaliados preservados | `integracao/terraform-convergencia.json`, `integracao/preservacao.json`; registros sanitizados `integracao/telas/terraform-convergencia.png`, `aws-sessao-registro.png` |
+
+`arquitetura.png` é diagrama explicativo. Capturas `backup-registro.png`, `kernel-registro.png`, `terraform-convergencia.png` e `aws-sessao-registro.png` são registros técnicos gerados a partir dos JSONs e identificados como tais, não imagens de console. `site-final.png`, `cloudflare-dns.png`, `cloudflare-mfa.png`, `aws-mfa-operador.png`, `aws-waf-integrado.png`, `aws-cloudfront-origem.png`, `aws-cloudwatch-integrado.png` e `wazuh-fim-atual.png` são capturas visuais do ambiente. Os arquivos `aws-waf-action-totals-recorte.png` e `zap-resumo-recorte.png` são recortes derivados das capturas completas correspondentes; `aws-sessao-registro-recorte.png` é recorte do registro técnico gerado. Os originais permanecem preservados. `aws-alarmes-atuais.png` é uma visualização anterior de consulta com limitação de permissão e não é usada como prova do estado atual de SNS.
+
+A implantação não criou novos EC2/RDS nem alterou meio de pagamento pessoal. CloudWatch, logs e aproximadamente 71,6 MB em duas versões do backup podem gerar custos institucionais. A conta não foi limitada por orçamento e a fatura não foi consultada. Cinco riscos residuais permanecem altos: R01, R03, R06, R07 e R10.

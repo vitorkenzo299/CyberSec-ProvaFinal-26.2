@@ -1,0 +1,110 @@
+{
+  "baseline_utc": "2026-11-21T21:42:18.635141+00:00",
+  "checked_utc": "2026-11-22T03:55:25.384174+00:00",
+  "instances": [
+    {
+      "id": "i-078159184460cea36",
+      "name": "MicroInstance",
+      "state_before": "running",
+      "state_after": "running",
+      "compared_fields": [
+        "InstanceType",
+        "VpcId",
+        "SubnetId",
+        "PrivateIpAddress",
+        "PublicIpAddress",
+        "SecurityGroups",
+        "Tags"
+      ],
+      "differences": []
+    },
+    {
+      "id": "i-0d1f95c4e23c4fc77",
+      "name": "Wazuh",
+      "state_before": "running",
+      "state_after": "running",
+      "compared_fields": [
+        "InstanceType",
+        "VpcId",
+        "SubnetId",
+        "PrivateIpAddress",
+        "PublicIpAddress",
+        "SecurityGroups",
+        "Tags"
+      ],
+      "differences": []
+    },
+    {
+      "id": "i-09692206a93e8ce2d",
+      "name": "ABCPlace-R4-VPN",
+      "state_before": "running",
+      "state_after": "running",
+      "compared_fields": [
+        "InstanceType",
+        "VpcId",
+        "SubnetId",
+        "PrivateIpAddress",
+        "PublicIpAddress",
+        "SecurityGroups",
+        "Tags"
+      ],
+      "differences": []
+    },
+    {
+      "id": "i-01ae94efb2c0e0c8b",
+      "name": "Database",
+      "state_before": "running",
+      "state_after": "running",
+      "compared_fields": [
+        "InstanceType",
+        "VpcId",
+        "SubnetId",
+        "PrivateIpAddress",
+        "PublicIpAddress",
+        "SecurityGroups",
+        "Tags"
+      ],
+      "differences": []
+    }
+  ],
+  "previous_security_groups": [
+    {
+      "id": "sg-0d4e1260a6e3b19d5",
+      "rules_unchanged": true
+    },
+    {
+      "id": "sg-0c385e6d9e9977850",
+      "rules_unchanged": true
+    },
+    {
+      "id": "sg-0fd0cfef8e9c71a41",
+      "rules_unchanged": true
+    },
+    {
+      "id": "sg-0baee63a430b07641",
+      "rules_unchanged": true
+    },
+    {
+      "id": "sg-09adb6ce8ca470da8",
+      "rules_unchanged": true
+    },
+    {
+      "id": "sg-0755454e5bb966eaa",
+      "rules_unchanged": true
+    },
+    {
+      "id": "sg-0933449baf2a8084f",
+      "rules_unchanged": true
+    },
+    {
+      "id": "sg-0c5eb263232565cc3",
+      "rules_unchanged": true
+    },
+    {
+      "id": "sg-009494117b00b95ce",
+      "rules_unchanged": true
+    }
+  ],
+  "all_unchanged": true,
+  "scope": "comparacao dos campos listados e regras dos SG anteriores; nao afirma igualdade de toda a telemetria ou de cada metadado da conta"
+}

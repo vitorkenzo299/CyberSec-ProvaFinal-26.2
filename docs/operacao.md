@@ -1,6 +1,6 @@
 # Procedimentos de implantação e validação
 
-Os comandos desta página são um roteiro para o ambiente novo na conta acadêmica existente. A implantação só deve começar depois de confirmar cobertura sem desembolso pessoal e revisar o plano real. A implantação e os testes reais foram executados em 21/11/2026. Este roteiro documenta a retomada e uma futura implantação isolada.
+Os comandos desta página são um roteiro para o ambiente novo na conta acadêmica existente. A implantação só deve começar depois de confirmar cobertura sem desembolso pessoal e revisar o plano real. A implantação e os testes ocorreram em 21–22/11/2026. Este roteiro é a receita de uma implantação isolada futura; a configuração já aplicada não requer novo apply.
 
 ## Preparação
 
@@ -105,9 +105,9 @@ Exportar evidências e relatório antes de remover o laboratório. Revisar `terr
 
 ## Estado atual e retomada
 
-Projeto `cyberfinal262-5f48e9`, VPC `vpc-013c42b2a693efb40`. A aplicação está em https://d3hc8whbcpdvtd.cloudfront.net. Web: `10.62.10.10`; Wazuh: `https://10.62.10.20` pela VPN. O perfil privado se chama `cyberfinal-vitor.ovpn`. O Windows usa o OpenVPN GUI com o serviço interativo instalado. Ele evita a necessidade de executar manualmente o cliente com privilégios de rede.
+Projeto `cyberfinal262-5f48e9`, VPC `vpc-013c42b2a693efb40`. A aplicação final está em https://final.abcplace.blog.br, por Cloudflare, CloudFront/AWS WAF e origem privada HTTPS. Web: `10.62.10.10`; Wazuh: `https://10.62.10.20` pela VPN. O perfil privado se chama `cyberfinal-vitor.ovpn`. O Windows usa o OpenVPN GUI com o serviço interativo instalado. Ele evita a necessidade de executar manualmente o cliente com privilégios de rede.
 
-A chave privada, o perfil VPN, as credenciais de consulta e os outputs ficam em `.local/auth` ou `.local/deployment.json`, excluídos do Git. Não imprimir nem compartilhar esses arquivos. O parâmetro SSM do perfil é `/cyberfinal262-5f48e9/vpn/client`. A senha de vitor no Wazuh fica no arquivo privado `wazuh-viewer.json`. O acesso ao console AWS deve usar SSO e a função observer de consulta. Uma nova sessão pode ser necessária após expirar a autenticação.
+A chave privada, o perfil VPN, as credenciais de consulta e os outputs ficam em `.local/auth` ou `.local/deployment.json`, excluídos do Git. Não imprimir nem compartilhar esses arquivos. O parâmetro SSM do perfil é `/cyberfinal262-5f48e9/vpn/client`. A senha de vitor no Wazuh fica no arquivo privado `wazuh-viewer.json`. Para consultas de rotina, usar SSO e a função observer. As mudanças desta avaliação usaram AWSReservedSSO_AdministratorAccess; menor privilégio de implantação permanece pendente em R01. Uma nova sessão pode ser necessária após expirar a autenticação.
 
 `deployment_suffix` é um identificador estável de seis caracteres hexadecimais que deve ser definido antes do primeiro plano. Para outro laboratório, gerar um sufixo novo e manter o valor até seu encerramento. Não alterar o sufixo de um ambiente existente. O nome da implantação atual não deve ser reutilizado para criar um segundo laboratório.
 
@@ -133,4 +133,4 @@ Para preparar somente as fontes públicas: `python scripts/pack_wordpress.py --o
 
 Manutenção nominal: conectar a VPN, usar SSH como vitor e elevar explicitamente para WP-CLI. A interface pública `/wp-admin` e `/wp-login.php` foi bloqueada; não compartilhar a sessão nominal de Vitor com os colegas. Conceder acesso próprio aos integrantes quando necessário. A senha privada da conta WordPress nominal e o segredo do banco estão apenas no servidor, fora do Git. A configuração PHP fica em 640 root:www-data; arquivos públicos ficam em 644 e diretórios em 755, com escrita de uploads limitada.
 
-`scripts/verify_wordpress.sh` verifica versões, checksums oficiais, grants, TLS (incluindo CA e hostname incorretos) e respostas HTTP sem imprimir segredos. O tema serve catálogo acadêmico sem checkout, cadastro de clientes ou pagamentos. Atualizações automáticas e edição pela interface foram desabilitadas; manter rotina de atualização revisada. Restauração integral de WordPress e dados reais não foi demonstrada.
+`scripts/verify_wordpress.sh` verifica versões, checksums oficiais, grants, TLS (incluindo CA e hostname incorretos) e respostas HTTP sem imprimir segredos. O tema serve catálogo acadêmico sem checkout, cadastro de clientes ou pagamentos. Atualizações automáticas e edição pela interface foram desabilitadas; manter rotina de atualização revisada. A restauração integral do WordPress foi demonstrada: 52 tabelas, 8.808 arquivos, hashes conferidos e catálogo/busca HTTP 200 em cópia isolada. Dados reais, recuperação de desastre integral e RPO/RTO comerciais não foram validados.

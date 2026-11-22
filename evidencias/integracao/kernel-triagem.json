@@ -1,0 +1,6178 @@
+{
+  "inventory_utc": "2026-11-22T03:01:38.674615+00:00",
+  "wazuh_package_cve_correlations": 2038,
+  "wazuh_severity_counts": {
+    "Medium": 848,
+    "-": 488,
+    "High": 538,
+    "Critical": 14,
+    "Low": 150
+  },
+  "unique_cves": 1019,
+  "hosts": [
+    {
+      "role": "web",
+      "kernel": "7.0.0-1018-aws",
+      "engine": "OpenSCAP command line tool (oscap) 1.3.9",
+      "engine_exit": 0,
+      "started_utc": "2026-11-22T03:26:43.950312+00:00",
+      "finished_utc": "2026-11-22T03:26:47.228754+00:00",
+      "elapsed_seconds": 3.28,
+      "definition_count": 1020
+    },
+    {
+      "role": "vpn",
+      "kernel": "7.0.0-1018-aws",
+      "engine": "OpenSCAP command line tool (oscap) 1.3.9",
+      "engine_exit": 0,
+      "started_utc": "2026-11-22T03:26:29.369021+00:00",
+      "finished_utc": "2026-11-22T03:26:32.253435+00:00",
+      "elapsed_seconds": 2.88,
+      "definition_count": 1020
+    },
+    {
+      "role": "wazuh",
+      "kernel": "7.0.0-1018-aws",
+      "engine": "OpenSCAP command line tool (oscap) 1.3.9",
+      "engine_exit": 0,
+      "started_utc": "2026-11-22T03:26:56.611779+00:00",
+      "finished_utc": "2026-11-22T03:26:59.316879+00:00",
+      "elapsed_seconds": 2.71,
+      "definition_count": 1020
+    }
+  ],
+  "result_counts": {
+    "true": 217,
+    "false": 802
+  },
+  "matched_severity_counts": {
+    "High": 37,
+    "Critical": 1,
+    "Negligible": 11,
+    "Medium": 90,
+    "Low": 78
+  },
+  "source_url": "https://security-metadata.canonical.com/oval/com.ubuntu.noble.cve.oval.xml.bz2",
+  "source_sha256": "6f2e342d6af29887ec9cb3b071bf62351aeec66b597e68248cba59d33320b96e",
+  "selected_feed_sha256": "976b4ee2afb03b4453aa6b9e73895e082804b99964a4c685421e822d5c22d016",
+  "selection": "All 1019 unique CVEs present in current Wazuh inventory, plus all recursive definitions/tests/objects/states/variables; no criteria or versions modified.",
+  "all_recursive_references_resolved": true,
+  "cves": [
+    {
+      "cve": "CVE-2026-99288",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992880000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99287",
+      "severity": "Critical",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992870000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99286",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992860000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99285",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992850000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99284",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992840000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99283",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992830000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99282",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992820000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99281",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992810000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99275",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992750000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99274",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992740000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99273",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992730000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99272",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992720000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99271",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992710000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99270",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992700000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99261",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992610000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99260",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992600000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99258",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992580000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99256",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992560000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99255",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992550000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99254",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992540000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99251",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992510000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99249",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992490000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99247",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992470000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99246",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992460000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99245",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992450000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99244",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992440000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99240",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992400000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99239",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992390000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99236",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992360000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99235",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992350000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99234",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992340000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99233",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992330000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99231",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992310000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99230",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992300000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99229",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992290000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99228",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992280000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99227",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992270000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99226",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992260000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99225",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992250000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99224",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992240000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99223",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992230000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99222",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992220000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99221",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992210000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99220",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992200000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99219",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992190000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99218",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992180000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99216",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992160000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99215",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992150000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99213",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992130000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99212",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992120000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99211",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992110000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99209",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992090000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99206",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992060000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99204",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992040000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99203",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992030000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99202",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992020000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99201",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026992010000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99192",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991920000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99191",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991910000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99189",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991890000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99187",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991870000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99182",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991820000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99181",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991810000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99180",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991800000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99179",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991790000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99178",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991780000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99176",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991760000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99175",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991750000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99174",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991740000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99173",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991730000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99172",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991720000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99171",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991710000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99169",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991690000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99167",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991670000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99166",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991660000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99165",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991650000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99163",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991630000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99161",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991610000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99157",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991570000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99156",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991560000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99155",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991550000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99154",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991540000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99153",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991530000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99152",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991520000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99150",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991500000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99147",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991470000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99146",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991460000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99143",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991430000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99142",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991420000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99140",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991400000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99139",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991390000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99138",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991380000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99136",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991360000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99135",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991350000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99134",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991340000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99133",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991330000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99132",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991320000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99131",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991310000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99130",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991300000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99128",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991280000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99127",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991270000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99126",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991260000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99124",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991240000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99123",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991230000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99122",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991220000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99121",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991210000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99118",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991180000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99117",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991170000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99115",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991150000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99114",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991140000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99113",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991130000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99112",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991120000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99110",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991100000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99109",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991090000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99106",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991060000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99103",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991030000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99101",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991010000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99100",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026991000000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99087",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990870000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99086",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990860000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99083",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990830000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99082",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990820000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-99077",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99076",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990760000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99041",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990410000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99028",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990280000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99027",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99026",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990260000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99021",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990210000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99019",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990190000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99014",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990140000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99009",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-99002",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026990020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98999",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98996",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989960000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98993",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98989",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98985",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98983",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989830000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98981",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989810000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98978",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989780000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98977",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98975",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989750000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98972",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98966",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989660000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98954",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98951",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989510000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98946",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989460000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98932",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98929",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98926",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989260000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98924",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98917",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98916",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989160000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98914",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026989140000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98897",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988970000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98890",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988900000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-98863",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988630000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98853",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98839",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988390000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98834",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98829",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98824",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98820",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988200000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98816",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988160000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98815",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988150000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-98814",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988140000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98813",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98810",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988100000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98803",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988030000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98802",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98800",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026988000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98799",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026987990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98795",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026987950000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98789",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026987890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98786",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026987860000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98747",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026987470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98740",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026987400000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98715",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026987150000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98714",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026987140000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98685",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026986850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98684",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026986840000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98683",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026986830000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98682",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026986820000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98652",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026986520000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98628",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026986280000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98599",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026985990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98598",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026985980000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98589",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026985890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98570",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026985700000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98558",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026985580000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98556",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026985560000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98551",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026985510000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98510",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026985100000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98471",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026984710000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98466",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026984660000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98449",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026984490000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98439",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026984390000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98436",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026984360000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98431",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026984310000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98427",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026984270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98424",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026984240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98420",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026984200000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-98393",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98389",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98364",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983640000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98355",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983550000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98341",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983410000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98338",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98333",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983330000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98332",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98330",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98321",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983210000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98317",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98304",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026983040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98294",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982940000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98292",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982920000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98289",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98288",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982880000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98286",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982860000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98285",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98284",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982840000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98279",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98273",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982730000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98211",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026982110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98180",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981800000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98177",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98176",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981760000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98162",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98156",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981560000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98148",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981480000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98134",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98131",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981310000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98125",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981250000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98124",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98115",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026981150000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98099",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98087",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980870000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98085",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98084",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980840000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98079",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98073",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980730000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98067",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980670000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98058",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980580000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98044",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980440000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98043",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980430000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98038",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98034",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98033",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980330000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98032",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98019",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980190000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-98003",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026980030000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97997",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026979970000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97989",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026979890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97988",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026979880000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97975",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026979750000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97962",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026979620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97960",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026979600000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97603",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026976030000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97600",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026976000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97565",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975650000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97563",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975630000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97561",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975610000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97554",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97521",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975210000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97519",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975190000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97515",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975150000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97513",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97511",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97504",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97503",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975030000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97501",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026975010000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97499",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97498",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974980000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97493",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97480",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974800000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97479",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97478",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974780000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97477",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97474",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974740000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97433",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974330000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97432",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97431",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974310000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97426",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974260000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97424",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97423",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974230000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97422",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974220000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97414",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974140000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-97410",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026974100000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93827",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026938270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93818",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026938180000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93282",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932820000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93272",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93260",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932600000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93251",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932510000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93241",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932410000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93237",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93230",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93221",
+      "severity": "Critical",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932210000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93216",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932160000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93202",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026932020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93181",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931810000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93176",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931760000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93175",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931750000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93168",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931680000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93154",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93148",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931480000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93146",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931460000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93144",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931440000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93129",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93128",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931280000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93125",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931250000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93123",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931230000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93122",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931220000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93116",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931160000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93104",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93100",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026931000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93099",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026930990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93091",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026930910000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93081",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026930810000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93058",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026930580000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-93047",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026930470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-92520",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026925200000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-92503",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026925030000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-92500",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026925000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-92499",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026924990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-92493",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026924930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-92485",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026924850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-92482",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026924820000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-92480",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026924800000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90430",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90428",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904280000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90427",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90426",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904260000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90424",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90422",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904220000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90421",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904210000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90417",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90408",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904080000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90401",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026904010000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90380",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903800000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90379",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90367",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903670000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90365",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903650000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90363",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903630000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90359",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903590000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90351",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903510000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90347",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90346",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903460000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90345",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903450000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90343",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903430000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90337",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90336",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903360000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90335",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903350000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90333",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903330000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90330",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90328",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903280000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90326",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903260000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90324",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90321",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903210000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90320",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903200000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90317",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90315",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903150000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90311",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90301",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903010000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90300",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026903000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90289",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90273",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902730000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90267",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902670000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90265",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902650000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90264",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902640000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90263",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902630000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90261",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902610000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90260",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902600000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90259",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902590000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90256",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902560000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90247",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90237",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90234",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90232",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90231",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902310000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90217",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90208",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902080000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90206",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902060000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90205",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902050000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90204",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026902040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90183",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901830000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90182",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901820000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90179",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90174",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901740000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90167",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901670000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90162",
+      "severity": "Critical",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90161",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901610000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90156",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901560000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90155",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901550000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90154",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90149",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901490000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90144",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901440000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90116",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901160000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90111",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90106",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901060000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90105",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901050000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90104",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026901040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90099",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90098",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900980000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-90097",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900970000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90093",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90087",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900870000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90086",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900860000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90084",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900840000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90083",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900830000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90061",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900610000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-90027",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026900270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89987",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026899870000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89920",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026899200000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89913",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026899130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89906",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026899060000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89866",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026898660000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89862",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026898620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89833",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026898330000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89813",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026898130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89811",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026898110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89810",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026898100000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89808",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026898080000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89788",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026897880000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89757",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026897570000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89722",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026897220000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89709",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026897090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89705",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026897050000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89682",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026896820000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89675",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026896750000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89654",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026896540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89648",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026896480000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89642",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026896420000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89637",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026896370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89632",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2026896320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89631",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026896310000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89601",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026896010000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89537",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026895370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-89528",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026895280000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80948",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026809480000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80905",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026809050000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80884",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026808840000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80872",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026808720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80866",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026808660000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80786",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026807860000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80785",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026807850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80761",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026807610000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80747",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026807470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80738",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026807380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80734",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026807340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80725",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026807250000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80721",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026807210000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80698",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806980000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80693",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80692",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806920000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80670",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806700000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80668",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806680000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80662",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80653",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80643",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806430000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80634",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80631",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806310000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80628",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806280000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80623",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806230000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80616",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806160000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80607",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026806070000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80580",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026805800000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80579",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026805790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-80542",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026805420000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74754",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74752",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747520000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74747",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74734",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74733",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747330000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74729",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74725",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747250000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74723",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747230000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74715",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747150000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74713",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74711",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026747110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74695",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026746950000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74690",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026746900000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74687",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026746870000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74638",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026746380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74611",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026746110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74605",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026746050000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74600",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026746000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74578",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745780000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-74571",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745710000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74560",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745600000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74559",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745590000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74558",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745580000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74544",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745440000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74538",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74537",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74534",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74533",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745330000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74530",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74527",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74506",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026745060000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74466",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026744660000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74407",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026744070000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74405",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026744050000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74388",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743880000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74385",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74375",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743750000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74374",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743740000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74373",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743730000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74368",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743680000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74344",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743440000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74342",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743420000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-74338",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74337",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74324",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74317",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74314",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026743140000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74273",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026742730000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74272",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026742720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74269",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026742690000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74264",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026742640000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74261",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026742610000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-74257",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026742570000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72501",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026725010000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72499",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72495",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724950000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72494",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724940000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72493",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72488",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724880000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72472",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72454",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72440",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724400000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72439",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724390000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72423",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724230000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72404",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026724040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72398",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026723980000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72397",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026723970000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72383",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026723830000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72380",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026723800000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72375",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026723750000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72341",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026723410000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72337",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026723370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72329",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026723290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72321",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026723210000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72288",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026722880000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72203",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026722030000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-72200",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026722000000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-72198",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026721980000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-72162",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026721620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72098",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026720980000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72073",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026720730000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72042",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026720420000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-72009",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026720090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68471",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684710000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68470",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684700000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68453",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68448",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684480000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68447",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68441",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684410000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68436",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684360000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68426",
+      "severity": "Critical",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684260000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68418",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684180000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68412",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684120000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68409",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68404",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68401",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684010000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68400",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026684000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68383",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026683830000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68382",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026683820000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68374",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026683740000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68337",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026683370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68323",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026683230000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68312",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026683120000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68291",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682910000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68258",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682580000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68257",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682570000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68252",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682520000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68245",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682450000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68242",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682420000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68241",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682410000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68238",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68233",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682330000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68211",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026682110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68152",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026681520000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68114",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026681140000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68113",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026681130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68109",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026681090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68105",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026681050000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-68103",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026681030000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-68102",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026681020000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-68086",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026680860000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-68081",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026680810000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64529",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026645290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64523",
+      "severity": "Critical",
+      "definition_id": "oval:com.ubuntu.noble:def:2026645230000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64513",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026645130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64400",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026644000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64389",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026643890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64388",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026643880000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64283",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026642830000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64255",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026642550000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64227",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026642270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64213",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026642130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64190",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026641900000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-64160",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026641600000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64154",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026641540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64146",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026641460000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64117",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026641170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64112",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026641120000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64079",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64078",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640780000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64077",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64076",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640760000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64060",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640600000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64052",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640520000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64038",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64036",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640360000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64023",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640230000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-64022",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026640220000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63999",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026639990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63983",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026639830000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63979",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026639790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63978",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026639780000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63963",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026639630000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63962",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026639620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63879",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026638790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63858",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026638580000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63853",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026638530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63825",
+      "severity": "Critical",
+      "definition_id": "oval:com.ubuntu.noble:def:2026638250000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63819",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026638190000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63811",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026638110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-63805",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026638050000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53401",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026534010000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53377",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026533770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53368",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026533680000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53330",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026533300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53317",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026533170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53297",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026532970000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53292",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026532920000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53285",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026532850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53284",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026532840000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53281",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026532810000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53272",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026532720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53258",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026532580000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53207",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026532070000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53189",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53179",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53178",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531780000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53142",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531420000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53139",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531390000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53129",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53120",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531200000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53118",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531180000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53109",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53108",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531080000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53107",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531070000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53106",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531060000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53104",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53103",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026531030000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53091",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026530910000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53053",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026530530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53025",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026530250000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53024",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026530240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53018",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026530180000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53017",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026530170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53009",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026530090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-53000",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026530000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-52994",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026529940000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-52991",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026529910000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-52972",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026529720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-52956",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026529560000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-52953",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026529530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-52946",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026529460000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-52937",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026529370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46330",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026463300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46324",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026463240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46302",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026463020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46272",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026462720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46245",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026462450000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46181",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026461810000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46175",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026461750000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46171",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026461710000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46153",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026461530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46148",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026461480000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46147",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026461470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46130",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026461300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46071",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026460710000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46066",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026460660000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46059",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026460590000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46054",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026460540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46032",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026460320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-46014",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026460140000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-45961",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026459610000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-45949",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026459490000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-45940",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026459400000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-45934",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026459340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-45932",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026459320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-45894",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026458940000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43485",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026434850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43464",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026434640000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43463",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026434630000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43443",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026434430000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43416",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026434160000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43410",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026434100000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43379",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026433790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43353",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026433530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43352",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026433520000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43310",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026433100000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43309",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026433090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43308",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026433080000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43301",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026433010000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43299",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026432990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43298",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026432980000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43294",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026432940000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43263",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026432630000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43234",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026432340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43229",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026432290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43220",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026432200000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43213",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026432130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43204",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026432040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43191",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026431910000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43172",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026431720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43161",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026431610000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43127",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026431270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43126",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026431260000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43118",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026431180000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43115",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026431150000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43101",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026431010000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43053",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026430530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43048",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026430480000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43042",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026430420000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43034",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026430340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43029",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026430290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43022",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026430220000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-43009",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026430090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31777",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026317770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31771",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026317710000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31692",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026316920000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31630",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026316300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31592",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026315920000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31579",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026315790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31568",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026315680000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31537",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026315370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31536",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026315360000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31531",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026315310000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31526",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026315260000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31506",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026315060000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31493",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026314930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31479",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026314790000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31462",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026314620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-31410",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026314100000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-25702",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026257020000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-23472",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026234720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23459",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026234590000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23393",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026233930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23377",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026233770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23371",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026233710000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23348",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026233480000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23327",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026233270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23265",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026232650000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23247",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2026232470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23240",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026232400000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23239",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026232390000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23217",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026232170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23208",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2026232080000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23152",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026231520000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-23017",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2026230170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-118593",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:20261185930000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-100082",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:20261000820000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-100081",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:20261000810000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-100080",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:20261000800000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2026-100077",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:20261000770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-100076",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:20261000760000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-100074",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:20261000740000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2026-100072",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:20261000720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-71315",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025713150000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-71313",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025713130000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-71285",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025712850000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-71227",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025712270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-71202",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025712020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-71080",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025710800000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-71074",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025710740000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-71073",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025710730000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68822",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025688220000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68802",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025688020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68781",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025687810000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68745",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025687450000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68730",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025687300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68729",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025687290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68376",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025683760000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68360",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025683600000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68356",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025683560000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68353",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025683530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68338",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025683380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68324",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025683240000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68304",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025683040000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68251",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025682510000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68236",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025682360000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68230",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025682300000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68212",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025682120000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68211",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025682110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68209",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025682090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68188",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025681880000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-68174",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025681740000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40355",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025403550000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40354",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025403540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40344",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025403440000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40340",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025403400000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40338",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025403380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40274",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025402740000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40247",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025402470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40203",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025402030000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40190",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025401900000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2025-40170",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025401700000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40146",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025401460000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40136",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025401360000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40086",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025400860000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40075",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025400750000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40065",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025400650000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40040",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025400400000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40025",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025400250000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-40003",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025400030000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39990",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025399900000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39958",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025399580000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39933",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025399330000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39910",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025399100000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39896",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025398960000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39862",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025398620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39859",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025398590000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39789",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025397890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39762",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025397620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39754",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025397540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-39677",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025396770000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38717",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025387170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38636",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025386360000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38605",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025386050000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38597",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025385970000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38498",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025384980000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38438",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025384380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38421",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025384210000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38372",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025383720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38360",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025383600000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38359",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025383590000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38353",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025383530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38311",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025383110000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38272",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025382720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38261",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025382610000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38242",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025382420000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38207",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025382070000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38199",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025381990000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38189",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025381890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38188",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025381880000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38140",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025381400000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38132",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025381320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38096",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025380960000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38064",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025380640000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38042",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025380420000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38041",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025380410000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38038",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025380380000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38036",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025380360000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-38029",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025380290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37907",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025379070000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37906",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025379060000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37880",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025378800000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37876",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025378760000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37870",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025378700000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37837",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025378370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37834",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025378340000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37806",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025378060000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37776",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025377760000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37747",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025377470000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37746",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025377460000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-37743",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025377430000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-23162",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025231620000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-23135",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025231350000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-23132",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025231320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-22109",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025221090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-22043",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2025220430000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-22002",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025220020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-21984",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025219840000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-21907",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025219070000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-21752",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025217520000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-21696",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025216960000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-21693",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2025216930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2025-12801",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2025128010000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2025-1272",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202512720000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2024-58241",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024582410000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-58100",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2024581000000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-58098",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2024580980000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-58089",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024580890000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-58015",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024580150000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-58012",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024580120000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-57976",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024579760000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-57922",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024579220000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-57857",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2024578570000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-57809",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024578090000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-56712",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024567120000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-56702",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024567020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-56617",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024566170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-56591",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2024565910000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-56544",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024565440000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-53216",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024532160000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2024-53207",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024532070000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-53098",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024530980000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-53064",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024530640000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-50217",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024502170000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-50106",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024501060000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-50102",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024501020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-50003",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024500030000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-49990",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024499900000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-49970",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024499700000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-49940",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024499400000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-49932",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024499320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-49916",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024499160000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-49910",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024499100000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-49908",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024499080000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-47729",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024477290000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-46742",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2024467420000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-44964",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2024449640000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-44951",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024449510000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-44932",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024449320000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-43872",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024438720000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-42139",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024421390000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-42107",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024421070000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-41008",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024410080000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-40954",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2024409540000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-39286",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024392860000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2024-38581",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2024385810000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-38391",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024383910000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-37353",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024373530000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-35995",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2024359950000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2024-35948",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2024359480000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-35923",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024359230000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-35895",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024358950000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2024-27025",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024270250000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-27022",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024270220000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-25743",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024257430000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-25740",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024257400000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2024-24864",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2024248640000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2024-21963",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024219630000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2024-2193",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202421930000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-14040",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024140400000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-14027",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2024140270000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2024-0564",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:202405640000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-6240",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202362400000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-6238",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:202362380000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-54190",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2023541900000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-54187",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2023541870000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-54105",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2023541050000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-53642",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2023536420000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-52879",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2023528790000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-3640",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202336400000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-3397",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202333970000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-33053",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2023330530000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-31082",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2023310820000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-26242",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2023262420000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-1193",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202311930000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-0160",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202301600000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2023-0030",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202300300000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-50551",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2022505510000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-50380",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2022503800000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-50240",
+      "severity": "High",
+      "definition_id": "oval:com.ubuntu.noble:def:2022502400000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-50232",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2022502320000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-50230",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2022502300000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-50128",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2022501280000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2022-50090",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2022500900000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-49940",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2022499400000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-48929",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2022489290000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-48846",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2022488460000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-45885",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2022458850000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-4543",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202245430000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-44034",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2022440340000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-41848",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2022418480000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-3238",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202232380000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-2961",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202229610000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-25837",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2022258370000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2022-25836",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2022258360000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-25265",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2022252650000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-1247",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202212470000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-0480",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202204800000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2022-0400",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202204000000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2021-3864",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202138640000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2021-3773",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202137730000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2021-3714",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:202137140000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2021-31615",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2021316150000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2021-26934",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2021269340000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2020-35501",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2020355010000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2020-26560",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020265600000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2020-26559",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020265590000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2020-26557",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020265570000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2020-26556",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020265560000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2020-26146",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020261460000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2020-26143",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020261430000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2020-26142",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020261420000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2020-26140",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020261400000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2020-15802",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020158020000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2020-14356",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020143560000000",
+      "result": "false"
+    },
+    {
+      "cve": "CVE-2020-14304",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2020143040000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2020-11935",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2020119350000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2019-20794",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2019207940000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2019-20426",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2019204260000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2019-19814",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2019198140000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2019-19378",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2019193780000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2019-15794",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2019157940000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2019-15213",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2019152130000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2019-14899",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2019148990000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2018-17977",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:2018179770000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2018-12931",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2018129310000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2018-12930",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2018129300000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2018-12929",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:2018129290000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2018-12928",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2018129280000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2018-1121",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:201811210000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2017-13694",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2017136940000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2017-13693",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2017136930000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2017-13165",
+      "severity": "Negligible",
+      "definition_id": "oval:com.ubuntu.noble:def:2017131650000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2017-0537",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:201705370000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2016-8660",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:201686600000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2015-7837",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:201578370000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2013-7445",
+      "severity": "Medium",
+      "definition_id": "oval:com.ubuntu.noble:def:201374450000000",
+      "result": "true"
+    },
+    {
+      "cve": "CVE-2012-4542",
+      "severity": "Low",
+      "definition_id": "oval:com.ubuntu.noble:def:201245420000000",
+      "result": "true"
+    }
+  ],
+  "interpretation": "true = condição de vulnerabilidade da definição satisfeita; false = condição não satisfeita. Não são explorações confirmadas. Controles compensatórios não alteram o resultado por versão. R03 continua alto; não se declara infraestrutura sem High/Critical.",
+  "temporary_scan_policies_removed": true
+}

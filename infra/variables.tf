@@ -77,6 +77,11 @@ variable "protect_database" {
   default     = true
   description = "Protege o RDS contra exclusão. Desativar deliberadamente ao encerrar o laboratório."
 }
+variable "enable_alarm_notifications" {
+  type        = bool
+  default     = true
+  description = "Ativar apos coletar metricas e estabilizar os alarmes; reutiliza SNS confirmado do Roteiro 4."
+}
 variable "wazuh_installer_sha256" {
   type        = string
   description = "SHA-256 revisado do instalador oficial Wazuh 4.14."

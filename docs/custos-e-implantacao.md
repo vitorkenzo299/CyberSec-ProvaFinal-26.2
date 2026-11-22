@@ -1,44 +1,19 @@
 # Consumo e encerramento
 
-O ambiente foi criado na conta institucional existente em 21/11/2026. Organizations confirmou vínculo institucional e pagador de gerenciamento distinto. Os recursos anteriores foram preservados. A cobertura institucional não implica gratuidade nem limite rígido de gastos.
+## Conta e limite pessoal
 
-## Condição definida pelo aluno
+A avaliação reutiliza a conta institucional e os recursos existentes. O pagador é institucional; nenhum meio de pagamento pessoal foi incluído ou alterado. Não foram criadas novas instâncias EC2 ou RDS nem foi contratado plano pago Cloudflare. A zona Cloudflare continua no plano Free. Isso não garante custo zero para a instituição.
 
-Usar a conta acadêmica já existente, sem desembolso pessoal. Não excluir ou interromper o que já está pronto. A conta reutilizada não torna recursos novos gratuitos: é necessário verificar cobertura institucional ou créditos elegíveis antes de criar serviços. O limite pessoal autorizado é R$ 0; a estimativa abaixo é custo bruto de uma alternativa de infraestrutura, não autorização para cobrança ao aluno.
+O backup WordPress deixou duas versões criptografadas, privadas e versionadas no bucket existente (aproximadamente 35,8 MB cada). Métricas adicionais do CloudWatch, logs e outros usos da conta também podem gerar cobranças institucionais. A revisão não consultou a fatura, não ativou um teto automático e não criou uma rotina diária de backup. Custos reais devem ser acompanhados no console de billing pela instituição.
 
-`funding_source_confirmed` é um valor obrigatório no Terraform. Se a cobertura não estiver confirmada, o plano é rejeitado. O exemplo mantém esse valor em `false`. Os testes usam cobertura fictícia apenas dentro de provedores simulados.
+## Recursos preservados
 
-## Estimativa de planejamento
+O subdomínio `final.abcplace.blog.br` foi adicionado ao DNS e à borda Cloudflare/CloudFront. Os registros de apex, `www` e monitoramento foram comparados e preservados. Os quatro servidores anteriores e os campos avaliados dos nove Security Groups não mudaram. A infraestrutura da final permanece ativa e separada, sem peering ou migração comercial.
 
-Para us-east-1, sem créditos, impostos ou câmbio, reservar aproximadamente **US$ 0,30 a US$ 0,40 por hora** de ambiente ativo, mais tráfego, processamento, logs e requisições. Esta faixa é uma estimativa de ordem de grandeza; a cotação precisa ser refeita para a conta e os preços vigentes antes de aplicar a configuração.
+O plano Terraform final não propõe alterações; nenhuma aplicação de plano foi necessária. As evidências e as duas versões de backup foram preservadas. Nenhum recurso, dado ou registro anterior foi apagado.
 
-| Duração ativa | Parcela estimada pela faixa horária |
-| --- | ---: |
-| 6 horas | US$ 1,80 a US$ 2,40 |
-| 24 horas | US$ 7,20 a US$ 9,60 |
-| 730 horas | US$ 219 a US$ 292 |
+## Encerramento futuro
 
-O dimensionamento inclui três EC2, RDS, NAT Gateway, dois IPv4 públicos, armazenamento, cinco regras/grupos de WAF e monitoramento. O Wazuh concentra boa parte da capacidade de computação. Créditos e franquias, quando existirem, não foram considerados.
+Os recursos atuais continuam consumindo na conta institucional. Se o grupo quiser encerrar a avaliação após a apresentação, deve identificar exclusivamente os recursos específicos da final, revisar snapshots, certificados, logs, alarmes e objetos versionados, confirmar retenção de evidências e obter autorização antes de qualquer remoção. Não usar comandos amplos de limpeza da conta. A interrupção de EC2 não interrompe todas as possíveis cobranças de rede, armazenamento, métricas ou logs.
 
-NAT Gateway, IPv4 público e WAF têm cobrança própria. Interromper apenas as EC2 mantém outros recursos cobrados. [Preços VPC](https://aws.amazon.com/vpc/pricing/), [preços WAF](https://aws.amazon.com/waf/pricing/), [preços EC2](https://aws.amazon.com/ec2/pricing/on-demand/), [preços RDS MySQL](https://aws.amazon.com/rds/mysql/pricing/).
-
-## Situação e acompanhamento
-
-- A sessão SSO nominal foi renovada e a implantação foi realizada. A função observer permite consulta posterior.
-- O pagador institucional foi verificado. A entrega não apurou fatura nem configurou um teto automático de consumo.
-- A entrada da VPN está restrita a /32 e usa uma chave SSH nova. Mudanças no IP do operador exigem revisão da regra.
-- Decisão sobre domínio novo com certificado ACM. O domínio padrão CloudFront permite demonstração inicial, mas sua política mínima TLSv1 deve aparecer como pendência.
-- A cópia temporária de restauração já foi removida. O banco principal, o snapshot e os demais recursos novos continuam identificados para a demonstração.
-
-As credenciais devem ser configuradas no computador ou pela sessão autorizada da AWS. Não devem entrar em arquivos versionados, imagens, mensagens ou slides.
-
-## Encerramento
-
-Ao terminar as evidências, exportar a entrega e conferir o plano de remoção apenas dos recursos com o prefixo desta avaliação. O RDS tem proteção contra exclusão e exige alteração deliberada antes de remover. O snapshot final, os backups retidos, os segredos em recuperação e os objetos de auditoria podem permanecer e gerar pequenas cobranças. O bucket de auditoria não é esvaziado automaticamente.
-
-Um orçamento ou alarme de custo avisa sobre consumo; não constitui teto automático de cobrança. Não consultar a API paga do Cost Explorer durante a verificação inicial de cobertura; preferir o console gratuito e consultas de estado de conta que não tenham tarifa por requisição.
-
-A função IAM observer e o snapshot de evidência foram criados no pós-provisionamento. Incluir esses recursos na revisão de encerramento, pois não são removidos automaticamente pelo estado Terraform atual. Nunca usar um comando de remoção amplo na conta.
-
-
-WordPress/WooCommerce foi adicionado ao Web e ao RDS já existentes da avaliação final, sem criar novas instâncias. O consumo dos recursos ativos continua variável. A evolução não modificou o domínio nem os recursos dos roteiros anteriores.
+A função de observação e snapshots/objetos de auditoria podem permanecer fora do estado Terraform atual. Um orçamento ou alarme de custo avisa sobre consumo; não funciona como bloqueio de cobrança. O ambiente precisa ser acompanhado pela instituição.

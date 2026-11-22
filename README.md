@@ -1,41 +1,27 @@
 # ABC Place — avaliação final de Cibersegurança 2026.2
 
-**Grupo 09: Vitor, Artur Cruz e Daniel Juho.** A avaliação consolida e evolui os roteiros 1 a 4 do mesmo projeto ABC Place: identidade e acesso, análise de riscos, Wazuh, CloudWatch, Cloudflare e VPN.
+**Grupo 09: Vitor, Artur Cruz e Daniel Juho.** Esta entrega integra os roteiros 1–4 do mesmo caso ABC Place: identidade e acesso, análise de riscos, Wazuh, CloudWatch, Cloudflare, VPN e WordPress/WooCommerce.
 
-**Aplicação atual:** [catálogo ABC Place em WordPress/WooCommerce](https://d3hc8whbcpdvtd.cloudfront.net).
+**Loja final:** [final.abcplace.blog.br](https://final.abcplace.blog.br).
 
-A infraestrutura nova é um ambiente de evolução separado na conta institucional. O domínio `abcplace.blog.br`, o WordPress e os servidores dos roteiros anteriores permanecem preservados. Não houve alteração do DNS, peering, migração de clientes/pedidos ou substituição da loja antiga. A implementação demonstra os controles da evolução com três produtos sintéticos, sem pagamentos ou dados pessoais.
+A evolução usa a conta AWS institucional e a zona Cloudflare existente. O novo subdomínio passa por Cloudflare, CloudFront/AWS WAF e origem privada HTTPS. Os registros anteriores, quatro servidores e Security Groups avaliados foram preservados. A loja contém três produtos sintéticos, sem checkout comercial ou dados pessoais.
 
 ## Entrega
 
 - [Relatório PDF](entrega/Relatorio_Final_Ciberseguranca.pdf) e [Word editável](entrega/Relatorio_Final_Ciberseguranca.docx)
 - [Apresentação de 12 slides](entrega/Apresentacao_Executiva.pptx) e [PDF](entrega/Apresentacao_Executiva.pdf)
-- [Matriz de riscos em Excel](entrega/Matriz_de_Riscos.xlsx): 14 IDs, escala original 4×4, fonte original e correspondência aos três níveis da avaliação final
-- [Fotos e evidências completas](entrega/Evidencias_Completas.zip), [índice](evidencias/INDICE.md) e [manifesto SHA-256](evidencias/manifesto.json)
-- [Roteiro de fala para os três integrantes](docs/roteiro-apresentacao.md)
-- [Ligação com os roteiros anteriores](docs/mapeamento-dos-roteiros.md)
+- [Matriz de riscos](entrega/Matriz_de_Riscos.xlsx), com 14 cenários, pontuação original e residual, ações e provas
+- [Evidências completas](entrega/Evidencias_Completas.zip), [índice](evidencias/INDICE.md) e [manifesto SHA-256](evidencias/manifesto.json)
+- [Roteiro de fala](docs/roteiro-apresentacao.md), [mapeamento dos roteiros](docs/mapeamento-dos-roteiros.md), [status](docs/status.md) e [arquitetura](docs/arquitetura.md)
 
-## Continuidade e resultados
+## Resultado técnico
 
-| Base dos roteiros | Evolução demonstrada na avaliação |
-| --- | --- |
-| R1: IAM, EC2 e publicação Apache/HTTPS | SSO nominal, roles de serviço, consulta de menor privilégio e administração privada |
-| R2: WordPress/WooCommerce, seis ameaças e sete fragilidades | Mesma plataforma e 14 cenários originais; controles e residual reavaliados |
-| R3: Wazuh com Web/Database, FIM e análise de logs | Wazuh privado; agentes Web/VPN; eventos 554/550/553 também na árvore WordPress |
-| R4: CloudWatch/SNS, rate limit Cloudflare e OpenVPN | CloudWatch e AWS WAF na nova VPC; VPN, logs de bloqueio e separação de rede testados |
+Cloudflare e AWS WAF protegem o subdomínio final, HTTPS é exigido até a origem privada, a VPN restringe administração e o Wazuh registra alterações FIM. Oito alarmes estão ligados ao SNS existente; a notificação de rede ALARM/OK foi confirmada pelo usuário. A restauração do WordPress conferiu 52 tabelas, 8.808 arquivos e respostas HTTP 200 da loja e da busca. O scan ZAP final não encontrou achados High/Medium/Low no escopo público testado; painel, plugins autenticados e checkout não foram validados.
 
-WordPress 7.1.5, WooCommerce 11.3.1 e PHP 8.3.6 foram observados no servidor novo. A integridade do núcleo e do WooCommerce passou na comparação oficial. O usuário `abcplace_web` possui apenas SELECT/INSERT/UPDATE/DELETE no schema `abcplace_wp`; ele não tem privilégios de administração do RDS. TLS rejeitou CA incorreta e nome de servidor inválido. O catálogo técnico anterior mantém seu usuário separado com SELECT somente.
+A matriz conserva 14 IDs: **cinco riscos permanecem altos** (R01, R03, R06, R07 e R10) e nove são moderados. R01 segue alto porque foi usada a função AWS `AdministratorAccess`; menor privilégio para implantação não foi comprovado. R03 mantém achados de kernel sem patch demonstrado. Os riscos de testes autenticados, ransomware, dados e resposta a incidentes também permanecem explícitos. A demonstração não é aprovação para produção.
 
-A varredura WordPress ZAP 2.17.0 concluiu em 100%, com fila passiva zerada: 1.228 mensagens, 16 URLs, 0 alertas High/Medium/Low e 54 informativos (duas regras). O relatório e a análise desses registros foram preservados. O scan anterior do catálogo Python permanece identificado como outro escopo.
+## Custo e preservação
 
-**Risco residual:** seis cenários continuam altos (R01, R03, R06, R07, R10 e R14), com controles parciais, justificativa e ação proposta. Os oito demais são moderados. As estimativas não representam probabilidades medidas ou aprovação para produção. O kernel em triagem agora é **R03**, seguindo o ID da matriz do Roteiro 2.
+Não foi alterado nenhum meio de pagamento pessoal nem criado novo EC2/RDS; Cloudflare permanece no plano Free. A conta é institucional, mas não significa custo zero: as cópias versionadas no S3, métricas e logs podem gerar cobrança institucional. A fatura não foi consultada e não existe teto automático configurado. Os serviços permanecem ativos. Nenhum recurso antigo foi apagado.
 
-## Operação
-
-- [Arquitetura e limites](docs/arquitetura.md)
-- [Matriz e justificativas](docs/matriz-de-riscos.md)
-- [Procedimentos de acesso e pós-instalação](docs/operacao.md)
-- [Consumo e encerramento](docs/custos-e-implantacao.md)
-- [Status](docs/status.md) e [versões/fontes](docs/versoes-e-fontes.md)
-
-Os quatro servidores e as regras dos nove grupos de segurança anteriores foram comparados e preservados nos campos avaliados. Segredos, perfil VPN e estado Terraform ficam fora do Git. A cobertura institucional não implica gratuidade ou bloqueio automático de gastos. Os recursos novos continuam ativos para a apresentação.
+Consulte [consumo e encerramento](docs/custos-e-implantacao.md) antes de pedir mudanças ou limpeza. Qualquer encerramento deve ser limitado aos recursos da avaliação e preservar o legado e as evidências.

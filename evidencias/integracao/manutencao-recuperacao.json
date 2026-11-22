@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-11-22T04:04:23.169397+00:00",
+  "reason": "Único reteste completo após configurar o domínio final; sem rotina diária ou permissão permanente. Suprime apenas o alarme de rede da manutenção para evitar e-mails adicionais.",
+  "alarm": "cyberfinal262-5f48e9-web-network",
+  "notification_actions_temporarily_disabled": true,
+  "finished_utc": "2026-11-22T04:05:38.234771+00:00",
+  "actions_restored": true,
+  "final_state": "OK"
+}
