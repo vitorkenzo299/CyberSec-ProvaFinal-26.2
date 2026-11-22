@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-11-22T01:25:14.660267+00:00",
+  "before": {
+    "10.62.10.10": false,
+    "10.62.10.20": false
+  },
+  "during": {
+    "10.62.10.10": true,
+    "10.62.10.20": true
+  },
+  "private_wazuh_https": 200,
+  "after": {
+    "10.62.10.10": false,
+    "10.62.10.20": false
+  },
+  "finished_utc": "2026-11-22T01:25:32.506747+00:00",
+  "passed": true,
+  "tls_boundary": "Wazuh privado usa certificado da instalação; teste HTTPS privado não afirma confiança pública desse certificado."
+}

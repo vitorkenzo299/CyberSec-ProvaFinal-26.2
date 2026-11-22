@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-11-22T01:28:17.536168+00:00",
+  "operational_checks_passed": true,
+  "fully_integrated_without_pending_items": false,
+  "course_sources": "Roteiros 1–4 mapeados em docs/mapeamento-dos-roteiros.md; materiais anteriores identificados por hash em evidencias/continuidade/fontes.json.",
+  "cloudflare_scope": "Domínio legado abcplace.blog.br; HTTP 200 e rate limit 429 seguido de recuperação 302 nesta conferência. Não protege a distribuição nova.",
+  "new_edge_scope": "CloudFront com AWS WAF e VPC Origin no domínio da avaliação.",
+  "remaining_items": [
+    "Alarmes novos sem ação externa configurada; assinatura SNS confirmada pertence ao fluxo legado.",
+    "MFA e concessões individuais dos demais integrantes não comprovados.",
+    "Triagem do inventário do sistema operacional (R03) permanece aberta.",
+    "TLS mínimo na borda e TLS na origem privada ainda exigem evolução.",
+    "Restauração integral WordPress, testes autenticados, checkout e capacidade não foram demonstrados."
+  ],
+  "assessment_boundary": "Artefatos e execução acadêmica revisados com limites e riscos justificados. Isso não certifica prontidão de produção nem migração integral do ambiente dos roteiros."
+}

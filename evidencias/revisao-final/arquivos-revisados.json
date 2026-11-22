@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-11-22T01:28:17.409303+00:00",
+  "source_review_utc": "2026-11-22T00:54:21.861336+00:00",
+  "report_pages": 17,
+  "slides": 12,
+  "team": [
+    "Vitor",
+    "Artur Cruz",
+    "Daniel Juho"
+  ],
+  "artifacts": [
+    {
+      "file": "Apresentacao_Executiva.pdf",
+      "sha256": "803ccb7608bcfaeca4c0c29dac897ca81569d2fe07b80bcb0fd2adacfe436b1d",
+      "matches_reviewed_file": true
+    },
+    {
+      "file": "Apresentacao_Executiva.pptx",
+      "sha256": "1ec55fa0000895a771a179fb2a443edc7752d31576b89fa794aa8931d1310dea",
+      "matches_reviewed_file": true
+    },
+    {
+      "file": "Matriz_de_Riscos.xlsx",
+      "sha256": "ecae3523bd5b058197f78e5af1f9c2c38768e546dfd669a991ca55995251126a",
+      "matches_reviewed_file": true
+    },
+    {
+      "file": "Relatorio_Final_Ciberseguranca.docx",
+      "sha256": "8bd06af1f796925ed9ff93e3ce1dd868d35a3d96dd1845992a458df4a5387686",
+      "matches_reviewed_file": true
+    },
+    {
+      "file": "Relatorio_Final_Ciberseguranca.pdf",
+      "sha256": "c490e34497e5a0edf4ba4c66b20eaf28cdb58f3a7df01820d50cc3f539428729",
+      "matches_reviewed_file": true
+    }
+  ]
+}

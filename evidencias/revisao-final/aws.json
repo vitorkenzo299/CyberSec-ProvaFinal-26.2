@@ -1,0 +1,138 @@
+{
+  "checked_utc": "2026-11-22T01:21:33.070129+00:00",
+  "project": "cyberfinal262-5f48e9",
+  "instances": [
+    {
+      "id": "i-02525d2134b6e5dba",
+      "role": "vpn",
+      "state": "running",
+      "health": {
+        "instance": "ok",
+        "system": "ok"
+      },
+      "public_ip_present": true,
+      "ssm": "Online"
+    },
+    {
+      "id": "i-0827f8e781876e807",
+      "role": "web",
+      "state": "running",
+      "health": {
+        "instance": "ok",
+        "system": "ok"
+      },
+      "public_ip_present": false,
+      "ssm": "Online"
+    },
+    {
+      "id": "i-0db11855e5d491210",
+      "role": "wazuh",
+      "state": "running",
+      "health": {
+        "instance": "ok",
+        "system": "ok"
+      },
+      "public_ip_present": false,
+      "ssm": "Online"
+    }
+  ],
+  "rds": {
+    "DBInstanceStatus": "available",
+    "Engine": "mysql",
+    "EngineVersion": "8.4.11",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 7,
+    "LatestRestorableTime": "2026-11-22 01:20:32+00:00",
+    "DeletionProtection": true
+  },
+  "cloudfront": {
+    "status": "Deployed",
+    "enabled": true,
+    "domain": "d3hc8whbcpdvtd.cloudfront.net",
+    "waf_associated": true,
+    "origin_type": "VPCOrigin"
+  },
+  "waf_rules": [
+    "ControlledEvidenceProbe",
+    "AWSManagedRulesCommonRuleSet",
+    "AWSManagedRulesSQLiRuleSet",
+    "AWSManagedRulesKnownBadInputsRuleSet",
+    "RateLimit"
+  ],
+  "cloudtrail": {
+    "is_logging": true,
+    "latest_delivery_utc": "2026-11-22T01:18:45.197000+00:00",
+    "latest_delivery_error": ""
+  },
+  "new_alarms": [
+    {
+      "name": "cyberfinal262-5f48e9-vpn-cpu",
+      "state": "OK",
+      "external_action_count": 0
+    },
+    {
+      "name": "cyberfinal262-5f48e9-vpn-status",
+      "state": "OK",
+      "external_action_count": 0
+    },
+    {
+      "name": "cyberfinal262-5f48e9-wazuh-cpu",
+      "state": "OK",
+      "external_action_count": 0
+    },
+    {
+      "name": "cyberfinal262-5f48e9-wazuh-status",
+      "state": "OK",
+      "external_action_count": 0
+    },
+    {
+      "name": "cyberfinal262-5f48e9-web-cpu",
+      "state": "OK",
+      "external_action_count": 0
+    },
+    {
+      "name": "cyberfinal262-5f48e9-web-status",
+      "state": "OK",
+      "external_action_count": 0
+    }
+  ],
+  "log_groups": [
+    {
+      "name": "/cyberfinal262-5f48e9/system",
+      "stored_bytes": 0
+    },
+    {
+      "name": "/cyberfinal262-5f48e9/vpc-flow",
+      "stored_bytes": 0
+    }
+  ],
+  "legacy_sns": {
+    "topic_found": true,
+    "confirmed_subscriptions": 1,
+    "endpoints_omitted": true,
+    "legacy_alarms": [
+      {
+        "name": "ABCPlace-R4-CPU-Web",
+        "state": "OK",
+        "action_count": 1
+      },
+      {
+        "name": "ABCPlace-R4-Disco-Web",
+        "state": "OK",
+        "action_count": 1
+      },
+      {
+        "name": "ABCPlace-R4-Rede-Web",
+        "state": "OK",
+        "action_count": 1
+      },
+      {
+        "name": "ABCPlace-R4-Sistema-Web",
+        "state": "OK",
+        "action_count": 1
+      }
+    ]
+  },
+  "scope": "Somente consultas. Não envia notificações nem altera alarmes, permissões, instâncias, regras ou domínios."
+}

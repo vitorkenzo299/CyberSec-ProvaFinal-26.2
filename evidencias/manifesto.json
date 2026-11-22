@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-22T00:54:21.967323+00:00",
+  "generated_utc": "2026-11-22T01:28:17.764808+00:00",
   "files": [
     {
       "path": "evidencias/atuais/20261121T223109Z/alarmes.json",
@@ -373,8 +373,8 @@
     },
     {
       "path": "evidencias/INDICE.md",
-      "bytes": 7285,
-      "sha256": "4c360964526c68b270b4718026e9b08a0c53ac4f9ddf85258f58a86531227995"
+      "bytes": 7760,
+      "sha256": "e16820756a70afbfcb3a0d1eb01e2a19002096ccb5fba82229ecfc3963d34725"
     },
     {
       "path": "evidencias/locais/aplicacao-local-desktop.png",
@@ -395,6 +395,46 @@
       "path": "evidencias/locais/validacao-local.json",
       "bytes": 3338,
       "sha256": "2050cc78a51fd291e6d5cf1243dc8b54caeaed5b09399978e4a1f8a9295af96a"
+    },
+    {
+      "path": "evidencias/revisao-final/arquivos-revisados.json",
+      "bytes": 1138,
+      "sha256": "d07a3ceb40246fc5261721f47240e70f79c2f98dd06adf71a246e4afe7027cb9"
+    },
+    {
+      "path": "evidencias/revisao-final/aws.json",
+      "bytes": 3184,
+      "sha256": "fe2d9e372bf4474cbbb53ca6d6ccbaf3a89f12cee8700d60546eb2fd5f4c7113"
+    },
+    {
+      "path": "evidencias/revisao-final/cloudflare-rate.json",
+      "bytes": 3194,
+      "sha256": "793d75c0d34e5717f7c55f8a78e7a314f9a985d16efee1607fb5b9df106fc726"
+    },
+    {
+      "path": "evidencias/revisao-final/logs.json",
+      "bytes": 1658,
+      "sha256": "7b75714d379228af8a39be264582220fcdab18ef8ed57c336095837e49996769"
+    },
+    {
+      "path": "evidencias/revisao-final/public.json",
+      "bytes": 2393,
+      "sha256": "2ebc7b6c669b29ce042ee3c9c37b0d429eabf2e467940393c103051f711e73da"
+    },
+    {
+      "path": "evidencias/revisao-final/resumo.json",
+      "bytes": 1243,
+      "sha256": "9658a70d64e6e0d019d25add567ab66b35bc19ee3a5c274bae534b7108f3dfce"
+    },
+    {
+      "path": "evidencias/revisao-final/servicos.json",
+      "bytes": 2668,
+      "sha256": "6739686d1b13e654914557d43989ac6032d456196d38dfaa0f9c904331061b91"
+    },
+    {
+      "path": "evidencias/revisao-final/vpn.json",
+      "bytes": 504,
+      "sha256": "5bfe2b0de06d25b518a055598085b49b912f73cbf8719ec489f1ab8bb73db1a4"
     },
     {
       "path": "evidencias/wordpress/capturas.json",

@@ -1,0 +1,89 @@
+{
+  "checked_utc": "2026-11-22T01:25:26.214042+00:00",
+  "target": "https://abcplace.blog.br/wp-admin/",
+  "maximum_requests": 16,
+  "records": [
+    {
+      "phase": "bounded_burst",
+      "index": 1,
+      "checked_utc": "2026-11-22T01:25:09.412234+00:00",
+      "http": 302,
+      "server": "cloudflare",
+      "cf_ray": "a5e42374084af245-GRU",
+      "cf_mitigated": null,
+      "location": "https://abcplace.blog.br/wp-login.php?redirect_to=https%3A%2F%2Fabcplace.blog.br%2Fwp-admin%2F&reauth=1"
+    },
+    {
+      "phase": "bounded_burst",
+      "index": 2,
+      "checked_utc": "2026-11-22T01:25:10.299104+00:00",
+      "http": 302,
+      "server": "cloudflare",
+      "cf_ray": "a5e4237a7f5f36ec-GRU",
+      "cf_mitigated": null,
+      "location": "https://abcplace.blog.br/wp-login.php?redirect_to=https%3A%2F%2Fabcplace.blog.br%2Fwp-admin%2F&reauth=1"
+    },
+    {
+      "phase": "bounded_burst",
+      "index": 3,
+      "checked_utc": "2026-11-22T01:25:11.159898+00:00",
+      "http": 302,
+      "server": "cloudflare",
+      "cf_ray": "a5e4237fec5f4f8c-GRU",
+      "cf_mitigated": null,
+      "location": "https://abcplace.blog.br/wp-login.php?redirect_to=https%3A%2F%2Fabcplace.blog.br%2Fwp-admin%2F&reauth=1"
+    },
+    {
+      "phase": "bounded_burst",
+      "index": 4,
+      "checked_utc": "2026-11-22T01:25:11.997472+00:00",
+      "http": 302,
+      "server": "cloudflare",
+      "cf_ray": "a5e42385495d630c-GRU",
+      "cf_mitigated": null,
+      "location": "https://abcplace.blog.br/wp-login.php?redirect_to=https%3A%2F%2Fabcplace.blog.br%2Fwp-admin%2F&reauth=1"
+    },
+    {
+      "phase": "bounded_burst",
+      "index": 5,
+      "checked_utc": "2026-11-22T01:25:12.464485+00:00",
+      "http": 302,
+      "server": "cloudflare",
+      "cf_ray": "a5e4238a8b07c618-GRU",
+      "cf_mitigated": null,
+      "location": "https://abcplace.blog.br/wp-login.php?redirect_to=https%3A%2F%2Fabcplace.blog.br%2Fwp-admin%2F&reauth=1"
+    },
+    {
+      "phase": "bounded_burst",
+      "index": 6,
+      "checked_utc": "2026-11-22T01:25:13.299372+00:00",
+      "http": 302,
+      "server": "cloudflare",
+      "cf_ray": "a5e4238d89daf1af-GRU",
+      "cf_mitigated": null,
+      "location": "https://abcplace.blog.br/wp-login.php?redirect_to=https%3A%2F%2Fabcplace.blog.br%2Fwp-admin%2F&reauth=1"
+    },
+    {
+      "phase": "bounded_burst",
+      "index": 7,
+      "checked_utc": "2026-11-22T01:25:13.606249+00:00",
+      "http": 429,
+      "server": "cloudflare",
+      "cf_ray": "a5e423929baf4f8c-GRU",
+      "cf_mitigated": null,
+      "location": null
+    },
+    {
+      "phase": "after_12_seconds",
+      "index": 1,
+      "checked_utc": "2026-11-22T01:25:26.214042+00:00",
+      "http": 302,
+      "server": "cloudflare",
+      "cf_ray": "a5e423de5fbd6284-GRU",
+      "cf_mitigated": null,
+      "location": "https://abcplace.blog.br/wp-login.php?redirect_to=https%3A%2F%2Fabcplace.blog.br%2Fwp-admin%2F&reauth=1"
+    }
+  ],
+  "block_observed": true,
+  "boundary": "GET anônimo limitado, sem senha e sem alteração de regra. HTTP 429 na borda e recuperação demonstram a limitação observada, mas não auditam todas as regras Cloudflare nem comprovam resistência a DDoS."
+}

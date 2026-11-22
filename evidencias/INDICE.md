@@ -56,3 +56,8 @@ O HTML ZAP agrupa 54 instâncias informativas em duas regras. O JSON conserva as
 A prova de restauração EV11 antecede WordPress e valida somente o catálogo técnico. O fluxo SNS do Roteiro 4 é histórico e não comprova destinatários dos alarmes novos. A nova VPC não foi conectada ao legado e o domínio anterior não foi alterado. `wordpress/vpn-apos-revisao.json` comprova o encerramento dos clientes locais e o catálogo público ainda disponível.
 
 Os IDs gravados em registros históricos da primeira revisão são localizados por `continuidade/correspondencia-ids.json`; o antigo R05 do kernel corresponde ao R03 atual. `continuidade/qualidade-versao-anterior.json` pertence ao commit 476b779 e seus hashes se referem aos arquivos daquele commit, não aos entregáveis revisados. O recibo atual é `atuais/qualidade-entrega.json`.
+
+
+## Conferência operacional adicional
+
+`revisao-final/` contém nova consulta de saúde AWS, respostas públicas, teste limitado da Cloudflare com recuperação, conexão/desconexão VPN, serviços internos, recebimento de logs e conferência dos hashes dos arquivos revisados. A conferência de 21/11 às 22h21–22h25 (Brasília) confirma operação atual, mantendo explícitas as pendências em `resumo.json`. Ela não altera as datas ou o escopo dos testes anteriores.

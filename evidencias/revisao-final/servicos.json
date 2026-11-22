@@ -1,0 +1,83 @@
+{
+  "records": [
+    {
+      "checked_utc": "2026-11-22T01:21:35.033446+00:00",
+      "role": "vpn",
+      "services": {
+        "openvpn-server@server": "active",
+        "wazuh-agent": "active",
+        "auditd": "active",
+        "amazon-cloudwatch-agent": "active"
+      }
+    },
+    {
+      "checked_utc": "2026-11-22T01:21:36.859793+00:00",
+      "role": "web",
+      "services": {
+        "nginx": "active",
+        "php8.3-fpm": "active",
+        "cyberfinal": "active",
+        "wazuh-agent": "active",
+        "auditd": "active",
+        "amazon-cloudwatch-agent": "active"
+      },
+      "wordpress": {
+        "wordpress": "7.1.5",
+        "woocommerce": "11.3.1",
+        "products": 3,
+        "database_cipher": "TLS_AES_256_GCM_SHA384"
+      }
+    },
+    {
+      "checked_utc": "2026-11-22T01:23:33.658121+00:00",
+      "role": "wazuh",
+      "services": {
+        "wazuh-manager": "active",
+        "wazuh-indexer": "active",
+        "wazuh-dashboard": "active",
+        "auditd": "active",
+        "amazon-cloudwatch-agent": "active"
+      },
+      "agents": {
+        "data": {
+          "affected_items": [
+            {
+              "lastKeepAlive": "9999-12-31T23:59:59+00:00",
+              "id": "000",
+              "name": "ip-10-62-10-20",
+              "version": "Wazuh v4.14.10",
+              "status": "active"
+            },
+            {
+              "lastKeepAlive": "2026-11-22T01:23:23+00:00",
+              "id": "001",
+              "name": "cyberfinal262-5f48e9-vpn",
+              "version": "Wazuh v4.14.10",
+              "status": "active"
+            },
+            {
+              "lastKeepAlive": "2026-11-22T01:23:19+00:00",
+              "id": "002",
+              "name": "cyberfinal262-5f48e9-web",
+              "version": "Wazuh v4.14.10",
+              "status": "active"
+            }
+          ],
+          "total_affected_items": 3,
+          "total_failed_items": 0,
+          "failed_items": []
+        },
+        "message": "All selected agents information was returned",
+        "error": 0
+      },
+      "agents_query_identity": "integração do dashboard já configurada; somente leitura de agentes nesta consulta",
+      "fim_read_as_vitor": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "admin_read_as_vitor_http": 403,
+      "query_user": "vitor (painel/indexer); não é um login Basic separado da API de gerenciamento"
+    }
+  ],
+  "boundary": "Consulta corrigida usa a integração já configurada para ler a API de agentes. O login vitor é do painel/indexer e sua permissão de leitura foi testada separadamente. Não se alterou conta ou role para realizar esta conferência."
+}

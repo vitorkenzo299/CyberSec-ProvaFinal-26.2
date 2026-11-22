@@ -1,0 +1,58 @@
+{
+  "checked_utc": "2026-11-22T01:25:14.402270+00:00",
+  "log_groups": [
+    {
+      "group": "/cyberfinal262-5f48e9/system",
+      "sample_streams": [
+        {
+          "stream": "i-0db11855e5d491210/syslog",
+          "last_event_timestamp": 1795309634078,
+          "sample_event_count": 2,
+          "sample_latest_timestamp": 1795310654079
+        },
+        {
+          "stream": "i-0827f8e781876e807/syslog",
+          "last_event_timestamp": 1795309212196,
+          "sample_event_count": 2,
+          "sample_latest_timestamp": 1795310652196
+        }
+      ]
+    },
+    {
+      "group": "/cyberfinal262-5f48e9/vpc-flow",
+      "sample_streams": [
+        {
+          "stream": "eni-0910da3184d5e98b0-all",
+          "last_event_timestamp": 1795309773000,
+          "sample_event_count": 2,
+          "sample_latest_timestamp": 1795310654000
+        },
+        {
+          "stream": "eni-0755bac81e33270c5-all",
+          "last_event_timestamp": 1795308756000,
+          "sample_event_count": 2,
+          "sample_latest_timestamp": 1795310654000
+        }
+      ]
+    },
+    {
+      "group": "aws-waf-logs-cyberfinal262-5f48e9",
+      "sample_streams": [
+        {
+          "stream": "cloudfront_cyberfinal262-5f48e9_0",
+          "last_event_timestamp": 1795308531785,
+          "sample_event_count": 2,
+          "sample_latest_timestamp": 1795310482489
+        }
+      ]
+    }
+  ],
+  "flow_logs": [
+    {
+      "state": "ACTIVE",
+      "delivery": "SUCCESS",
+      "error": ""
+    }
+  ],
+  "note": "storedBytes pode estar defasado; a conferência usa existência e horário de eventos. Conteúdo dos logs não é publicado nesta consulta."
+}
